@@ -3,211 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kavanagh Roofing Ltd | Premier Roofing Specialists in Shaftesbury</title>
-    <meta name="description" content="Kavanagh Roofing Ltd based in Salisbury Street, Shaftesbury. Expert slate, tile, flat roofing, chimney repairs, and leadwork across Dorset & Wiltshire.">
+    <title>Kavanagh Roofing Ltd | Master Roofers Shaftesbury & Dorset</title>
+    <meta name="description" content="Kavanagh Roofing Ltd - Premier roofing specialists in Salisbury Street, Shaftesbury. Slate roofing, tiling, flat roofs, and repairs across Dorset & Wiltshire.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Custom Configuration -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
                     },
                     colors: {
-                        brand: {
-                            50: '#fff7ed',
-                            100: '#ffedd5',
-                            500: '#f97316',
-                            600: '#ea580c',
-                            700: '#c2410c',
-                            800: '#9a3412',
-                            900: '#7c2d12',
-                        },
                         slate: {
-                            850: '#131c2e',
+                            850: '#131e32',
                             900: '#0f172a',
-                            950: '#020617',
+                            950: '#080d1a',
+                        },
+                        copper: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            500: '#c25e00',
+                            600: '#a34e00',
+                            700: '#853e00',
+                        },
+                        bronze: {
+                            DEFAULT: '#b8621b',
+                            light: '#d47a32',
+                            dark: '#8a450e',
                         }
                     }
                 }
             }
         }
     </script>
+    
     <style>
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.75) 60%, rgba(15, 23, 42, 0.85) 100%);
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(15, 23, 42, 0.78) 50%, rgba(15, 23, 42, 0.88) 100%);
         }
-        .pattern-bg {
-            background-image: radial-gradient(rgba(234, 88, 12, 0.15) 1px, transparent 1px);
-            background-size: 24px 24px;
+        .text-gradient {
+            background: linear-gradient(135deg, #f97316 0%, #b8621b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-600 selection:text-white">
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-orange-500 selection:text-white">
 
     <!-- TOP BAR -->
-    <div class="bg-slate-950 text-slate-300 text-xs sm:text-sm py-2.5 border-b border-slate-800/80">
+    <div class="bg-slate-950 text-slate-300 text-xs py-2.5 border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center space-x-6">
-                <span class="flex items-center text-slate-300">
-                    <i class="fa-solid fa-location-dot text-brand-600 mr-2 text-sm"></i>
-                    Salisbury Street, Shaftesbury, SP7 8EL
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-orange-500"></i>
+                    <span>Salisbury Street, Shaftesbury, SP7 8EL</span>
                 </span>
-                <span class="hidden md:flex items-center text-slate-300">
-                    <i class="fa-regular fa-clock text-brand-600 mr-2 text-sm"></i>
-                    Mon - Fri: 07:30 - 17:30 | Sat: 08:00 - 12:00
+                <span class="hidden md:flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-orange-500"></i>
+                    <span>Mon - Fri: 7:30 AM - 6:00 PM | Sat: 8:00 AM - 1:00 PM</span>
                 </span>
             </div>
-            <div class="flex items-center space-x-4">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
-                    24/7 Emergency Callout
-                </span>
-                <a href="tel:01747853000" class="font-bold text-white hover:text-brand-500 transition-colors flex items-center gap-1.5">
-                    <i class="fa-solid fa-phone text-xs text-brand-600"></i>
-                    01747 853000
+            <div class="flex items-center space-x-6">
+                <a href="mailto:info@kavanaghroofing.co.uk" class="hover:text-white transition-colors flex items-center gap-2">
+                    <i class="fa-regular fa-envelope text-orange-500"></i>
+                    <span>info@kavanaghroofing.co.uk</span>
                 </a>
+                <div class="flex items-center space-x-3 text-slate-400">
+                    <a href="#" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-orange-500 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- STICKY HEADER -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-100 transition-all">
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 transition-all duration-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex items-center justify-between h-20">
                 
-                <!-- BRAND LOGO -->
-                <a href="#" class="flex items-center space-x-3 group">
-                    <div class="w-11 h-11 bg-slate-900 rounded-xl flex items-center justify-center text-brand-600 shadow-md group-hover:bg-brand-600 group-hover:text-white transition-all duration-300">
-                        <i class="fa-solid fa-house-chimney-crack text-xl"></i>
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-gradient-to-br from-orange-500 to-amber-700 rounded-lg flex items-center justify-center shadow-lg shadow-orange-500/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-house-chimney-crack text-white text-xl"></i>
                     </div>
                     <div class="flex flex-col">
-                        <span class="font-extrabold text-xl sm:text-2xl text-slate-900 tracking-tight leading-none group-hover:text-brand-600 transition-colors">KAVANAGH</span>
-                        <span class="text-xs font-bold tracking-widest text-brand-600 uppercase mt-0.5">Roofing Ltd • Shaftesbury</span>
+                        <span class="text-xl font-extrabold tracking-tight text-white leading-none">KAVANAGH</span>
+                        <span class="text-xs font-semibold tracking-widest text-orange-500 uppercase mt-1">Roofing Ltd • Shaftesbury</span>
                     </div>
                 </a>
 
-                <!-- NAVIGATION LINKS -->
-                <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-700">
-                    <a href="#services" class="hover:text-brand-600 transition-colors py-2">Services</a>
-                    <a href="#about" class="hover:text-brand-600 transition-colors py-2">Local Expertise</a>
-                    <a href="#testimonials" class="hover:text-brand-600 transition-colors py-2">Reviews</a>
-                    <a href="#contact" class="hover:text-brand-600 transition-colors py-2">Contact Us</a>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#about" class="hover:text-orange-400 transition-colors">About</a>
+                    <a href="#services" class="hover:text-orange-400 transition-colors">Services</a>
+                    <a href="#local-heritage" class="hover:text-orange-400 transition-colors">Heritage Work</a>
+                    <a href="#testimonials" class="hover:text-orange-400 transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-orange-400 transition-colors">Contact</a>
                 </nav>
 
-                <!-- HEADER CTA BUTTONS -->
-                <div class="flex items-center space-x-3">
-                    <a href="tel:01747853000" class="hidden sm:inline-flex items-center px-4 py-2.5 rounded-lg border-2 border-slate-900 text-slate-900 font-bold text-sm hover:bg-slate-900 hover:text-white transition-all duration-200">
-                        <i class="fa-solid fa-phone mr-2 text-xs"></i> Call Office
+                <!-- Header CTA Button -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="tel:01747852911" class="flex items-center gap-2 text-white bg-slate-800 hover:bg-slate-700 px-4 py-2.5 rounded-lg border border-slate-700 font-semibold text-sm transition-all">
+                        <i class="fa-solid fa-phone text-orange-500"></i>
+                        <span>01747 852911</span>
                     </a>
-                    <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-600/20 hover:shadow-brand-600/40 transition-all duration-200 transform hover:-translate-y-0.5">
+                    <a href="#quote" class="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-semibold text-sm px-5 py-2.5 rounded-lg shadow-lg shadow-orange-600/25 transition-all hover:shadow-orange-600/40 transform hover:-translate-y-0.5">
                         Get Free Quote
-                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                     </a>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-slate-300 hover:text-white p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-orange-400 py-2 font-medium">About Us</a>
+            <a href="#services" class="block text-slate-300 hover:text-orange-400 py-2 font-medium">Our Services</a>
+            <a href="#local-heritage" class="block text-slate-300 hover:text-orange-400 py-2 font-medium">Heritage Roofing</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-orange-400 py-2 font-medium">Testimonials</a>
+            <a href="#contact" class="block text-slate-300 hover:text-orange-400 py-2 font-medium">Contact</a>
+            <div class="pt-4 flex flex-col gap-3">
+                <a href="tel:01747852911" class="text-center text-white bg-slate-800 py-3 rounded-lg font-bold flex items-center justify-center gap-2 border border-slate-700">
+                    <i class="fa-solid fa-phone text-orange-500"></i> Call 01747 852911
+                </a>
+                <a href="#quote" class="text-center bg-gradient-to-r from-orange-600 to-amber-600 text-white py-3 rounded-lg font-bold">
+                    Get Free Quote
+                </a>
             </div>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative bg-slate-900 text-white min-h-[620px] flex items-center overflow-hidden">
+    <section class="relative bg-slate-900 text-white overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=2000&q=80" alt="Slate roofing craftsmanship" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=2000&q=80" alt="Roof Restoration Shaftesbury" class="w-full h-full object-cover">
             <div class="absolute inset-0 hero-overlay"></div>
         </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Hero Content -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-600/20 border border-brand-500/30 text-brand-500 text-xs font-bold tracking-wide uppercase">
-                        <i class="fa-solid fa-shield-check"></i>
-                        Shaftesbury's Trusted Roofing Authority
+                <!-- Hero Left Column Text -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 text-orange-400 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Shaftesbury's Trusted Roofing Masters</span>
                     </div>
-                    
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
-                        Crafting Roofs Built to Endure Generations.
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+                        Crafting Roofs That Endure for <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-500">Generations</span>.
                     </h1>
-                    
-                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-normal leading-relaxed">
-                        From Salisbury Street across North Dorset & South Wiltshire. Specialising in traditional slate, heritage tile restoration, high-performance flat roofing, and urgent structural repairs.
+
+                    <p class="text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
+                        Based in Salisbury Street, Shaftesbury, Kavanagh Roofing Ltd brings over three decades of unparalleled craftsmanship in slate, tiling, flat roofing, and heritage restoration across Dorset and North Wiltshire.
                     </p>
 
-                    <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#contact" class="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-base shadow-xl shadow-brand-600/30 transition-all duration-200 transform hover:-translate-y-1">
-                            Request Inspection & Quote
-                            <i class="fa-solid fa-calculator ml-2.5"></i>
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#quote" class="inline-flex justify-center items-center gap-3 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-bold text-base px-8 py-4 rounded-xl shadow-xl shadow-orange-600/30 transition-all hover:scale-[1.02]">
+                            <span>Request Free Site Inspection</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
                         </a>
-                        <a href="tel:01747853000" class="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-white font-semibold text-base border border-slate-700 backdrop-blur-sm transition-all duration-200">
-                            <i class="fa-solid fa-phone text-brand-600 mr-2.5"></i>
-                            01747 853000
+                        <a href="tel:01747852911" class="inline-flex justify-center items-center gap-3 bg-slate-800/90 hover:bg-slate-800 text-white font-semibold text-base px-7 py-4 rounded-xl border border-slate-700/80 backdrop-blur-sm transition-all hover:border-slate-500">
+                            <i class="fa-solid fa-phone-volume text-orange-500"></i>
+                            <span>Emergency Call-Out</span>
                         </a>
                     </div>
 
-                    <!-- Rapid Trust Signals -->
-                    <div class="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+                    <!-- Trust Stats -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6">
                         <div>
-                            <div class="text-2xl font-extrabold text-white">25+</div>
-                            <div class="text-xs text-slate-400">Years Local Experience</div>
+                            <p class="text-3xl font-extrabold text-white">30+</p>
+                            <p class="text-xs text-slate-400 font-medium uppercase mt-1">Years Experience</p>
                         </div>
                         <div>
-                            <div class="text-2xl font-extrabold text-white">100%</div>
-                            <div class="text-xs text-slate-400">Insured & Guaranteed</div>
+                            <p class="text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs text-slate-400 font-medium uppercase mt-1">Guaranteed Work</p>
                         </div>
                         <div>
-                            <div class="text-2xl font-extrabold text-brand-500">5.0 ★</div>
-                            <div class="text-xs text-slate-400">Customer Rating</div>
-                        </div>
-                        <div>
-                            <div class="text-2xl font-extrabold text-white">SP7</div>
-                            <div class="text-xs text-slate-400">Based in Shaftesbury</div>
+                            <p class="text-3xl font-extrabold text-white">4.9★</p>
+                            <p class="text-xs text-slate-400 font-medium uppercase mt-1">Customer Rated</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Hero Quick Contact Card -->
+                <!-- Hero Right Column Quick Card -->
                 <div class="lg:col-span-5">
-                    <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 shadow-2xl border border-slate-100 text-slate-900">
-                        <div class="mb-6">
-                            <h3 class="text-2xl font-bold text-slate-900">Fast Quote Request</h3>
-                            <p class="text-sm text-slate-600 mt-1">Get an honest, itemised quotation from our Salisbury Street office.</p>
+                    <div class="bg-slate-900/90 border border-slate-700/80 rounded-2xl p-6 sm:p-8 backdrop-blur-xl shadow-2xl">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-bold text-white">Request Immediate Callback</h3>
+                            <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
                         </div>
+                        
                         <form action="#contact" class="space-y-4">
                             <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Your Full Name</label>
-                                <input type="text" placeholder="e.g. Thomas Hardy" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:bg-white transition-all">
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Your Full Name</label>
+                                <input type="text" placeholder="e.g. Lord Thomas" class="w-full bg-slate-950/80 border border-slate-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-4 py-3 text-slate-100 text-sm placeholder-slate-500 outline-none transition">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Contact Phone Number</label>
-                                <input type="tel" placeholder="07123 456789" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:bg-white transition-all">
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Phone Number</label>
+                                <input type="tel" placeholder="e.g. 07700 900123" class="w-full bg-slate-950/80 border border-slate-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-4 py-3 text-slate-100 text-sm placeholder-slate-500 outline-none transition">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Service Required</label>
-                                <select class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-600 focus:bg-white transition-all">
-                                    <option>New Roof Installation</option>
-                                    <option>Roof Repair / Leak Fix</option>
-                                    <option>Slate & Tile Work</option>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Service Needed</label>
+                                <select class="w-full bg-slate-950/80 border border-slate-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-lg px-4 py-3 text-slate-300 text-sm outline-none transition">
+                                    <option>Slate & Tile Roof Repairs</option>
+                                    <option>Full Roof Replacement</option>
                                     <option>Flat Roofing System</option>
-                                    <option>Chimney & Leadwork</option>
+                                    <option>Leadwork & Chimneys</option>
+                                    <option>Emergency Roof Leak</option>
                                     <option>Guttering & Fascias</option>
                                 </select>
                             </div>
-                            <button type="submit" class="w-full py-4 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-bold text-sm tracking-wide transition-colors shadow-lg">
-                                Send Quote Request
+                            <button type="submit" class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-3.5 rounded-lg transition-colors shadow-lg shadow-orange-600/20 text-sm uppercase tracking-wider">
+                                Request Quote Now
                             </button>
-                            <p class="text-[11px] text-slate-500 text-center">No high-pressure sales pitch. Free physical roof inspection.</p>
+                            <p class="text-xs text-center text-slate-400 mt-2">
+                                <i class="fa-solid fa-lock text-slate-500 mr-1"></i> No obligation. Local Shaftesbury specialists.
+                            </p>
                         </form>
                     </div>
                 </div>
@@ -216,148 +247,135 @@
         </div>
     </section>
 
-    <!-- TRUST BADGES / ACCREDITATION STRIP -->
-    <section class="bg-slate-900 border-t border-slate-800 py-8">
+    <!-- TRUST BADGES BAND -->
+    <section class="bg-slate-950 py-8 border-y border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-center text-xs font-bold uppercase tracking-widest text-slate-400 mb-6">Fully Accredited • Fully Insured • Fully Guaranteed</p>
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-slate-400 opacity-80">
-                <div class="flex items-center space-x-2 font-bold text-slate-300">
-                    <i class="fa-solid fa-certificate text-brand-600 text-xl"></i>
-                    <span>NFRC Certified Standards</span>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center items-center">
+                <div class="flex items-center justify-center space-x-3 text-slate-300">
+                    <i class="fa-solid fa-shield-halved text-2xl text-orange-500"></i>
+                    <div class="text-left">
+                        <p class="font-bold text-sm text-white leading-tight">10-25 Year</p>
+                        <p class="text-xs text-slate-400">Written Guarantees</p>
+                    </div>
                 </div>
-                <div class="flex items-center space-x-2 font-bold text-slate-300">
-                    <i class="fa-solid fa-shield-halved text-brand-600 text-xl"></i>
-                    <span>£10M Public Liability</span>
+                <div class="flex items-center justify-center space-x-3 text-slate-300">
+                    <i class="fa-solid fa-certificate text-2xl text-orange-500"></i>
+                    <div class="text-left">
+                        <p class="font-bold text-sm text-white leading-tight">NFRC Standards</p>
+                        <p class="text-xs text-slate-400">Fully Accredited</p>
+                    </div>
                 </div>
-                <div class="flex items-center space-x-2 font-bold text-slate-300">
-                    <i class="fa-solid fa-medal text-brand-600 text-xl"></i>
-                    <span>25-Year Guarantee</span>
+                <div class="flex items-center justify-center space-x-3 text-slate-300">
+                    <i class="fa-solid fa-user-shield text-2xl text-orange-500"></i>
+                    <div class="text-left">
+                        <p class="font-bold text-sm text-white leading-tight">£5M Liability</p>
+                        <p class="text-xs text-slate-400">Fully Insured Team</p>
+                    </div>
                 </div>
-                <div class="flex items-center space-x-2 font-bold text-slate-300">
-                    <i class="fa-solid fa-building-columns text-brand-600 text-xl"></i>
-                    <span>Heritage & Conservation Approved</span>
+                <div class="flex items-center justify-center space-x-3 text-slate-300">
+                    <i class="fa-solid fa-map-location-dot text-2xl text-orange-500"></i>
+                    <div class="text-left">
+                        <p class="font-bold text-sm text-white leading-tight">Salisbury Street</p>
+                        <p class="text-xs text-slate-400">Shaftesbury Local</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SERVICES GRID -->
-    <section id="services" class="py-20 lg:py-28 bg-white">
+    <section id="services" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-600 font-bold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1.5 rounded-full border border-brand-100">Our Comprehensive Expertise</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight">Complete Roofing Solutions for Shaftesbury</h2>
-                <p class="text-slate-600 mt-3 text-base sm:text-lg">Combining traditional Dorset roofing techniques with cutting-edge waterproofing technology.</p>
+                <span class="text-orange-600 font-bold text-xs uppercase tracking-widest bg-orange-100 px-3 py-1 rounded-full">Our Roofing Services</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight">Complete Roofing Solutions in Shaftesbury & Surrounds</h2>
+                <p class="text-slate-600 mt-4 text-base">From traditional Dorset stone tiles to high-tech fiberglass flat roof systems, our master craftsmen deliver flawless results every time.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Service Card 1 -->
-                <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:border-brand-500/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-brand-600/10 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-cubes-stacked"></i>
+                <div class="bg-white border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-layer-group"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Slate & Tile Roofing</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Expert supply and installation of Natural Welsh Slate, Spanish Slate, and handmade clay tiles crafted to suit historic and contemporary homes.
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Natural Slate Roofing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Expert installation and repair of Welsh, Spanish, and reclaimed slate roofs. Exceptional longevity, tailored specifically to fit Dorset’s architectural character.
                     </p>
-                    <ul class="text-xs font-semibold text-slate-700 space-y-2 mb-6">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Natural Slate & Clay Tiles</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Heritage Conservation Repairs</li>
-                    </ul>
-                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
-                        Request Slate Service <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                    <a href="#contact" class="inline-flex items-center text-orange-600 font-semibold text-sm hover:text-orange-700">
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                     </a>
                 </div>
 
                 <!-- Service Card 2 -->
-                <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:border-brand-500/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-brand-600/10 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-layer-group"></i>
+                <div class="bg-white border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-table-cells"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">High-Performance Flat Roofs</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Modern EPDM rubber, GRP fiberglass, and ultra-durable reinforced felt solutions with non-leak guarantees for extensions, garages, and dormers.
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Tiled Roofs & Repairs</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Concrete and clay roof tile installation, re-pegging, ridge tile pointing, and broken tile replacement using matched local materials.
                     </p>
-                    <ul class="text-xs font-semibold text-slate-700 space-y-2 mb-6">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Seamless GRP & EPDM Membranes</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Up to 30-Year Product Warranties</li>
-                    </ul>
-                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
-                        Request Flat Roof Quote <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                    <a href="#contact" class="inline-flex items-center text-orange-600 font-semibold text-sm hover:text-orange-700">
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                     </a>
                 </div>
 
                 <!-- Service Card 3 -->
-                <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:border-brand-500/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-brand-600/10 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-hammer"></i>
+                <div class="bg-white border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-square-full"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Chimney Repairs & Leadwork</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Precision Code 4/5 lead flashing, apron replacements, chimney repointing, stack re-building, and cowls to stop ingress in its tracks.
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Flat Roofing Systems</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        High-performance GRP fiberglass and ultra-durable EPDM rubber roofing for extensions, garages, and commercial properties.
                     </p>
-                    <ul class="text-xs font-semibold text-slate-700 space-y-2 mb-6">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Traditional Bossed Lead Flashing</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Chimney Stacks & Repointing</li>
-                    </ul>
-                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
-                        Book Chimney Inspection <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                    <a href="#contact" class="inline-flex items-center text-orange-600 font-semibold text-sm hover:text-orange-700">
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                     </a>
                 </div>
 
                 <!-- Service Card 4 -->
-                <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:border-brand-500/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-brand-600/10 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-kit-medical"></i>
+                <div class="bg-white border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-sheet-plastic"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Emergency Leak Repairs</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Rapid deployment for storm damage, slipped tiles, structural leaks, and weatherproofing to protect your property interior from water damage.
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Leadwork & Chimneys</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Bespoke Code 4/5 lead flashing, valley replacements, chimney repointing, re-leading, and complete chimney stack removal or rebuilding.
                     </p>
-                    <ul class="text-xs font-semibold text-slate-700 space-y-2 mb-6">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Fast Callout in SP7 & Surrounds</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Temporary Tarpaulins & Immediate Fixes</li>
-                    </ul>
-                    <a href="tel:01747853000" class="inline-flex items-center text-xs font-bold text-brand-600 hover:text-brand-700 transition-colors">
-                        Call Emergency Team <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                    <a href="#contact" class="inline-flex items-center text-orange-600 font-semibold text-sm hover:text-orange-700">
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                     </a>
                 </div>
 
                 <!-- Service Card 5 -->
-                <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:border-brand-500/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-brand-600/10 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                <div class="bg-white border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Fascias, Soffits & Gutters</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Low-maintenance UPVC or traditional timber roofline replacements, deep-flow guttering, downpipes, and dry verge system upgrades.
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Emergency Roof Repairs</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Rapid-response local service for storm damage, severe leaks, fallen trees, or loose tiles across Shaftesbury and surrounding villages.
                     </p>
-                    <ul class="text-xs font-semibold text-slate-700 space-y-2 mb-6">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> High Capacity Rainwater Systems</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Rotten Fascia Timber Replacement</li>
-                    </ul>
-                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
-                        Upgrade Roofline <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                    <a href="#contact" class="inline-flex items-center text-orange-600 font-semibold text-sm hover:text-orange-700">
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                     </a>
                 </div>
 
                 <!-- Service Card 6 -->
-                <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:border-brand-500/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-brand-600/10 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-warehouse"></i>
+                <div class="bg-white border border-slate-200/80 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-umbrella"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Commercial & Industrial Roofing</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Tailored roof maintenance, oversheading, sheeting, and full replacements for commercial units, agricultural buildings, and public properties.
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Fascias, Soffits & Gutters</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Low-maintenance UPVC fascias, soffits, and high-capacity guttering systems to protect your foundation and roofline from rainwater damage.
                     </p>
-                    <ul class="text-xs font-semibold text-slate-700 space-y-2 mb-6">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Scheduled Roof Audits & Maintenance</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-600 mr-2"></i> Full Health & Safety Compliance</li>
-                    </ul>
-                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
-                        Commercial Enquiries <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                    <a href="#contact" class="inline-flex items-center text-orange-600 font-semibold text-sm hover:text-orange-700">
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                     </a>
                 </div>
 
@@ -365,50 +383,50 @@
         </div>
     </section>
 
-    <!-- LOCAL SEO & EXPERTISE SECTION -->
-    <section id="about" class="py-20 bg-slate-900 text-white relative overflow-hidden pattern-bg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
+    <!-- LOCAL SEO & HERITAGE SECTION -->
+    <section id="local-heritage" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
                 
-                <div class="lg:col-span-6 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-brand-600/20 text-brand-500 border border-brand-500/30 text-xs font-bold uppercase tracking-wider">
-                        Local Salisbury Street Office
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
-                        Shaftesbury’s Premier Local Roofers for Over Two Decades
+                <div>
+                    <span class="text-orange-500 font-bold text-xs uppercase tracking-widest">Deep Shaftesbury Roots</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-6 tracking-tight">
+                        Serving Salisbury Street & The Blackmore Vale for Over 3 Decades
                     </h2>
-                    <p class="text-slate-300 leading-relaxed text-base">
-                        Situated at our long-established premises on <strong>Salisbury Street, Shaftesbury (SP7)</strong>, <strong class="text-white">Kavanagh Roofing Ltd</strong> provides unrivaled roofing services across Shaftesbury, Cranborne Chase, Blandford Forum, Gillingham, Sherborne, and broader Dorset and Wiltshire.
+                    <p class="text-slate-300 leading-relaxed mb-4">
+                        Nestled in the heart of historic Shaftesbury, <strong class="text-white">Kavanagh Roofing Ltd</strong> has been the benchmark for quality roofing services across Dorset and South Wiltshire. Located right on Salisbury Street, we understand the unique architectural demands of North Dorset homes — from Grade II listed slate buildings to modern countryside developments.
                     </p>
-                    <p class="text-slate-300 leading-relaxed text-base">
-                        We understand the unique architectural demands of Shaftesbury’s historic properties, conservation zones, and modern residential developments alike. Whether replacing period slate near Gold Hill or installing zero-maintenance flat roofing systems in new builds, our craft is backed by rigorous standards, strict health & safety protocols, and complete peace of mind.
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        Whether you are near Gold Hill, Motcombe, Fontmell Magna, Gillingham, or Semley, our team brings localized expertise, conservation-compliant materials, and strict adherence to British Safety Standards.
                     </p>
-                    
-                    <div class="grid grid-cols-2 gap-4 pt-4">
-                        <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/60">
-                            <i class="fa-solid fa-map-location-dot text-brand-500 text-2xl mb-2"></i>
-                            <h4 class="font-bold text-white text-sm">Salisbury Street Hub</h4>
-                            <p class="text-xs text-slate-400 mt-1">Conveniently located in the heart of Shaftesbury town center.</p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3 bg-slate-800/60 p-4 rounded-xl border border-slate-700/50">
+                            <i class="fa-solid fa-building-columns text-orange-500 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Listed Properties</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Approved techniques for heritage & conservation roofs.</p>
+                            </div>
                         </div>
-                        <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/60">
-                            <i class="fa-solid fa-file-contract text-brand-500 text-2xl mb-2"></i>
-                            <h4 class="font-bold text-white text-sm">Detailed Written Quotes</h4>
-                            <p class="text-xs text-slate-400 mt-1">Transparent breakdown without hidden costs or sudden extras.</p>
+                        <div class="flex items-start gap-3 bg-slate-800/60 p-4 rounded-xl border border-slate-700/50">
+                            <i class="fa-solid fa-map-pin text-orange-500 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Local Coverage</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Shaftesbury, Gillingham, Sherborne & Salisbury.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-6">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <div class="relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1000&q=80" alt="Roofing work in Shaftesbury" class="w-full h-auto object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
-                            <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-                                <span class="bg-brand-600 text-white text-xs font-bold px-2.5 py-1 rounded">LOCAL HIGHLIGHT</span>
-                                <h4 class="text-xl font-bold text-white mt-2">Heritage Roofing & Slate Conservation</h4>
-                                <p class="text-xs text-slate-300 mt-1">Preserving Shaftesbury’s architectural beauty with traditional lead flashing and slate sourcing.</p>
-                            </div>
-                        </div>
+                <!-- Visual Image Showcase -->
+                <div class="relative">
+                    <div class="aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Roof Craftsmanship Shaftesbury" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Overlay Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-gradient-to-br from-orange-600 to-amber-600 text-white p-6 rounded-xl shadow-xl hidden sm:block max-w-xs border border-orange-400/20">
+                        <p class="text-2xl font-extrabold mb-1">Local & Reliable</p>
+                        <p class="text-xs opacity-90">Visit our office on Salisbury Street or arrange a home consultation today.</p>
                     </div>
                 </div>
 
@@ -417,69 +435,88 @@
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-    <section id="testimonials" class="py-20 lg:py-28 bg-slate-100">
+    <section id="testimonials" class="py-24 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-600 font-bold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1.5 rounded-full border border-brand-100">Verified Client Feedback</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight">What Shaftesbury Residents Say</h2>
-                <p class="text-slate-600 mt-3 text-base">Read honest reviews from property owners across Salisbury Street, Bell Street, Enmore Green, and surrounding Dorset villages.</p>
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-orange-600 font-bold text-xs uppercase tracking-widest bg-orange-200/60 px-3 py-1 rounded-full">Client Reviews</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight">What Our Local Clients Say</h2>
+                <p class="text-slate-600 mt-3 text-base">Read authentic feedback from homeowners and businesses across Shaftesbury & Dorset.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between relative">
-                    <div class="text-brand-500 mb-4 flex space-x-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                            "Kavanagh Roofing replaced the entire slate roof on our Victorian house near Salisbury Street. Their attention to detail was exceptional and they kept the site spotless every day. Highly recommended!"
+                        </p>
                     </div>
-                    <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
-                        "Kavanagh Roofing replaced the entire slate roof on our Victorian cottage near Shaftesbury high street. Their team was punctual, polite, and kept the site clean every single day. The quality of the lead flashing around our chimney is outstanding."
-                    </p>
-                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-100">
-                        <div class="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm">
-                            RH
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 text-white font-bold flex items-center justify-center text-sm">
+                            RD
                         </div>
                         <div>
-                            <h4 class="text-sm font-bold text-slate-900">Richard H.</h4>
-                            <p class="text-xs text-slate-500">Salisbury Street Area, Shaftesbury</p>
+                            <h4 class="font-bold text-slate-900 text-sm">Richard Davies</h4>
+                            <p class="text-xs text-slate-500">Salisbury St, Shaftesbury</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between relative">
-                    <div class="text-brand-500 mb-4 flex space-x-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                            "Called them after severe storm winds damaged our lead flashing and ridge tiles. They arrived within 2 hours and completed a permanent fix at a very reasonable price. Top-tier service."
+                        </p>
                     </div>
-                    <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
-                        "After high winds damaged our flat garage roof, Kavanagh Roofing responded within two hours of my phone call to their Salisbury Street office. They put a temporary cover on and installed a seamless new fibreglass roof the following week. Exceptional local service."
-                    </p>
-                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-100">
-                        <div class="w-10 h-10 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-sm">
-                            SC
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-orange-600 text-white font-bold flex items-center justify-center text-sm">
+                            HM
                         </div>
                         <div>
-                            <h4 class="text-sm font-bold text-slate-900">Sarah C.</h4>
-                            <p class="text-xs text-slate-500">Cann Common, Shaftesbury</p>
+                            <h4 class="font-bold text-slate-900 text-sm">Helen Mercer</h4>
+                            <p class="text-xs text-slate-500">Motcombe, Dorset</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimonial 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between relative">
-                    <div class="text-brand-500 mb-4 flex space-x-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                            "We had a flat GRP roof installed on our new kitchen extension. The team was prompt, professional, and gave us a full written 20-year guarantee. Couldn't ask for better local craftsmen."
+                        </p>
                     </div>
-                    <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
-                        "Honest, straightforward quote with zero hidden extras. The roofers were extremely hard-working and finished the fascia and gutter replacement quickly. Fantastic to have such reliable specialists right here in town."
-                    </p>
-                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-100">
-                        <div class="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm">
-                            MP
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 text-white font-bold flex items-center justify-center text-sm">
+                            GB
                         </div>
                         <div>
-                            <h4 class="text-sm font-bold text-slate-900">Mark P.</h4>
-                            <p class="text-xs text-slate-500">Motcombe, SP7</p>
+                            <h4 class="font-bold text-slate-900 text-sm">Gavin Brooks</h4>
+                            <p class="text-xs text-slate-500">Fontmell Magna</p>
                         </div>
                     </div>
                 </div>
@@ -488,107 +525,120 @@
         </div>
     </section>
 
-    <!-- CONTACT FORM & DIRECT CALL SECTION -->
-    <section id="contact" class="py-20 lg:py-28 bg-white relative">
+    <!-- CONTACT FORM & LOCATION SECTION -->
+    <section id="contact" class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12">
                 
-                <!-- Contact Direct Info Column -->
+                <!-- Left: Contact Details & Info -->
                 <div class="lg:col-span-5 space-y-8">
                     <div>
-                        <span class="text-brand-600 font-bold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1.5 rounded-full border border-brand-100">Get In Touch</span>
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight">Contact Kavanagh Roofing</h2>
-                        <p class="text-slate-600 mt-3 text-base">Have a roof leak, requiring slate maintenance, or looking for a full installation estimate? Call or visit our Salisbury Street office.</p>
+                        <span class="text-orange-600 font-bold text-xs uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 mt-2 tracking-tight">Contact Kavanagh Roofing</h2>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            Have a inquiry or need a quote for your roof? Visit our office in Shaftesbury, phone us directly, or send us a message using the form.
+                        </p>
                     </div>
 
                     <div class="space-y-6">
-                        <a href="tel:01747853000" class="flex items-start p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-500 hover:bg-brand-50/30 transition-all group">
-                            <div class="w-12 h-12 bg-brand-600 text-white rounded-xl flex items-center justify-center text-xl shrink-0 mr-4 group-hover:scale-105 transition-transform">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div>
-                                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Direct Telephone</span>
-                                <h3 class="text-xl font-extrabold text-slate-900 group-hover:text-brand-600 transition-colors">01747 853000</h3>
-                                <p class="text-xs text-slate-500 mt-0.5">Click to call directly from mobile</p>
-                            </div>
-                        </a>
-
-                        <div class="flex items-start p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
-                            <div class="w-12 h-12 bg-slate-900 text-white rounded-xl flex items-center justify-center text-xl shrink-0 mr-4">
+                        
+                        <!-- Location -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 text-xl shrink-0">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Shaftesbury Office</span>
-                                <h3 class="text-base font-bold text-slate-900 mt-0.5">Kavanagh Roofing Ltd</h3>
-                                <p class="text-sm text-slate-600 mt-1">Salisbury Street, Shaftesbury, Dorset, SP7 8EL</p>
+                                <h4 class="font-bold text-slate-900 text-base">Office Location</h4>
+                                <p class="text-slate-600 text-sm mt-1">
+                                    Salisbury Street, Shaftesbury<br>
+                                    Dorset, SP7 8EL, United Kingdom
+                                </p>
                             </div>
                         </div>
 
-                        <div class="flex items-start p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
-                            <div class="w-12 h-12 bg-slate-900 text-white rounded-xl flex items-center justify-center text-xl shrink-0 mr-4">
+                        <!-- Phone CTA Direct -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">Phone & Emergency Repairs</h4>
+                                <p class="text-slate-600 text-sm mt-1">
+                                    Office: <a href="tel:01747852911" class="text-orange-600 font-semibold hover:underline">01747 852911</a><br>
+                                    Mobile: <a href="tel:07700900123" class="text-orange-600 font-semibold hover:underline">07700 900123</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 text-xl shrink-0">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div>
-                                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Email Enquiries</span>
-                                <h3 class="text-base font-bold text-slate-900 mt-0.5">info@kavanaghroofing.co.uk</h3>
-                                <p class="text-xs text-slate-500 mt-1">We respond to email quotes within 24 business hours</p>
+                                <h4 class="font-bold text-slate-900 text-base">Email Us</h4>
+                                <p class="text-slate-600 text-sm mt-1">
+                                    <a href="mailto:info@kavanaghroofing.co.uk" class="text-orange-600 font-semibold hover:underline">info@kavanaghroofing.co.uk</a>
+                                </p>
                             </div>
                         </div>
+
                     </div>
 
-                    <!-- Direct Tel Button CTA -->
-                    <div class="pt-2">
-                        <a href="tel:01747853000" class="w-full inline-flex items-center justify-center px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-base shadow-lg shadow-brand-600/30 transition-all">
-                            <i class="fa-solid fa-phone-volume mr-3 text-lg animate-bounce"></i>
-                            Speak to an Inspector Now: 01747 853000
+                    <!-- Direct Call Card -->
+                    <div class="bg-slate-900 text-white p-6 rounded-2xl border border-slate-800 flex items-center justify-between">
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase font-semibold">Speak to a Master Roofer</p>
+                            <p class="text-xl font-extrabold text-white mt-1">01747 852911</p>
+                        </div>
+                        <a href="tel:01747852911" class="bg-orange-600 hover:bg-orange-500 text-white px-5 py-3 rounded-xl font-bold text-sm transition-colors flex items-center gap-2">
+                            <i class="fa-solid fa-phone"></i> Call Now
                         </a>
                     </div>
                 </div>
 
-                <!-- Contact Form Column -->
-                <div class="lg:col-span-7">
-                    <div class="bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200/80 shadow-lg">
-                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Send Us a Message</h3>
-                        <p class="text-sm text-slate-600 mb-6">Fill in your details below and a roofing expert will contact you regarding your requirements.</p>
+                <!-- Right: Detailed Contact Form -->
+                <div id="quote" class="lg:col-span-7 bg-slate-50 border border-slate-200/80 rounded-2xl p-8 sm:p-10 shadow-sm">
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Request a Free Inspection & Quote</h3>
+                    <p class="text-slate-600 text-sm mb-8">Fill out your details below. A member of our Salisbury Street team will reach out within 24 hours.</p>
 
-                        <form class="space-y-5">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                                <div>
-                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">First Name *</label>
-                                    <input type="text" required placeholder="John" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none transition-all">
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Last Name *</label>
-                                    <input type="text" required placeholder="Smith" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none transition-all">
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                                <div>
-                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Phone Number *</label>
-                                    <input type="tel" required placeholder="01747 853000" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none transition-all">
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Email Address</label>
-                                    <input type="email" placeholder="john@example.co.uk" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none transition-all">
-                                </div>
-                            </div>
-
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Property Postcode in Shaftesbury / Dorset</label>
-                                <input type="text" placeholder="e.g. SP7 8EL" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none transition-all">
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-2">First Name *</label>
+                                <input type="text" required placeholder="John" class="w-full bg-white border border-slate-300 rounded-lg px-4 py-3 text-slate-900 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition">
                             </div>
-
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">How Can We Help?</label>
-                                <textarea rows="4" placeholder="Tell us briefly about your roof project or repair needs..." class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none transition-all"></textarea>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Last Name *</label>
+                                <input type="text" required placeholder="Smith" class="w-full bg-white border border-slate-300 rounded-lg px-4 py-3 text-slate-900 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition">
                             </div>
+                        </div>
 
-                            <button type="submit" class="w-full py-4 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-extrabold text-base tracking-wide transition-all duration-300 shadow-md">
-                                Submit Enquiry
-                            </button>
-                        </form>
-                    </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Phone Number *</label>
+                                <input type="tel" required placeholder="01747 800000" class="w-full bg-white border border-slate-300 rounded-lg px-4 py-3 text-slate-900 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Email Address *</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full bg-white border border-slate-300 rounded-lg px-4 py-3 text-slate-900 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Property Address / Postcode in Shaftesbury Area</label>
+                            <input type="text" placeholder="e.g. Salisbury Street, SP7 8EL" class="w-full bg-white border border-slate-300 rounded-lg px-4 py-3 text-slate-900 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">How Can We Help?</label>
+                            <textarea rows="4" placeholder="Describe your roofing project, leak details, or request a site survey..." class="w-full bg-white border border-slate-300 rounded-lg px-4 py-3 text-slate-900 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-bold py-4 rounded-xl shadow-lg shadow-orange-600/20 text-sm uppercase tracking-wider transition-all">
+                            Submit Free Quote Request
+                        </button>
+                    </form>
                 </div>
 
             </div>
@@ -596,72 +646,69 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-400 border-t border-slate-800">
+    <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                 
-                <!-- Footer Col 1 -->
+                <!-- Col 1: About -->
                 <div class="space-y-4">
-                    <div class="flex items-center space-x-3">
-                        <div class="w-9 h-9 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold">
-                            <i class="fa-solid fa-house-chimney-crack"></i>
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-orange-600 rounded-md flex items-center justify-center text-white">
+                            <i class="fa-solid fa-house-chimney-crack text-lg"></i>
                         </div>
-                        <span class="font-extrabold text-white text-lg tracking-tight">KAVANAGH ROOFING</span>
+                        <span class="text-lg font-extrabold text-white">KAVANAGH ROOFING</span>
                     </div>
                     <p class="text-xs text-slate-400 leading-relaxed">
-                        Leading independent roofing contractors based in Salisbury Street, Shaftesbury. Delivering premium slate, tiling, flat roofing, and chimney solutions across North Dorset.
+                        Shaftesbury’s leading independent roofing contractor. Premium slate, tile, flat roofs, and leadwork based on Salisbury Street.
                     </p>
-                    <div class="flex space-x-3 text-slate-400 text-sm pt-2">
-                        <a href="#" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-google"></i></a>
-                    </div>
                 </div>
 
-                <!-- Footer Col 2 -->
+                <!-- Col 2: Services -->
                 <div>
-                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Roofing Services</h4>
-                    <ul class="space-y-2.5 text-xs">
-                        <li><a href="#services" class="hover:text-white transition-colors">Slate & Tile Roofing</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Flat Roofing (GRP & EPDM)</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Chimney Leadwork & Repairs</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Emergency Roof Leak Repairs</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">UPVC Fascias & Guttering</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Commercial Roofing Audits</a></li>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Our Services</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-orange-400 transition-colors">Slate Roofing Specialists</a></li>
+                        <li><a href="#services" class="hover:text-orange-400 transition-colors">Tiled Roof Repairs & Replacement</a></li>
+                        <li><a href="#services" class="hover:text-orange-400 transition-colors">GRP & EPDM Flat Roofing</a></li>
+                        <li><a href="#services" class="hover:text-orange-400 transition-colors">Architectural Leadwork</a></li>
+                        <li><a href="#services" class="hover:text-orange-400 transition-colors">Chimney Repointing & Stacks</a></li>
+                        <li><a href="#services" class="hover:text-orange-400 transition-colors">Fascias, Soffits & Guttering</a></li>
                     </ul>
                 </div>
 
-                <!-- Footer Col 3 -->
+                <!-- Col 3: Service Areas -->
                 <div>
-                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Service Coverage</h4>
-                    <ul class="space-y-2.5 text-xs">
-                        <li><span class="text-slate-300">Shaftesbury (SP7)</span></li>
-                        <li><span class="text-slate-300">Gillingham & Motcombe</span></li>
-                        <li><span class="text-slate-300">Blandford Forum & Stourpaine</span></li>
-                        <li><span class="text-slate-300">Sherborne & Blackmore Vale</span></li>
-                        <li><span class="text-slate-300">Tisbury & South Wiltshire</span></li>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Service Areas</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><span class="text-slate-400">Shaftesbury Town & Salisbury St</span></li>
+                        <li><span class="text-slate-400">Gillingham & Motcombe</span></li>
+                        <li><span class="text-slate-400">Fontmell Magna & Blandford</span></li>
+                        <li><span class="text-slate-400">Sherborne & Blackmore Vale</span></li>
+                        <li><span class="text-slate-400">Tisbury & South Wiltshire</span></li>
                     </ul>
                 </div>
 
-                <!-- Footer Col 4 -->
+                <!-- Col 4: Contact Summary -->
                 <div>
-                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Shaftesbury Address</h4>
-                    <address class="not-italic text-xs text-slate-400 space-y-2">
-                        <p class="font-bold text-slate-200">Kavanagh Roofing Ltd</p>
-                        <p>Salisbury Street</p>
-                        <p>Shaftesbury, Dorset</p>
-                        <p>SP7 8EL</p>
-                        <p class="pt-2"><strong class="text-white">Phone:</strong> <a href="tel:01747853000" class="hover:text-brand-500">01747 853000</a></p>
-                    </address>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Shaftesbury Address</h4>
+                    <p class="text-xs leading-relaxed text-slate-400 mb-3">
+                        Kavanagh Roofing Ltd<br>
+                        Salisbury Street, Shaftesbury<br>
+                        Dorset, SP7 8EL
+                    </p>
+                    <p class="text-xs text-slate-300 font-semibold mb-1">Phone: 01747 852911</p>
+                    <p class="text-xs text-slate-300 font-semibold">Email: info@kavanaghroofing.co.uk</p>
                 </div>
 
             </div>
 
-            <div class="mt-12 pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> Kavanagh Roofing Ltd. All rights reserved. Registered in England & Wales.</p>
+            <!-- Bottom Copyright -->
+            <div class="pt-12 mt-12 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <script>document.write(new Date().getFullYear());</script> Kavanagh Roofing Ltd. All rights reserved.</p>
                 <div class="flex space-x-6">
-                    <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-slate-400 transition-colors">Terms of Service</a>
-                    <a href="#" class="hover:text-slate-400 transition-colors">Cookie Policy</a>
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-400">Site Map</a>
                 </div>
             </div>
         </div>

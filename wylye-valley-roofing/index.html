@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wylye Valley Roofing | Master Roofers Shaftesbury & Dorset</title>
+    <meta name="description" content="Wylye Valley Roofing provides premium roofing services, slate & tile repairs, flat roofs, and emergency care in Coppice Street, Shaftesbury & surrounding areas.">
+    
+    <!-- Google Font: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#131e32',
+                            900: '#0f172a',
+                            950: '#080d1a',
+                        },
+                        copper: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                        },
+                        amber: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(rgba(234, 88, 12, 0.12) 1px, transparent 0);
+            background-size: 28px 28px;
+        }
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .copper-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #b45309 100%);
+        }
+        .copper-gradient-hover:hover {
+            background: linear-gradient(135deg, #f97316 0%, #c2410c 100%);
+        }
+        .card-glow:hover {
+            box-shadow: 0 20px 40px -15px rgba(234, 88, 12, 0.15);
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-950 text-slate-100 antialiased selection:bg-copper-600 selection:text-white">
+
+    <!-- TOP BAR -->
+    <div class="bg-slate-900 border-b border-slate-800/80 text-xs text-slate-300 py-2.5 px-4 sticky sm:relative top-0 z-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-copper-500"></i>
+                    Coppice Street, Shaftesbury, SP7 8SF
+                </span>
+                <span class="hidden md:flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-copper-500"></i>
+                    Mon - Sat: 07:30 - 18:00 (24/7 Emergency)
+                </span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="mailto:info@wylyevalleyroofing.co.uk" class="hover:text-copper-500 transition-colors hidden sm:flex items-center gap-1.5">
+                    <i class="fa-regular fa-envelope text-copper-500"></i>
+                    info@wylyevalleyroofing.co.uk
+                </a>
+                <span class="flex items-center gap-2 text-slate-400">
+                    <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                    Guild of Master Craftsmen
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-slate-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-copper-600 to-amber-600 flex items-center justify-center text-white shadow-lg shadow-copper-900/40 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-house-chimney-crack text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-white block leading-tight">WYLYE VALLEY</span>
+                        <span class="text-xs font-semibold tracking-widest text-copper-500 uppercase block">Roofing Specialists</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#services" class="hover:text-copper-500 transition-colors">Services</a>
+                    <a href="#about" class="hover:text-copper-500 transition-colors">Why Choose Us</a>
+                    <a href="#testimonials" class="hover:text-copper-500 transition-colors">Local Reviews</a>
+                    <a href="#contact" class="hover:text-copper-500 transition-colors">Contact Us</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <div class="flex items-center space-x-4">
+                    <a href="tel:01747859204" class="hidden sm:flex items-center gap-2 text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 px-4 py-2.5 rounded-lg transition-all">
+                        <i class="fa-solid fa-phone text-copper-500"></i>
+                        <span>01747 859204</span>
+                    </a>
+                    <a href="#contact" class="copper-gradient copper-gradient-hover text-white text-sm font-bold px-5 py-2.5 rounded-lg shadow-md shadow-copper-950/50 hover:shadow-lg hover:shadow-copper-600/30 transition-all">
+                        Get Free Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative hero-pattern pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Copy -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-copper-500/30 text-copper-500 text-xs font-semibold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-copper-500 animate-pulse"></span>
+                        Trusted Local Roofers in Shaftesbury & Wylye Valley
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Craftsmanship Above All. <span class="text-transparent bg-clip-text bg-gradient-to-r from-copper-500 to-amber-500">Built To Last.</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        From heritage slate repairs in Coppice Street to high-performance flat roof systems across Dorset & Wiltshire. Reliable, fully guaranteed roofing solutions by local time-served artisans.
+                    </p>
+
+                    <!-- Hero Call To Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="tel:01747859204" class="w-full sm:w-auto copper-gradient copper-gradient-hover text-white text-base font-bold px-8 py-4 rounded-xl shadow-lg shadow-copper-950/80 flex items-center justify-center gap-3 transition-all hover:-translate-y-0.5">
+                            <i class="fa-solid fa-phone-volume text-lg"></i>
+                            <span>Call 01747 859204</span>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-850 text-slate-200 hover:text-white border border-slate-700 font-semibold px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all">
+                            <span>Request Online Quote</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-copper-500"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Metrics Grid -->
+                    <div class="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl font-extrabold text-white">25+</div>
+                            <div class="text-xs text-slate-400 font-medium mt-0.5">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-white">20-Yr</div>
+                            <div class="text-xs text-slate-400 font-medium mt-0.5">Work Guarantee</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 font-medium mt-0.5">Fully Insured</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Feature Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl backdrop-blur-sm">
+                        <div class="absolute -top-3 -right-3 bg-amber-600 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full shadow-md">
+                            Direct Line
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-white mb-2">Need Immediate Emergency Repairs?</h3>
+                        <p class="text-sm text-slate-400 mb-6">Storm damage, active leaks, or loose slates? Our Coppice Street team is on call for rapid response in Shaftesbury.</p>
+
+                        <div class="space-y-4">
+                            <a href="tel:07700900821" class="flex items-center justify-between p-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 transition-all group">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-copper-600/20 text-copper-500 flex items-center justify-center">
+                                        <i class="fa-solid fa-bolt text-lg"></i>
+                                    </div>
+                                    <div class="text-left">
+                                        <div class="text-xs text-slate-400 font-medium">Emergency Mobile Hotline</div>
+                                        <div class="text-base font-bold text-white group-hover:text-copper-500 transition-colors">07700 900821</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-slate-500 group-hover:text-copper-500 transition-colors"></i>
+                            </a>
+
+                            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800 space-y-2">
+                                <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+                                    <i class="fa-solid fa-check text-emerald-400"></i> No Call-Out Fee Options Available
+                                </div>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+                                    <i class="fa-solid fa-check text-emerald-400"></i> Free Inspection & Written Quote
+                                </div>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+                                    <i class="fa-solid fa-check text-emerald-400"></i> Local Shaftesbury Premises
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES / ACCREDITATIONS -->
+    <section class="py-8 bg-slate-900 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-xs font-semibold text-slate-400 uppercase tracking-widest mb-6">Accredited & Recognized Roofing Excellence</p>
+            <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-80 hover:opacity-100 transition-opacity">
+                <div class="flex items-center gap-2 text-slate-300 font-bold text-sm">
+                    <i class="fa-solid fa-certificate text-copper-500 text-lg"></i> Guild of Master Craftsmen
+                </div>
+                <div class="flex items-center gap-2 text-slate-300 font-bold text-sm">
+                    <i class="fa-solid fa-shield-virus text-copper-500 text-lg"></i> Public Liability Insured (£5M)
+                </div>
+                <div class="flex items-center gap-2 text-slate-300 font-bold text-sm">
+                    <i class="fa-solid fa-award text-copper-500 text-lg"></i> NFRC Compliant Standards
+                </div>
+                <div class="flex items-center gap-2 text-slate-300 font-bold text-sm">
+                    <i class="fa-solid fa-house-shield text-copper-500 text-lg"></i> Guarantee Protection Scheme
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 lg:py-28 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-copper-500 uppercase tracking-widest mb-3">Our Expertise</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Comprehensive Roofing Services</p>
+                <p class="mt-4 text-slate-400 text-base">Whether it’s a minor slate replacement or a complete timber roof renewal, our Shaftesbury team delivers precision engineered solutions.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-copper-600/50 transition-all card-glow group">
+                    <div class="w-14 h-14 rounded-xl bg-copper-600/10 text-copper-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-border-all"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Slate & Tile Roofing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Specializing in Natural Welsh Slate, Spanish Slate, and handmade clay tiles. Ideal for conservation properties and traditional Shaftesbury builds.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-copper-500 uppercase tracking-wider group-hover:text-copper-400">
+                        Inquire Details <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-copper-600/50 transition-all card-glow group">
+                    <div class="w-14 h-14 rounded-xl bg-copper-600/10 text-copper-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">High-Performance Flat Roofs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Seamless EPDM Rubber, GRP Fiberglass, and modern felt systems designed for maximum weatherproofing with up to 30-year guarantees.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-copper-500 uppercase tracking-wider group-hover:text-copper-400">
+                        Inquire Details <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-copper-600/50 transition-all card-glow group">
+                    <div class="w-14 h-14 rounded-xl bg-copper-600/10 text-copper-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Chimney Repair & Leadwork</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Expert lead flashing, stack repointing, chimney removal, and cowl installation to protect against water ingress and structural decay.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-copper-500 uppercase tracking-wider group-hover:text-copper-400">
+                        Inquire Details <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-copper-600/50 transition-all card-glow group">
+                    <div class="w-14 h-14 rounded-xl bg-copper-600/10 text-copper-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Fascias, Soffits & Gutters</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Low-maintenance uPVC rainwater systems, timber fascia restoration, and gutter cleaning or full replacement to safeguard foundations.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-copper-500 uppercase tracking-wider group-hover:text-copper-400">
+                        Inquire Details <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-copper-600/50 transition-all card-glow group">
+                    <div class="w-14 h-14 rounded-xl bg-copper-600/10 text-copper-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Roof Repairs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Rapid local dispatch for storm damage, missing tiles, high wind leaks, and immediate temporary tarpaulin protection.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-copper-500 uppercase tracking-wider group-hover:text-copper-400">
+                        Inquire Details <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-copper-600/50 transition-all card-glow group">
+                    <div class="w-14 h-14 rounded-xl bg-copper-600/10 text-copper-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-copper-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Roof Inspections & Surveys</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Comprehensive pre-purchase roof surveys, drone thermal photography, and detailed condition reports for homeowners & buyers.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-copper-500 uppercase tracking-wider group-hover:text-copper-400">
+                        Inquire Details <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO / WHY CHOOSE US SECTION -->
+    <section id="about" class="py-20 bg-slate-900 border-y border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- SEO Content Text -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-copper-600/20 text-copper-500 text-xs font-bold uppercase tracking-wider">
+                        Based in Coppice Street, Shaftesbury
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Your Trusted Local Roofing Specialists Across Shaftesbury & Wylye Valley
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                        At <strong class="text-white">Wylye Valley Roofing</strong>, we combine traditional West Country craftsmanship with modern material technology. Operating directly from our yard on <strong class="text-white">Coppice Street, Shaftesbury</strong>, we have earned a reputation as the premiere choice for residential and commercial roofing projects across North Dorset, Wiltshire, and the Cranborne Chase area.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Whether your property is a historic Grade II listed building in Shaftesbury town center needing Period Slate matching, or a contemporary home requiring dry ridge installation, our team ensures every job is completed safely, cleanly, and on budget.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800">
+                            <i class="fa-solid fa-map-location-dot text-copper-500 text-lg mb-2"></i>
+                            <h4 class="text-white font-bold text-sm mb-1">Local & Accessible</h4>
+                            <p class="text-xs text-slate-400">Based right in Coppice Street. Fast local callouts for SP7 postcodes and surrounding villages.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800">
+                            <i class="fa-solid fa-handshake text-copper-500 text-lg mb-2"></i>
+                            <h4 class="text-white font-bold text-sm mb-1">Honest & Transparent</h4>
+                            <p class="text-xs text-slate-400">No pushy sales, no hidden fees. Clear written estimates and regular photographic updates.</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="tel:01747859204" class="inline-flex items-center gap-3 text-copper-500 font-bold hover:text-copper-400 text-base">
+                            <span>Speak directly to our Shaftesbury team on 01747 859204</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Visual Box / Features Highlight -->
+                <div class="bg-slate-950 border border-slate-800 rounded-3xl p-8 lg:p-10 relative overflow-hidden">
+                    <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-copper-600/10 rounded-full blur-3xl"></div>
+                    
+                    <h3 class="text-xl font-bold text-white mb-6">Areas Frequently Served:</h3>
+                    
+                    <div class="grid grid-cols-2 gap-3 text-sm text-slate-300 mb-8">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-500 text-xs"></i> Shaftesbury (Town)</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-500 text-xs"></i> Gillingham</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-500 text-xs"></i> Motcombe</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-500 text-xs"></i> Fontmell Magna</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-500 text-xs"></i> Semley & Tisbury</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-500 text-xs"></i> Warminster & Wylye</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-500 text-xs"></i> Ludwell</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-500 text-xs"></i> Blandford Forum</div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center">
+                        <i class="fa-solid fa-quote-left text-3xl text-copper-500/40 mb-3 block"></i>
+                        <p class="text-sm italic text-slate-300 mb-3">
+                            "Wylye Valley Roofing stripped and completely re-slated our Victorian cottage near Gold Hill. Exceptional quality, clean workspace, and finished two days ahead of schedule!"
+                        </p>
+                        <span class="text-xs font-bold text-copper-500 uppercase tracking-wider block">— R. Harrison, Shaftesbury Resident</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 lg:py-28 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-copper-500 uppercase tracking-widest mb-3">Client Feedback</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">What Our Customers Say</p>
+                <p class="mt-3 text-slate-400 text-sm">Real reviews from homeowners and businesses around Shaftesbury.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">Emergency Leak Fixed Promptly</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            "After heavy storms caused water to trickle into our loft on Coppice Street, Wylye Valley Roofing came out within 2 hours. They secured the roof safely and replaced the broken tiles the next morning. Top class!"
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 flex items-center justify-between text-xs">
+                        <span class="font-bold text-slate-200">Mark & Sarah T.</span>
+                        <span class="text-slate-500">Coppice St, Shaftesbury</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">Full Garage Flat Roof Replacement</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            "Replaced our rotten old felt roof with a pristine new fiberglass system. Highly professional, polite team who left the site spotless every evening. Highly recommend their 20-year guarantee!"
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 flex items-center justify-between text-xs">
+                        <span class="font-bold text-slate-200">David M.</span>
+                        <span class="text-slate-500">Gillingham</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">Flawless Leadwork & Chimney Repairs</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            "We had our chimney re-pointed and new lead flashings fitted on our period cottage. The level of craftsmanship was superb. Fair pricing and great communication throughout."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 flex items-center justify-between text-xs">
+                        <span class="font-bold text-slate-200">Claire B.</span>
+                        <span class="text-slate-500">Semley</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION & FORM -->
+    <section id="contact" class="py-20 lg:py-28 bg-slate-900 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="text-xs font-bold text-copper-500 uppercase tracking-widest mb-2">Get In Touch</h2>
+                        <p class="text-3xl sm:text-4xl font-extrabold text-white">Request A Free Inspection & Quote</p>
+                        <p class="mt-4 text-slate-400 text-sm leading-relaxed">
+                            Have a query about a leak, roof replacement, or gutter repair? Fill out the form or reach us directly via telephone for immediate attention.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Tel Button Callout -->
+                        <a href="tel:01747859204" class="p-6 rounded-2xl bg-gradient-to-r from-copper-600 to-amber-600 text-white flex items-center justify-between hover:shadow-xl hover:shadow-copper-950/60 transition-all group">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-medium text-amber-100 uppercase tracking-wider">Office Landline</div>
+                                    <div class="text-xl font-extrabold">01747 859204</div>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-circle-chevron-right text-2xl group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-950 border border-slate-800">
+                                <i class="fa-solid fa-location-dot text-copper-500 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white mb-0.5">Address</h4>
+                                    <p class="text-slate-400">Wylye Valley Roofing, Coppice Street, Shaftesbury, Dorset, SP7 8SF</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-950 border border-slate-800">
+                                <i class="fa-solid fa-envelope text-copper-500 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white mb-0.5">Email</h4>
+                                    <p class="text-slate-400">info@wylyevalleyroofing.co.uk</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-950 border border-slate-800">
+                                <i class="fa-solid fa-clock text-copper-500 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white mb-0.5">Working Hours</h4>
+                                    <p class="text-slate-400">Mon - Fri: 07:30 - 18:00</p>
+                                    <p class="text-slate-400">Saturday: 08:00 - 13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right Column -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for contacting Wylye Valley Roofing. We will respond within 24 hours!');" class="bg-slate-950 border border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl space-y-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Send Us A Message</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name *</label>
+                                <input type="text" required placeholder="John Smith" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-copper-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number *</label>
+                                <input type="tel" required placeholder="07123 456789" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-copper-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-copper-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Property Postcode</label>
+                                <input type="text" placeholder="e.g. SP7 8SF" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-copper-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                            <select class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-copper-500 transition-colors">
+                                <option value="slate-tile">Slate & Tile Roof Repair / Renewal</option>
+                                <option value="flat-roof">Flat Roof System (EPDM / GRP)</option>
+                                <option value="chimney">Chimney Repair & Leadwork</option>
+                                <option value="fascias-gutters">Fascias, Soffits & Gutters</option>
+                                <option value="emergency">Emergency Storm Leak</option>
+                                <option value="inspection">Roof Survey / Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Details / Message</label>
+                            <textarea rows="4" placeholder="Please describe the work required or issues with your roof..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-copper-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full copper-gradient copper-gradient-hover text-white font-bold py-4 rounded-xl shadow-lg shadow-copper-950/80 transition-all text-base uppercase tracking-wider">
+                            Submit Quote Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800/80 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-copper-600 to-amber-600 flex items-center justify-center text-white">
+                            <i class="fa-solid fa-house-chimney-crack text-lg"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white tracking-tight">WYLYE VALLEY ROOFING</span>
+                    </div>
+                    <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+                        Professional roofing contractors based in Coppice Street, Shaftesbury. Serving Dorset & Wiltshire with reliable repairs, re-roofs, leadwork, and emergency services.
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Quick Links</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-copper-500 transition-colors">Slate & Tile Roofs</a></li>
+                        <li><a href="#services" class="hover:text-copper-500 transition-colors">Flat Roofing Solutions</a></li>
+                        <li><a href="#services" class="hover:text-copper-500 transition-colors">Leadwork & Chimneys</a></li>
+                        <li><a href="#about" class="hover:text-copper-500 transition-colors">Shaftesbury Area Info</a></li>
+                        <li><a href="#contact" class="hover:text-copper-500 transition-colors">Free Inspection</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Contact Info</h5>
+                    <p class="text-xs text-slate-400 mb-1">Coppice Street, Shaftesbury, SP7 8SF</p>
+                    <p class="text-xs text-slate-400 mb-1">Office: 01747 859204</p>
+                    <p class="text-xs text-slate-400">Mobile: 07700 900821</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Wylye Valley Roofing. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <span>Coppice Street, Shaftesbury</span>
+                    <span>•</span>
+                    <span>Fully Guarantee Protected</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

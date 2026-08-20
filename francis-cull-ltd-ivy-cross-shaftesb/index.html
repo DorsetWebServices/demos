@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis & Cull Ltd | Specialist Window Cleaning Ivy Cross, Shaftesbury</title>
+    <meta name="description" content="Francis & Cull Ltd provides premium residential and commercial pure-water window cleaning, gutter clearing, and exterior detail cleaning in Ivy Cross, Shaftesbury, and across North Dorset.">
+    
+    <!-- Google Font: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        },
+                        slateDark: '#0B132B',
+                        slateNavy: '#1C2541',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #1e293b;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(11, 19, 43, 0.95) 0%, rgba(28, 37, 65, 0.88) 100%), url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80') center/cover no-repeat;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-slateDark text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-brand-400"></i> Mon - Sat: 07:30 - 18:00
+                </span>
+                <span class="hidden md:flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-400"></i> Ivy Cross, Shaftesbury, Dorset, SP7
+                </span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="mailto:info@francisandcull.co.uk" class="hover:text-brand-300 transition flex items-center gap-2">
+                    <i class="fa-regular fa-envelope text-brand-400"></i> info@francisandcull.co.uk
+                </a>
+                <a href="tel:01747851234" class="font-semibold text-brand-300 hover:text-white transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-xs"></i> 01747 851234
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-droplet text-lg"></i>
+                </div>
+                <div>
+                    <span class="block text-xl font-extrabold tracking-tight text-slate-900 leading-none">Francis & Cull</span>
+                    <span class="text-[10px] uppercase tracking-widest font-bold text-brand-600 block mt-1">Window Cleaning Ltd</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#home" class="hover:text-brand-600 transition">Home</a>
+                <a href="#services" class="hover:text-brand-600 transition">Services</a>
+                <a href="#about" class="hover:text-brand-600 transition">About Us</a>
+                <a href="#testimonials" class="hover:text-brand-600 transition">Reviews</a>
+                <a href="#contact" class="hover:text-brand-600 transition">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="flex items-center gap-3">
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-xs tracking-wide uppercase bg-brand-600 text-white hover:bg-brand-700 shadow-md shadow-brand-600/20 hover:shadow-lg transition-all">
+                    Get Free Quote
+                </a>
+                <a href="tel:01747851234" class="sm:hidden w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION -->
+    <section id="home" class="relative hero-gradient text-white py-24 lg:py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-400/30 text-brand-300 text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-shield-halved text-brand-400"></i> Premier Window Cleaners in Shaftesbury
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
+                    Crystal Clear Views for Your Home & Business.
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed mb-8 max-w-2xl">
+                    Professional reach-and-wash pure water technology delivered by trusted local specialists. Serving Ivy Cross, Shaftesbury, and surrounding Dorset villages with absolute precision.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="inline-flex items-center justify-center px-7 py-4 rounded-xl font-bold text-sm bg-brand-500 text-white hover:bg-brand-400 shadow-lg shadow-brand-500/30 transition-all gap-2 group">
+                        <span>Request Instant Quote</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="tel:01747851234" class="inline-flex items-center justify-center px-7 py-4 rounded-xl font-bold text-sm bg-white/10 text-white hover:bg-white/20 border border-white/10 transition-all gap-2">
+                        <i class="fa-solid fa-phone text-brand-400"></i>
+                        <span>Call 01747 851234</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Badges Bar -->
+        <div class="mt-16 sm:mt-24 border-t border-slate-700/50 bg-slateDark/60 backdrop-blur-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="flex flex-col items-center p-2">
+                        <i class="fa-solid fa-award text-2xl text-brand-400 mb-2"></i>
+                        <span class="text-sm font-bold text-white">Fully Insured</span>
+                        <span class="text-xs text-slate-400">£5M Public Liability</span>
+                    </div>
+                    <div class="flex flex-col items-center p-2">
+                        <i class="fa-solid fa-certificate text-2xl text-brand-400 mb-2"></i>
+                        <span class="text-sm font-bold text-white">DBS Checked</span>
+                        <span class="text-xs text-slate-400">Vetted & Reliable Staff</span>
+                    </div>
+                    <div class="flex flex-col items-center p-2">
+                        <i class="fa-solid fa-glass-water text-2xl text-brand-400 mb-2"></i>
+                        <span class="text-sm font-bold text-white">100% Pure Water</span>
+                        <span class="text-xs text-slate-400">Streak-Free Spotless Finish</span>
+                    </div>
+                    <div class="flex flex-col items-center p-2">
+                        <i class="fa-solid fa-thumbs-up text-2xl text-brand-400 mb-2"></i>
+                        <span class="text-sm font-bold text-white">100% Guarantee</span>
+                        <span class="text-xs text-slate-400">Reclean If Not Satisfied</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICES GRID -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-xs uppercase tracking-widest block mb-2">Our Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Complete Exterior Cleaning Solutions</h2>
+                <p class="text-slate-600 mt-3 text-base">We combine traditional craftsmanship with advanced purified water systems to care for every detail of your property.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Residential Window Cleaning</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Regular 4, 8, or 12-weekly scheduled cleaning for homes of all sizes. Includes glass, frames, sills, and doors as standard.</p>
+                    <ul class="text-xs font-semibold text-slate-700 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Pure Water Purification</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Frames & Sills Included</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Hard-To-Reach Windows</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Commercial & Retail</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Tailored window cleaning contracts for shops, offices, schools, and commercial premises across Ivy Cross and Shaftesbury.</p>
+                    <ul class="text-xs font-semibold text-slate-700 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Flexible Scheduling</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Fully Insured RAMS</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> High Reach Equipment</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-icicles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Gutter & Fascia Clearing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">High-power gutter vacuum extraction removing debris, leaves, and moss to protect your property from costly water damage.</p>
+                    <ul class="text-xs font-semibold text-slate-700 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Ground-Based Vacuum Tech</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Fascia & Soffit Wash</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Blockage Prevention</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Solar Panel Cleaning</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Maximize your green energy output. Dirt and grime can reduce solar efficiency by up to 30%; pure water brings them back to 100%.</p>
+                    <ul class="text-xs font-semibold text-slate-700 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Chemical-Free Pure Water</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Restores Energy Output</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Safe Non-Abrasive Brushes</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Conservatory Roof Washing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Specialist cleaning of polycarbonate and glass conservatory roofs, restoring natural light and removing stubborn algae build-up.</p>
+                    <ul class="text-xs font-semibold text-slate-700 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Deep Algae Removal</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Finial & Ridge Cleaning</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Complete Exterior Detail</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-spray-can"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Pressure & Soft Washing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Revitalise patios, driveways, stonework, and exterior cladding with safe, effective pressure and soft washing services.</p>
+                    <ul class="text-xs font-semibold text-slate-700 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Driveway & Patio Detailing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Lichen & Moss Treatment</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Stone & Render Restoration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. LOCAL SEO & ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-brand-600 font-bold text-xs uppercase tracking-widest block mb-2">Local Dorset Professionals</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mb-6">Serving Ivy Cross, Shaftesbury & The Blackmore Vale</h2>
+                    <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
+                        <p>
+                            Based at the heart of <strong>Ivy Cross in Shaftesbury (SP7)</strong>, <strong>Francis & Cull Ltd</strong> is a family-operated business built on the values of absolute reliability, meticulous attention to detail, and modern cleaning innovation.
+                        </p>
+                        <p>
+                            From historical properties near Gold Hill to modern developments across Motcombe, Cann, and Fontmell Magna, we understand the unique maintenance needs of North Dorset homes and business premises.
+                        </p>
+                        <p>
+                            Our state-of-the-art 100% laboratory-grade pure water filtration system absorbs dirt at a molecular level, leaving your windows spot-free, chemical-free, and cleaner for much longer.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <span class="block text-2xl font-extrabold text-slate-900">10+</span>
+                            <span class="text-xs text-slate-500 font-medium">Years Local Service</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <span class="block text-2xl font-extrabold text-slate-900">100%</span>
+                            <span class="text-xs text-slate-500 font-medium">Satisfaction Guaranteed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80" alt="Professional window cleaning equipment" class="w-full h-[400px] object-cover">
+                    </div>
+                    <!-- Coverage Card Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-slateDark text-white p-6 rounded-2xl shadow-xl max-w-xs hidden sm:block border border-slate-700">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i class="fa-solid fa-map-location-dot text-brand-400 text-xl"></i>
+                            <h4 class="font-bold text-sm">Areas We Cover</h4>
+                        </div>
+                        <p class="text-xs text-slate-300">
+                            Ivy Cross, Shaftesbury Town, Motcombe, Semley, Fontmell Magna, Cann, Melbury, and SP7 surrounding areas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-xs uppercase tracking-widest block mb-2">Client Reviews</span>
+                <h2 class="text-3xl font-extrabold text-slate-900">What Our Shaftesbury Customers Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+                            "Francis & Cull Ltd have been cleaning our windows in Ivy Cross for over two years now. Always punctual, polite, and the pure water system leaves the frames immaculate!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
+                            EH
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">E. Harrison</h4>
+                            <span class="text-[11px] text-slate-400">Ivy Cross, Shaftesbury</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+                            "Had our shopfront and upper windows cleaned in town. Excellent commercial service—quick, non-disruptive, and extremely competitively priced."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
+                            MR
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">M. Roberts</h4>
+                            <span class="text-[11px] text-slate-400">High Street Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+                            "Booked them for a full gutter vacuum and conservatory roof clean. Astonishing difference. Professional team that treats your property with genuine care."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
+                            SD
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">S. Davies</h4>
+                            <span class="text-[11px] text-slate-400">Motcombe Resident</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT FORM & DIRECT CALL SECTION -->
+    <section id="contact" class="py-24 bg-slateDark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left: Contact Details -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-widest block mb-2">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">Request Your Free Quotation Today</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-8">
+                            Complete the simple form or call us directly. We provide free, no-obligation quotes for residential and commercial exterior cleaning in Shaftesbury and surrounding areas.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-slate-800 text-brand-400 flex items-center justify-center shrink-0 border border-slate-700">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block uppercase font-bold tracking-wider">Phone Call or WhatsApp</span>
+                                    <a href="tel:01747851234" class="text-lg font-bold text-white hover:text-brand-400 transition">01747 851234</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-slate-800 text-brand-400 flex items-center justify-center shrink-0 border border-slate-700">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block uppercase font-bold tracking-wider">Email Us</span>
+                                    <a href="mailto:info@francisandcull.co.uk" class="text-sm font-semibold text-white hover:text-brand-400 transition">info@francisandcull.co.uk</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-slate-800 text-brand-400 flex items-center justify-center shrink-0 border border-slate-700">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 block uppercase font-bold tracking-wider">Registered Address</span>
+                                    <span class="text-sm text-slate-200">Ivy Cross, Shaftesbury, Dorset, SP7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Call CTA Card -->
+                    <div class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-brand-600 to-brand-800 border border-brand-500/30">
+                        <h4 class="font-bold text-white text-base mb-1">Need Urgent Window or Gutter Service?</h4>
+                        <p class="text-xs text-brand-100 mb-4">Speak directly with our local Shaftesbury team right now.</p>
+                        <a href="tel:01747851234" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-brand-900 font-extrabold text-xs uppercase tracking-wider hover:bg-brand-50 transition shadow-md">
+                            <i class="fa-solid fa-phone"></i> Call 01747 851234
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slateNavy p-8 sm:p-10 rounded-3xl border border-slate-700/60 shadow-2xl">
+                        <h3 class="text-xl font-bold mb-6 text-white">Send Us A Message</h3>
+                        <form onsubmit="event.preventDefault(); alert('Thank you for contacting Francis & Cull Ltd. We will respond shortly!');" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name *</label>
+                                    <input type="text" required placeholder="John Smith" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-400 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number *</label>
+                                    <input type="tel" required placeholder="07123 456789" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-400 transition">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Postcode *</label>
+                                    <input type="text" required placeholder="SP7 8XX" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-400 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required</label>
+                                    <select class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-brand-400 transition">
+                                        <option>Residential Window Cleaning</option>
+                                        <option>Commercial Window Cleaning</option>
+                                        <option>Gutter & Fascia Clearing</option>
+                                        <option>Solar Panel Cleaning</option>
+                                        <option>Conservatory Roof Washing</option>
+                                        <option>Pressure / Soft Washing</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Message / Details</label>
+                                <textarea rows="4" placeholder="Tell us about your property size or special cleaning requirements..." class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-400 transition"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-brand-500 hover:bg-brand-400 text-white font-extrabold text-sm uppercase tracking-wider transition shadow-lg shadow-brand-500/25">
+                                Submit Quote Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer class="bg-slateDark text-slate-400 border-t border-slate-800 text-xs py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white font-bold">
+                        <i class="fa-solid fa-droplet text-sm"></i>
+                    </div>
+                    <span class="text-base font-extrabold text-white">Francis & Cull Ltd</span>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-slate-300 font-medium">
+                    <a href="#home" class="hover:text-white transition">Home</a>
+                    <a href="#services" class="hover:text-white transition">Services</a>
+                    <a href="#about" class="hover:text-white transition">About</a>
+                    <a href="#testimonials" class="hover:text-white transition">Reviews</a>
+                    <a href="#contact" class="hover:text-white transition">Contact</a>
+                </div>
+
+                <div class="text-center md:text-right text-slate-500">
+                    <p>&copy; <script>document.write(new Date().getFullYear())</script> Francis & Cull Ltd. All rights reserved.</p>
+                    <p class="mt-1">Ivy Cross, Shaftesbury, Dorset, SP7</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

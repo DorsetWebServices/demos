@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watertite Heating Limited | Heating & Plumbing Donhead St Mary & Shaftesbury</title>
-    <meta name="description" content="Premier heating and plumbing specialists in Donhead St Mary, Shaftesbury & surrounding SP7 areas. Gas Safe registered, boiler installs, emergency repairs & heat pumps.">
+    <title>Watertite Heating Limited | Expert Plumbing & Heating Donhead St Mary & Shaftesbury</title>
+    <meta name="description" content="Watertite Heating Limited provides high-end plumbing, boiler repairs, heat pump installations, and 24/7 emergency response in Donhead St Mary, Shaftesbury, and across Dorset & Wiltshire. Gas Safe Registered.">
     
-    <!-- Google Font: Plus Jakarta Sans -->
+    <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,13 +25,13 @@
                     },
                     colors: {
                         brand: {
-                            dark: '#0B132B',      // Deep Royal Navy
-                            slate: '#1C2541',     // Rich Midnight Slate
-                            copper: '#C86432',    // Warm Oxidized Copper Accent
-                            copperDark: '#A64D23',// Deep Copper Hover
-                            blue: '#0284C7',      // Water Blue Accent
-                            light: '#F8FAFC',     // Crisp Ice White Background
-                            muted: '#64748B'      // Elegant Muted Text
+                            navy: '#0A1128',
+                            slate: '#1E293B',
+                            copper: '#C2410C',
+                            copperHover: '#9A3412',
+                            amber: '#D97706',
+                            ice: '#F0F9FF',
+                            softGray: '#F8FAFC'
                         }
                     }
                 }
@@ -39,184 +39,192 @@
         }
     </script>
     <style>
-        .copper-gradient {
-            background: linear-gradient(135deg, #D97706 0%, #C86432 50%, #9A3412 100%);
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(10, 17, 40, 0.95) 0%, rgba(30, 41, 59, 0.88) 100%);
         }
-        .hero-pattern {
-            background-color: #0B132B;
-            background-image: radial-gradient(rgba(200, 100, 50, 0.12) 1px, transparent 0);
-            background-size: 28px 28px;
+        .copper-glow {
+            box-shadow: 0 10px 25px -5px rgba(194, 65, 12, 0.3);
         }
     </style>
 </head>
-<body class="bg-brand-light text-slate-800 font-sans antialiased selection:bg-brand-copper selection:text-white">
+<body class="font-sans text-slate-800 bg-white antialiased">
 
     <!-- TOP BAR -->
-    <div class="bg-brand-dark text-slate-300 text-xs sm:text-sm py-2.5 border-b border-slate-800">
+    <div class="bg-brand-navy text-slate-300 text-xs sm:text-sm py-2.5 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2">
-            <div class="flex items-center gap-6 flex-wrap justify-center md:justify-start">
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6 text-xs sm:text-sm">
                 <span class="flex items-center gap-2">
-                    <i class="fa-regular fa-clock text-brand-copper"></i> Mon - Fri: 8:00 AM - 6:00 PM | 24/7 Emergency Response
+                    <i class="fa-regular fa-clock text-brand-amber"></i>
+                    <span>Mon - Fri: 08:00 - 18:00 | 24/7 Emergency</span>
                 </span>
-                <span class="hidden sm:inline-flex items-center gap-2 text-slate-400">
-                    <i class="fa-solid fa-location-dot text-brand-copper"></i> Donhead St Mary, Shaftesbury (SP7)
+                <span class="hidden sm:flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-amber"></i>
+                    <span>Donhead St Mary, Shaftesbury (SP7)</span>
                 </span>
             </div>
-            <div class="flex items-center gap-4">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-950 text-emerald-400 border border-emerald-800">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Engineers On Call
-                </span>
-                <a href="mailto:info@watertiteheating.co.uk" class="hover:text-brand-copper transition-colors hidden lg:inline">
-                    <i class="fa-regular fa-envelope mr-1"></i> info@watertiteheating.co.uk
+            <div class="flex items-center gap-4 text-xs sm:text-sm">
+                <a href="mailto:info@watertiteheating.co.uk" class="hover:text-white transition-colors flex items-center gap-1.5">
+                    <i class="fa-regular fa-envelope text-brand-amber"></i>
+                    <span>info@watertiteheating.co.uk</span>
                 </a>
+                <span class="text-slate-700">|</span>
+                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    On-Call Today
+                </span>
             </div>
         </div>
     </div>
 
     <!-- STICKY HEADER -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            
-            <!-- Logo -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-xl bg-brand-dark text-white flex items-center justify-center shadow-md group-hover:bg-brand-copper transition-colors duration-300">
-                    <i class="fa-solid fa-fire-flame-curved text-xl text-brand-copper group-hover:text-white transition-colors duration-300"></i>
-                </div>
-                <div>
-                    <span class="text-xl font-extrabold tracking-tight text-brand-dark block leading-none">
-                        WATERTITE
-                    </span>
-                    <span class="text-[10px] font-bold tracking-widest text-brand-copper uppercase block mt-1">
-                        HEATING & PLUMBING LTD
-                    </span>
-                </div>
-            </a>
-
-            <!-- Navigation Links -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-                <a href="#services" class="hover:text-brand-copper transition-colors">Services</a>
-                <a href="#about" class="hover:text-brand-copper transition-colors">Why Us</a>
-                <a href="#coverage" class="hover:text-brand-copper transition-colors">Local Area</a>
-                <a href="#testimonials" class="hover:text-brand-copper transition-colors">Reviews</a>
-                <a href="#contact" class="hover:text-brand-copper transition-colors">Contact</a>
-            </nav>
-
-            <!-- Call CTA -->
-            <div class="flex items-center gap-3">
-                <a href="tel:01747828492" class="hidden sm:flex items-center gap-2.5 px-5 py-2.5 rounded-lg bg-brand-dark hover:bg-slate-800 text-white font-bold text-sm shadow-md transition-all hover:shadow-lg hover:-translate-y-0.5">
-                    <i class="fa-solid fa-phone text-brand-copper"></i>
-                    <span>01747 828 492</span>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-brand-navy rounded-xl flex items-center justify-center text-brand-copper font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-fire-flame-curved text-brand-amber"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-extrabold tracking-tight text-brand-navy leading-tight">WATERTITE</span>
+                        <span class="block text-xs font-semibold uppercase tracking-widest text-brand-copper">Heating Limited</span>
+                    </div>
                 </a>
-                <a href="#contact" class="px-4 py-2.5 rounded-lg bg-brand-copper hover:bg-brand-copperDark text-white font-bold text-sm shadow-md transition-all hover:shadow-lg hover:-translate-y-0.5">
-                    Book Engineer
-                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-700">
+                    <a href="#services" class="hover:text-brand-copper transition-colors">Services</a>
+                    <a href="#about" class="hover:text-brand-copper transition-colors">About Us</a>
+                    <a href="#coverage" class="hover:text-brand-copper transition-colors">Local Coverage</a>
+                    <a href="#reviews" class="hover:text-brand-copper transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-brand-copper transition-colors">Contact</a>
+                </nav>
+
+                <!-- Action CTA -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="tel:01747828911" class="flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-brand-copper text-white font-semibold text-sm hover:bg-brand-copperHover transition-all copper-glow">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>01747 828 911</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <a href="tel:01747828911" class="p-2.5 rounded-lg bg-brand-copper text-white sm:hidden">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
             </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-copper">Services</a>
+            <a href="#about" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-copper">About Us</a>
+            <a href="#coverage" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-copper">Local Coverage</a>
+            <a href="#reviews" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-copper">Reviews</a>
+            <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-copper">Contact</a>
+            <a href="tel:01747828911" class="block w-full text-center py-3 rounded-lg bg-brand-navy text-white font-semibold">
+                Call Now: 01747 828 911
+            </a>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative hero-pattern text-white py-20 lg:py-28 overflow-hidden">
-        <!-- Ambient lighting background -->
-        <div class="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-brand-copper/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-0 left-1/3 w-80 h-80 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <section class="relative bg-brand-navy text-white overflow-hidden py-20 lg:py-28">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0 opacity-25 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80');"></div>
+        <div class="absolute inset-0 z-0 hero-gradient"></div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Left Column Text -->
-                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-xs font-semibold text-brand-copper">
-                        <i class="fa-solid fa-shield-halved text-amber-500"></i>
-                        Gas Safe Registered #548291 • Shaftesbury & Donhead St Mary
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-brand-amber text-xs sm:text-sm font-semibold tracking-wide">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Gas Safe Registered & Local Specialists</span>
                     </div>
 
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
-                        Precision Heating & <span class="text-transparent bg-clip-text copper-gradient">Expert Plumbing</span> Solutions.
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Premium Heating & Plumbing in <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Shaftesbury</span>
                     </h1>
 
-                    <p class="text-lg sm:text-xl text-slate-300 font-normal max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        From high-efficiency boiler installations to emergency repairs across Shaftesbury, Donhead St Mary, and the Cranborne Chase region. Built on 20+ years of local trust and technical excellence.
+                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Based in Donhead St Mary, Watertite Heating Limited delivers high-specification boiler installations, heat pump integration, and rapid emergency plumbing throughout Dorset & Wiltshire.
                     </p>
 
-                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-copper hover:bg-brand-copperDark text-white font-bold text-base shadow-lg shadow-orange-950/30 transition-all hover:shadow-xl hover:-translate-y-0.5 text-center">
-                            Request Emergency Callout
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-copper hover:bg-brand-copperHover text-white font-bold text-base transition-all copper-glow text-center">
+                            Request a Free Quote
                         </a>
-                        <a href="tel:01747828492" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700 text-white font-bold text-base transition-all text-center flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-phone text-brand-copper"></i> Call 01747 828 492
+                        <a href="tel:01747828911" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800/90 hover:bg-slate-800 text-white border border-slate-700 font-bold text-base transition-all text-center flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-amber"></i>
+                            <span>01747 828 911</span>
                         </a>
                     </div>
 
-                    <!-- Key Feature Highlights -->
-                    <div class="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-800 text-left">
-                        <div class="flex items-center gap-2.5">
-                            <i class="fa-solid fa-circle-check text-brand-copper text-sm"></i>
-                            <span class="text-xs sm:text-sm font-medium text-slate-300">No Hidden Fees</span>
+                    <!-- Key Metrics -->
+                    <div class="pt-8 border-t border-slate-800 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">20+</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Years Experience</div>
                         </div>
-                        <div class="flex items-center gap-2.5">
-                            <i class="fa-solid fa-circle-check text-brand-copper text-sm"></i>
-                            <span class="text-xs sm:text-sm font-medium text-slate-300">Fast Local Arrival</span>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">24/7</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Emergency Callout</div>
                         </div>
-                        <div class="flex items-center gap-2.5 col-span-2 sm:col-span-1">
-                            <i class="fa-solid fa-circle-check text-brand-copper text-sm"></i>
-                            <span class="text-xs sm:text-sm font-medium text-slate-300">Fully Insured Work</span>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Satisfaction Rate</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Column Card/Visual -->
+                <!-- Quick Emergency Contact Card -->
                 <div class="lg:col-span-5">
-                    <div class="bg-slate-900/90 backdrop-blur-xl border border-slate-700/60 rounded-2xl p-6 sm:p-8 shadow-2xl relative">
-                        <div class="absolute -top-3 -right-3 bg-brand-copper text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
-                            Verified Local Firm
+                    <div class="bg-white rounded-2xl p-6 sm:p-8 text-slate-900 shadow-2xl border border-slate-100 relative">
+                        <div class="absolute -top-3 right-6 bg-brand-copper text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+                            Fast Response
                         </div>
-                        
-                        <h3 class="text-xl font-bold text-white mb-2">Need Urgent Repairs?</h3>
-                        <p class="text-slate-400 text-sm mb-6">Speak directly with a master heating engineer today.</p>
+                        <h2 class="text-2xl font-bold text-brand-navy mb-2">Need Urgent Help?</h2>
+                        <p class="text-slate-600 text-sm mb-6">Boiler breakdown, leaking pipe, or no hot water? Contact our local engineers in Donhead St Mary today.</p>
 
                         <div class="space-y-4">
-                            <div class="bg-slate-800/60 rounded-xl p-4 border border-slate-700/50 flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-brand-copper flex items-center justify-center shrink-0">
-                                    <i class="fa-solid fa-fire text-lg"></i>
+                            <a href="tel:07700900482" class="flex items-center gap-4 p-4 rounded-xl bg-brand-softGray border border-slate-200 hover:border-brand-copper transition-all group">
+                                <div class="w-12 h-12 rounded-lg bg-brand-navy text-brand-amber flex items-center justify-center text-xl shrink-0 group-hover:scale-105 transition-transform">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-sm font-bold text-white">Boiler Breakdown & Servicing</h4>
-                                    <p class="text-xs text-slate-400 mt-0.5">Diagnostics, power flushing & Worcester Bosch accredited installs.</p>
+                                    <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Direct Mobile / WhatsApp</div>
+                                    <div class="text-lg font-bold text-brand-navy">07700 900 482</div>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div class="bg-slate-800/60 rounded-xl p-4 border border-slate-700/50 flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center shrink-0">
-                                    <i class="fa-solid fa-faucet-drip text-lg"></i>
+                            <a href="tel:01747828911" class="flex items-center gap-4 p-4 rounded-xl bg-brand-softGray border border-slate-200 hover:border-brand-copper transition-all group">
+                                <div class="w-12 h-12 rounded-lg bg-brand-copper text-white flex items-center justify-center text-xl shrink-0 group-hover:scale-105 transition-transform">
+                                    <i class="fa-solid fa-phone"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-sm font-bold text-white">Full Plumbing Services</h4>
-                                    <p class="text-xs text-slate-400 mt-0.5">Leaking pipes, cylinder upgrades, bathroom plumbing & pumps.</p>
+                                    <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Landline / Office</div>
+                                    <div class="text-lg font-bold text-brand-navy">01747 828 911</div>
                                 </div>
-                            </div>
-
-                            <div class="bg-slate-800/60 rounded-xl p-4 border border-slate-700/50 flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
-                                    <i class="fa-solid fa-leaf text-lg"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-sm font-bold text-white">Renewable Heating</h4>
-                                    <p class="text-xs text-slate-400 mt-0.5">Heat pumps & eco-friendly heating solutions for Dorset homes.</p>
-                                </div>
-                            </div>
+                            </a>
                         </div>
 
-                        <div class="mt-6 pt-6 border-t border-slate-800 flex items-center justify-between">
-                            <div class="flex items-center gap-1 text-amber-400 text-sm">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <span class="text-white text-xs font-bold ml-1">5.0 Star Rating</span>
-                            </div>
-                            <span class="text-xs text-slate-400">140+ Local Reviews</span>
-                        </div>
+                        <ul class="mt-6 space-y-2 text-xs font-medium text-slate-600">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                                <span>No hidden call-out charges</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                                <span>Fully insured & Gas Safe certified</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -224,254 +232,237 @@
         </div>
     </section>
 
-    <!-- TRUST BADGES BAR -->
-    <section class="bg-white border-b border-slate-200 py-8">
+    <!-- TRUST BADGES STRIP -->
+    <section class="bg-brand-softGray border-y border-slate-200 py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-center text-xs font-bold uppercase tracking-widest text-slate-400 mb-6">
-                Accredited & Certified Heating Engineers
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center text-center">
-                
-                <div class="flex flex-col items-center justify-center p-3 rounded-xl hover:bg-slate-50 transition-colors">
-                    <div class="w-12 h-12 rounded-full bg-amber-500/10 text-amber-600 flex items-center justify-center text-xl font-black mb-1">
-                        <i class="fa-solid fa-shield-cat"></i>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-shield-virus text-brand-copper text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs font-extrabold uppercase text-slate-900">Gas Safe Registered</div>
+                        <div class="text-xs text-slate-500">Licence #584920</div>
                     </div>
-                    <span class="text-sm font-bold text-slate-800">Gas Safe Registered</span>
-                    <span class="text-xs text-slate-500">License ID #548291</span>
                 </div>
-
-                <div class="flex flex-col items-center justify-center p-3 rounded-xl hover:bg-slate-50 transition-colors">
-                    <div class="w-12 h-12 rounded-full bg-blue-500/10 text-blue-600 flex items-center justify-center text-xl font-black mb-1">
-                        <i class="fa-solid fa-award"></i>
+                <div class="flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-certificate text-brand-copper text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs font-extrabold uppercase text-slate-900">OFTEC Certified</div>
+                        <div class="text-xs text-slate-500">Oil Heating Experts</div>
                     </div>
-                    <span class="text-sm font-bold text-slate-800">Worcester Accredited</span>
-                    <span class="text-xs text-slate-500">Up to 12 Year Warranties</span>
                 </div>
-
-                <div class="flex flex-col items-center justify-center p-3 rounded-xl hover:bg-slate-50 transition-colors">
-                    <div class="w-12 h-12 rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-xl font-black mb-1">
-                        <i class="fa-solid fa-oil-well"></i>
+                <div class="flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-star text-amber-500 text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs font-extrabold uppercase text-slate-900">5-Star Rated</div>
+                        <div class="text-xs text-slate-500">Local Verified Reviews</div>
                     </div>
-                    <span class="text-sm font-bold text-slate-800">OFTEC Registered</span>
-                    <span class="text-xs text-slate-500">Oil Heating Specialists</span>
                 </div>
-
-                <div class="flex flex-col items-center justify-center p-3 rounded-xl hover:bg-slate-50 transition-colors">
-                    <div class="w-12 h-12 rounded-full bg-red-500/10 text-red-600 flex items-center justify-center text-xl font-black mb-1">
-                        <i class="fa-solid fa-toolbox"></i>
+                <div class="flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-house-chimney-check text-brand-copper text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs font-extrabold uppercase text-slate-900">Fully Insured</div>
+                        <div class="text-xs text-slate-500">£5M Public Liability</div>
                     </div>
-                    <span class="text-sm font-bold text-slate-800">City & Guilds Qualified</span>
-                    <span class="text-xs text-slate-500">Advanced Craft Certified</span>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- SERVICES GRID SECTION -->
-    <section id="services" class="py-20 bg-slate-50">
+    <!-- SERVICES GRID -->
+    <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-extrabold tracking-widest text-brand-copper uppercase block mb-2">Our Specialisms</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
-                    Comprehensive Heating & Plumbing Services
-                </h2>
-                <p class="text-slate-600 mt-4 text-base sm:text-lg">
-                    Whether you require a complete boiler replacement in Shaftesbury or urgent leak repair in Donhead St Mary, our team delivers flawless workmanship.
-                </p>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-copper mb-2">Our Expertise</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-brand-navy">Comprehensive Heating & Plumbing Solutions</p>
+                <p class="text-slate-600 mt-4 text-base">From traditional oil boilers in rural homes to cutting-edge heat pumps and luxury bathroom installations.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Service 1 -->
-                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-orange-50 text-brand-copper flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-copper group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-fire"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-3">Boiler Installation & Upgrades</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Expert fitting of high-efficiency gas, oil, and LPG boilers. Authorized installers for Worcester Bosch, Vaillant, and Grant systems with extended warranties.
-                        </p>
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-copper hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-brand-ice rounded-xl flex items-center justify-center text-brand-copper text-2xl mb-6 group-hover:bg-brand-copper group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-fire text-brand-amber group-hover:text-white"></i>
                     </div>
-                    <ul class="space-y-2 border-t border-slate-100 pt-4 text-xs font-semibold text-slate-700">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Up to 12-Year Guarantee</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Free In-Home Site Survey</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Boiler Installation & Service</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Gas, LPG, and Oil boiler installations, regular servicing, and urgent repairs. Authorized installer for leading Worcester Bosch & Grant systems.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-brand-copper group-hover:text-brand-navy transition-colors">
+                        Book a Service <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-sky-600 group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-wrench"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-3">Emergency Plumbing & Repairs</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Rapid emergency response for burst pipes, leaking cylinders, blocked drains, and loss of water supply across Donhead St Mary and Shaftesbury.
-                        </p>
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-copper hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-brand-ice rounded-xl flex items-center justify-center text-brand-copper text-2xl mb-6 group-hover:bg-brand-copper group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-faucet-drip"></i>
                     </div>
-                    <ul class="space-y-2 border-t border-slate-100 pt-4 text-xs font-semibold text-slate-700">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-600"></i> Fast Local Dispatch</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-600"></i> Fully Stocked Vans</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">24/7 Emergency Plumbing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Burst pipes, severe leaks, blocked drains, and hot water failures. Fast response team available day or night across Shaftesbury & surrounds.
+                    </p>
+                    <a href="tel:01747828911" class="inline-flex items-center gap-2 text-sm font-bold text-brand-copper group-hover:text-brand-navy transition-colors">
+                        Call Emergency Hotline <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-temperature-arrow-up"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-3">Central Heating & Radiators</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Complete heating system designs, thermostatic valve installation, magnetic filtering, and full power flushing to restore heating efficiency.
-                        </p>
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-copper hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-brand-ice rounded-xl flex items-center justify-center text-brand-copper text-2xl mb-6 group-hover:bg-brand-copper group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-leaf"></i>
                     </div>
-                    <ul class="space-y-2 border-t border-slate-100 pt-4 text-xs font-semibold text-slate-700">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-600"></i> Power Flushing Diagnostics</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-600"></i> Smart Thermostats (Hive/Nest)</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Heat Pumps & Renewables</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Future-proof your heating with Air Source Heat Pumps. Design, installation, and maintenance to lower energy bills and carbon emissions.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-brand-copper group-hover:text-brand-navy transition-colors">
+                        Explore Renewables <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-leaf"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-3">Air Source Heat Pumps</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Transition your home to eco-friendly renewable energy with heat pump design, retrofitting, and ongoing servicing tailored to rural properties.
-                        </p>
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-copper hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-brand-ice rounded-xl flex items-center justify-center text-brand-copper text-2xl mb-6 group-hover:bg-brand-copper group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
                     </div>
-                    <ul class="space-y-2 border-t border-slate-100 pt-4 text-xs font-semibold text-slate-700">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Low Running Costs</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Renewable Energy Advice</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Central Heating & Powerflushing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Full system upgrades, smart thermostat integrations (Hive/Tado), radiator replacements, and deep chemical powerflushing.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-brand-copper group-hover:text-brand-navy transition-colors">
+                        Improve System Efficiency <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-shower"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-3">Bathroom Installations</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Turnkey luxury bathroom plumbing, power shower installations, unvented hot water cylinders, and modernizing period cottage plumbing.
-                        </p>
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-copper hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-brand-ice rounded-xl flex items-center justify-center text-brand-copper text-2xl mb-6 group-hover:bg-brand-copper group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-bath"></i>
                     </div>
-                    <ul class="space-y-2 border-t border-slate-100 pt-4 text-xs font-semibold text-slate-700">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600"></i> High Water Pressure Upgrades</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600"></i> Complete Pipe Re-routing</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Bespoke Bathroom Fitting</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Turnkey bathroom design, plumbing, and installation. From luxury master suites to wet rooms and high-pressure shower systems.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-brand-copper group-hover:text-brand-navy transition-colors">
+                        View Options <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-slate-800 group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-clipboard-check"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-3">Landlord & Gas Safety Checks</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            CP12 landlord gas safety certificates, annual boiler health checks, and scheduled maintenance contracts for homeowners and letting agents.
-                        </p>
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-copper hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-brand-ice rounded-xl flex items-center justify-center text-brand-copper text-2xl mb-6 group-hover:bg-brand-copper group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-clipboard-check"></i>
                     </div>
-                    <ul class="space-y-2 border-t border-slate-100 pt-4 text-xs font-semibold text-slate-700">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-slate-800"></i> Official CP12 Documentation</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-slate-800"></i> Annual Servicing Reminders</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Landlord Gas Certificates</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Safety inspections and CP12 certificates for landlords and property managers across Shaftesbury, Tisbury, and Gillingham.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-brand-copper group-hover:text-brand-navy transition-colors">
+                        Book Inspection <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- LOCAL SEO & ABOUT SECTION -->
-    <section id="about" class="py-20 bg-white">
+    <!-- LOCAL SEO CONTENT SECTION -->
+    <section id="about" class="py-20 bg-brand-softGray border-y border-slate-200 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
                 <div class="lg:col-span-6 space-y-6">
-                    <span class="text-xs font-extrabold tracking-widest text-brand-copper uppercase block">Local Experts You Can Rely On</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight leading-tight">
-                        Serving Donhead St Mary, Shaftesbury & the Dorset/Wiltshire Border
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-navy/5 text-brand-navy text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-location-crosshairs text-brand-copper"></i>
+                        Donhead St Mary & Shaftesbury Local Plumbing
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy leading-tight">
+                        Trusted Heating Engineers Serving the Nadder Valley & Shaftesbury Region
                     </h2>
-                    
-                    <p class="text-slate-600 text-base leading-relaxed">
-                        At <strong class="text-slate-900 font-semibold">Watertite Heating Limited</strong>, we take pride in delivering premier heating engineering and general plumbing services to homeowners, landed estates, and businesses throughout Donhead St Mary, Shaftesbury, Ludwell, and surrounding villages.
-                    </p>
 
-                    <p class="text-slate-600 text-base leading-relaxed">
-                        Navigating the unique plumbing requirements of historic Wiltshire stone cottages through to modern residential developments requires specialized expertise. As Gas Safe and OFTEC registered specialists, we bring meticulous standards, clear transparent pricing, and courteous service to every home we enter.
-                    </p>
-
-                    <div class="bg-slate-50 border-l-4 border-brand-copper p-4 rounded-r-lg">
-                        <p class="text-sm text-slate-700 font-medium italic">
-                            "Whether replacing an ancient oil boiler in Ludwell or installing energy-efficient central heating in Shaftesbury, Watertite Heating stands for absolute reliability and clean workmanship."
+                    <div class="text-slate-600 text-base space-y-4 leading-relaxed">
+                        <p>
+                            At <strong>Watertite Heating Limited</strong>, we take pride in providing tailored, high-performance plumbing and heating engineering to residential and commercial clients in <strong>Donhead St Mary</strong>, <strong>Shaftesbury</strong>, and surrounding villages.
+                        </p>
+                        <p>
+                            Whether you reside in a period country cottage needing specialized oil boiler tuning or a modern property requiring air-source heat pump retrofitting, our Gas Safe and OFTEC registered engineers deliver exceptional craftsmanship. We are thoroughly versed in local water pressure nuances, older piping infrastructure, and modern energy compliance.
                         </p>
                     </div>
 
-                    <div id="coverage" class="pt-4">
-                        <h4 class="text-sm font-bold text-brand-dark uppercase tracking-wider mb-3">Primary Coverage Area (SP7 & SP3 Postcodes):</h4>
+                    <div id="coverage" class="pt-4 border-t border-slate-200">
+                        <h4 class="text-sm font-bold text-brand-navy uppercase tracking-wider mb-3">Primary Coverage Areas:</h4>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-semibold">Donhead St Mary</span>
-                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-semibold">Shaftesbury</span>
-                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-semibold">Donhead St Andrew</span>
-                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-semibold">Ludwell</span>
-                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-semibold">Tisbury</span>
-                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-semibold">Charlton</span>
-                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-semibold">Semley</span>
-                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-semibold">Gillingham</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700">Donhead St Mary (SP7)</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700">Donhead St Andrew</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700">Shaftesbury</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700">Tisbury</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700">Semley</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700">Ludwell</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700">Gillingham</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700">Fontmell Magna</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-6 relative">
-                    <div class="bg-brand-dark text-white rounded-3xl p-8 sm:p-10 shadow-2xl relative overflow-hidden">
-                        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-copper/20 rounded-full blur-2xl"></div>
-                        
-                        <h3 class="text-2xl font-bold mb-6 relative z-10">Why Choose Watertite Heating?</h3>
-                        
-                        <div class="space-y-6 relative z-10">
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-brand-copper/20 text-brand-copper flex items-center justify-center shrink-0 font-bold">
-                                    01
+                <div class="lg:col-span-6">
+                    <div class="relative bg-brand-navy rounded-3xl p-8 text-white shadow-2xl overflow-hidden">
+                        <!-- Decorative SVG pattern -->
+                        <div class="absolute -right-12 -bottom-12 w-64 h-64 bg-brand-copper/10 rounded-full blur-2xl pointer-events-none"></div>
+
+                        <div class="relative z-10 space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-brand-copper/20 flex items-center justify-center text-brand-amber text-2xl font-bold">
+                                    <i class="fa-solid fa-award"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-base font-bold text-white">Gas Safe & OFTEC Certified</h4>
-                                    <p class="text-sm text-slate-300 mt-1">Fully credentialed to work safely on Mains Gas, LPG, and Oil heating installations.</p>
+                                    <h3 class="text-xl font-bold">Why Local Homeowners Choose Us</h3>
+                                    <p class="text-xs text-slate-400">Quality, Reliability & Transparent Pricing</p>
                                 </div>
                             </div>
 
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-brand-copper/20 text-brand-copper flex items-center justify-center shrink-0 font-bold">
-                                    02
+                            <div class="space-y-4 pt-2">
+                                <div class="flex gap-4 items-start">
+                                    <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs mt-1 shrink-0">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm text-white">Fully Qualified Gas & Oil Engineers</h4>
+                                        <p class="text-xs text-slate-300 mt-0.5">Accredited to work safely on LPG, mains natural gas, and oil systems.</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="text-base font-bold text-white">Transparent Fixed Pricing</h4>
-                                    <p class="text-sm text-slate-300 mt-1">Clear, upfront quotations before any work begins. No unexpected add-ons.</p>
+
+                                <div class="flex gap-4 items-start">
+                                    <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs mt-1 shrink-0">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm text-white">Clean & Respectful Workmanship</h4>
+                                        <p class="text-xs text-slate-300 mt-0.5">We use protective floor coverings and leave your property immaculate.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-4 items-start">
+                                    <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs mt-1 shrink-0">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm text-white">Upfront Written Quotes</h4>
+                                        <p class="text-xs text-slate-300 mt-0.5">No surprise fees. Clear breakdowns on parts and labor before work begins.</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-brand-copper/20 text-brand-copper flex items-center justify-center shrink-0 font-bold">
-                                    03
-                                </div>
+                            <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
                                 <div>
-                                    <h4 class="text-base font-bold text-white">Local Emergency Response</h4>
-                                    <p class="text-sm text-slate-300 mt-1">Based in Donhead St Mary, enabling fast response times when heating emergencies strike.</p>
+                                    <div class="text-xs text-slate-400">Direct Local Engineer</div>
+                                    <div class="text-sm font-bold text-white">Donhead St Mary, SP7 9AQ</div>
                                 </div>
+                                <a href="tel:01747828911" class="px-4 py-2 rounded-lg bg-brand-copper hover:bg-brand-copperHover text-white text-xs font-bold transition-all">
+                                    Call Office
+                                </a>
                             </div>
-                        </div>
-
-                        <div class="mt-8 pt-6 border-t border-slate-800 text-center relative z-10">
-                            <p class="text-xs text-slate-400">Need advice on an upcoming project or replacement?</p>
-                            <a href="#contact" class="inline-block mt-3 text-sm font-bold text-brand-copper hover:text-white transition-colors">
-                                Speak With Our Master Engineer <i class="fa-solid fa-arrow-right ml-1"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -480,23 +471,19 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section id="testimonials" class="py-20 bg-slate-50 border-t border-slate-200">
+    <!-- TESTIMONIALS -->
+    <section id="reviews" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-extrabold tracking-widest text-brand-copper uppercase block mb-2">Verified Reviews</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
-                    What Our Local Clients Say
-                </h2>
-                <p class="text-slate-600 mt-3 text-base">
-                    Read feedback from homeowners in Shaftesbury, Donhead St Mary, and surrounding villages.
-                </p>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-copper mb-2">Testimonials</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-brand-navy">What Our Local Clients Say</p>
+                <p class="text-slate-600 mt-4 text-base">Read feedback from homeowners across Shaftesbury and the Donheads.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 
                 <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                <div class="bg-brand-softGray rounded-2xl p-8 border border-slate-200 flex flex-col justify-between relative">
                     <div>
                         <div class="flex text-amber-400 text-sm gap-1 mb-4">
                             <i class="fa-solid fa-star"></i>
@@ -505,23 +492,23 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
-                            "Watertite replaced our old oil system with a brand new Worcester Bosch boiler in our cottage in Donhead St Mary. They were punctual, exceptionally neat, and the heating works perfectly. Highly recommended!"
+                        <p class="text-slate-700 text-sm italic leading-relaxed mb-6">
+                            "Watertite replaced our old oil boiler with a modern high-efficiency system in Donhead St Mary. The team was punctual, polite, and left the utility room cleaner than they found it. Highly recommended!"
                         </p>
                     </div>
-                    <div class="flex items-center justify-between border-t border-slate-100 pt-4">
-                        <div>
-                            <p class="text-sm font-bold text-brand-dark">Edward M.</p>
-                            <p class="text-xs text-slate-500">Donhead St Mary</p>
+                    <div class="pt-4 border-t border-slate-200 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-navy text-white flex items-center justify-center font-bold text-sm">
+                            SM
                         </div>
-                        <span class="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">
-                            <i class="fa-solid fa-circle-check"></i> Verified Job
-                        </span>
+                        <div>
+                            <div class="font-bold text-sm text-brand-navy">Sarah M.</div>
+                            <div class="text-xs text-slate-500">Donhead St Mary</div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                <div class="bg-brand-softGray rounded-2xl p-8 border border-slate-200 flex flex-col justify-between relative">
                     <div>
                         <div class="flex text-amber-400 text-sm gap-1 mb-4">
                             <i class="fa-solid fa-star"></i>
@@ -530,23 +517,23 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
-                            "Called them late on a Tuesday evening when our hot water cylinder started leaking. They arrived in Shaftesbury within 45 minutes and fixed the issue immediately. Top-class emergency service."
+                        <p class="text-slate-700 text-sm italic leading-relaxed mb-6">
+                            "Had an urgent leak late on a Sunday evening in Shaftesbury. Watertite arrived within 45 minutes and solved the issue quickly without inflating the cost. Outstanding local service."
                         </p>
                     </div>
-                    <div class="flex items-center justify-between border-t border-slate-100 pt-4">
-                        <div>
-                            <p class="text-sm font-bold text-brand-dark">Sarah & David H.</p>
-                            <p class="text-xs text-slate-500">Shaftesbury Town</p>
+                    <div class="pt-4 border-t border-slate-200 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-copper text-white flex items-center justify-center font-bold text-sm">
+                            JP
                         </div>
-                        <span class="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">
-                            <i class="fa-solid fa-circle-check"></i> Verified Job
-                        </span>
+                        <div>
+                            <div class="font-bold text-sm text-brand-navy">James P.</div>
+                            <div class="text-xs text-slate-500">Shaftesbury Town Centre</div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                <div class="bg-brand-softGray rounded-2xl p-8 border border-slate-200 flex flex-col justify-between relative">
                     <div>
                         <div class="flex text-amber-400 text-sm gap-1 mb-4">
                             <i class="fa-solid fa-star"></i>
@@ -555,18 +542,18 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
-                            "Watertite carried out a full power flush and installed new thermostatic valves throughout our house in Ludwell. The difference in temperature is incredible and our gas bills have visibly dropped."
+                        <p class="text-slate-700 text-sm italic leading-relaxed mb-6">
+                            "Excellent complete bathroom installation and underfloor heating in Semley. The quality of tile work and plumbing precision is top-tier. Professional from initial quote to final sign-off."
                         </p>
                     </div>
-                    <div class="flex items-center justify-between border-t border-slate-100 pt-4">
-                        <div>
-                            <p class="text-sm font-bold text-brand-dark">Dr. Richard P.</p>
-                            <p class="text-xs text-slate-500">Ludwell / SP7</p>
+                    <div class="pt-4 border-t border-slate-200 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-navy text-white flex items-center justify-center font-bold text-sm">
+                            RB
                         </div>
-                        <span class="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">
-                            <i class="fa-solid fa-circle-check"></i> Verified Job
-                        </span>
+                        <div>
+                            <div class="font-bold text-sm text-brand-navy">Richard B.</div>
+                            <div class="text-xs text-slate-500">Semley</div>
+                        </div>
                     </div>
                 </div>
 
@@ -574,121 +561,115 @@
         </div>
     </section>
 
-    <!-- CONTACT FORM & IMMEDIATE CALL SECTION -->
-    <section id="contact" class="py-20 bg-brand-dark text-white relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-12 gap-12">
+    <!-- CONTACT FORM & CALL SECTION -->
+    <section id="contact" class="py-20 bg-brand-navy text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
                 
-                <!-- Contact Info Column -->
+                <!-- Left Details -->
                 <div class="lg:col-span-5 space-y-8">
                     <div>
-                        <span class="text-xs font-extrabold tracking-widest text-brand-copper uppercase block mb-2">Get In Touch</span>
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                            Request Your Free Consultation
-                        </h2>
-                        <p class="text-slate-300 mt-4 text-sm sm:text-base leading-relaxed">
-                            Fill in the form to request a quote or schedule a site visit. For urgent boiler breakdowns or leaks, call our emergency hotline directly.
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-copper mb-2">Get In Touch</h2>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Book Your Heating Engineer Today</h3>
+                        <p class="text-slate-300 mt-4 text-base leading-relaxed">
+                            Fill out the form to request a non-obligation estimate, or call our direct numbers for emergency assistance.
                         </p>
                     </div>
 
-                    <!-- Direct Call Card -->
-                    <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 space-y-4">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-brand-copper text-white flex items-center justify-center text-xl shrink-0">
-                                <i class="fa-solid fa-phone-volume"></i>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-amber text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Direct Hotline (Donhead St Mary)</p>
-                                <a href="tel:01747828492" class="text-2xl font-extrabold text-white hover:text-brand-copper transition-colors">
-                                    01747 828 492
-                                </a>
-                            </div>
-                        </div>
-                        <a href="tel:01747828492" class="w-full py-3 px-4 rounded-xl bg-brand-copper hover:bg-brand-copperDark text-white font-bold text-center block transition-colors">
-                            <i class="fa-solid fa-phone mr-2"></i> Tap to Call Engineer Now
-                        </a>
-                    </div>
-
-                    <!-- Location & Operating Details -->
-                    <div class="space-y-4 text-sm text-slate-300">
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-location-dot text-brand-copper mt-1"></i>
-                            <div>
-                                <strong class="text-white block">Registered Business Address:</strong>
-                                Watertite Heating Limited, Donhead St Mary, Shaftesbury, SP7 9AQ, United Kingdom.
+                                <div class="text-xs text-slate-400 font-medium">Telephone Enquiries</div>
+                                <a href="tel:01747828911" class="text-xl font-bold text-white hover:text-brand-amber transition-colors">01747 828 911</a>
+                                <p class="text-xs text-slate-400 mt-0.5">Shaftesbury Office Line</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-envelope text-brand-copper mt-1"></i>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-copper text-xl shrink-0">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
                             <div>
-                                <strong class="text-white block">Email Enquiries:</strong>
-                                info@watertiteheating.co.uk
+                                <div class="text-xs text-slate-400 font-medium">Emergency Mobile / 24-7</div>
+                                <a href="tel:07700900482" class="text-xl font-bold text-white hover:text-brand-copper transition-colors">07700 900 482</a>
+                                <p class="text-xs text-slate-400 mt-0.5">Direct On-Call Technician</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-clock text-brand-copper mt-1"></i>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-amber text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
                             <div>
-                                <strong class="text-white block">Opening Hours:</strong>
-                                Monday – Friday: 08:00 – 18:00<br>
-                                Emergency Callouts: 24 Hours / 7 Days
+                                <div class="text-xs text-slate-400 font-medium">Email Address</div>
+                                <a href="mailto:info@watertiteheating.co.uk" class="text-base font-semibold text-white hover:text-brand-amber transition-colors">info@watertiteheating.co.uk</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-amber text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Registered Address</div>
+                                <div class="text-sm font-semibold text-white">Donhead St Mary, Shaftesbury, SP7 9AQ</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Form Column -->
-                <div class="lg:col-span-7">
-                    <div class="bg-white text-slate-900 rounded-3xl p-8 sm:p-10 shadow-2xl">
-                        <h3 class="text-2xl font-bold text-brand-dark mb-2">Send an Enquiry</h3>
-                        <p class="text-slate-500 text-sm mb-6">We respond to all online enquiries within 2 hours during normal business hours.</p>
+                <!-- Form Right -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 text-slate-900 shadow-2xl">
+                    <h3 class="text-2xl font-bold text-brand-navy mb-2">Request a Call Back or Quote</h3>
+                    <p class="text-sm text-slate-600 mb-8">We aim to respond to all web queries within 2 hours during normal working days.</p>
 
-                        <form onsubmit="event.preventDefault(); alert('Thank you for contacting Watertite Heating Limited. We will reach out to you shortly.');" class="space-y-5">
-                            <div class="grid sm:grid-cols-2 gap-5">
-                                <div>
-                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Your Full Name *</label>
-                                    <input type="text" required placeholder="e.g. John Smith" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-copper text-sm">
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Phone Number *</label>
-                                    <input type="tel" required placeholder="07123 456789" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-copper text-sm">
-                                </div>
-                            </div>
-
-                            <div class="grid sm:grid-cols-2 gap-5">
-                                <div>
-                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Email Address</label>
-                                    <input type="email" placeholder="john@example.co.uk" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-copper text-sm">
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Location / Postcode</label>
-                                    <input type="text" placeholder="e.g. Shaftesbury (SP7)" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-copper text-sm">
-                                </div>
-                            </div>
-
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your message! Watertite Heating will contact you shortly.');" class="space-y-5">
+                        <div class="grid sm:grid-cols-2 gap-5">
                             <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Service Required</label>
-                                <select class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-copper text-sm bg-white">
-                                    <option>Boiler Installation or Upgrade</option>
-                                    <option>Boiler Repair / Breakdown</option>
-                                    <option>General Plumbing & Leaks</option>
-                                    <option>Annual Service & Maintenance</option>
-                                    <option>Air Source Heat Pumps</option>
-                                    <option>Other / Project Enquiry</option>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-2">Full Name *</label>
+                                <input type="text" required placeholder="John Smith" class="w-full px-4 py-3 rounded-xl bg-brand-softGray border border-slate-200 focus:outline-none focus:border-brand-copper text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-2">Phone Number *</label>
+                                <input type="tel" required placeholder="07123 456789" class="w-full px-4 py-3 rounded-xl bg-brand-softGray border border-slate-200 focus:outline-none focus:border-brand-copper text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-2">Email Address</label>
+                                <input type="email" placeholder="john@example.co.uk" class="w-full px-4 py-3 rounded-xl bg-brand-softGray border border-slate-200 focus:outline-none focus:border-brand-copper text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-2">Service Required</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-brand-softGray border border-slate-200 focus:outline-none focus:border-brand-copper text-sm">
+                                    <option>Boiler Service / Repair</option>
+                                    <option>New Boiler Installation</option>
+                                    <option>Emergency Plumbing Repair</option>
+                                    <option>Heat Pump / Renewable Energy</option>
+                                    <option>Bathroom Plumbing</option>
+                                    <option>Other / General Enquiry</option>
                                 </select>
                             </div>
+                        </div>
 
-                            <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Project Details</label>
-                                <textarea rows="4" placeholder="Please describe the issue or work required..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-copper text-sm"></textarea>
-                            </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-2">Postcode / Location</label>
+                            <input type="text" placeholder="e.g. SP7 9AQ or Shaftesbury" class="w-full px-4 py-3 rounded-xl bg-brand-softGray border border-slate-200 focus:outline-none focus:border-brand-copper text-sm">
+                        </div>
 
-                            <button type="submit" class="w-full py-4 rounded-xl bg-brand-dark hover:bg-slate-800 text-white font-extrabold text-base transition-all shadow-lg hover:shadow-xl">
-                                Submit Request
-                            </button>
-                        </form>
-                    </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-2">Message Details</label>
+                            <textarea rows="4" placeholder="Please describe your plumbing or heating requirement..." class="w-full px-4 py-3 rounded-xl bg-brand-softGray border border-slate-200 focus:outline-none focus:border-brand-copper text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-brand-copper hover:bg-brand-copperHover text-white font-bold text-base transition-all copper-glow text-center">
+                            Submit Quote Request
+                        </button>
+                    </form>
                 </div>
 
             </div>
@@ -696,37 +677,66 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-400 text-xs py-12 border-t border-slate-900">
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-slate-900">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
                 
-                <!-- Footer Brand -->
-                <div class="flex items-center gap-3">
-                    <div class="w-9 h-9 rounded-lg bg-brand-copper text-white flex items-center justify-center font-bold">
-                        <i class="fa-solid fa-fire-flame-curved"></i>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 bg-brand-copper rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                        <span class="text-lg font-extrabold text-white tracking-wider">WATERTITE</span>
                     </div>
-                    <div>
-                        <span class="text-base font-extrabold text-white block leading-none">WATERTITE HEATING LTD</span>
-                        <span class="text-[10px] text-slate-500 font-semibold tracking-wider uppercase">Donhead St Mary & Shaftesbury</span>
-                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Watertite Heating Limited is a premier local plumbing & central heating contractor operating in Donhead St Mary, Shaftesbury, and surrounding areas.
+                    </p>
                 </div>
 
-                <!-- Footer Quick Nav -->
-                <div class="flex flex-wrap justify-center gap-6 font-medium text-slate-400 text-xs">
-                    <a href="#services" class="hover:text-white transition-colors">Services</a>
-                    <a href="#about" class="hover:text-white transition-colors">About Us</a>
-                    <a href="#coverage" class="hover:text-white transition-colors">Service Area</a>
-                    <a href="#testimonials" class="hover:text-white transition-colors">Reviews</a>
-                    <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-white transition-colors">Boiler Repairs & Installation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Emergency Plumbing</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Heat Pumps & Green Energy</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Powerflushing Services</a></li>
+                        <li><a href="#coverage" class="hover:text-white transition-colors">Local Service Areas</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Service Towns</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li>Donhead St Mary & Donhead St Andrew</li>
+                        <li>Shaftesbury & Motcombe</li>
+                        <li>Tisbury & Wardour</li>
+                        <li>Semley & Ludwell</li>
+                        <li>Gillingham & Fontmell Magna</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Accreditations</h4>
+                    <p class="text-xs text-slate-400 mb-3">Gas Safe Registered Engineeer #584920</p>
+                    <p class="text-xs text-slate-400 mb-3">OFTEC Certified Oil Heating Technicians</p>
+                    <div class="flex gap-2">
+                        <span class="px-2.5 py-1 bg-slate-900 border border-slate-800 rounded text-[10px] font-bold text-slate-300">GAS SAFE</span>
+                        <span class="px-2.5 py-1 bg-slate-900 border border-slate-800 rounded text-[10px] font-bold text-slate-300">OFTEC</span>
+                        <span class="px-2.5 py-1 bg-slate-900 border border-slate-800 rounded text-[10px] font-bold text-slate-300">FULLY INSURED</span>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500">
-                <p>&copy; <script>document.write(new Date().getFullYear());</script> Watertite Heating Limited. All rights reserved.</p>
-                <p class="text-center md:text-right">
-                    Gas Safe Register No. 548291 • Registered Company in England & Wales • Serving SP7, SP3, Dorset & Wiltshire
-                </p>
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <div>
+                    © <script>document.write(new Date().getFullYear())</script> Watertite Heating Limited. All rights reserved. Registered in England & Wales.
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-400 transition-colors">Cookie Settings</a>
+                </div>
             </div>
         </div>
     </footer>

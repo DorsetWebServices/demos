@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenlife Renewable Heating | Shaftesbury Plumbing & Heat Pump Specialists</title>
+    <meta name="description" content="Shaftesbury's premier renewable heating & plumbing experts based in Mampitts Lane. MCS Certified Heat Pump installers, underfloor heating, and Gas Safe plumbing services across Dorset.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            950: '#071813',
+                            900: '#0B251D',
+                            800: '#143B2F',
+                            700: '#1D5443',
+                            600: '#277059',
+                            500: '#10B981',
+                            400: '#34D399',
+                            100: '#E6F6F1',
+                            50: '#F2FBF8',
+                        },
+                        sage: {
+                            100: '#E3ECE8',
+                            200: '#C7D9D1',
+                            500: '#739686',
+                        },
+                        gold: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-header {
+            background: rgba(11, 37, 29, 0.92);
+            backdrop-filter: blur(12px);
+        }
+        .hero-pattern {
+            background-color: #0B251D;
+            background-image: radial-gradient(rgba(16, 185, 129, 0.15) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- TOP INFORMATION BAR -->
+    <div class="bg-brand-950 text-slate-300 text-xs py-2.5 px-4 border-b border-brand-800/50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-400"></i>
+                    <span>Mampitts Lane, Shaftesbury, SP7 8FD</span>
+                </span>
+                <span class="hidden md:flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-brand-400"></i>
+                    <span>Mon - Fri: 08:00 - 18:00 | 24/7 Emergency Call-Out</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-5">
+                <span class="flex items-center gap-2 text-emerald-400 font-medium">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>£7,500 BUS Grant Approved Installer</span>
+                </span>
+                <a href="tel:01747850912" class="hover:text-white transition-colors font-semibold text-brand-400">
+                    <i class="fa-solid fa-phone mr-1"></i> 01747 850912
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 glass-header border-b border-brand-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- LOGO -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-leaf text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-white block leading-none">Greenlife</span>
+                    <span class="text-xs uppercase tracking-widest text-brand-400 font-semibold mt-1 block">Renewable Heating</span>
+                </div>
+            </a>
+
+            <!-- NAVIGATION -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-200">
+                <a href="#services" class="hover:text-brand-400 transition-colors">Services</a>
+                <a href="#heat-pumps" class="hover:text-brand-400 transition-colors">Heat Pumps & Grants</a>
+                <a href="#about" class="hover:text-brand-400 transition-colors">Why Greenlife</a>
+                <a href="#testimonials" class="hover:text-brand-400 transition-colors">Local Reviews</a>
+                <a href="#contact" class="hover:text-brand-400 transition-colors">Contact Us</a>
+            </nav>
+
+            <!-- HEADER CTA BUTTONS -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="tel:07700900842" class="px-4 py-2.5 rounded-lg text-xs font-bold text-white bg-amber-600 hover:bg-amber-500 transition-all flex items-center gap-2 shadow-md">
+                    <i class="fa-solid fa-bolt text-xs"></i>
+                    <span>Emergency Plumbing</span>
+                </a>
+                <a href="#contact" class="px-5 py-2.5 rounded-lg text-sm font-semibold text-brand-950 bg-brand-400 hover:bg-brand-500 hover:text-white transition-all duration-200 shadow-md shadow-brand-500/10">
+                    Book Heat Audit
+                </a>
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-200 hover:text-white focus:outline-none p-2" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-900 border-b border-brand-800 px-6 py-6 space-y-4 text-slate-200 font-medium">
+            <a href="#services" class="block hover:text-brand-400 py-1">Services</a>
+            <a href="#heat-pumps" class="block hover:text-brand-400 py-1">Heat Pumps & Grants</a>
+            <a href="#about" class="block hover:text-brand-400 py-1">Why Greenlife</a>
+            <a href="#testimonials" class="block hover:text-brand-400 py-1">Local Reviews</a>
+            <a href="#contact" class="block hover:text-brand-400 py-1">Contact Us</a>
+            <div class="pt-4 border-t border-brand-800 flex flex-col gap-3">
+                <a href="tel:01747850912" class="w-full text-center py-3 rounded-lg bg-brand-800 text-brand-400 font-bold">
+                    <i class="fa-solid fa-phone mr-2"></i> Call 01747 850912
+                </a>
+                <a href="#contact" class="w-full text-center py-3 rounded-lg bg-brand-400 text-brand-950 font-bold">
+                    Book Free Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-pattern relative text-white py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-900/90 to-transparent z-0"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- HERO LEFT CONTENT -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-800/80 border border-brand-700/60 text-brand-400 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-location-crosshairs"></i> Shaftesbury & Dorset Heating Engineers
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Sustainable Warmth for <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-200">Dorset Homes.</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-2xl leading-relaxed">
+                        Based in Mampitts Lane, Shaftesbury. We specialize in Air Source Heat Pumps, Precision Underfloor Heating, and Boiler Transitions. Cut your carbon footprint and slash energy bills with local, MCS-accredited plumbing experts.
+                    </p>
+
+                    <!-- HERO CTAS -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-brand-950 bg-brand-400 hover:bg-brand-500 hover:text-white transition-all shadow-xl shadow-brand-400/10 group">
+                            <span>Claim £7,500 Heat Pump Grant</span>
+                            <i class="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="tel:01747850912" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-white bg-brand-800/80 hover:bg-brand-800 border border-brand-700/50 transition-all">
+                            <i class="fa-solid fa-phone mr-3 text-brand-400"></i>
+                            <span>01747 850912</span>
+                        </a>
+                    </div>
+
+                    <!-- HERO METRICS -->
+                    <div class="pt-6 border-t border-brand-800/80 grid grid-cols-3 gap-4 text-center sm:text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">£7,500</div>
+                            <div class="text-xs text-slate-400 mt-1">Government Grant Available</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">0% VAT</div>
+                            <div class="text-xs text-slate-400 mt-1">On Heat Pump Installations</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Local Shaftesbury Support</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HERO RIGHT CARD / QUICK AUDIT -->
+                <div class="lg:col-span-5">
+                    <div class="bg-brand-900/90 border border-brand-700/50 rounded-2xl p-6 sm:p-8 shadow-2xl backdrop-blur-sm relative">
+                        <div class="absolute -top-3.5 right-6 bg-brand-500 text-brand-950 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                            Free Assessment
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-white mb-2">Check Home Eligibility</h3>
+                        <p class="text-xs text-slate-300 mb-6">Find out if your Shaftesbury home qualifies for zero VAT and the £7,500 BUS Grant.</p>
+
+                        <form action="#contact" method="GET" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Property Postcode</label>
+                                <input type="text" placeholder="e.g. SP7 8FD" class="w-full px-4 py-3 rounded-lg bg-brand-950/80 border border-brand-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-400 text-sm" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Current Heating Type</label>
+                                <select class="w-full px-4 py-3 rounded-lg bg-brand-950/80 border border-brand-700 text-white focus:outline-none focus:ring-2 focus:ring-brand-400 text-sm">
+                                    <option value="mains-gas">Mains Gas Boiler</option>
+                                    <option value="oil">Oil Boiler</option>
+                                    <option value="lpg">LPG System</option>
+                                    <option value="electric">Electric Storage Heaters</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Contact Phone Number</label>
+                                <input type="tel" placeholder="07123 456789" class="w-full px-4 py-3 rounded-lg bg-brand-950/80 border border-brand-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-400 text-sm" required>
+                            </div>
+                            <button type="submit" class="w-full py-3.5 rounded-lg text-sm font-bold bg-brand-400 text-brand-950 hover:bg-brand-500 hover:text-white transition-colors shadow-lg">
+                                Check Eligibility Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES BAR -->
+    <section class="bg-white border-b border-slate-200 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-center justify-between gap-6 opacity-80 grayscale hover:grayscale-0 transition-all duration-300">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-award text-2xl text-brand-700"></i>
+                    <div>
+                        <div class="text-xs font-bold text-slate-900 uppercase">MCS Certified</div>
+                        <div class="text-[10px] text-slate-500">Quality Assured Installer</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-fire text-2xl text-amber-600"></i>
+                    <div>
+                        <div class="text-xs font-bold text-slate-900 uppercase">Gas Safe Registered</div>
+                        <div class="text-[10px] text-slate-500">Fully Licensed Engineers</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-leaf text-2xl text-emerald-600"></i>
+                    <div>
+                        <div class="text-xs font-bold text-slate-900 uppercase">RECC Accredited</div>
+                        <div class="text-[10px] text-slate-500">Consumer Code Protection</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-star text-2xl text-gold-500"></i>
+                    <div>
+                        <div class="text-xs font-bold text-slate-900 uppercase">5.0 Star Rating</div>
+                        <div class="text-[10px] text-slate-500">Google Local Reviews</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-house-chimney-check text-2xl text-brand-700"></i>
+                    <div>
+                        <div class="text-xs font-bold text-slate-900 uppercase">OFTEC Registered</div>
+                        <div class="text-[10px] text-slate-500">Oil & Liquid Fuel Certified</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 text-xs font-bold uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">Our Core Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Complete Heating & Plumbing Solutions</h2>
+                <p class="text-slate-600">From precision renewable heating design to traditional plumbing repairs in Mampitts Lane and surrounding Dorset villages.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- SERVICE 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Air Source Heat Pumps</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Ultra-efficient heating systems engineered specifically for UK climates. Replaces traditional boilers and qualifies for the £7,500 BUS Grant.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-700 hover:text-brand-900 inline-flex items-center gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-border-all"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Underfloor Heating (UFH)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Seamless warm-water underfloor heating tailored for retrofits or new extensions. Designed to maximize heat pump efficiency.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-700 hover:text-brand-900 inline-flex items-center gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Solar Thermal Heating</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Harness sunlight to heat your domestic hot water. Reduce water heating energy costs by up to 60% annually.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-700 hover:text-brand-900 inline-flex items-center gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE 4 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-fire-flame-simple"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Boiler Conversions & Upgrades</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Transitioning from aging oil or gas boilers to high-efficiency condensing or hybrid heating setups. Gas Safe & OFTEC certified.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-700 hover:text-brand-900 inline-flex items-center gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE 5 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">General Plumbing & Repairs</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        From leaky pipes, cylinder upgrades, and radiator balancings to complete modern bathroom plumbing overhauls.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-700 hover:text-brand-900 inline-flex items-center gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE 6 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200/80 hover:border-brand-500 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">24/7 Emergency Response</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Rapid-dispatch local plumbers for urgent leaks, broken heating systems, and pressure loss across Shaftesbury & SP7.
+                    </p>
+                    <a href="tel:07700900842" class="text-sm font-bold text-amber-600 hover:text-amber-800 inline-flex items-center gap-2">
+                        <span>Call Emergency Line</span>
+                        <i class="fa-solid fa-phone text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED RENEWABLE GRANT SECTION -->
+    <section id="heat-pumps" class="py-20 bg-brand-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-gradient-to-r from-brand-800 to-brand-900 border border-brand-700/60 rounded-3xl p-8 lg:p-12 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-6">
+                        <span class="bg-brand-500/20 text-brand-400 border border-brand-500/30 text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full inline-block">
+                            Boiler Upgrade Scheme (BUS)
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+                            Get £7,500 Towards Your New Heat Pump in Shaftesbury
+                        </h2>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            The UK Government’s Boiler Upgrade Scheme provides upfront grants of £7,500 to help homeowners transition from fossil fuel boilers to clean, efficient heat pumps. As MCS-certified installers based on Mampitts Lane, Greenlife handles the entire application process on your behalf.
+                        </p>
+                        <ul class="space-y-3 text-sm text-slate-200">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-400"></i>
+                                <span>We apply directly for the £7,500 voucher on your behalf</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-400"></i>
+                                <span>0% VAT rate applied to all heat pump installations</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-400"></i>
+                                <span>Complete thermal loss calculation & system design included</span>
+                            </li>
+                        </ul>
+                        <div class="pt-4">
+                            <a href="#contact" class="inline-block px-8 py-4 rounded-xl bg-brand-400 text-brand-950 font-bold hover:bg-brand-500 hover:text-white transition-all shadow-lg">
+                                Apply For Your Grant Today
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 bg-brand-950/80 rounded-2xl p-6 border border-brand-700/50">
+                        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-calculator text-brand-400"></i>
+                            Example Cost Breakdown
+                        </h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between py-2 border-b border-brand-800">
+                                <span class="text-slate-400">Average Installation Cost</span>
+                                <span class="font-semibold text-white">£11,500</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-brand-800">
+                                <span class="text-slate-400">UK BUS Grant Discount</span>
+                                <span class="font-semibold text-emerald-400">- £7,500</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-brand-800">
+                                <span class="text-slate-400">VAT (0% Rate)</span>
+                                <span class="font-semibold text-emerald-400">£0</span>
+                            </div>
+                            <div class="flex justify-between py-3 font-bold text-base text-white">
+                                <span>Net Estimated Cost</span>
+                                <span class="text-brand-400">£4,000</span>
+                            </div>
+                        </div>
+                        <p class="text-[11px] text-slate-400 mt-4 italic">
+                            *Subject to property survey and suitability assessment. Greenlife Renewable Heating is an approved installer.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO & ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brand-600 text-xs font-bold uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">Local Dorset Heritage</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+                        Your Trusted Local Heating Engineers in Mampitts Lane, Shaftesbury
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        At <strong>Greenlife Renewable Heating</strong>, we bridge the gap between traditional plumbing excellence and modern eco-friendly heating technology. Operating right out of <strong>Mampitts Lane, Shaftesbury</strong>, our team brings decades of combined industry experience to local homeowners across Dorset and Wiltshire.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Whether you reside in a historic property in Shaftesbury town center needing sensitive heating modernization, or a new build near Motcombe or Cann, we engineer custom air source heat pump systems, underfloor heating, and high-efficiency plumbing setups tailored to your floorplan.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-map-location-dot text-brand-600 text-xl mb-2"></i>
+                            <h4 class="font-bold text-slate-900 text-sm">Service Coverage</h4>
+                            <p class="text-xs text-slate-500 mt-1">Shaftesbury, Motcombe, Gillingham, Semley, Fontmell Magna & SP7</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-user-shield text-brand-600 text-xl mb-2"></i>
+                            <h4 class="font-bold text-slate-900 text-sm">Full Guarantees</h4>
+                            <p class="text-xs text-slate-500 mt-1">Up to 10-year manufacturer warranties on heat pump units</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden bg-brand-900 p-8 text-white shadow-2xl">
+                        <div class="absolute -right-10 -bottom-10 opacity-10">
+                            <i class="fa-solid fa-leaf text-9xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-6">Why Local Homeowners Choose Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-brand-800 border border-brand-700 flex items-center justify-center shrink-0 text-brand-400">
+                                    <i class="fa-solid fa-house-laptop"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-base">In-House Design & Installation</h4>
+                                    <p class="text-slate-300 text-sm mt-1">We never sub-contract out our installations. Everything is managed by our qualified Shaftesbury team.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-brand-800 border border-brand-700 flex items-center justify-center shrink-0 text-brand-400">
+                                    <i class="fa-solid fa-coins"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-base">Transparent Pricing</h4>
+                                    <p class="text-slate-300 text-sm mt-1">Detailed fixed quotes with no hidden call-out fees or unexpected extras.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-brand-800 border border-brand-700 flex items-center justify-center shrink-0 text-brand-400">
+                                    <i class="fa-solid fa-headset"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-base">Dedicated Aftercare</h4>
+                                    <p class="text-slate-300 text-sm mt-1">Local ongoing servicing, system balancing, and 24/7 priority support for all our clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 text-xs font-bold uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">Customer Reviews</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">What Shaftesbury Residents Say</h2>
+                <p class="text-slate-600">Read genuine feedback from local homeowners who have upgraded their heating with Greenlife.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- TESTIMONIAL 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold-500 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                            "Greenlife replaced our old oil boiler with a Samsung Air Source Heat Pump. They handled the entire £7,500 grant application seamlessly. Our home in Mampitts Lane is warmer than ever and energy bills have dropped significantly!"
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-slate-900 text-sm">David & Sarah P.</div>
+                            <div class="text-xs text-slate-500">Mampitts Lane, Shaftesbury</div>
+                        </div>
+                        <span class="text-emerald-600 text-xs font-semibold bg-emerald-50 px-2.5 py-1 rounded-md">Verified Customer</span>
+                    </div>
+                </div>
+
+                <!-- TESTIMONIAL 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold-500 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                            "Called them out for an emergency leak on a Sunday evening. They arrived within 45 minutes, fixed the pipe clean and fast, and charged a very fair price. Fantastic local service."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-slate-900 text-sm">Mark H.</div>
+                            <div class="text-xs text-slate-500">Motcombe Road, Shaftesbury</div>
+                        </div>
+                        <span class="text-emerald-600 text-xs font-semibold bg-emerald-50 px-2.5 py-1 rounded-md">Verified Customer</span>
+                    </div>
+                </div>
+
+                <!-- TESTIMONIAL 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold-500 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                            "We had warm-water underfloor heating installed across our ground floor. The team was extremely polite, neat, and worked around our schedule. Highly recommend Greenlife!"
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-slate-900 text-sm">Emma L.</div>
+                            <div class="text-xs text-slate-500">Semley, near Shaftesbury</div>
+                        </div>
+                        <span class="text-emerald-600 text-xs font-semibold bg-emerald-50 px-2.5 py-1 rounded-md">Verified Customer</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & DIRECT CALL SECTION -->
+    <section id="contact" class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- CONTACT INFO & DIRECT TEL -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-brand-600 text-xs font-bold uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">Get In Touch</span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 mt-3 mb-4">Contact Our Shaftesbury Team</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Have questions about heat pumps, BUS grants, or need general plumbing assistance? Drop us a message or speak directly with our engineers.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- DIRECT PHONE BOX -->
+                        <div class="p-6 rounded-2xl bg-brand-900 text-white border border-brand-800">
+                            <div class="text-xs uppercase tracking-wider text-brand-400 font-bold mb-1">Direct Call Office</div>
+                            <div class="text-2xl font-extrabold mb-3">01747 850912</div>
+                            <p class="text-xs text-slate-300 mb-4">Monday to Friday: 8am - 6pm. Speaking directly to a qualified heating specialist.</p>
+                            <a href="tel:01747850912" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-brand-400 text-brand-950 font-bold hover:bg-brand-500 hover:text-white transition-all text-sm">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Call Office Now</span>
+                            </a>
+                        </div>
+
+                        <!-- EMERGENCY BOX -->
+                        <div class="p-6 rounded-2xl bg-slate-900 text-white">
+                            <div class="flex items-center gap-2 text-amber-500 text-xs font-bold uppercase mb-1">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                <span>24/7 Emergency Line</span>
+                            </div>
+                            <div class="text-xl font-bold mb-2">07700 900842</div>
+                            <p class="text-xs text-slate-400 mb-3">For urgent leaks, burst pipes, and sudden boiler failure in SP7.</p>
+                            <a href="tel:07700900842" class="inline-flex items-center gap-2 text-xs font-bold text-amber-400 hover:underline">
+                                <span>Call Emergency On-Call Engineer</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- LOCATION ADDRESS -->
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center shrink-0 font-bold">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Office Location</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">Greenlife Renewable Heating, Mampitts Lane, Shaftesbury, Dorset, SP7 8FD, United Kingdom.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="lg:col-span-7 bg-slate-50 border border-slate-200 p-8 sm:p-10 rounded-3xl shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Send Us a Message</h3>
+                    <p class="text-xs text-slate-600 mb-6">Fill in your details below and a member of our Shaftesbury team will respond within 2 business hours.</p>
+
+                    <form id="contact-form" class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for contacting Greenlife Renewable Heating. We will get back to you shortly!');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
+                                <input type="text" placeholder="John Smith" class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Phone Number *</label>
+                                <input type="tel" placeholder="07123 456789" class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm" required>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
+                                <input type="email" placeholder="john@example.co.uk" class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Service Required</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                                    <option>Air Source Heat Pump Quote</option>
+                                    <option>Underfloor Heating</option>
+                                    <option>Boiler Replacement / Upgrade</option>
+                                    <option>General Plumbing & Repairs</option>
+                                    <option>Solar Thermal Systems</option>
+                                    <option>Annual Service / Maintenance</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Property Address or Postcode</label>
+                            <input type="text" placeholder="Mampitts Lane area, Shaftesbury" class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">How Can We Help You? *</label>
+                            <textarea rows="4" placeholder="Tell us about your property and current heating system..." class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm" required></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold bg-brand-700 text-white hover:bg-brand-800 transition-colors shadow-lg">
+                            Submit Inquiry
+                        </button>
+
+                        <p class="text-[11px] text-slate-500 text-center mt-3">
+                            <i class="fa-solid fa-lock text-brand-600 mr-1"></i> Your personal details are protected and will only be used to respond to your inquiry.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-950 text-slate-400 py-12 border-t border-brand-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-brand-900">
+                
+                <!-- BRAND INFO -->
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-lg bg-brand-500 flex items-center justify-center text-white font-bold">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white tracking-tight">Greenlife</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Shaftesbury’s leading renewable heating specialists. MCS Certified Heat Pump installers serving Mampitts Lane, Dorset & surrounding areas.
+                    </p>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase text-white tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-brand-400 transition-colors">Air Source Heat Pumps</a></li>
+                        <li><a href="#services" class="hover:text-brand-400 transition-colors">Underfloor Heating</a></li>
+                        <li><a href="#heat-pumps" class="hover:text-brand-400 transition-colors">£7,500 BUS Grant Info</a></li>
+                        <li><a href="#about" class="hover:text-brand-400 transition-colors">About Our Team</a></li>
+                        <li><a href="#contact" class="hover:text-brand-400 transition-colors">Contact & Quotes</a></li>
+                    </ul>
+                </div>
+
+                <!-- LOCAL COVERAGE AREA -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase text-white tracking-wider mb-4">Local Coverage</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li>Shaftesbury (SP7)</li>
+                        <li>Mampitts Lane & Cann</li>
+                        <li>Motcombe & Enmore Green</li>
+                        <li>Gillingham & Fontmell Magna</li>
+                        <li>Semley & Cranborne Chase</li>
+                    </ul>
+                </div>
+
+                <!-- ACCREDITATIONS -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase text-white tracking-wider mb-4">Certifications</h4>
+                    <div class="flex flex-wrap gap-2 text-xs text-slate-300">
+                        <span class="px-2.5 py-1 rounded bg-brand-900 border border-brand-800">MCS #304912</span>
+                        <span class="px-2.5 py-1 rounded bg-brand-900 border border-brand-800">Gas Safe #592014</span>
+                        <span class="px-2.5 py-1 rounded bg-brand-900 border border-brand-800">RECC Member</span>
+                        <span class="px-2.5 py-1 rounded bg-brand-900 border border-brand-800">OFTEC Registered</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COPYRIGHT & LEGAL -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs gap-4 text-slate-500">
+                <div>
+                    &copy; <span id="year"></span> Greenlife Renewable Heating. All rights reserved. Mampitts Lane, Shaftesbury, UK.
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-300">Cookie Preferences</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR MOBILE MENU & DYNAMIC YEAR -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>

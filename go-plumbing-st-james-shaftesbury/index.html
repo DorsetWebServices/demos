@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Plumbing | Expert Plumbers in St James & Shaftesbury</title>
+    <meta name="description" content="Go Plumbing - Premium, reliable plumbing and heating services in St James, Shaftesbury, Dorset. Gas Safe registered, 24/7 emergency response, boiler repairs, and bathroom installations.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0B132B',
+                            slate: '#1C2541',
+                            copper: '#C86D51',
+                            copperHover: '#B25B40',
+                            gold: '#D4AF37',
+                            lightBg: '#F8FAFC',
+                            cardBg: '#111B38'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .copper-gradient-text {
+            background: linear-gradient(135deg, #E89A7A 0%, #C86D51 50%, #9E472A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .copper-bg-gradient {
+            background: linear-gradient(135deg, #C86D51 0%, #A8543A 100%);
+        }
+        .glass-header {
+            background: rgba(11, 19, 43, 0.88);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-brand-navy text-slate-100 font-sans antialiased selection:bg-brand-copper selection:text-white">
+
+    <!-- TOP BAR -->
+    <div class="bg-slate-950 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-2 text-emerald-400 font-medium">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    24/7 Emergency Dispatch Active
+                </span>
+                <span class="hidden md:inline-flex items-center gap-1.5 text-slate-400">
+                    <i class="fa-regular fa-clock text-brand-copper"></i> Mon - Sun: 24 Hours
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-slate-400">
+                    <i class="fa-solid fa-location-dot text-brand-copper"></i> Serving St James, Shaftesbury & SP7
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="mailto:info@goplumbing-shaftesbury.co.uk" class="hover:text-brand-copper transition-colors hidden sm:inline-block">
+                    <i class="fa-regular fa-envelope text-brand-copper mr-1"></i> info@goplumbing-shaftesbury.co.uk
+                </a>
+                <span class="text-slate-700 hidden sm:inline">|</span>
+                <span class="text-brand-gold font-semibold flex items-center gap-1">
+                    <i class="fa-solid fa-shield-halved text-brand-gold"></i> Gas Safe #592014
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 glass-header border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl copper-bg-gradient flex items-center justify-center text-white text-xl shadow-lg shadow-brand-copper/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-extrabold tracking-tight text-white block leading-none">GO <span class="copper-gradient-text">PLUMBING</span></span>
+                        <span class="text-[10px] uppercase tracking-widest text-slate-400 font-semibold block mt-1">St James • Shaftesbury</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+                    <a href="#services" class="hover:text-brand-copper transition-colors">Services</a>
+                    <a href="#about" class="hover:text-brand-copper transition-colors">Why Choose Us</a>
+                    <a href="#local-seo" class="hover:text-brand-copper transition-colors">St James Area</a>
+                    <a href="#testimonials" class="hover:text-brand-copper transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-brand-copper transition-colors">Contact Us</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:01747859204" class="text-right">
+                        <span class="text-[11px] text-slate-400 block font-medium uppercase tracking-wider">Direct Local Line</span>
+                        <span class="text-lg font-bold text-white tracking-wide hover:text-brand-copper transition-colors">01747 859204</span>
+                    </a>
+                    <a href="tel:01747859204" class="copper-bg-gradient hover:opacity-95 text-white text-sm font-semibold px-5 py-3 rounded-xl shadow-lg shadow-brand-copper/25 flex items-center gap-2 transition-all hover:scale-105">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>Call Now</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="lg:hidden hidden border-t border-slate-800 bg-brand-navy px-4 pt-3 pb-6 space-y-3" id="mobileMenu">
+            <a href="#services" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-copper">Services</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-copper">Why Choose Us</a>
+            <a href="#local-seo" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-copper">St James Area</a>
+            <a href="#testimonials" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-copper">Reviews</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-copper">Contact Us</a>
+            <div class="pt-4 border-t border-slate-800 flex flex-col gap-3">
+                <a href="tel:01747859204" class="w-full text-center copper-bg-gradient text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-brand-copper/20">
+                    <i class="fa-solid fa-phone"></i> Call 01747 859204
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden">
+        <!-- Subtle Glow Background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-copper/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-copper/15 border border-brand-copper/30 text-brand-copper text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-location-crosshairs"></i> Your Local St James Plumbing Specialist
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                        Premium Plumbing & Heating Solutions in <span class="copper-gradient-text">Shaftesbury</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        From emergency leaks on St James Street to complete luxury bathroom renovations across Shaftesbury. Gas Safe registered, fully insured, and serving SP7 with unmatched craftsmanship.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="tel:01747859204" class="w-full sm:w-auto copper-bg-gradient hover:opacity-95 text-white font-bold text-base px-8 py-4 rounded-xl shadow-xl shadow-brand-copper/30 flex items-center justify-center gap-3 transition-all hover:-translate-y-0.5">
+                            <i class="fa-solid fa-phone-volume text-lg"></i>
+                            <span>Emergency Callout: 01747 859204</span>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto bg-slate-800/90 hover:bg-slate-800 text-slate-200 font-semibold text-base px-7 py-4 rounded-xl border border-slate-700/80 flex items-center justify-center gap-2 transition-all">
+                            <span>Request Free Quote</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-brand-copper"></i>
+                        </a>
+                    </div>
+
+                    <!-- Micro Trust Badges -->
+                    <div class="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-slate-400 text-xs">
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-circle-check text-brand-copper text-sm"></i>
+                            <span>No Call-Out Fee Options</span>
+                        </div>
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-circle-check text-brand-copper text-sm"></i>
+                            <span>30-60 Min Local Dispatch</span>
+                        </div>
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-circle-check text-brand-copper text-sm"></i>
+                            <span>Gas Safe Registered</span>
+                        </div>
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-circle-check text-brand-copper text-sm"></i>
+                            <span>5-Star Rated Service</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Visual Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl bg-gradient-to-b from-slate-800/90 to-brand-cardBg p-6 sm:p-8 border border-slate-700/60 shadow-2xl">
+                        <!-- Rating Header -->
+                        <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+                            <div>
+                                <div class="flex text-amber-400 text-sm gap-1 mb-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-xs text-slate-400 font-medium">4.9/5 Average Rating in Shaftesbury</span>
+                            </div>
+                            <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20">
+                                Verified Local
+                            </span>
+                        </div>
+
+                        <!-- Highlights List -->
+                        <div class="py-6 space-y-4">
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-8 h-8 rounded-lg bg-brand-copper/10 text-brand-copper flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Rapid St James Response</h4>
+                                    <p class="text-xs text-slate-400 mt-0.5">Based locally in St James, ensuring fast arrival for urgent leaks, burst pipes & boiler breakdowns.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-8 h-8 rounded-lg bg-brand-copper/10 text-brand-copper flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-fire-flame-curved"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Boiler & Heating Masters</h4>
+                                    <p class="text-xs text-slate-400 mt-0.5">Annual servicing, repairs, and energy-efficient system installs with up to 10-year warranties.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-8 h-8 rounded-lg bg-brand-copper/10 text-brand-copper flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Transparent Pricing</h4>
+                                    <p class="text-xs text-slate-400 mt-0.5">Clear written quotes prior to starting work. No hidden fees or unexpected charges.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Action Card Inside -->
+                        <div class="bg-slate-900/90 rounded-xl p-4 border border-slate-800 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
+                                <span class="text-xs font-medium text-slate-300">Engineers available in SP7 right now</span>
+                            </div>
+                            <a href="#contact" class="text-xs font-bold text-brand-copper hover:underline">Book Slot &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES STRIP -->
+    <section class="bg-slate-950/60 border-y border-slate-800/80 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-center justify-around gap-6 opacity-80 grayscale hover:grayscale-0 transition-all">
+                <div class="flex items-center gap-2 text-slate-300 font-semibold text-sm">
+                    <i class="fa-solid fa-shield-virus text-brand-copper text-2xl"></i>
+                    <span>GAS SAFE REGISTERED</span>
+                </div>
+                <div class="flex items-center gap-2 text-slate-300 font-semibold text-sm">
+                    <i class="fa-solid fa-award text-brand-copper text-2xl"></i>
+                    <span>CITY & GUILDS CERTIFIED</span>
+                </div>
+                <div class="flex items-center gap-2 text-slate-300 font-semibold text-sm">
+                    <i class="fa-solid fa-droplet text-brand-copper text-2xl"></i>
+                    <span>WATER SAFE APPROVED</span>
+                </div>
+                <div class="flex items-center gap-2 text-slate-300 font-semibold text-sm">
+                    <i class="fa-solid fa-house-chimney-check text-brand-copper text-2xl"></i>
+                    <span>FULL PUBLIC LIABILITY</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID SECTION -->
+    <section id="services" class="py-20 lg:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-bold text-brand-copper uppercase tracking-widest">Our Plumbing & Heating Services</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Complete Plumbing Expertise for Homes & Businesses in SP7</p>
+                <p class="text-slate-400 text-base">Whether it’s a minor drip or a complete central heating overhaul, Go Plumbing provides trusted engineering with clean, lasting solutions.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-brand-cardBg border border-slate-800 rounded-2xl p-8 hover:border-brand-copper/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-copper/10 text-brand-copper flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">24/7 Emergency Plumbing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Burst pipes, severe leaks, overflowing toilets, or lost water pressure. Our St James team responds rapidly to prevent damage to your property.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Fast arrival across Shaftesbury</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Water supply restoration</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Trace and access leaks</li>
+                    </ul>
+                    <a href="tel:01747859204" class="text-sm font-bold text-brand-copper flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        <span>Call Emergency Line</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-brand-cardBg border border-slate-800 rounded-2xl p-8 hover:border-brand-copper/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-copper/10 text-brand-copper flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Boiler Services & Repairs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Gas Safe registered boiler installation, annual servicing, diagnostic fault finding, and efficient replacements for modern, reliable heating.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Worcester Bosch, Baxi, Vaillant</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Boiler health checks & CP12s</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Up to 10-year manufacturer warranty</li>
+                    </ul>
+                    <a href="#contact" class="text-sm font-bold text-brand-copper flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        <span>Book Boiler Service</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-brand-cardBg border border-slate-800 rounded-2xl p-8 hover:border-brand-copper/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-copper/10 text-brand-copper flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bath"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Bathroom Installation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Turnkey bathroom refurbishments, high-end walk-in showers, freestanding baths, and pipework re-routing tailored to period and modern homes.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Full design & installation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> High-end sanitaryware fitting</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> En-suites & wet rooms</li>
+                    </ul>
+                    <a href="#contact" class="text-sm font-bold text-brand-copper flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        <span>Request Bathroom Quote</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-brand-cardBg border border-slate-800 rounded-2xl p-8 hover:border-brand-copper/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-copper/10 text-brand-copper flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Central Heating & Radiators</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Keep your home cozy with high-efficiency radiator upgrades, thermostatic radiator valves (TRVs), power flushing, and underfloor heating setups.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Power flushing cold spots</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Smart thermostats (Nest / Hive)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> System pressure balancing</li>
+                    </ul>
+                    <a href="#contact" class="text-sm font-bold text-brand-copper flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        <span>Explore Heating Options</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-brand-cardBg border border-slate-800 rounded-2xl p-8 hover:border-brand-copper/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-copper/10 text-brand-copper flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Leak Detection & Pipe Repairs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Non-invasive leak detection using thermal imaging and moisture meters to pinpoint concealed water leaks behind walls or under stone floors.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Hidden leak localization</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Lead pipe upgrades & repairs</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Minimal disruptive intrusion</li>
+                    </ul>
+                    <a href="#contact" class="text-sm font-bold text-brand-copper flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        <span>Book Leak Inspector</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-brand-cardBg border border-slate-800 rounded-2xl p-8 hover:border-brand-copper/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-copper/10 text-brand-copper flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General Plumbing Maintenance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        From dripping taps and unblocking drains to installing unvented hot water cylinders and water softeners for hard water in North Dorset.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mb-6 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Tap replacement & re-seating</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Water softener installation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-copper"></i> Unvented hot water cylinders</li>
+                    </ul>
+                    <a href="#contact" class="text-sm font-bold text-brand-copper flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        <span>General Enquiries</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO CONTENT SECTION -->
+    <section id="local-seo" class="py-20 bg-slate-950/70 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 text-brand-copper text-xs font-semibold">
+                        <i class="fa-solid fa-map-pin"></i> Local St James & Shaftesbury Focus
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
+                        Dedicated Local Plumbing Services for <span class="copper-gradient-text">St James, Shaftesbury</span>
+                    </h2>
+
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Nestled at the foot of Gold Hill, the historical neighborhood of <strong class="text-white">St James, Shaftesbury</strong> presents unique plumbing needs. From characterful stone cottages with period pipework to contemporary family residences across the SP7 area, <strong class="text-white">Go Plumbing</strong> brings deep local knowledge and specialized techniques.
+                    </p>
+
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        We understand the specific challenges of water hardness in North Dorset and the intricacies of heritage plumbing systems. Whether you live near St James' Church, along Pump Lane, or anywhere in the broader Blackmore Vale, our engineers are based right around the corner for prompt, courteous, and efficient service.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="bg-brand-navy p-4 rounded-xl border border-slate-800">
+                            <span class="block text-brand-copper font-bold text-lg mb-1">Local Fast Response</span>
+                            <span class="text-xs text-slate-400">Direct access to St James Street, Pump Lane, and surrounding Shaftesbury bypasses.</span>
+                        </div>
+                        <div class="bg-brand-navy p-4 rounded-xl border border-slate-800">
+                            <span class="block text-brand-copper font-bold text-lg mb-1">Heritage & Modern</span>
+                            <span class="text-xs text-slate-400">Expert care for period cottage plumbing and high-efficiency modern boiler setups.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="relative bg-brand-cardBg rounded-2xl p-8 border border-slate-800 space-y-6">
+                        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-compass text-brand-copper"></i> Servicing St James & Nearby Postcodes
+                        </h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            We proudly provide comprehensive plumbing, heating, and emergency callout services to the following local communities:
+                        </p>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
+                            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800/80 font-medium text-slate-300">
+                                <i class="fa-solid fa-location-dot text-brand-copper mr-1"></i> St James (SP7)
+                            </div>
+                            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800/80 font-medium text-slate-300">
+                                <i class="fa-solid fa-location-dot text-brand-copper mr-1"></i> Shaftesbury Town
+                            </div>
+                            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800/80 font-medium text-slate-300">
+                                <i class="fa-solid fa-location-dot text-brand-copper mr-1"></i> Gold Hill
+                            </div>
+                            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800/80 font-medium text-slate-300">
+                                <i class="fa-solid fa-location-dot text-brand-copper mr-1"></i> Motcombe
+                            </div>
+                            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800/80 font-medium text-slate-300">
+                                <i class="fa-solid fa-location-dot text-brand-copper mr-1"></i> Fontmell Magna
+                            </div>
+                            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800/80 font-medium text-slate-300">
+                                <i class="fa-solid fa-location-dot text-brand-copper mr-1"></i> Cann
+                            </div>
+                            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800/80 font-medium text-slate-300">
+                                <i class="fa-solid fa-location-dot text-brand-copper mr-1"></i> Compton Abbas
+                            </div>
+                            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800/80 font-medium text-slate-300">
+                                <i class="fa-solid fa-location-dot text-brand-copper mr-1"></i> Melbury Abbas
+                            </div>
+                            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-slate-800/80 font-medium text-slate-300">
+                                <i class="fa-solid fa-location-dot text-brand-copper mr-1"></i> SP7 & SP8
+                            </div>
+                        </div>
+
+                        <div class="p-4 bg-brand-copper/10 rounded-xl border border-brand-copper/20 flex items-center justify-between">
+                            <div>
+                                <span class="block text-xs font-bold text-white">Not sure if we cover your road?</span>
+                                <span class="text-[11px] text-slate-400">Call our friendly team to confirm immediate availability.</span>
+                            </div>
+                            <a href="tel:01747859204" class="text-xs font-bold bg-brand-copper text-white px-3 py-2 rounded-lg hover:bg-brand-copperHover transition-colors">
+                                Ask Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-bold text-brand-copper uppercase tracking-widest">Client Feedback</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Trusted by St James Residents</p>
+                <p class="text-slate-400 text-sm">Read real feedback from local Shaftesbury homeowners and businesses.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-brand-cardBg border border-slate-800 p-7 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "When our boiler gave up on a freezing Sunday morning in St James, Go Plumbing was at our door within 45 minutes. Fixed the issue swiftly, replaced a faulty valve, and cleaned up meticulously."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="block font-bold text-white text-sm">Arthur P.</span>
+                            <span class="text-xs text-slate-500">St James Street, Shaftesbury</span>
+                        </div>
+                        <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded">Verified Customer</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-brand-cardBg border border-slate-800 p-7 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Go Plumbing completed a total bathroom makeover in our cottage. Fitting new copper pipes and high-end fixtures into an old building wasn't easy, but their workmanship is unmatched."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="block font-bold text-white text-sm">Eleanor M.</span>
+                            <span class="text-xs text-slate-500">Pump Lane, Shaftesbury</span>
+                        </div>
+                        <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded">Verified Customer</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-brand-cardBg border border-slate-800 p-7 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Clear upfront quote with zero hidden charges. They installed a water softener and serviced our central heating system. Professional, polite, and top-tier expertise!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="block font-bold text-white text-sm">David & Sarah K.</span>
+                            <span class="text-xs text-slate-500">Motcombe Rd, SP7</span>
+                        </div>
+                        <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded">Verified Customer</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & CALL SECTION -->
+    <section id="contact" class="py-20 lg:py-28 bg-slate-950/80 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="text-xs font-bold text-brand-copper uppercase tracking-widest mb-2">Get In Touch</h2>
+                        <h3 class="text-3xl font-extrabold text-white">Need a Reliable Plumber in St James?</h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Reach out today for immediate emergency assistance, a free project estimate, or to schedule annual heating maintenance.
+                        </p>
+                    </div>
+
+                    <!-- Direct Call Card -->
+                    <div class="p-6 rounded-2xl copper-bg-gradient text-white shadow-xl space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-white/80">Immediate Assistance</span>
+                            <i class="fa-solid fa-phone-volume text-2xl animate-pulse"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-white/90 block">Speak directly with an engineer:</span>
+                            <a href="tel:01747859204" class="text-3xl font-black tracking-tight text-white hover:underline">01747 859204</a>
+                        </div>
+                        <p class="text-xs text-white/80 border-t border-white/20 pt-3">
+                            Available 24 hours a day, 7 days a week for plumbing emergencies in St James & Shaftesbury.
+                        </p>
+                    </div>
+
+                    <!-- Location Details -->
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-brand-copper flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Operating Address</h4>
+                                <p class="text-xs text-slate-400 mt-1">St James Street, Shaftesbury, Dorset, SP7 8HE, UK</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-brand-copper flex items-center justify-center shrink-0">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Operating Hours</h4>
+                                <p class="text-xs text-slate-400 mt-1">Emergency Dispatch: 24/7/365<br>Standard Hours: Mon - Sat: 07:00 - 19:00</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-brand-copper flex items-center justify-center shrink-0">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Email Enquiries</h4>
+                                <p class="text-xs text-slate-400 mt-1">info@goplumbing-shaftesbury.co.uk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-brand-cardBg border border-slate-800 p-8 sm:p-10 rounded-2xl shadow-2xl">
+                        <h3 class="text-xl font-bold text-white mb-2">Send Us a Message / Book a Quote</h3>
+                        <p class="text-slate-400 text-xs mb-8">Fill in your details below and our St James team will contact you within 1 hour.</p>
+
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your enquiry has been received. Go Plumbing will contact you shortly.');" class="space-y-5">
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Your Full Name *</label>
+                                    <input type="text" required placeholder="e.g. John Smith" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-copper transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number *</label>
+                                    <input type="tel" required placeholder="e.g. 07123 456789" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-copper transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Postcode *</label>
+                                    <input type="text" required placeholder="e.g. SP7 8HE" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-copper transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required</label>
+                                    <select class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-copper transition-colors">
+                                        <option>Emergency Repair</option>
+                                        <option>Boiler Service / Repair</option>
+                                        <option>Bathroom Fitting</option>
+                                        <option>Central Heating / Radiators</option>
+                                        <option>Leak Detection</option>
+                                        <option>General Plumbing</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Describe Your Plumbing Need</label>
+                                <textarea rows="4" placeholder="Tell us about the issue or requested project..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-copper transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full copper-bg-gradient hover:opacity-95 text-white font-bold text-base py-4 rounded-xl shadow-lg shadow-brand-copper/30 transition-all hover:scale-[1.01]">
+                                Submit Request &rarr;
+                            </button>
+
+                            <p class="text-[11px] text-slate-500 text-center">
+                                We respect your privacy. Your details are used solely to fulfill your plumbing service request.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 text-xs border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg copper-bg-gradient flex items-center justify-center text-white text-sm">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <span class="text-xl font-extrabold text-white tracking-tight">GO <span class="copper-gradient-text">PLUMBING</span></span>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Your trusted, Gas Safe registered local plumbers based in St James, Shaftesbury. Delivering excellence in heating and plumbing across North Dorset.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Quick Links</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="#services" class="hover:text-brand-copper transition-colors">Emergency Plumbing</a></li>
+                        <li><a href="#services" class="hover:text-brand-copper transition-colors">Boiler Servicing</a></li>
+                        <li><a href="#services" class="hover:text-brand-copper transition-colors">Bathroom Installations</a></li>
+                        <li><a href="#local-seo" class="hover:text-brand-copper transition-colors">St James Area Coverage</a></li>
+                        <li><a href="#contact" class="hover:text-brand-copper transition-colors">Contact & Quotes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coverage Areas -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Local Areas Served</h4>
+                    <ul class="space-y-2.5">
+                        <li>St James Street & Pump Lane</li>
+                        <li>Shaftesbury Town Centre</li>
+                        <li>Gold Hill & Environs</li>
+                        <li>Motcombe & Fontmell Magna</li>
+                        <li>Melbury Abbas & SP7 Region</li>
+                    </ul>
+                </div>
+
+                <!-- Emergency Contact Footer -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Emergency Callout</h4>
+                    <p class="text-slate-400 text-xs mb-3">Available around the clock for leaks, bursts, and boiler failures in St James.</p>
+                    <a href="tel:01747859204" class="inline-flex items-center gap-2 text-brand-copper font-bold text-lg hover:underline">
+                        <i class="fa-solid fa-phone"></i> 01747 859204
+                    </a>
+                    <div class="mt-4 pt-4 border-t border-slate-800 text-[11px] text-slate-500">
+                        Gas Safe Registration: #592014
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500">
+                <p>&copy; <span id="year"></span> Go Plumbing (St James, Shaftesbury). All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-400">Gas Safe Verification</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING MOBILE QUICK CALL BUTTON -->
+    <div class="fixed bottom-4 right-4 z-50 md:hidden">
+        <a href="tel:01747859204" class="copper-bg-gradient text-white p-4 rounded-full shadow-2xl flex items-center justify-center text-xl border-2 border-white/20 active:scale-95 transition-transform" aria-label="Call Plumber Now">
+            <i class="fa-solid fa-phone-volume"></i>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT FOR DYNAMIC FUNCTIONALITY -->
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    </script>
+</body>
+</html>

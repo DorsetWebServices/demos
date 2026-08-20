@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A & P Hare Limited | Artisan Bakery Shaftesbury | Mampitts Lane</title>
+    <meta name="description" content="A & P Hare Limited is Shaftesbury's premier artisan bakery on Mampitts Lane. Specialising in long-fermentation sourdough, butter croissants, and local Dorset treats.">
+    
+    <!-- Google Font: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: '#FAF6F0',
+                        linen: '#F3EDE2',
+                        bark: '#1C1917',
+                        espresso: '#2A2421',
+                        terracotta: {
+                            50: '#FDF8F6',
+                            100: '#FBF0EB',
+                            500: '#A84325',
+                            600: '#8C351B',
+                            700: '#702813',
+                        },
+                        wheat: {
+                            400: '#E0B56C',
+                            500: '#CD9743',
+                            600: '#B37D2B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF6F0;
+            color: #1C1917;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-terracotta-500 selection:text-white">
+
+    <!-- TOP BAR / HOURS & INFO -->
+    <div class="bg-espresso text-stone-300 text-xs sm:text-sm py-2.5 px-4 border-b border-stone-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6 flex-wrap justify-center md:justify-start">
+                <span class="flex items-center gap-2 text-stone-300">
+                    <i class="fa-solid font-bold fa-location-dot text-wheat-400"></i>
+                    <span>Mampitts Lane, Shaftesbury, SP7 9FL</span>
+                </span>
+                <span class="hidden sm:inline text-stone-600">|</span>
+                <span class="flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-wheat-400"></i>
+                    <span>Tues – Sat: 07:00 - 15:00 | Sun: 08:00 - 13:00</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+441747854321" class="hover:text-wheat-400 transition-colors flex items-center gap-1.5 font-medium">
+                    <i class="fa-solid fa-phone text-xs text-wheat-400"></i> 01747 854321
+                </a>
+                <span class="text-stone-700">•</span>
+                <div class="flex gap-3 text-stone-400">
+                    <a href="#" class="hover:text-wheat-400 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-wheat-400 transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-stone-200/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full bg-terracotta-600 flex items-center justify-center text-white shadow-md group-hover:bg-terracotta-700 transition-colors">
+                        <i class="fa-solid fa-wheat-awn text-lg"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-lg sm:text-xl tracking-tight text-espresso leading-none">A & P HARE</span>
+                        <span class="text-[10px] tracking-widest font-semibold uppercase text-terracotta-600 mt-1">Limited • Artisan Bakery</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-stone-700">
+                    <a href="#about" class="hover:text-terracotta-600 transition-colors">Our Story</a>
+                    <a href="#bakes" class="hover:text-terracotta-600 transition-colors">Fresh Bakes</a>
+                    <a href="#craft" class="hover:text-terracotta-600 transition-colors">The Craft</a>
+                    <a href="#reviews" class="hover:text-terracotta-600 transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-terracotta-600 transition-colors">Find Us</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="#contact" class="bg-terracotta-600 hover:bg-terracotta-700 text-white px-5 py-2.5 rounded-lg font-semibold text-sm shadow-sm transition-all transform hover:-translate-y-0.5">
+                        Order Ahead
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Icon (Visual Only for single page simplicity) -->
+                <button class="md:hidden text-stone-800 p-2 focus:outline-none" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-terracotta-100 text-terracotta-700 text-xs font-bold tracking-wide uppercase">
+                        <i class="fa-solid fa-fire text-terracotta-500"></i> Freshly Baked Daily on Mampitts Lane
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-espresso tracking-tight leading-[1.15]">
+                        Authentic Handcrafted Bread & Pastries in <span class="text-terracotta-600 underline decoration-wheat-400 decoration-wavy decoration-2 underline-offset-8">Shaftesbury</span>
+                    </h1>
+                    
+                    <p class="text-lg text-stone-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        At <strong class="text-stone-800 font-semibold">A & P Hare Limited</strong>, we honour ancient slow-fermentation traditions. Every loaf of sourdough, flaky croissant, and tea-time sweet treat is baked from scratch using locally sourced Wessex grains and rich Dorset butter.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#bakes" class="w-full sm:w-auto bg-terracotta-600 hover:bg-terracotta-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-terracotta-600/20 transition-all text-center">
+                            Explore Today's Counter
+                        </a>
+                        <a href="tel:+441747854321" class="w-full sm:w-auto bg-white border-2 border-stone-300 hover:border-stone-800 text-stone-800 font-bold px-8 py-3.5 rounded-xl transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-phone text-terracotta-600"></i> Call Bakery
+                        </a>
+                    </div>
+
+                    <!-- TRUST BADGES -->
+                    <div class="pt-8 border-t border-stone-300/60 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <div class="flex items-center justify-center lg:justify-start text-amber-500 gap-1 text-sm mb-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-xs font-bold text-stone-800">4.9★ Google Reviews</p>
+                            <p class="text-[11px] text-stone-500">Local Shaftesbury Favorite</p>
+                        </div>
+                        <div class="text-center lg:text-left border-l border-stone-300/60 pl-4">
+                            <i class="fa-solid fa-seedling text-terracotta-600 text-lg mb-1"></i>
+                            <p class="text-xs font-bold text-stone-800">100% Organic UK</p>
+                            <p class="text-[11px] text-stone-500">Stoneground Grains</p>
+                        </div>
+                        <div class="text-center lg:text-left border-l border-stone-300/60 pl-4">
+                            <i class="fa-solid fa-hourglass-half text-terracotta-600 text-lg mb-1"></i>
+                            <p class="text-xs font-bold text-stone-800">36-Hour Ferment</p>
+                            <p class="text-[11px] text-stone-500">Gut-Friendly Loaves</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Image Showcase Grid -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Main Image -->
+                        <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white relative z-10">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=1000" 
+                                 alt="Freshly baked artisan sourdough bread at A & P Hare Bakery" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <!-- Secondary Decorative Floating Card -->
+                        <div class="absolute -bottom-6 -left-6 z-20 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-stone-200 hidden sm:flex items-center gap-4 max-w-xs">
+                            <div class="w-12 h-12 bg-wheat-400/20 rounded-xl flex items-center justify-center text-wheat-600 shrink-0">
+                                <i class="fa-solid fa-store text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-stone-900">Visit Us on Mampitts Lane</p>
+                                <p class="text-[11px] text-stone-500">Oven doors open 7am Sharp</p>
+                            </div>
+                        </div>
+                        <!-- Background Frame Decoration -->
+                        <div class="absolute -top-4 -right-4 w-full h-full rounded-3xl bg-terracotta-600/10 border-2 border-terracotta-600/20 -z-0"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED SERVICES / BAKED GOODS GRID -->
+    <section id="bakes" class="py-20 bg-linen/50 border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-terracotta-600">Fresh From The Oven</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-espresso mt-2">Baked Fresh Daily in Shaftesbury</h2>
+                <p class="text-stone-600 mt-4 text-base">We combine time-honoured baking heritage with top-tier local ingredients. Here is what you’ll find on our counter every morning.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Item 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-stone-200/80 group">
+                    <div class="h-48 rounded-xl overflow-hidden mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&q=80&w=600" alt="Artisan Sourdough" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-espresso/80 text-white text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">Signature</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-espresso group-hover:text-terracotta-600 transition-colors">Heritage Sourdoughs</h3>
+                        <span class="text-xs font-extrabold bg-wheat-400/20 text-wheat-600 px-2.5 py-1 rounded-full">Daily</span>
+                    </div>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                        Naturally leavened over 36 hours for rich flavour and exceptional digestability. Open crumb, blistering crust, and ultimate satisfaction.
+                    </p>
+                    <ul class="text-xs text-stone-500 space-y-1.5 font-medium border-t border-stone-100 pt-3">
+                        <li><i class="fa-solid fa-check text-terracotta-500 mr-1.5"></i> Classic White Sourdough</li>
+                        <li><i class="fa-solid fa-check text-terracotta-500 mr-1.5"></i> Dorset Malted Seeded</li>
+                        <li><i class="fa-solid fa-check text-terracotta-500 mr-1.5"></i> Dark Rye & Caraway</li>
+                    </ul>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-stone-200/80 group">
+                    <div class="h-48 rounded-xl overflow-hidden mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=600" alt="Viennoiserie & Croissants" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-espresso group-hover:text-terracotta-600 transition-colors">Viennoiserie & Pastries</h3>
+                        <span class="text-xs font-extrabold bg-wheat-400/20 text-wheat-600 px-2.5 py-1 rounded-full">Hand-Laminated</span>
+                    </div>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                        Crafted using 100% West Country grass-fed butter. Flaky, golden, and multi-layered pasties that melt in your mouth.
+                    </p>
+                    <ul class="text-xs text-stone-500 space-y-1.5 font-medium border-t border-stone-100 pt-3">
+                        <li><i class="fa-solid fa-check text-terracotta-500 mr-1.5"></i> Butter Croissants & Pain au Chocolat</li>
+                        <li><i class="fa-solid fa-check text-terracotta-500 mr-1.5"></i> Almond & Apricot Danish</li>
+                        <li><i class="fa-solid fa-check text-terracotta-500 mr-1.5"></i> Cinnamon & Cardamom Knots</li>
+                    </ul>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-stone-200/80 group">
+                    <div class="h-48 rounded-xl overflow-hidden mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&q=80&w=600" alt="Savouries & Lunch Items" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-espresso group-hover:text-terracotta-600 transition-colors">Savouries & Sausage Rolls</h3>
+                        <span class="text-xs font-extrabold bg-wheat-400/20 text-wheat-600 px-2.5 py-1 rounded-full">Hot & Fresh</span>
+                    </div>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                        Hearty takeaway lunches made with local free-range pork, farm-fresh eggs, and rich seasonal vegetable fillings.
+                    </p>
+                    <ul class="text-xs text-stone-500 space-y-1.5 font-medium border-t border-stone-100 pt-3">
+                        <li><i class="fa-solid fa-check text-terracotta-500 mr-1.5"></i> Award-Winning Dorset Pork Rolls</li>
+                        <li><i class="fa-solid fa-check text-terracotta-500 mr-1.5"></i> Roasted Squash & Goat's Cheese Tarts</li>
+                        <li><i class="fa-solid fa-check text-terracotta-500 mr-1.5"></i> Daily Fresh Focaccia Sandwiches</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO & STORY SECTION -->
+    <section id="craft" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1579697096985-41fe1430e5df?auto=format&fit=crop&q=80&w=800" 
+                             alt="Baker dusting flour on dough at A & P Hare Limited in Shaftesbury" 
+                             class="rounded-3xl shadow-xl w-full object-cover">
+                        <div class="absolute -bottom-6 -right-6 bg-espresso text-stone-200 p-6 rounded-2xl hidden sm:block max-w-xs shadow-xl">
+                            <i class="fa-solid fa-quote-left text-wheat-400 text-2xl mb-2"></i>
+                            <p class="text-xs italic leading-relaxed text-stone-300">"Real bread takes time. We don't shortcut our fermentation, ever."</p>
+                            <span class="text-[11px] font-bold text-wheat-400 mt-2 block">— The Baking Team, A & P Hare</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta-600">Local Craftsmanship</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-espresso leading-tight">
+                        Serving Mampitts Lane & The Greater Shaftesbury Community
+                    </h2>
+                    
+                    <div class="prose prose-stone text-stone-600 space-y-4 text-base leading-relaxed">
+                        <p>
+                            Nestled in the bustling neighborhood of <strong>Mampitts Lane, Shaftesbury</strong>, 
+                            <strong>A & P Hare Limited</strong> was founded on a simple belief: every community deserves extraordinary, honest bread.
+                        </p>
+                        <p>
+                            In an era of rushed factory loafs, we take step-by-step pride in traditional methods. From stoneground Wessex flours to our 10-year-old sourdough starter, every batch is mixed, shaped, and scored by human hands right here in North Dorset.
+                        </p>
+                        <p>
+                            Whether you are stopping by after the morning school run, grabbing lunch near Gold Hill, or seeking artisanal sourdough for your weekend gathering, <strong>A & P Hare Limited</strong> offers a warm Dorset welcome and unmatched quality.
+                        </p>
+                    </div>
+
+                    <div class="pt-2 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-linen border border-stone-200">
+                            <i class="fa-solid fa-wheat-lh text-terracotta-600 text-xl mb-1"></i>
+                            <h4 class="font-bold text-sm text-espresso">Unbleached Flours</h4>
+                            <p class="text-xs text-stone-500 mt-1">Sourced directly from stone mills in the West Country.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-linen border border-stone-200">
+                            <i class="fa-solid fa-mug-hot text-terracotta-600 text-xl mb-1"></i>
+                            <h4 class="font-bold text-sm text-espresso">Specialty Coffee</h4>
+                            <p class="text-xs text-stone-500 mt-1">Expertly extracted espresso to match your pastry.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="reviews" class="py-20 bg-linen/60 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-terracotta-600">Community Words</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-espresso mt-2">Loved by Shaftesbury Locals</h2>
+                <p class="text-stone-600 mt-3 text-sm">Read what our neighbours on Mampitts Lane and around Dorset say about us.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-stone-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 text-xs gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm leading-relaxed italic mb-6">
+                            "Without a doubt the finest sourdough in Dorset. The crust and texture of their seeded sourdough from the Mampitts Lane shop is unmatched. Get there early before the croissants sell out!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-100">
+                        <div class="w-10 h-10 rounded-full bg-terracotta-100 text-terracotta-700 font-bold flex items-center justify-center text-sm">
+                            EM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-espresso">Eleanor M.</h4>
+                            <p class="text-[11px] text-stone-500">Mampitts Green, Shaftesbury</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-stone-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 text-xs gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm leading-relaxed italic mb-6">
+                            "A & P Hare Limited catered our family gathering last weekend with savouries and tartlets. The quality was top-class and everyone kept asking where the pastries came from."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-100">
+                        <div class="w-10 h-10 rounded-full bg-wheat-400/30 text-wheat-600 font-bold flex items-center justify-center text-sm">
+                            GH
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-espresso">Graham H.</h4>
+                            <p class="text-[11px] text-stone-500">Shaftesbury Town Centre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-stone-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 text-xs gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm leading-relaxed italic mb-6">
+                            "The sausage rolls are legendary and the staff are always smiling no matter how busy the morning rush gets. A real gem for Shaftesbury!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-100">
+                        <div class="w-10 h-10 rounded-full bg-terracotta-100 text-terracotta-700 font-bold flex items-center justify-center text-sm">
+                            CL
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-espresso">Claire L.</h4>
+                            <p class="text-[11px] text-stone-500">Motcombe Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & MAP/INFO SECTION -->
+    <section id="contact" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left: Contact Details & Tap to Call -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-terracotta-600">Get In Touch</span>
+                        <h2 class="text-3xl font-extrabold text-espresso mt-1">Visit or Contact Us</h2>
+                        <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+                            Have a custom bread order, catering enquiry, or just want to confirm today's special bakes? Send us a message or ring our team directly.
+                        </p>
+                    </div>
+
+                    <!-- Direct Tap to Call Mobile CTA -->
+                    <div class="p-6 rounded-2xl bg-terracotta-600 text-white shadow-lg space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white">
+                                <i class="fa-solid fa-phone text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-stone-100 font-medium">Need to reserve a loaf today?</p>
+                                <p class="text-lg font-bold">Call the Bakery Counter</p>
+                            </div>
+                        </div>
+                        <a href="tel:+441747854321" class="block w-full text-center bg-white text-terracotta-700 font-bold py-3 rounded-xl hover:bg-stone-100 transition-colors text-sm shadow-sm">
+                            <i class="fa-solid fa-phone mr-2 text-xs"></i> 01747 854321
+                        </a>
+                    </div>
+
+                    <div class="space-y-4 text-stone-700 text-sm">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-stone-200">
+                            <i class="fa-solid fa-location-dot text-terracotta-600 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-espresso">A & P Hare Limited</h4>
+                                <p class="text-stone-600 text-xs mt-0.5">Mampitts Lane, Shaftesbury, Dorset, SP7 9FL</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-stone-200">
+                            <i class="fa-regular fa-clock text-terracotta-600 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-espresso">Opening Hours</h4>
+                                <p class="text-stone-600 text-xs mt-0.5">Tuesday – Saturday: 07:00 – 15:00</p>
+                                <p class="text-stone-600 text-xs">Sunday: 08:00 – 13:00</p>
+                                <p class="text-stone-400 text-[11px] mt-1 font-medium">Closed Mondays for maintenance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Contact Form -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-stone-200 shadow-xl shadow-stone-900/5">
+                    <h3 class="text-2xl font-bold text-espresso mb-6">Send Us a Message</h3>
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received by A & P Hare Limited.');" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="name" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Your Name *</label>
+                                <input type="text" id="name" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-terracotta-500 focus:border-transparent text-sm bg-cream/30">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" required placeholder="e.g. 07123 456789" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-terracotta-500 focus:border-transparent text-sm bg-cream/30">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Email Address</label>
+                            <input type="email" id="email" placeholder="sarah@example.co.uk" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-terracotta-500 focus:border-transparent text-sm bg-cream/30">
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Enquiry Type</label>
+                            <select id="subject" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-terracotta-500 focus:border-transparent text-sm bg-cream/30">
+                                <option>General Enquiry</option>
+                                <option>Pre-order Bread / Pastries</option>
+                                <option>Catering & Special Events</option>
+                                <option>Wholesale Bakery Supply</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Your Message *</label>
+                            <textarea id="message" rows="4" required placeholder="Tell us how we can help..." class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-terracotta-500 focus:border-transparent text-sm bg-cream/30"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-terracotta-600 hover:bg-terracotta-700 text-white font-bold py-4 rounded-xl shadow-md transition-all text-sm uppercase tracking-wider">
+                            Send Message to Bakery
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-espresso text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-stone-800">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-full bg-terracotta-600 flex items-center justify-center text-white">
+                        <i class="fa-solid fa-wheat-awn text-sm"></i>
+                    </div>
+                    <span class="font-extrabold text-white text-lg tracking-tight">A & P HARE LIMITED</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 text-xs text-stone-300 font-medium">
+                    <a href="#about" class="hover:text-wheat-400 transition-colors">Our Story</a>
+                    <a href="#bakes" class="hover:text-wheat-400 transition-colors">Fresh Bakes</a>
+                    <a href="#craft" class="hover:text-wheat-400 transition-colors">Shaftesbury Craft</a>
+                    <a href="#reviews" class="hover:text-wheat-400 transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-wheat-400 transition-colors">Contact</a>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="w-8 h-8 rounded-full bg-stone-800 flex items-center justify-center text-stone-300 hover:bg-terracotta-600 hover:text-white transition-colors" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram text-xs"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-stone-800 flex items-center justify-center text-stone-300 hover:bg-terracotta-600 hover:text-white transition-colors" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+                <p>© <script>document.write(new Date().getFullYear())</script> A & P Hare Limited. All rights reserved. Mampitts Lane, Shaftesbury.</p>
+                <p>Designed for Artisan Excellence in Dorset, UK</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

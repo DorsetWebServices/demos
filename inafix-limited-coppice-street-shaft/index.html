@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inafix Limited | Expert Car Repairs & MOT Testing Shaftesbury</title>
+    <meta name="description" content="Inafix Limited - Shaftesbury's leading independent garage on Coppice Street. MOT testing, car servicing, diagnostics, brakes, tyres & aircon repair. Call 01747 852200.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Font: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            400: '#fbbf24',
+                            500: '#f59e0b', // Warm Amber Accent
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        dark: {
+                            950: '#070a11', // Metallic Obsidian
+                            900: '#0b1120', // Deep Navy Charcoal
+                            800: '#151e32', // Card Background
+                            700: '#23304a', // Border highlight
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #070a11;
+            color: #f1f5f9;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(245, 158, 11, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glow-amber {
+            box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.25);
+        }
+        .glass-card {
+            background: linear-gradient(135deg, rgba(21, 30, 50, 0.7) 0%, rgba(11, 17, 32, 0.8) 100%);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-dark-950">
+
+    <!-- 1. TOP BAR -->
+    <div class="bg-dark-950 border-b border-slate-800/80 text-xs text-slate-300 py-2.5 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-500"></i>
+                    <span>Coppice Street, Shaftesbury, SP7 8SF</span>
+                </span>
+                <span class="hidden md:flex items-center gap-2 border-l border-slate-800 pl-6">
+                    <i class="fa-regular fa-clock text-brand-500"></i>
+                    <span>Mon - Fri: 8:00 AM - 5:30 PM | Sat: 8:30 AM - 12:30 PM</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="mailto:info@inafix.co.uk" class="hover:text-brand-500 transition-colors flex items-center gap-1.5">
+                    <i class="fa-regular fa-envelope text-brand-500"></i>
+                    <span class="hidden sm:inline">info@inafix.co.uk</span>
+                </a>
+                <span class="text-slate-700">|</span>
+                <a href="tel:01747852200" class="text-brand-500 font-semibold hover:underline flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>01747 852200</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-dark-900/90 backdrop-blur-md border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-dark-950 font-black text-xl shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1">
+                            <span class="text-2xl font-black tracking-tight text-white">INAFIX</span>
+                            <span class="text-xs font-bold px-1.5 py-0.5 rounded bg-brand-500/10 text-brand-500 border border-brand-500/20">LTD</span>
+                        </div>
+                        <p class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold">Auto Repair & MOT Shaftesbury</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+                    <a href="#services" class="hover:text-brand-500 transition-colors">Services</a>
+                    <a href="#about" class="hover:text-brand-500 transition-colors">Why Inafix</a>
+                    <a href="#seo-info" class="hover:text-brand-500 transition-colors">Local Specialist</a>
+                    <a href="#testimonials" class="hover:text-brand-500 transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="tel:01747852200" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 text-dark-950 font-bold text-sm hover:from-brand-400 hover:to-brand-500 transition-all duration-200 shadow-md shadow-brand-500/20 hover:shadow-brand-500/30 hover:-translate-y-0.5">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>Book Now</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-white p-2">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-dark-900 border-b border-slate-800 px-4 py-4 space-y-3">
+            <a href="#services" class="block text-slate-300 hover:text-brand-500 py-1 font-medium">Services</a>
+            <a href="#about" class="block text-slate-300 hover:text-brand-500 py-1 font-medium">Why Inafix</a>
+            <a href="#seo-info" class="block text-slate-300 hover:text-brand-500 py-1 font-medium">Local Specialist</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-brand-500 py-1 font-medium">Reviews</a>
+            <a href="#contact" class="block text-slate-300 hover:text-brand-500 py-1 font-medium">Contact</a>
+            <a href="tel:01747852200" class="w-full text-center block mt-2 px-5 py-2.5 rounded-xl bg-brand-500 text-dark-950 font-bold text-sm">
+                Call 01747 852200
+            </a>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION -->
+    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-grid-pattern">
+        <!-- Ambient Blur Effects -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-500/10 blur-[140px] rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/80 text-xs font-semibold text-brand-400">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        Shaftesbury's Trusted Independent Garage
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+                        Dealer-Grade Care. <br class="hidden sm:inline">
+                        <span class="bg-gradient-to-r from-brand-400 via-brand-500 to-amber-200 bg-clip-text text-transparent">Honest Local Service.</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Located conveniently on <strong class="text-white">Coppice Street, Shaftesbury</strong>. Inafix Limited delivers dealer-level diagnostics, Class 4 MOT testing, vehicle servicing, and precision repairs without the main-dealer price tag.
+                    </p>
+
+                    <!-- Hero Call-To-Actions -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-brand-500 text-dark-950 font-bold text-base hover:bg-brand-400 transition-all shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:-translate-y-0.5">
+                            <i class="fa-solid fa-calendar-check text-lg"></i>
+                            <span>Book MOT & Service</span>
+                        </a>
+                        <a href="tel:01747852200" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl glass-card text-white font-semibold text-base hover:bg-slate-800 transition-all border border-slate-700/80 hover:border-slate-600">
+                            <i class="fa-solid fa-phone text-brand-500"></i>
+                            <span>01747 852200</span>
+                        </a>
+                    </div>
+
+                    <!-- Key Selling Points Badges -->
+                    <div class="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-4 text-left">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-brand-500 shrink-0">
+                                <i class="fa-solid fa-check-circle"></i>
+                            </div>
+                            <span class="text-xs text-slate-300 font-medium">DVSA Approved MOT Station</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-brand-500 shrink-0">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <span class="text-xs text-slate-300 font-medium">Advanced Diagnostic Tools</span>
+                        </div>
+                        <div class="flex items-center gap-3 col-span-2 sm:col-span-1">
+                            <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-brand-500 shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <span class="text-xs text-slate-300 font-medium">Parts & Labour Guaranteed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column: Feature Visual Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Glow Backing -->
+                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-brand-500 to-amber-600 opacity-20 blur-xl"></div>
+                        
+                        <div class="relative glass-card rounded-2xl p-6 sm:p-8 space-y-6 border border-slate-700/60 shadow-2xl">
+                            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                                <div>
+                                    <h3 class="text-lg font-bold text-white">Inafix Express Booking</h3>
+                                    <p class="text-xs text-slate-400">Coppice St, Shaftesbury, SP7 8SF</p>
+                                </div>
+                                <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-full border border-emerald-500/20">Garage Open Today</span>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div class="bg-dark-950/70 p-4 rounded-xl border border-slate-800 flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="p-2.5 rounded-lg bg-brand-500/10 text-brand-500">
+                                            <i class="fa-solid fa-car text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-sm font-semibold text-white">Class 4 MOT Test</h4>
+                                            <p class="text-xs text-slate-400">Cars & Light Commercials</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm font-bold text-brand-400">Official DVSA</span>
+                                </div>
+
+                                <div class="bg-dark-950/70 p-4 rounded-xl border border-slate-800 flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="p-2.5 rounded-lg bg-brand-500/10 text-brand-500">
+                                            <i class="fa-solid fa-oil-can text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-sm font-semibold text-white">Full & Interim Servicing</h4>
+                                            <p class="text-xs text-slate-400">All Makes & Models</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm font-bold text-slate-300">From £99</span>
+                                </div>
+
+                                <div class="bg-dark-950/70 p-4 rounded-xl border border-slate-800 flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="p-2.5 rounded-lg bg-brand-500/10 text-brand-500">
+                                            <i class="fa-solid fa-laptop-code text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-sm font-semibold text-white">Fault Code Diagnostics</h4>
+                                            <p class="text-xs text-slate-400">Engine, ABS, Airbag, DPF</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm font-bold text-slate-300">Fast Scan</span>
+                                </div>
+                            </div>
+
+                            <div class="pt-2">
+                                <a href="tel:01747852200" class="w-full py-3.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm flex items-center justify-center gap-2 transition-colors border border-slate-700">
+                                    <i class="fa-solid fa-headset text-brand-500"></i>
+                                    <span>Speak Directly to a Mechanic</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES BAR -->
+    <section class="bg-dark-900 border-y border-slate-800/80 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-slate-950/40 border border-slate-800/60">
+                    <div class="text-2xl font-extrabold text-brand-500 mb-1">100%</div>
+                    <div class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Transparent Quotes</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-950/40 border border-slate-800/60">
+                    <div class="text-2xl font-extrabold text-white mb-1">DVSA</div>
+                    <div class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Authorized Testing</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-950/40 border border-slate-800/60">
+                    <div class="text-2xl font-extrabold text-brand-500 mb-1">4.9 ★</div>
+                    <div class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Customer Satisfaction</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-950/40 border border-slate-800/60">
+                    <div class="text-2xl font-extrabold text-white mb-1">Coppice St</div>
+                    <div class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Shaftesbury Hub</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICES GRID -->
+    <section id="services" class="py-20 lg:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-3">Our Expertise</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Complete Automotive Services in Shaftesbury</p>
+                <p class="text-slate-400 mt-4 text-base">From routine maintenance to complex engine repairs, Inafix Limited delivers premier craftsmanship for all vehicle makes and models.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-dark-950 transition-colors">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Class 4 MOT Testing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Official DVSA approved MOT testing centre on Coppice Street. Thorough checks ensuring your car meets all UK safety and environmental standards.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-medium mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Fast, while-you-wait slots</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Free re-test within statutory period</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-brand-400 group-hover:text-brand-300">Book MOT <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-dark-950 transition-colors">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Vehicle Servicing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Interim, Full, and Major vehicle servicing that protects your manufacturer warranty. Quality OEM filters, lubricants, and complete inspection.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-medium mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Warranty compliant servicing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Digital service book updates</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-brand-400 group-hover:text-brand-300">Schedule Service <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-dark-950 transition-colors">
+                        <i class="fa-solid fa-car-battery"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Diagnostics & Electrical</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Dealer-level computer diagnostics to quickly pinpoint warning lights, engine faults, ABS issues, and electrical gremlins accurately.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-medium mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Multi-brand diagnostic software</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Accurate fault diagnosis</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-brand-400 group-hover:text-brand-300">Diagnose Issue <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-dark-950 transition-colors">
+                        <i class="fa-solid fa-circle-notch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Brakes, Clutches & Exhausts</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Complete stopping power and transmission repairs. Quality brake pads, discs, clutch replacements, and exhaust component fitting.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-medium mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Premium brake components</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Clutch replacement specialists</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-brand-400 group-hover:text-brand-300">Get Quote <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-dark-950 transition-colors">
+                        <i class="fa-solid fa-compact-disc"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Tyres & Wheel Alignment</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Premium, mid-range, and budget tyres fitted and balanced. Precision wheel alignment to prevent uneven tyre wear and improve efficiency.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-medium mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Top brand tyres in stock</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Laser wheel alignment</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-brand-400 group-hover:text-brand-300">Find Tyres <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-dark-950 transition-colors">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Air Conditioning Service</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Aircon re-gas (R134a & R1234yf refrigerants), leak testing, and anti-bacterial system cleaning to keep your cabin cool and fresh.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-medium mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Old & new gas types supported</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> System leak check included</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-brand-400 group-hover:text-brand-300">Book Aircon Check <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. LOCAL SEO & WHY CHOOSE US SECTION -->
+    <section id="seo-info" class="py-20 bg-dark-900 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-500">Shaftesbury's Local Repair Hub</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+                        Looking for a Reliable Auto Garage on Coppice Street?
+                    </h2>
+                    
+                    <div class="prose prose-invert text-slate-300 text-sm leading-relaxed space-y-4">
+                        <p>
+                            Welcome to <strong class="text-white">Inafix Limited</strong>, your premier independent workshop located in the heart of <strong class="text-white">Shaftesbury, Dorset (SP7 8SF)</strong>. Conveniently situated on <strong class="text-white">Coppice Street</strong>, we provide motorists across Shaftesbury, Motcombe, Cann, Melbury, and North Dorset with honest, expert, and affordably priced automotive care.
+                        </p>
+                        <p>
+                            We understand that leaving your vehicle at a garage requires trust. At Inafix Limited, our certified technicians combine modern diagnostic technology with traditional mechanical expertise. Whether you require an annual Class 4 MOT inspection, major engine diagnostics, timing belt replacement, or new tyres, we ensure every job is completed to exacting standards.
+                        </p>
+                        <p>
+                            Unlike main dealership prices, we deliver transparent, itemised quotes prior to starting any repair work—ensuring no surprise bills. Experience local service that puts customer satisfaction and safety first.
+                        </p>
+                    </div>
+
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <div class="flex items-center gap-2 text-xs font-semibold text-slate-200 bg-slate-800/80 px-3.5 py-2 rounded-lg border border-slate-700">
+                            <i class="fa-solid fa-location-dot text-brand-500"></i> Coppice Street, Shaftesbury
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-semibold text-slate-200 bg-slate-800/80 px-3.5 py-2 rounded-lg border border-slate-700">
+                            <i class="fa-solid fa-wrench text-brand-500"></i> All Makes & Models Welcomed
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-semibold text-slate-200 bg-slate-800/80 px-3.5 py-2 rounded-lg border border-slate-700">
+                            <i class="fa-solid fa-sterling-sign text-brand-500"></i> Fair, Upfront Pricing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Box Right -->
+                <div class="lg:col-span-6">
+                    <div class="glass-card rounded-2xl p-8 border border-slate-700 relative">
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-shield-halved text-brand-500"></i>
+                            Why Shaftesbury Drivers Choose Inafix
+                        </h3>
+
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0 font-bold">1</div>
+                                <div>
+                                    <h4 class="text-base font-semibold text-white">Dealer Equivalent Quality Without Dealer Prices</h4>
+                                    <p class="text-xs text-slate-400 mt-1">We fit high-quality OEM or matching specification parts, ensuring your manufacturer's warranty remains 100% valid.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0 font-bold">2</div>
+                                <div>
+                                    <h4 class="text-base font-semibold text-white">Central Coppice Street Location</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Easy to find and convenient for local drop-offs while you work or visit Shaftesbury town center.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0 font-bold">3</div>
+                                <div>
+                                    <h4 class="text-base font-semibold text-white">Clear Communication & No Hidden Charges</h4>
+                                    <p class="text-xs text-slate-400 mt-1">We always contact you for approval before carrying out any extra work discovered during inspection.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+                            <span class="text-xs text-slate-400">Need advice on a vehicle noise or fault?</span>
+                            <a href="tel:01747852200" class="text-xs font-bold text-brand-500 hover:underline">Call 01747 852200 →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 lg:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-3">Customer Feedback</h2>
+                <p class="text-3xl font-extrabold text-white tracking-tight">What Shaftesbury Locals Say</p>
+                <p class="text-slate-400 mt-2 text-sm">Real reviews from local vehicle owners who rely on Inafix Limited.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="glass-card rounded-2xl p-6 border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brand-500 text-xs gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Took my Audi to Inafix on Coppice Street after an engine warning light came on. They diagnosed the issue within an hour and repaired it the same day at half the quote I got from the main dealer in Salisbury. Honest and professional!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-brand-500 text-sm">
+                            DM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">David M.</h4>
+                            <p class="text-[11px] text-slate-400">Shaftesbury Town</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card rounded-2xl p-6 border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brand-500 text-xs gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "I've used Inafix for both my car's MOT and annual servicing for the last 3 years. Super clear communication, excellent turnaround time, and always friendly staff. Wouldn't take my car anywhere else in North Dorset."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-brand-500 text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Sarah K.</h4>
+                            <p class="text-[11px] text-slate-400">Motcombe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card rounded-2xl p-6 border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brand-500 text-xs gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Extremely helpful team. Fitted two new rear tyres and completed full laser alignment while I was at work nearby. Car drives perfectly now. Highly recommend Inafix Limited!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-brand-500 text-sm">
+                            JL
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">James L.</h4>
+                            <p class="text-[11px] text-slate-400">Coppice Street Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT FORM & LOCATION SECTION -->
+    <section id="contact" class="py-20 bg-dark-900 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-500">Get In Touch</span>
+                        <h2 class="text-3xl font-extrabold text-white tracking-tight mt-2">Visit or Contact Inafix Limited</h2>
+                        <p class="text-slate-400 text-sm mt-3">Ready to book an MOT, service, or repair? Give us a call or send an inquiry using the form.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        
+                        <!-- Location Item -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-500 shrink-0 text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Garage Location</h4>
+                                <p class="text-xs text-slate-300 mt-1">Inafix Limited</p>
+                                <p class="text-xs text-slate-400">Coppice Street, Shaftesbury</p>
+                                <p class="text-xs text-slate-400">Dorset, SP7 8SF, United Kingdom</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone Item -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-500 shrink-0 text-xl">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Telephone Booking</h4>
+                                <p class="text-xs text-slate-400 mt-1">Speak directly with our team:</p>
+                                <a href="tel:01747852200" class="text-lg font-extrabold text-brand-400 hover:underline">01747 852200</a>
+                            </div>
+                        </div>
+
+                        <!-- Hours Item -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-500 shrink-0 text-xl">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Opening Hours</h4>
+                                <div class="text-xs text-slate-300 mt-1 space-y-1">
+                                    <p><strong class="text-slate-200">Monday - Friday:</strong> 8:00 AM – 5:30 PM</p>
+                                    <p><strong class="text-slate-200">Saturday:</strong> 8:30 AM – 12:30 PM</p>
+                                    <p><strong class="text-slate-200">Sunday:</strong> Closed</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Instant Phone CTA Button -->
+                    <div class="p-6 rounded-2xl bg-gradient-to-br from-brand-500/20 to-transparent border border-brand-500/30">
+                        <h4 class="text-sm font-bold text-white mb-2">Need Urgent Assistance?</h4>
+                        <p class="text-xs text-slate-300 mb-4">For immediate workshop availability or fault advice, call us directly during opening hours.</p>
+                        <a href="tel:01747852200" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-500 hover:bg-brand-400 text-dark-950 font-bold text-sm transition-colors">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call 01747 852200 Now</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card rounded-2xl p-8 border border-slate-700">
+                        <h3 class="text-xl font-bold text-white mb-2">Request a Booking / Quote</h3>
+                        <p class="text-xs text-slate-400 mb-6">Fill out the details below and our garage team will contact you to confirm.</p>
+
+                        <form onsubmit="event.preventDefault(); alert('Thank you for your request. Inafix Limited will contact you shortly.');" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Full Name *</label>
+                                    <input type="text" required placeholder="e.g. John Smith" class="w-full px-4 py-3 rounded-xl bg-dark-950/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Phone Number *</label>
+                                    <input type="tel" required placeholder="e.g. 07123 456789" class="w-full px-4 py-3 rounded-xl bg-dark-950/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Vehicle Registration *</label>
+                                    <input type="text" required placeholder="e.g. AB12 CDE" class="w-full px-4 py-3 rounded-xl bg-dark-950/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors uppercase font-mono font-bold tracking-wider">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Service Required *</label>
+                                    <select required class="w-full px-4 py-3 rounded-xl bg-dark-950/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors">
+                                        <option value="" disabled selected>Select service type...</option>
+                                        <option value="mot">MOT Test (Class 4)</option>
+                                        <option value="service">Full / Interim Service</option>
+                                        <option value="mot-service">MOT + Full Service Combo</option>
+                                        <option value="diagnostics">Engine Diagnostics / Fault Light</option>
+                                        <option value="brakes">Brakes / Suspension</option>
+                                        <option value="tyres">Tyres & Alignment</option>
+                                        <option value="aircon">Air Conditioning Service</option>
+                                        <option value="other">Other Repair Inquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Preferred Booking Date</label>
+                                <input type="date" class="w-full px-4 py-3 rounded-xl bg-dark-950/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Additional Details or Symptoms</label>
+                                <textarea rows="3" placeholder="Tell us about any specific issues or vehicle symptoms..." class="w-full px-4 py-3 rounded-xl bg-dark-950/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-400 hover:to-brand-500 text-dark-950 font-extrabold text-sm transition-all duration-200 shadow-lg shadow-brand-500/20">
+                                Send Booking Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-950 border-t border-slate-800 text-slate-400 text-xs py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-brand-500 text-dark-950 flex items-center justify-center font-bold text-sm">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <div>
+                        <span class="text-white font-bold text-sm tracking-tight">INAFIX LIMITED</span>
+                        <p class="text-[11px] text-slate-400">Registered in England & Wales | Coppice Street, Shaftesbury, SP7 8SF</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 font-medium text-slate-300">
+                    <a href="#services" class="hover:text-brand-500 transition-colors">Services</a>
+                    <a href="#about" class="hover:text-brand-500 transition-colors">Why Choose Us</a>
+                    <a href="#seo-info" class="hover:text-brand-500 transition-colors">Shaftesbury Hub</a>
+                    <a href="#contact" class="hover:text-brand-500 transition-colors">Book MOT</a>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <p>&copy; <span id="year"></span> Inafix Limited. All rights reserved.</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">Quality Auto Repairs & MOT Inspections in North Dorset</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // Dynamic Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talbot Plumbing | Master Plumbers & Heating Engineers Shaftesbury</title>
+    <meta name="description" content="Premier plumbing & heating services in Bimport, Shaftesbury and North Dorset. Period property specialists, Gas Safe registered, 24/7 emergency callout.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#111827',
+                            900: '#0B111E',
+                            950: '#05080E',
+                        },
+                        copper: {
+                            400: '#e59b6e',
+                            500: '#C87D55',
+                            600: '#a8623d',
+                            700: '#87492a',
+                        },
+                        brass: {
+                            400: '#E1B866',
+                            500: '#C99E42',
+                        },
+                        sand: {
+                            50: '#FAF8F5',
+                            100: '#F3EFEA',
+                            200: '#E6DFD5',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(11, 17, 30, 0.95) 0%, rgba(17, 24, 39, 0.85) 100%);
+        }
+        .copper-glow {
+            box-shadow: 0 0 25px -5px rgba(200, 125, 85, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans bg-sand-50 text-slate-800 antialiased selection:bg-copper-500 selection:text-white">
+
+    <!-- TOP BAR -->
+    <div class="bg-navy-950 text-slate-300 text-xs sm:text-sm py-2.5 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-copper-500"></i>
+                    <span>Bimport, Shaftesbury, Dorset, SP7 8AT</span>
+                </span>
+                <span class="hidden lg:flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-copper-500"></i>
+                    <span>Mon - Fri: 07:30 - 18:00 | 24/7 Emergency</span>
+                </span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center gap-2 text-emerald-400 font-medium">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    24/7 Emergency On-Call
+                </span>
+                <a href="tel:01747850123" class="text-white hover:text-copper-400 font-semibold transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-xs text-copper-500"></i>
+                    <span>01747 850123</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-copper-500 to-copper-700 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-faucet-drip text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-white block leading-none">TALBOT</span>
+                        <span class="text-xs font-semibold tracking-widest text-copper-400 uppercase">Plumbing & Heating</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#about" class="text-slate-300 hover:text-copper-400 transition-colors">About Us</a>
+                    <a href="#services" class="text-slate-300 hover:text-copper-400 transition-colors">Services</a>
+                    <a href="#local-area" class="text-slate-300 hover:text-copper-400 transition-colors">Shaftesbury & Area</a>
+                    <a href="#testimonials" class="text-slate-300 hover:text-copper-400 transition-colors">Testimonials</a>
+                    <a href="#contact" class="text-slate-300 hover:text-copper-400 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <a href="tel:01747850123" class="bg-gradient-to-r from-copper-500 to-copper-600 hover:from-copper-600 hover:to-copper-700 text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-all duration-200 shadow-lg shadow-copper-500/20 flex items-center gap-2">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>01747 850123</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" id="mobile-menu-btn" class="text-slate-300 hover:text-white p-2 rounded-md focus:outline-none" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Nav (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-950 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-copper-400 font-medium">About Us</a>
+            <a href="#services" class="block py-2 text-slate-300 hover:text-copper-400 font-medium">Services</a>
+            <a href="#local-area" class="block py-2 text-slate-300 hover:text-copper-400 font-medium">Shaftesbury & Area</a>
+            <a href="#testimonials" class="block py-2 text-slate-300 hover:text-copper-400 font-medium">Testimonials</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-copper-400 font-medium">Contact</a>
+            <div class="pt-2">
+                <a href="tel:01747850123" class="w-full bg-copper-500 text-white font-semibold text-center py-3 rounded-lg block">
+                    <i class="fa-solid fa-phone-volume mr-2"></i> Call 01747 850123
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-navy-950 text-white overflow-hidden py-20 lg:py-28">
+        <!-- Background Pattern & Glow -->
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#C87D55_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="absolute top-1/4 -right-20 w-96 h-96 bg-copper-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-brass-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-xs sm:text-sm font-medium text-copper-400">
+                        <i class="fa-solid fa-award text-brass-500"></i>
+                        <span>Bimport & Shaftesbury's Premier Plumbing Specialist</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Craftsmanship & Precision Plumbing in <span class="text-transparent bg-clip-text bg-gradient-to-r from-copper-400 to-brass-500">Shaftesbury</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Based in historic Bimport, Talbot Plumbing delivers uncompromised mechanical excellence, heritage property restorations, modern heating engineering, and rapid 24/7 emergency response throughout Shaftesbury and North Dorset.
+                    </p>
+
+                    <!-- Hero CTA Group -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="w-full sm:w-auto bg-gradient-to-r from-copper-500 to-copper-600 hover:from-copper-600 hover:to-copper-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-copper-500/20 transition-all duration-200 text-center">
+                            Request a Quotation
+                        </a>
+                        <a href="tel:01747850123" class="w-full sm:w-auto bg-slate-800/90 hover:bg-slate-800 border border-slate-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 text-center flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-phone text-copper-400"></i>
+                            <span>01747 850123</span>
+                        </a>
+                    </div>
+
+                    <!-- Micro Trust Stats -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">20+</div>
+                            <div class="text-xs text-slate-400 mt-1">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Gas Safe Certified</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">15 Min</div>
+                            <div class="text-xs text-slate-400 mt-1">Local Response Time</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Card / Contact Feature -->
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 backdrop-blur-xl shadow-2xl relative">
+                        <div class="absolute -top-3 -right-3 bg-gradient-to-br from-brass-400 to-copper-500 text-navy-950 font-bold text-xs uppercase px-3 py-1 rounded-full shadow">
+                            Fast Local Service
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-2">Need an Emergency Plumber?</h3>
+                        <p class="text-sm text-slate-400 mb-6">Burst pipes, boiler breakdowns, or urgent leaks in Bimport or surrounding areas? We are nearby.</p>
+
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center gap-3 text-slate-300 text-sm">
+                                <div class="w-8 h-8 rounded-full bg-copper-500/10 flex items-center justify-center text-copper-400 shrink-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <span>No hidden call-out charges for local Shaftesbury residents</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-slate-300 text-sm">
+                                <div class="w-8 h-8 rounded-full bg-copper-500/10 flex items-center justify-center text-copper-400 shrink-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <span>Fully equipped mobile workshop for immediate fixes</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-slate-300 text-sm">
+                                <div class="w-8 h-8 rounded-full bg-copper-500/10 flex items-center justify-center text-copper-400 shrink-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <span>Gas Safe Registered (#593821) & Fully Insured</span>
+                            </div>
+                        </div>
+
+                        <a href="tel:07700900456" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-3 transition-colors text-center shadow-lg shadow-emerald-900/30">
+                            <i class="fa-solid fa-bolt text-amber-300 animate-bounce"></i>
+                            <span class="text-base">Direct Emergency Line: 07700 900456</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES BAR -->
+    <section class="bg-navy-900 border-y border-slate-800/80 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-center">
+                <div class="flex items-center justify-center gap-3 text-slate-300">
+                    <i class="fa-solid fa-shield-halved text-2xl text-copper-400"></i>
+                    <div class="text-left">
+                        <div class="text-sm font-bold text-white leading-tight">Gas Safe Registered</div>
+                        <div class="text-xs text-slate-400">Reg. No #593821</div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-3 text-slate-300">
+                    <i class="fa-solid fa-certificate text-2xl text-copper-400"></i>
+                    <div class="text-left">
+                        <div class="text-sm font-bold text-white leading-tight">CIPHE Accredited</div>
+                        <div class="text-xs text-slate-400">Master Plumbers</div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-3 text-slate-300">
+                    <i class="fa-solid fa-house-chimney-crack text-2xl text-copper-400"></i>
+                    <div class="text-left">
+                        <div class="text-sm font-bold text-white leading-tight">Period Property</div>
+                        <div class="text-xs text-slate-400">Heritage Specialists</div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-3 text-slate-300">
+                    <i class="fa-solid fa-star text-2xl text-brass-500"></i>
+                    <div class="text-left">
+                        <div class="text-sm font-bold text-white leading-tight">5-Star Rated</div>
+                        <div class="text-xs text-slate-400">Over 150+ Dorset Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / LOCAL SEO TEXT SECTION -->
+    <section id="about" class="py-20 bg-sand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block text-xs font-bold uppercase tracking-wider text-copper-600 bg-copper-500/10 px-3 py-1 rounded-md">
+                        Heritage & Excellence
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+                        Dedicated Plumbers in Bimport & Historic Shaftesbury
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Operating from our base on <strong>Bimport</strong>, Talbot Plumbing brings bespoke mechanical craftsmanship to one of England’s most historic hilltop towns. Shaftesbury’s unique architectural heritage—ranging from Grade II listed thatched cottages on Gold Hill to elegant Georgian townhouses along Bimport—demands specialized plumbing and heating knowledge.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        We balance high-efficiency modern heating technologies, heat pump integration, and energy-conscious boiler systems with delicate, sympathetic installation in period properties. Whether you require an unvented hot water cylinder upgrade, bespoke bathroom plumbing, or emergency leak resolution, our team provides transparent pricing and flawless workmanship.
+                    </p>
+                    
+                    <div class="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 bg-white rounded-xl border border-sand-200 shadow-sm">
+                            <i class="fa-solid fa-wrench text-copper-500 text-lg mb-2"></i>
+                            <h4 class="font-bold text-navy-900 text-sm">Tailored Workmanship</h4>
+                            <p class="text-xs text-slate-500 mt-1">Respectful installation designed around thick stone walls and delicate period structures.</p>
+                        </div>
+                        <div class="p-4 bg-white rounded-xl border border-sand-200 shadow-sm">
+                            <i class="fa-solid fa-handshake text-copper-500 text-lg mb-2"></i>
+                            <h4 class="font-bold text-navy-900 text-sm">Transparent Pricing</h4>
+                            <p class="text-xs text-slate-500 mt-1">Written fixed quotes prior to work commencing. No hidden charges, ever.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="relative">
+                        <!-- Decorative Frame -->
+                        <div class="absolute -inset-4 bg-gradient-to-r from-copper-500 to-brass-500 rounded-2xl opacity-20 blur-lg"></div>
+                        
+                        <div class="relative bg-navy-900 text-white rounded-2xl p-8 shadow-xl space-y-6">
+                            <h3 class="text-2xl font-bold text-white border-b border-slate-800 pb-4">
+                                Why Shaftesbury Trusts Talbot Plumbing
+                            </h3>
+                            
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-4">
+                                    <div class="w-6 h-6 rounded-full bg-copper-500/20 text-copper-400 flex items-center justify-center shrink-0 mt-1">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="text-slate-100 block">Bimport & Local Shaftesbury Base</strong>
+                                        <span class="text-sm text-slate-400">Minutes away from St James, Enmore Green, and Cann. We arrive on time.</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <div class="w-6 h-6 rounded-full bg-copper-500/20 text-copper-400 flex items-center justify-center shrink-0 mt-1">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="text-slate-100 block">Gas Safe Certified Engineers</strong>
+                                        <span class="text-sm text-slate-400">Qualified for natural gas, LPG systems, and oil boiler servicing in rural Dorset properties.</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <div class="w-6 h-6 rounded-full bg-copper-500/20 text-copper-400 flex items-center justify-center shrink-0 mt-1">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="text-slate-100 block">Hard Water & Filtration Solutions</strong>
+                                        <span class="text-sm text-slate-400">Custom water softener systems tailored to Shaftesbury's hard chalk water supply.</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 flex items-center justify-between">
+                                <div>
+                                    <div class="text-xs text-slate-400">Need immediate help?</div>
+                                    <div class="text-base font-bold text-white">Local Callout Available Now</div>
+                                </div>
+                                <a href="tel:01747850123" class="bg-copper-500 hover:bg-copper-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                    Call Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID SECTION -->
+    <section id="services" class="py-20 bg-white border-t border-sand-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-copper-600 bg-copper-50 px-3 py-1 rounded-full">Our Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-3 tracking-tight">
+                    Comprehensive Mechanical Services
+                </h2>
+                <p class="text-slate-600 mt-3 text-base">
+                    From minor repairs to major heating installations, we deliver precision engineering tailored to North Dorset homes.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-sand-50 rounded-2xl p-8 border border-sand-200 hover:border-copper-500/50 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-900 text-copper-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Boiler Installation & Servicing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Worcester Bosch, Vaillant, and Grant accredited installers. Energy-efficient gas, LPG, and oil boiler maintenance & replacement.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Up to 12-Year Manufacturer Warranties</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Annual Safety Inspections & Landlord Certificates</li>
+                    </ul>
+                    <a href="#contact" class="text-copper-600 font-bold text-sm hover:text-copper-700 flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Book Service <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-sand-50 rounded-2xl p-8 border border-sand-200 hover:border-copper-500/50 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-900 text-copper-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-house-chimney-crack"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Period & Heritage Plumbing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Specialist plumbing for Shaftesbury’s historic stone cottages and listed buildings. Sympathetic pipework and discrete modern upgrades.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Lead pipe replacement & copper restoration</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Low pressure to high pressure conversion</li>
+                    </ul>
+                    <a href="#contact" class="text-copper-600 font-bold text-sm hover:text-copper-700 flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-sand-50 rounded-2xl p-8 border border-sand-200 hover:border-copper-500/50 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-900 text-copper-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bath"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Bespoke Bathroom Fitting</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Turnkey luxury bathroom renovations. From initial layout design and plumbing to high-end brassware, tiling, and walk-in showers.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Complete Project Management</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Walk-in Wetrooms & Designer Suites</li>
+                    </ul>
+                    <a href="#contact" class="text-copper-600 font-bold text-sm hover:text-copper-700 flex items-center gap-1 group-hover:gap-2 transition-all">
+                        View Options <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-sand-50 rounded-2xl p-8 border border-sand-200 hover:border-copper-500/50 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-900 text-copper-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Central Heating & Radiators</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Underfloor heating installations, cast iron radiator fitting, system power flushing, and smart thermostatic controls (Nest / Hive).
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Hydronic Underfloor Heating</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> MagnaClean Power Flushing</li>
+                    </ul>
+                    <a href="#contact" class="text-copper-600 font-bold text-sm hover:text-copper-700 flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Upgrade Heating <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-sand-50 rounded-2xl p-8 border border-sand-200 hover:border-copper-500/50 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-900 text-copper-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-glass-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Water Softeners & Filtration</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Protect your home from North Dorset’s hard chalk water. We fit high-capacity water softeners and drinking water purification units.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Limescale Elimination for Appliances</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Non-Electric Dual-Tank Systems</li>
+                    </ul>
+                    <a href="#contact" class="text-copper-600 font-bold text-sm hover:text-copper-700 flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Softener Enquiry <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-sand-50 rounded-2xl p-8 border border-sand-200 hover:border-copper-500/50 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-900 text-copper-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-pipe-collar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Leak Detection & Burst Pipes</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Acoustic and thermal leak detection to pinpoint hidden pipe leaks behind stone walls or under floorboards with minimal destruction.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Non-Invasive Diagnostics</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-copper-500"></i> Rapid Emergency Stop & Repair</li>
+                    </ul>
+                    <a href="#contact" class="text-copper-600 font-bold text-sm hover:text-copper-700 flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Report A Leak <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL AREA & SEO MAP SECTION -->
+    <section id="local-area" class="py-20 bg-navy-950 text-white border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-copper-500/10 text-copper-400 text-xs font-semibold">
+                        <i class="fa-solid fa-map-pin"></i> Coverage Area
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+                        Serving Bimport, Shaftesbury & The Blackmore Vale
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                        Conveniently situated right on <strong>Bimport</strong> in central Shaftesbury, Talbot Plumbing delivers rapid response times across SP7 postcodes and surrounding North Dorset / South Wiltshire villages.
+                    </p>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs text-slate-300">
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-arrow text-copper-400"></i> Bimport (HQ)
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-arrow text-copper-400"></i> Gold Hill
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-arrow text-copper-400"></i> St James
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-arrow text-copper-400"></i> Enmore Green
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-arrow text-copper-400"></i> Fontmell Magna
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-arrow text-copper-400"></i> Motcombe
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-arrow text-copper-400"></i> Melbury Abbas
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-arrow text-copper-400"></i> Ludwell
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-arrow text-copper-400"></i> Gillingham (Dorset)
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs text-slate-400">
+                        <strong class="text-white block mb-1">Rural Dorset Property Support</strong>
+                        We are fully equipped to service off-mains oil heating systems, private water supplies, septic tank plumbing connections, and estate boiler rooms across the Blackmore Vale.
+                    </div>
+                </div>
+
+                <!-- Interactive Map visual placeholder -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 h-96 flex flex-col justify-between p-6 shadow-2xl">
+                        <!-- Stylized Map Graphic Background -->
+                        <div class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:16px_16px] opacity-40"></div>
+                        
+                        <div class="relative z-10 flex justify-between items-start">
+                            <div class="bg-navy-950/90 border border-slate-700 p-3 rounded-lg backdrop-blur">
+                                <div class="text-xs font-bold text-white">Talbot Plumbing Workshop</div>
+                                <div class="text-[11px] text-copper-400">Bimport, Shaftesbury SP7 8AT</div>
+                            </div>
+                            <span class="bg-emerald-500/20 text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">
+                                Local Vans Active
+                            </span>
+                        </div>
+
+                        <div class="relative z-10 my-auto text-center">
+                            <div class="w-16 h-16 bg-gradient-to-br from-copper-500 to-copper-700 rounded-full flex items-center justify-center mx-auto text-white shadow-lg animate-pulse mb-3">
+                                <i class="fa-solid fa-location-dot text-2xl"></i>
+                            </div>
+                            <p class="text-sm font-semibold text-white">Central Shaftesbury Coverage</p>
+                            <p class="text-xs text-slate-400">Average response time in Bimport: under 30 mins</p>
+                        </div>
+
+                        <div class="relative z-10 bg-navy-950/90 border border-slate-800 p-3 rounded-lg backdrop-blur flex justify-between items-center text-xs">
+                            <span class="text-slate-300">Need immediate local dispatch?</span>
+                            <a href="tel:01747850123" class="text-copper-400 font-bold hover:underline">01747 850123 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-sand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-copper-600 bg-copper-50 px-3 py-1 rounded-full">Client Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-3 tracking-tight">
+                    Trusted Across Shaftesbury
+                </h2>
+                <p class="text-slate-600 mt-3 text-base">Read genuine experiences from our local homeowners and period property owners.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-sand-200 shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brass-500 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                            "Talbot Plumbing replaced our entire heating system in our Grade II cottage on Bimport. Finding engineers who understand old stone properties without causing structural damage is rare. Meticulous work and spotless cleanup!"
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-sand-100 flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-navy-900 text-sm">Lady Eleanor H.</div>
+                            <div class="text-xs text-slate-400">Bimport, Shaftesbury</div>
+                        </div>
+                        <span class="text-xs bg-sand-100 text-slate-600 px-2 py-1 rounded">Verified Owner</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-sand-200 shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brass-500 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                            "Called them out at 2 AM for a burst pipe in our St James kitchen. They arrived within 20 minutes, stopped the deluge, and had it fully repaired by morning. Absolute lifesavers!"
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-sand-100 flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-navy-900 text-sm">Marcus T.</div>
+                            <div class="text-xs text-slate-400">St James, Shaftesbury</div>
+                        </div>
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded">Emergency Callout</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-sand-200 shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brass-500 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                            "We had a new Worcester Bosch boiler fitted and a water softener installed. The difference in our water quality and heating efficiency is remarkable. Professional, polite, and competitively priced."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-sand-100 flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-navy-900 text-sm">David & Sarah P.</div>
+                            <div class="text-xs text-slate-400">Enmore Green</div>
+                        </div>
+                        <span class="text-xs bg-sand-100 text-slate-600 px-2 py-1 rounded">Boiler Install</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & DIRECT CALL SECTION -->
+    <section id="contact" class="py-20 bg-navy-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-copper-400">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 tracking-tight">
+                            Book A Local Plumber
+                        </h2>
+                        <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+                            Have a project in mind or need routine maintenance? Fill out the form or call our Shaftesbury team directly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 text-copper-400 flex items-center justify-center shrink-0 text-xl border border-slate-700">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Office Address</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">Talbot Plumbing, Bimport, Shaftesbury, Dorset, SP7 8AT</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 text-copper-400 flex items-center justify-center shrink-0 text-xl border border-slate-700">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Telephone</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">Office: <a href="tel:01747850123" class="text-copper-400 hover:underline">01747 850123</a></p>
+                                <p class="text-sm text-slate-400">Mobile / Emergency: <a href="tel:07700900456" class="text-emerald-400 hover:underline font-semibold">07700 900456</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 text-copper-400 flex items-center justify-center shrink-0 text-xl border border-slate-700">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Email</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">enquiries@talbotplumbing-shaftesbury.co.uk</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Tel Action Box -->
+                    <div class="p-6 rounded-2xl bg-gradient-to-br from-copper-600 to-copper-700 text-white shadow-xl">
+                        <h3 class="font-bold text-lg mb-1">Prefer to talk directly?</h3>
+                        <p class="text-xs text-copper-100 mb-4">Speak straight to our master engineer on site.</p>
+                        <a href="tel:01747850123" class="inline-flex items-center gap-3 bg-navy-950 hover:bg-navy-900 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors shadow">
+                            <i class="fa-solid fa-phone-volume text-copper-400"></i>
+                            <span>Call 01747 850123 Now</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-navy-950 p-8 sm:p-10 rounded-2xl border border-slate-800 shadow-2xl">
+                        <h3 class="text-2xl font-bold text-white mb-6">Send Us A Message</h3>
+                        
+                        <form onsubmit="event.preventDefault(); alert('Thank you for contacting Talbot Plumbing. We will respond shortly!');" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name *</label>
+                                    <input type="text" required placeholder="e.g. John Smith" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-copper-500 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number *</label>
+                                    <input type="tel" required placeholder="e.g. 07123 456789" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-copper-500 text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                    <input type="email" placeholder="john@example.co.uk" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-copper-500 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                                    <select class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-copper-500 text-sm">
+                                        <option>General Plumbing Repair</option>
+                                        <option>Boiler Service / Installation</option>
+                                        <option>Emergency Callout</option>
+                                        <option>Period Property Work</option>
+                                        <option>Bathroom Renovation</option>
+                                        <option>Water Softener System</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Postcode / Location in Shaftesbury</label>
+                                <input type="text" placeholder="e.g. Bimport, SP7" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-copper-500 text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project or Problem Details</label>
+                                <textarea rows="4" placeholder="Please describe how we can assist you..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-copper-500 text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-gradient-to-r from-copper-500 to-copper-600 hover:from-copper-600 hover:to-copper-700 text-white font-bold py-4 rounded-xl text-base shadow-xl shadow-copper-500/20 transition-all">
+                                Request Callback
+                            </button>
+                            
+                            <p class="text-center text-xs text-slate-500">
+                                Your information is stored securely. We respect your privacy.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-950 text-slate-400 text-sm border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-copper-500 flex items-center justify-center text-white font-bold">
+                            <i class="fa-solid fa-faucet-drip"></i>
+                        </div>
+                        <span class="text-lg font-extrabold text-white">TALBOT PLUMBING</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Master plumbing & heating engineers providing heritage property care, modern boiler engineering, and emergency services in Bimport, Shaftesbury and North Dorset.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Services</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-copper-400 transition-colors">Boiler Servicing & Repair</a></li>
+                        <li><a href="#services" class="hover:text-copper-400 transition-colors">Period Property Plumbing</a></li>
+                        <li><a href="#services" class="hover:text-copper-400 transition-colors">Bespoke Bathrooms</a></li>
+                        <li><a href="#services" class="hover:text-copper-400 transition-colors">Central Heating Systems</a></li>
+                        <li><a href="#services" class="hover:text-copper-400 transition-colors">Water Softeners</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Service Areas</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><span class="text-slate-400">Bimport & Shaftesbury Town</span></li>
+                        <li><span class="text-slate-400">Gold Hill & St James</span></li>
+                        <li><span class="text-slate-400">Enmore Green & Cann</span></li>
+                        <li><span class="text-slate-400">Fontmell Magna & Melbury</span></li>
+                        <li><span class="text-slate-400">Gillingham & Blackmore Vale</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Accreditations</h4>
+                    <div class="space-y-2 text-xs text-slate-400">
+                        <p><i class="fa-solid fa-shield text-copper-400 mr-2"></i> Gas Safe Register #593821</p>
+                        <p><i class="fa-solid fa-certificate text-copper-400 mr-2"></i> CIPHE Registered Member</p>
+                        <p><i class="fa-solid fa-circle-check text-copper-400 mr-2"></i> £5M Public Liability Insured</p>
+                        <p><i class="fa-solid fa-clock text-copper-400 mr-2"></i> 24/7 Emergency Dispatch</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <span id="year"></span> Talbot Plumbing. All rights reserved. Bimport, Shaftesbury, UK.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-400">Gas Safe Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inline Mobile Menu & Year Script -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

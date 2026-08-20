@@ -1,559 +1,750 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en-GB" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Environmental Cooling Services | Bespoke Carpentry & Timber Architecture Shaftesbury</title>
-  <meta name="description" content="Master carpentry, timber shading, solar louvres, and bespoke joinery in Enmore Green & Shaftesbury, Dorset. Sustainable architectural woodwork designed for natural climate control.">
-  
-  <!-- Google Fonts: Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-          },
-          colors: {
-            timber: {
-              50: '#fdfbf7',
-              100: '#f5efe6',
-              200: '#ebdcc6',
-              300: '#dcbfa0',
-              400: '#c89d74',
-              500: '#b8814e',
-              600: '#a3683f',
-              700: '#834f33',
-              800: '#6d412d',
-              900: '#583627',
-            },
-            spruce: {
-              50: '#f2f7f5',
-              100: '#dfedebb',
-              200: '#c1dbd6',
-              500: '#2d6a5e',
-              800: '#193e37',
-              900: '#122e29',
-              950: '#0a1d1a',
-            }
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    .bg-grain {
-      background-image: radial-gradient(rgba(184, 129, 78, 0.08) 1px, transparent 0);
-      background-size: 24px 24px;
-    }
-  </style>
-</head>
-<body class="font-sans text-slate-800 bg-timber-50 antialiased selection:bg-timber-500 selection:text-white">
-
-  <!-- TOP BAR -->
-  <div class="bg-spruce-950 text-slate-300 text-xs py-2.5 px-4 border-b border-spruce-900/50">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-6">
-        <span class="flex items-center gap-2">
-          <i class="fa-solid fa-location-dot text-timber-400"></i> Enmore Green, Shaftesbury, SP7
-        </span>
-        <span class="hidden md:flex items-center gap-2">
-          <i class="fa-regular fa-clock text-timber-400"></i> Mon–Fri: 08:00 – 17:30
-        </span>
-      </div>
-      <div class="flex items-center gap-6">
-        <span class="text-timber-300 font-medium">Bespoke Eco-Carpentry &amp; Solar Timber Shading</span>
-        <a href="tel:01747850921" class="text-white hover:text-timber-400 font-semibold transition-colors flex items-center gap-1.5">
-          <i class="fa-solid fa-phone text-xs text-timber-400"></i> 01747 850 921
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- STICKY HEADER -->
-  <header class="sticky top-0 z-50 bg-spruce-900/95 backdrop-blur-md border-b border-spruce-800/80 shadow-lg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        
-        <!-- Brand Logo -->
-        <a href="#" class="flex items-center gap-3 group">
-          <div class="w-11 h-11 rounded-lg bg-timber-500 flex items-center justify-center text-spruce-950 font-bold text-xl shadow-md group-hover:bg-timber-400 transition-all">
-            <i class="fa-solid fa-tree"></i>
-          </div>
-          <div>
-            <span class="text-xl font-bold tracking-tight text-white block leading-none">ENVIRONMENTAL</span>
-            <span class="text-xs font-semibold tracking-wider text-timber-400 uppercase">Cooling Services • Carpentry</span>
-          </div>
-        </a>
-
-        <!-- Desktop Navigation -->
-        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-200">
-          <a href="#services" class="hover:text-timber-400 transition-colors">Services</a>
-          <a href="#about" class="hover:text-timber-400 transition-colors">Enmore Green Workshop</a>
-          <a href="#testimonials" class="hover:text-timber-400 transition-colors">Client Reviews</a>
-          <a href="#contact" class="hover:text-timber-400 transition-colors">Contact</a>
-        </nav>
-
-        <!-- CTA Button -->
-        <div class="flex items-center gap-4">
-          <a href="tel:01747850921" class="hidden sm:inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white bg-spruce-800 hover:bg-spruce-800/80 px-4 py-3 rounded-lg border border-spruce-700 transition-all">
-            <i class="fa-solid fa-phone text-timber-400"></i> Call Workshop
-          </a>
-          <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-spruce-950 bg-timber-400 hover:bg-timber-300 px-5 py-3 rounded-lg shadow-md hover:shadow-xl transition-all">
-            Get Consultation
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section class="relative bg-spruce-900 text-white overflow-hidden py-20 lg:py-28 bg-grain">
-    <div class="absolute inset-0 bg-gradient-to-r from-spruce-950 via-spruce-900/90 to-transparent z-10"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Cooling Services | Bespoke Carpentry & Timber Architecture | Shaftesbury</title>
+    <meta name="description" content="Master carpenters in Enmore Green, Shaftesbury. Specialising in architectural timber shading, green oak frames, passive solar louvres, and bespoke joinery across Dorset.">
     
-    <!-- Hero Background Image Overlay -->
-    <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');"></div>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        forest: {
+                            800: '#1c3124',
+                            900: '#112217',
+                            950: '#0a160e',
+                        },
+                        timber: {
+                            100: '#f7f2e8',
+                            200: '#eae0d0',
+                            500: '#a37143',
+                            700: '#754a26',
+                            800: '#523319',
+                        },
+                        brass: {
+                            400: '#e0b368',
+                            500: '#cfa050',
+                            600: '#b08238',
+                        },
+                        sand: '#fdfbf7'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-header {
+            background: rgba(17, 34, 23, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-pattern {
+            background-color: #112217;
+            background-image: radial-gradient(#a37143 0.75px, transparent 0.75px), radial-gradient(#a37143 0.75px, #112217 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0,15px 15px;
+            background-opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="bg-sand text-gray-800 font-sans antialiased selection:bg-brass-500 selection:text-white">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-      <div class="max-w-3xl">
-        <div class="inline-flex items-center gap-2 bg-timber-500/20 border border-timber-500/40 text-timber-300 text-xs font-semibold px-3.5 py-1.5 rounded-full mb-6">
-          <span class="w-2 h-2 rounded-full bg-timber-400 animate-pulse"></span>
-          Master Joiners & Architectural Timber Specialists in Shaftesbury
+    <!-- TOP BAR -->
+    <div class="bg-forest-950 text-gray-300 text-xs py-2.5 px-4 sm:px-8 border-b border-forest-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brass-500"></i>
+                    Enmore Green, Shaftesbury, Dorset, SP7
+                </span>
+                <span class="hidden md:flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-brass-500"></i>
+                    Mon - Fri: 07:30 - 17:30 | Sat: By Appointment
+                </span>
+            </div>
+            <div class="flex items-center space-x-6 font-medium">
+                <a href="mailto:info@environmentalcooling.co.uk" class="hover:text-brass-400 transition-colors flex items-center gap-2">
+                    <i class="fa-regular fa-envelope text-brass-500"></i>
+                    info@environmentalcooling.co.uk
+                </a>
+                <a href="tel:01747859204" class="text-brass-400 hover:text-brass-500 font-semibold flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                    01747 859204
+                </a>
+            </div>
         </div>
-        
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
-          Sustainable Timber Carpentry & <span class="text-timber-400">Passive Solar Cooling</span>
-        </h1>
-        
-        <p class="text-lg sm:text-xl text-slate-300 font-normal mb-8 leading-relaxed">
-          Crafting bespoke wooden brise-soleil, thermal timber cladding, louvred pergolas, and heritage joinery. We combine traditional Dorset craftsmanship with modern climate-responsive woodwork to naturally cool and elevate your home.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-4 mb-12">
-          <a href="#contact" class="inline-flex justify-center items-center gap-3 bg-timber-500 hover:bg-timber-400 text-spruce-950 text-base font-bold px-8 py-4 rounded-xl shadow-xl transition-all">
-            Book Site Survey <i class="fa-solid fa-arrow-right text-sm"></i>
-          </a>
-          <a href="tel:01747850921" class="inline-flex justify-center items-center gap-3 bg-spruce-800/90 hover:bg-spruce-800 text-white border border-spruce-700 text-base font-semibold px-8 py-4 rounded-xl transition-all">
-            <i class="fa-solid fa-phone text-timber-400"></i> Speak to Joiner: 01747 850 921
-          </a>
-        </div>
-
-        <!-- TRUST BADGES -->
-        <div class="pt-8 border-t border-spruce-800/80 grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="flex items-center gap-3">
-            <i class="fa-solid fa-shield-halved text-timber-400 text-xl"></i>
-            <span class="text-xs text-slate-300 font-medium">Guild of Master Craftsmen</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <i class="fa-solid fa-leaf text-timber-400 text-xl"></i>
-            <span class="text-xs text-slate-300 font-medium">100% Sustainable British Oak</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <i class="fa-solid fa-house-chimney text-timber-400 text-xl"></i>
-            <span class="text-xs text-slate-300 font-medium">Enmore Green Local Workshop</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <i class="fa-solid fa-award text-timber-400 text-xl"></i>
-            <span class="text-xs text-slate-300 font-medium">25+ Yrs Dorset Experience</span>
-          </div>
-        </div>
-
-      </div>
     </div>
-  </section>
 
-  <!-- SERVICES GRID SECTION -->
-  <section id="services" class="py-24 bg-timber-50 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-bold text-timber-600 uppercase tracking-widest mb-3">Bespoke Woodworking & Structural Solutions</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-spruce-900 tracking-tight">Our Precision Carpentry & Environmental Shading Services</p>
-        <p class="mt-4 text-slate-600 text-base">We design, manufacture, and install timber architecture designed to naturally moderate temperature, reduce solar heat gain, and add timeless value to North Dorset properties.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Service Card 1 -->
-        <div class="bg-white rounded-2xl p-8 border border-timber-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-          <div class="w-14 h-14 rounded-xl bg-spruce-50 text-spruce-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-timber-500 group-hover:text-white transition-all">
-            <i class="fa-solid fa-sun-plant-wilt"></i>
-          </div>
-          <h3 class="text-xl font-bold text-spruce-900 mb-3">Timber Brise-Soleil & Shading</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Architectural timber louvres fitted to south-facing elevations. Controls solar gain, eliminates summer overheating, and allows winter light to pass naturally.
-          </p>
-          <ul class="text-xs font-semibold text-slate-500 space-y-2">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Western Red Cedar & Larch</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Engineered Passive Cooling</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 2 -->
-        <div class="bg-white rounded-2xl p-8 border border-timber-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-          <div class="w-14 h-14 rounded-xl bg-spruce-50 text-spruce-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-timber-500 group-hover:text-white transition-all">
-            <i class="fa-solid fa-grip-lines-vertical"></i>
-          </div>
-          <h3 class="text-xl font-bold text-spruce-900 mb-3">Bespoke Louvred Pergolas</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Handcrafted outdoor living structures with adjustable or fixed timber slats, providing natural airflow, shade, and climate protection for Dorset gardens.
-          </p>
-          <ul class="text-xs font-semibold text-slate-500 space-y-2">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Custom Oak & Hardwood Frames</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Integrated Rain Channels</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 3 -->
-        <div class="bg-white rounded-2xl p-8 border border-timber-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-          <div class="w-14 h-14 rounded-xl bg-spruce-50 text-spruce-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-timber-500 group-hover:text-white transition-all">
-            <i class="fa-solid fa-layer-group"></i>
-          </div>
-          <h3 class="text-xl font-bold text-spruce-900 mb-3">Insulated Cladding & Facades</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Rain-screen timber cladding with integrated thermal insulation layers to keep homes cool in hot summers and comfortably warm through cold Dorset winters.
-          </p>
-          <ul class="text-xs font-semibold text-slate-500 space-y-2">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Natural Breathable Membranes</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Thermally Treated Woods</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 4 -->
-        <div class="bg-white rounded-2xl p-8 border border-timber-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-          <div class="w-14 h-14 rounded-xl bg-spruce-50 text-spruce-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-timber-500 group-hover:text-white transition-all">
-            <i class="fa-solid fa-door-open"></i>
-          </div>
-          <h3 class="text-xl font-bold text-spruce-900 mb-3">Traditional Heritage Joinery</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Bespoke timber window frames, acoustic/thermal shutters, and exterior doors tailored for historic homes and conservation areas in Shaftesbury.
-          </p>
-          <ul class="text-xs font-semibold text-slate-500 space-y-2">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Draft & Solar Heat Proofing</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Period Matching Designs</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 5 -->
-        <div class="bg-white rounded-2xl p-8 border border-timber-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-          <div class="w-14 h-14 rounded-xl bg-spruce-50 text-spruce-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-timber-500 group-hover:text-white transition-all">
-            <i class="fa-solid fa-compass-drafting"></i>
-          </div>
-          <h3 class="text-xl font-bold text-spruce-900 mb-3">Green Oak Timber Framing</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Heavy-timber frames, porches, garden offices, and structural extensions constructed using traditional mortise and tenon joinery techniques.
-          </p>
-          <ul class="text-xs font-semibold text-slate-500 space-y-2">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> English Oak Sourcing</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Structural Engineering Approved</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 6 -->
-        <div class="bg-white rounded-2xl p-8 border border-timber-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-          <div class="w-14 h-14 rounded-xl bg-spruce-50 text-spruce-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-timber-500 group-hover:text-white transition-all">
-            <i class="fa-solid fa-fan"></i>
-          </div>
-          <h3 class="text-xl font-bold text-spruce-900 mb-3">Ventilated Timber Decking</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Elevated, air-flowing timber decking and veranda systems engineered to reduce heat radiant feedback around house foundations and patio doors.
-          </p>
-          <ul class="text-xs font-semibold text-slate-500 space-y-2">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Non-Slip Sustainable Hardwood</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber-500"></i> Concealed Fixing Systems</li>
-          </ul>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- LOCAL SEO & WORKSHOP TEXT SECTION -->
-  <section id="about" class="py-20 bg-spruce-950 text-white relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
-        <div class="lg:col-span-7">
-          <span class="text-timber-400 font-semibold text-xs uppercase tracking-widest block mb-2">Based in Enmore Green, Shaftesbury</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6 leading-tight">
-            Combining Traditional Dorset Carpentry with Modern Eco-Cooling Design
-          </h2>
-          
-          <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
-            <p>
-              Situated at the foot of Gold Hill in historic <strong class="text-timber-300">Enmore Green, Shaftesbury</strong>, <span class="text-white font-medium">Environmental Cooling Services</span> offers a unique approach to carpentry. We specialize in working with timber as a natural thermal regulator for residential and commercial buildings across North Dorset and the Blackmore Vale.
-            </p>
-            <p>
-              As summers become warmer, traditional air conditioning can be energy-intensive and visually jarring on historic Dorset homes. Our joinery team crafts architectural timber solutions—such as solar louvres, brise-soleil, cedar shading, and breathable clad extensions—that drastically reduce interior heat without electrical cooling.
-            </p>
-            <p>
-              Whether you require a bespoke oak frame in Motcombe, timber cladding in Fontmell Magna, or custom energy-efficient window shutters in central Shaftesbury, our workshop delivers unrivaled master joinery tailored to the local landscape.
-            </p>
-          </div>
-
-          <div class="mt-8 flex flex-wrap gap-4 text-xs font-semibold text-timber-300">
-            <span class="bg-spruce-900 border border-spruce-800 px-3 py-2 rounded-lg">📍 Enmore Green (SP7)</span>
-            <span class="bg-spruce-900 border border-spruce-800 px-3 py-2 rounded-lg">📍 Shaftesbury Hill</span>
-            <span class="bg-spruce-900 border border-spruce-800 px-3 py-2 rounded-lg">📍 Motcombe &amp; Semley</span>
-            <span class="bg-spruce-900 border border-spruce-800 px-3 py-2 rounded-lg">📍 Fontmell Magna</span>
-          </div>
-        </div>
-
-        <div class="lg:col-span-5">
-          <div class="bg-spruce-900 border border-spruce-800 rounded-3xl p-8 shadow-2xl relative">
-            <div class="absolute -top-4 -right-4 w-20 h-20 bg-timber-500/10 rounded-full blur-xl"></div>
+    <!-- STICKY HEADER & NAV -->
+    <header class="sticky top-0 z-50 glass-header border-b border-forest-800/60 shadow-xl transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
-            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-              <i class="fa-solid fa-hammer text-timber-400"></i> Why Choose Our Joinery?
-            </h3>
-            
-            <ul class="space-y-4 text-sm text-slate-300">
-              <li class="flex items-start gap-3">
-                <i class="fa-solid fa-circle-check text-timber-400 mt-1"></i>
-                <div>
-                  <strong class="text-white block">Sustainable Sourcing</strong>
-                  FSC-certified British oak, sweet chestnut, and larch sourced from responsible local estates.
-                </div>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fa-solid fa-circle-check text-timber-400 mt-1"></i>
-                <div>
-                  <strong class="text-white block">Passive Cooling Expertise</strong>
-                  Precision angle-calculated shading slats engineered to block peak summer sun angles.
-                </div>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fa-solid fa-circle-check text-timber-400 mt-1"></i>
-                <div>
-                  <strong class="text-white block">Local Enmore Green Workshop</strong>
-                  Visit our workshop near Shaftesbury by appointment to view timber samples and joinery details.
-                </div>
-              </li>
-            </ul>
-
-            <div class="mt-8 pt-6 border-t border-spruce-800 text-center">
-              <a href="#contact" class="text-timber-400 hover:text-timber-300 font-bold text-sm inline-flex items-center gap-2">
-                Request a Local Site Visit <i class="fa-solid fa-chevron-right text-xs"></i>
-              </a>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS SECTION -->
-  <section id="testimonials" class="py-24 bg-timber-100/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-bold text-timber-600 uppercase tracking-widest mb-3">Client Feedback</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-spruce-900 tracking-tight">Trusted Across Shaftesbury &amp; North Dorset</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <!-- Review 1 -->
-        <div class="bg-white rounded-2xl p-8 border border-timber-200/80 shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="flex text-timber-500 gap-1 text-sm mb-4">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
-              "We commissioned Environmental Cooling Services to design and build a modern larch brise-soleil for our south-facing glass extension in Shaftesbury. The difference in indoor summer temperature is night and day, and the timber joinery looks stunning."
-            </p>
-          </div>
-          <div class="border-t border-slate-100 pt-4">
-            <p class="font-bold text-spruce-900 text-sm">Arthur M.</p>
-            <p class="text-xs text-slate-500">Shaftesbury Town Centre</p>
-          </div>
-        </div>
-
-        <!-- Review 2 -->
-        <div class="bg-white rounded-2xl p-8 border border-timber-200/80 shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="flex text-timber-500 gap-1 text-sm mb-4">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
-              "Fantastic craftsman right here in Enmore Green. They crafted custom oak louvres for our garden pavilion. They were incredibly knowledgeable about timber selection and heat protection."
-            </p>
-          </div>
-          <div class="border-t border-slate-100 pt-4">
-            <p class="font-bold text-spruce-900 text-sm">Claire &amp; David S.</p>
-            <p class="text-xs text-slate-500">Enmore Green, Shaftesbury</p>
-          </div>
-        </div>
-
-        <!-- Review 3 -->
-        <div class="bg-white rounded-2xl p-8 border border-timber-200/80 shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="flex text-timber-500 gap-1 text-sm mb-4">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
-              "Replaced our period property's degraded exterior cladding with insulated timber panels. Prompt, clean, and incredible attention to detail. Highly recommend this local Dorset joiner."
-            </p>
-          </div>
-          <div class="border-t border-slate-100 pt-4">
-            <p class="font-bold text-spruce-900 text-sm">Robert H.</p>
-            <p class="text-xs text-slate-500">Motcombe</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT & CALL TO ACTION SECTION -->
-  <section id="contact" class="py-24 bg-white relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="bg-spruce-900 rounded-3xl overflow-hidden shadow-2xl border border-spruce-800 grid grid-cols-1 lg:grid-cols-12">
-        
-        <!-- Left: Call & Info Column -->
-        <div class="lg:col-span-5 bg-spruce-950 p-8 sm:p-12 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-spruce-800">
-          <div>
-            <span class="text-timber-400 font-bold text-xs uppercase tracking-widest block mb-3">Get in Touch</span>
-            <h3 class="text-3xl font-extrabold text-white mb-6">Discuss Your Project With Our Joiners</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-8">
-              Interested in solar timber shading, bespoke pergolas, cladding, or traditional carpentry in Shaftesbury? Call us directly or submit your project details for an initial advice and estimate.
-            </p>
-
-            <div class="space-y-6">
-              <!-- Tel Button Highlight -->
-              <a href="tel:01747850921" class="flex items-center gap-4 p-4 rounded-2xl bg-timber-500/10 border border-timber-500/30 hover:bg-timber-500/20 transition-all group">
-                <div class="w-12 h-12 rounded-xl bg-timber-500 text-spruce-950 flex items-center justify-center text-xl font-bold group-hover:scale-105 transition-transform">
-                  <i class="fa-solid fa-phone"></i>
+            <!-- BRAND LOGO -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-brass-400 to-timber-700 flex items-center justify-center text-forest-950 shadow-md group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-[#compass-drafting] fa-compass-drafting text-xl"></i>
                 </div>
                 <div>
-                  <span class="text-xs text-timber-300 uppercase tracking-wider block font-semibold">Direct Workshop Line</span>
-                  <span class="text-xl font-extrabold text-white">01747 850 921</span>
+                    <span class="block text-lg font-bold text-white tracking-tight leading-none uppercase">Environmental Cooling</span>
+                    <span class="text-[10px] text-brass-400 font-semibold tracking-widest uppercase">Bespoke Carpentry & Timber Structures</span>
                 </div>
-              </a>
+            </a>
 
-              <div class="flex items-start gap-4 text-slate-300 text-sm">
-                <div class="w-10 h-10 rounded-lg bg-spruce-900 border border-spruce-800 flex items-center justify-center text-timber-400 flex-shrink-0">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div>
-                  <strong class="text-white block">Workshop Address:</strong>
-                  The Joinery Yard, Enmore Green,<br>
-                  Shaftesbury, Dorset, SP7 8DA
-                </div>
-              </div>
+            <!-- DESKTOP NAVIGATION -->
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-gray-200">
+                <a href="#services" class="hover:text-brass-400 transition-colors">Services</a>
+                <a href="#craftsmanship" class="hover:text-brass-400 transition-colors">Our Craft</a>
+                <a href="#local-seo" class="hover:text-brass-400 transition-colors">Shaftesbury & Enmore Green</a>
+                <a href="#testimonials" class="hover:text-brass-400 transition-colors">Client Reviews</a>
+                <a href="#contact" class="hover:text-brass-400 transition-colors">Contact</a>
+            </nav>
 
-              <div class="flex items-start gap-4 text-slate-300 text-sm">
-                <div class="w-10 h-10 rounded-lg bg-spruce-900 border border-spruce-800 flex items-center justify-center text-timber-400 flex-shrink-0">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div>
-                  <strong class="text-white block">Email Enquiries:</strong>
-                  info@environmentalcoolingservices.co.uk
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-12 pt-6 border-t border-spruce-900 text-xs text-slate-400">
-            Serving Shaftesbury, Enmore Green, Motcombe, Cann, Gillingham &amp; surrounding North Dorset areas.
-          </div>
-        </div>
-
-        <!-- Right: Contact Form -->
-        <div class="lg:col-span-7 p-8 sm:p-12 bg-spruce-900">
-          <form onsubmit="event.preventDefault(); alert('Thank you for your message. Environmental Cooling Services will contact you shortly.');" class="space-y-6">
-            <h4 class="text-xl font-bold text-white mb-2">Send an Online Request</h4>
-            <p class="text-xs text-slate-400 mb-6">Fill in your requirements below and we will get back to you within 24 business hours.</p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Full Name *</label>
-                <input type="text" required placeholder="e.g. John Carpenter" class="w-full bg-spruce-950 border border-spruce-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-timber-400 transition-colors">
-              </div>
-
-              <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Phone Number *</label>
-                <input type="tel" required placeholder="07123 456789" class="w-full bg-spruce-950 border border-spruce-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-timber-400 transition-colors">
-              </div>
+            <!-- CTA BUTTON -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-brass-500 to-timber-500 hover:from-brass-600 hover:to-timber-700 text-forest-950 font-bold px-5 py-2.5 rounded-lg shadow-lg hover:shadow-brass-500/20 transition-all text-sm">
+                    <span>Consultation</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Email Address *</label>
-                <input type="email" required placeholder="john@example.co.uk" class="w-full bg-spruce-950 border border-spruce-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-timber-400 transition-colors">
-              </div>
-
-              <div>
-                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Service Required</label>
-                <select class="w-full bg-spruce-950 border border-spruce-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-timber-400 transition-colors">
-                  <option>Timber Brise-Soleil / Solar Louvres</option>
-                  <option>Bespoke Louvred Pergola</option>
-                  <option>Insulated Timber Cladding</option>
-                  <option>Heritage Joinery &amp; Shutters</option>
-                  <option>Green Oak Framing</option>
-                  <option>General Carpentry Consultation</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Project Details / Location</label>
-              <textarea rows="4" placeholder="Tell us about your property and woodworking or cooling shading needs..." class="w-full bg-spruce-950 border border-spruce-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-timber-400 transition-colors"></textarea>
-            </div>
-
-            <button type="submit" class="w-full bg-timber-400 hover:bg-timber-300 text-spruce-950 font-bold py-4 rounded-xl shadow-lg transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-2">
-              <i class="fa-solid fa-paper-plane"></i> Send Consultation Request
+            <!-- MOBILE MENU BUTTON -->
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-300 hover:text-white text-2xl focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
             </button>
-          </form>
         </div>
 
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-spruce-950 text-slate-400 text-xs py-12 border-t border-spruce-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-        
-        <div class="flex items-center gap-3">
-          <div class="w-8 h-8 rounded bg-timber-500 flex items-center justify-center text-spruce-950 font-bold text-sm">
-            <i class="fa-solid fa-tree"></i>
-          </div>
-          <span class="text-white font-bold tracking-tight text-sm">ENVIRONMENTAL COOLING SERVICES</span>
+        <!-- MOBILE MENU POPUP -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-forest-900 border-b border-forest-800 px-6 py-6 space-y-4">
+            <a href="#services" class="block text-gray-200 hover:text-brass-400 font-medium py-1">Services</a>
+            <a href="#craftsmanship" class="block text-gray-200 hover:text-brass-400 font-medium py-1">Our Craft</a>
+            <a href="#local-seo" class="block text-gray-200 hover:text-brass-400 font-medium py-1">Shaftesbury & Enmore Green</a>
+            <a href="#testimonials" class="block text-gray-200 hover:text-brass-400 font-medium py-1">Client Reviews</a>
+            <a href="#contact" class="block text-gray-200 hover:text-brass-400 font-medium py-1">Contact Us</a>
+            <a href="#contact" class="inline-block w-full text-center bg-brass-500 text-forest-950 font-bold py-3 rounded-lg mt-4">Book Consultation</a>
         </div>
+    </header>
 
-        <p class="text-center md:text-left">
-          &copy; <script>document.write(new Date().getFullYear())</script> Environmental Cooling Services (Carpentry &amp; Joinery). Enmore Green, Shaftesbury, SP7. All rights reserved.
-        </p>
+    <!-- HERO SECTION -->
+    <section class="relative bg-forest-900 hero-pattern text-white pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- HERO TEXT CONTENT -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-forest-800/80 border border-brass-500/30 text-brass-400 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-tree text-sm"></i>
+                        Enmore Green & Shaftesbury Master Carpenters
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Architectural Timber Framing & <span class="text-transparent bg-clip-text bg-gradient-to-r from-brass-400 to-timber-200">Passive Solar Shading</span>
+                    </h1>
+                    
+                    <p class="text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Harmonising traditional Dorset carpentry with modern climate-responsive timber design. From bespoke green oak frames and thermal brise-soleil to heritage joinery in Enmore Green.
+                    </p>
 
-        <div class="flex items-center gap-4 text-slate-400">
-          <a href="#" class="hover:text-timber-400 transition-colors">Privacy Policy</a>
-          <span>•</span>
-          <a href="#" class="hover:text-timber-400 transition-colors">Terms of Service</a>
-          <span>•</span>
-          <a href="tel:01747850921" class="hover:text-timber-400 transition-colors">01747 850 921</a>
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brass-500 hover:bg-brass-600 text-forest-950 font-bold px-7 py-3.5 rounded-lg shadow-xl hover:shadow-brass-500/25 transition-all text-base">
+                            <i class="fa-solid fa-calculator"></i>
+                            Request Site Survey
+                        </a>
+                        <a href="tel:01747859204" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-forest-800/80 hover:bg-forest-800 text-white font-semibold px-7 py-3.5 rounded-lg border border-forest-700 hover:border-brass-500/50 transition-all text-base">
+                            <i class="fa-solid fa-phone text-brass-400"></i>
+                            01747 859204
+                        </a>
+                    </div>
+
+                    <!-- MINI STATS / QUICK TRUST -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-forest-800/80 text-left max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <span class="block text-2xl font-extrabold text-brass-400">25+</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wide">Years Craftsmanship</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-extrabold text-brass-400">100%</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wide">Sustainably Sourced Oak</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-extrabold text-brass-400">SP7</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wide">Local Dorset Workshop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HERO VISUAL / FEATURE CARD -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Decorative glow -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-brass-500 to-timber-500 rounded-2xl blur-lg opacity-25"></div>
+                        
+                        <div class="relative bg-forest-950 border border-forest-800 rounded-2xl p-6 shadow-2xl space-y-6">
+                            <div class="flex items-center justify-between border-b border-forest-800 pb-4">
+                                <span class="text-xs font-bold uppercase tracking-wider text-brass-400">Craft Specification</span>
+                                <span class="inline-flex items-center gap-1 text-xs text-emerald-400"><i class="fa-solid fa-circle-check"></i> Guild Certified</span>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div class="p-4 rounded-xl bg-forest-900/90 border border-forest-800 flex items-start gap-4">
+                                    <div class="p-3 bg-timber-800/40 rounded-lg text-brass-400">
+                                        <i class="fa-solid fa-sun text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white text-sm">Solar Heat Mitigation</h4>
+                                        <p class="text-xs text-gray-400 mt-0.5">Bespoke exterior louvres & brise-soleil engineered to lower indoor summer temperatures naturally.</p>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-xl bg-forest-900/90 border border-forest-800 flex items-start gap-4">
+                                    <div class="p-3 bg-timber-800/40 rounded-lg text-brass-400">
+                                        <i class="fa-solid fa-hammer text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white text-sm">Green Oak & Timber Framing</h4>
+                                        <p class="text-xs text-gray-400 mt-0.5">Traditional mortise and tenon joinery for porches, outbuildings, pergolas, and extensions.</p>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-xl bg-forest-900/90 border border-forest-800 flex items-start gap-4">
+                                    <div class="p-3 bg-timber-800/40 rounded-lg text-brass-400">
+                                        <i class="fa-solid fa-house-chimney-window text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white text-sm">Heritage Dorset Restoration</h4>
+                                        <p class="text-xs text-gray-400 mt-0.5">Sympathetic structural repairs compliant with Cranborne Chase & Shaftesbury conservation guidelines.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-forest-900/50 rounded-xl p-4 text-center border border-dashed border-forest-700">
+                                <p class="text-xs text-gray-300">
+                                    Based in <strong class="text-brass-400">Enmore Green</strong>. Serving Shaftesbury, Motcombe, Fontmell Magna & Cranborne Chase.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-      </div>
-    </div>
-  </footer>
+    <!-- TRUST BADGES BAR -->
+    <section class="bg-timber-100 border-y border-timber-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center items-center">
+                <div class="flex items-center justify-center gap-3 text-timber-900 font-semibold text-sm">
+                    <i class="fa-solid fa-award text-2xl text-timber-700"></i>
+                    <span>Guild of Master Craftsmen</span>
+                </div>
+                <div class="flex items-center justify-center gap-3 text-timber-900 font-semibold text-sm">
+                    <i class="fa-solid fa-leaf text-2xl text-timber-700"></i>
+                    <span>FSC Sustainable Timber</span>
+                </div>
+                <div class="flex items-center justify-center gap-3 text-timber-900 font-semibold text-sm">
+                    <i class="fa-solid fa-shield-halved text-2xl text-timber-700"></i>
+                    <span>£5M Public Liability Insured</span>
+                </div>
+                <div class="flex items-center justify-center gap-3 text-timber-900 font-semibold text-sm">
+                    <i class="fa-solid fa-landmark text-2xl text-timber-700"></i>
+                    <span>Dorset Heritage Compliant</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- SERVICES GRID -->
+    <section id="services" class="py-20 lg:py-28 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold text-timber-700 uppercase tracking-widest bg-timber-100 px-3 py-1 rounded-full border border-timber-200">Our Specialisms</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-forest-900 tracking-tight">
+                    Environmental Carpentry & High-End Joinery
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    We combine time-honoured Dorset woodworking techniques with passive microclimate control—delivering aesthetic elegance and natural cooling performance.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- SERVICE CARD 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-forest-900 text-brass-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-brass-500 group-hover:text-forest-950 transition-colors">
+                        <i class="fa-solid fa-sun-plant-wilt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-forest-900 mb-3">Solar Brise-Soleil & Shading</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Precision-engineered timber louvres and exterior shading fins. Reduces internal solar heat gain by up to 75% during hot Shaftesbury summers without sacrificing natural light.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2 border-t border-gray-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Fixed & adjustable timber fins</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Western Red Cedar & Siberian Larch</li>
+                    </ul>
+                </div>
+
+                <!-- SERVICE CARD 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-forest-900 text-brass-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-brass-500 group-hover:text-forest-950 transition-colors">
+                        <i class="fa-solid fa-[#chess-board] fa-boxes-packing"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-forest-900 mb-3">Green Oak Framed Structures</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Hand-crafted green oak porches, garden pavilions, shaded pergolas, and oak-framed extensions. Built with traditional draw-pegged mortise and tenon joints.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2 border-t border-gray-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Structurally engineered timber</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Sourced from sustainable UK forests</li>
+                    </ul>
+                </div>
+
+                <!-- SERVICE CARD 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-forest-900 text-brass-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-brass-500 group-hover:text-forest-950 transition-colors">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-forest-900 mb-3">Ventilated Timber Cladding</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        High-performance architectural rainscreen cladding systems. Designed to create a thermal convective buffer zone that keeps external warmth out and insulates in winter.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2 border-t border-gray-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Shadow-gap & secret-fix profiles</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Enhanced thermal envelope efficiency</li>
+                    </ul>
+                </div>
+
+                <!-- SERVICE CARD 4 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-forest-900 text-brass-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-brass-500 group-hover:text-forest-950 transition-colors">
+                        <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-forest-900 mb-3">Custom Outdoor Living Canopies</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Bespoke open-air timber canopies with integrated slatted roofs, passive airflow channels, and climate protection for Dorset country residences.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2 border-t border-gray-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Integrated guttering & lighting tracks</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Weatherproof oil finishes</li>
+                    </ul>
+                </div>
+
+                <!-- SERVICE CARD 5 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-forest-900 text-brass-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-brass-500 group-hover:text-forest-950 transition-colors">
+                        <i class="fa-solid fa-door-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-forest-900 mb-3">Heritage Joinery & Restoration</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Expert repair and replacement of timber structural elements, sash windows, heavy doors, and period features in listed Shaftesbury and Enmore Green properties.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2 border-t border-gray-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Grade I & II Listed experience</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Match-existing moulding profiles</li>
+                    </ul>
+                </div>
+
+                <!-- SERVICE CARD 6 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-forest-900 text-brass-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-brass-500 group-hover:text-forest-950 transition-colors">
+                        <i class="fa-solid fa-[#sliders] fa-[#gear] fa-sliders"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-forest-900 mb-3">Architectural Interior Joinery</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Custom hardwood staircases, timber ceiling baffle systems for acoustic and thermal comfort, fitted alcoves, and bespoke internal acoustic panelling.
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2 border-t border-gray-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> English Walnut, Oak & Ash finishes</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brass-500"></i> Millimetre-perfect site fitting</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO & CRAFTSMANSHIP NARRATIVE SECTION -->
+    <section id="local-seo" class="py-20 bg-forest-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold text-brass-400 uppercase tracking-widest bg-forest-800 px-3.5 py-1.5 rounded-full border border-forest-700">
+                        Local Heritage & Eco Engineering
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight">
+                        Rooted in Enmore Green, Serving the Shaftesbury Hilltop Microclimate
+                    </h2>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Situated at the base of Shaftesbury's historic Gold Hill and Cranborne Chase area, <strong>Environmental Cooling Services</strong> brings a specialized approach to carpentry. Enmore Green homes experience unique sun exposure and hilltop weather fluctuations.
+                    </p>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Rather than relying solely on energy-intensive air conditioning, our master carpenters construct passive architectural timber solutions—such as cedar brise-soleil systems, oak shade pergolas, and ventilated timber facades—that naturally lower indoor temperatures while elevating your property's value.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-compass text-brass-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-sm">North Dorset Expertise</h4>
+                                <p class="text-xs text-gray-400">Deep knowledge of local stone, timber pairings, and planning permissions.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-seedling text-brass-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-sm">Sustainable Timber</h4>
+                                <p class="text-xs text-gray-400">100% certified British oak and larch with low carbon footprint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="bg-forest-950 p-8 rounded-2xl border border-forest-800 shadow-2xl relative">
+                        <div class="absolute -top-3 -right-3 bg-brass-500 text-forest-950 text-xs font-bold px-3 py-1 rounded-md shadow-md">
+                            Dorset Area Coverage
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Areas We Regularly Serve</h3>
+                        <p class="text-xs text-gray-400 mb-6">Our workshop in Enmore Green serves a 25-mile radius including historic towns and rural Dorset estates:</p>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
+                            <div class="p-2.5 rounded-lg bg-forest-900 border border-forest-800 text-gray-300 flex items-center gap-2">
+                                <i class="fa-solid fa-location-arrow text-brass-400 text-xs"></i> Enmore Green
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-forest-900 border border-forest-800 text-gray-300 flex items-center gap-2">
+                                <i class="fa-solid fa-location-arrow text-brass-400 text-xs"></i> Shaftesbury
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-forest-900 border border-forest-800 text-gray-300 flex items-center gap-2">
+                                <i class="fa-solid fa-location-arrow text-brass-400 text-xs"></i> Motcombe
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-forest-900 border border-forest-800 text-gray-300 flex items-center gap-2">
+                                <i class="fa-solid fa-location-arrow text-brass-400 text-xs"></i> Fontmell Magna
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-forest-900 border border-forest-800 text-gray-300 flex items-center gap-2">
+                                <i class="fa-solid fa-location-arrow text-brass-400 text-xs"></i> Melbury Abbas
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-forest-900 border border-forest-800 text-gray-300 flex items-center gap-2">
+                                <i class="fa-solid fa-location-arrow text-brass-400 text-xs"></i> Gillingham
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-forest-900 border border-forest-800 text-gray-300 flex items-center gap-2">
+                                <i class="fa-solid fa-location-arrow text-brass-400 text-xs"></i> Semley
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-forest-900 border border-forest-800 text-gray-300 flex items-center gap-2">
+                                <i class="fa-solid fa-location-arrow text-brass-400 text-xs"></i> Tisbury
+                            </div>
+                            <div class="p-2.5 rounded-lg bg-forest-900 border border-forest-800 text-gray-300 flex items-center gap-2">
+                                <i class="fa-solid fa-location-arrow text-brass-400 text-xs"></i> Blandford
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t border-forest-800 flex items-center justify-between text-xs text-gray-400">
+                            <span><i class="fa-solid fa-truck-fast text-brass-400 mr-1"></i> Rapid site visits in SP7 & SP8</span>
+                            <a href="#contact" class="text-brass-400 font-semibold hover:underline">Check postcode &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-timber-100/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-bold text-timber-700 uppercase tracking-widest bg-timber-200/60 px-3 py-1 rounded-full">Client Praise</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-forest-900">Endorsed by Dorset Homeowners</h2>
+                <p class="text-gray-600 text-sm">Read how our bespoke timber shade and framing installations have transformed properties across Shaftesbury.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- TESTIMONIAL 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-timber-200/80 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-brass-500 text-sm space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed italic">
+                            "Our south-facing modern extension in Enmore Green was unusable in July due to heat buildup. Environmental Cooling Services designed and fitted a custom red cedar brise-soleil. The temperature drop inside was immediate, and the timber work is pure art."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-bold text-forest-900 text-sm">Lord Richard P.</h4>
+                            <span class="text-xs text-gray-500">Enmore Green, Shaftesbury</span>
+                        </div>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-medium px-2.5 py-1 rounded">Verified Client</span>
+                    </div>
+                </div>
+
+                <!-- TESTIMONIAL 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-timber-200/80 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-brass-500 text-sm space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed italic">
+                            "The green oak frame canopy they built for our cottage patio in St James is exceptional. The craft craftsmanship is true old-school quality, yet the shade geometry keeps our dining area cool all afternoon."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-bold text-forest-900 text-sm">Eleanor V.</h4>
+                            <span class="text-xs text-gray-500">St James, Shaftesbury</span>
+                        </div>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-medium px-2.5 py-1 rounded">Verified Client</span>
+                    </div>
+                </div>
+
+                <!-- TESTIMONIAL 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-timber-200/80 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-brass-500 text-sm space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed italic">
+                            "Extremely professional team from start to finish. They handled listed building considerations with absolute precision and matched our historical timber cladding flawlessly."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-bold text-forest-900 text-sm">Marcus & Clara H.</h4>
+                            <span class="text-xs text-gray-500">Motcombe Estate</span>
+                        </div>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-medium px-2.5 py-1 rounded">Verified Client</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & DIRECT DIRECT CALL SECTION -->
+    <section id="contact" class="py-20 lg:py-28 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- LEFT CONTACT INFO & TEL DIRECT -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold text-timber-700 uppercase tracking-widest bg-timber-100 px-3 py-1 rounded-full border border-timber-200">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-forest-900 mt-3 tracking-tight">Discuss Your Timber Project</h2>
+                        <p class="text-gray-600 text-sm mt-3 leading-relaxed">
+                            Whether you require a passive solar timber louvre system, custom oak gazebo, or fine interior joinery in Enmore Green or Shaftesbury, we offer free site consultations.
+                        </p>
+                    </div>
+
+                    <!-- DIRECT TEL BUTTON CARD -->
+                    <div class="bg-gradient-to-br from-forest-900 to-forest-950 p-6 rounded-2xl text-white shadow-xl border border-forest-800 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full bg-brass-500 text-forest-950 flex items-center justify-center text-xl font-bold animate-pulse">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-brass-400 font-semibold uppercase tracking-wider block">Speak Directly With Master Carpenter</span>
+                                <h4 class="text-xl font-bold text-white">Immediate Telephone Line</h4>
+                            </div>
+                        </div>
+
+                        <a href="tel:01747859204" class="block w-full text-center bg-brass-500 hover:bg-brass-600 text-forest-950 font-extrabold text-lg py-3.5 rounded-xl transition-all shadow-lg hover:shadow-brass-500/30">
+                            <i class="fa-solid fa-phone mr-2"></i> Call 01747 859204
+                        </a>
+                        
+                        <p class="text-center text-xs text-gray-400">
+                            Mon - Fri 7:30am - 5:30pm | Enmore Green Workshop
+                        </p>
+                    </div>
+
+                    <!-- ADDRESS / DETAILS -->
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-timber-100 text-timber-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-building text-sm"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-forest-900">Workshop & Office</strong>
+                                <span>Environmental Cooling Services, Church Hill, Enmore Green, Shaftesbury, Dorset, SP7 8DA</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-timber-100 text-timber-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-envelope text-sm"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-forest-900">Email Inquiries</strong>
+                                <a href="mailto:info@environmentalcooling.co.uk" class="text-timber-700 hover:underline">info@environmentalcooling.co.uk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT FORM -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-8 sm:p-10 rounded-2xl border border-gray-200/80 shadow-xl">
+                        <h3 class="text-2xl font-bold text-forest-900 mb-2">Request Free Consultation & Quote</h3>
+                        <p class="text-xs text-gray-500 mb-6">Fill out the details below and our lead craftsman will respond within 24 hours.</p>
+
+                        <form action="#" method="POST" class="space-y-5" onsubmit="event.preventDefault(); alert('Thank you for reaching out to Environmental Cooling Services. We will contact you shortly!');">
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="full-name" class="block text-xs font-semibold text-gray-700 uppercase mb-1">Full Name *</label>
+                                    <input type="text" id="full-name" required placeholder="e.g. David Miller" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brass-500 focus:bg-white transition-colors">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-xs font-semibold text-gray-700 uppercase mb-1">Phone Number *</label>
+                                    <input type="tel" id="phone" required placeholder="e.g. 07700 900123" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brass-500 focus:bg-white transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="email" class="block text-xs font-semibold text-gray-700 uppercase mb-1">Email Address *</label>
+                                    <input type="email" id="email" required placeholder="david@example.co.uk" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brass-500 focus:bg-white transition-colors">
+                                </div>
+                                <div>
+                                    <label for="postcode" class="block text-xs font-semibold text-gray-700 uppercase mb-1">Property Postcode *</label>
+                                    <input type="text" id="postcode" required placeholder="e.g. SP7 8DA" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brass-500 focus:bg-white transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="service-type" class="block text-xs font-semibold text-gray-700 uppercase mb-1">Service Required</label>
+                                <select id="service-type" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brass-500 focus:bg-white transition-colors text-gray-700">
+                                    <option value="brise-soleil">Timber Brise-Soleil / Solar Shading</option>
+                                    <option value="oak-framing">Green Oak Framing & Gazebos</option>
+                                    <option value="cladding">Architectural Timber Cladding</option>
+                                    <option value="heritage">Heritage Joinery & Timber Repair</option>
+                                    <option value="interior">Custom Interior Joinery</option>
+                                    <option value="other">Other Bespoke Carpentry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-xs font-semibold text-gray-700 uppercase mb-1">Project Details / Requirements</label>
+                                <textarea id="message" rows="4" placeholder="Please describe your site, timeline, and goals..." class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brass-500 focus:bg-white transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-forest-900 hover:bg-forest-950 text-white font-bold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all text-base flex items-center justify-center gap-2">
+                                <span>Submit Consultation Request</span>
+                                <i class="fa-solid fa-paper-plane text-brass-400 text-sm"></i>
+                            </button>
+                            
+                            <p class="text-[11px] text-gray-400 text-center">
+                                Respect for your privacy. We never share your contact information.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-forest-950 text-gray-400 border-t border-forest-800 text-sm pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-forest-800">
+                
+                <!-- COL 1: BRAND -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded bg-brass-500 flex items-center justify-center text-forest-950 font-bold">
+                            <i class="fa-solid fa-compass-drafting text-sm"></i>
+                        </div>
+                        <span class="text-white font-bold tracking-tight uppercase">Environmental Cooling</span>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Bespoke architectural timber design, green oak framing, passive solar shading, and heritage joinery in Enmore Green & Shaftesbury, Dorset.
+                    </p>
+                </div>
+
+                <!-- COL 2: SERVICES LINK -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider">Services</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-brass-400 transition-colors">Solar Brise-Soleil</a></li>
+                        <li><a href="#services" class="hover:text-brass-400 transition-colors">Green Oak Framing</a></li>
+                        <li><a href="#services" class="hover:text-brass-400 transition-colors">Timber Cladding Systems</a></li>
+                        <li><a href="#services" class="hover:text-brass-400 transition-colors">Heritage Joinery</a></li>
+                        <li><a href="#services" class="hover:text-brass-400 transition-colors">Bespoke Architectural Woodwork</a></li>
+                    </ul>
+                </div>
+
+                <!-- COL 3: COVERAGE AREA -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider">Dorset & Wiltshire Coverage</h4>
+                    <p class="text-xs leading-relaxed text-gray-400">
+                        Enmore Green, Shaftesbury, Motcombe, Fontmell Magna, Gillingham, Semley, Tisbury, Melbury Abbas, and surrounding North Dorset villages.
+                    </p>
+                </div>
+
+                <!-- COL 4: ACCREDITATION -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider">Workshop Hours</h4>
+                    <ul class="text-xs space-y-1.5 text-gray-400">
+                        <li>Monday - Friday: 07:30 - 17:30</li>
+                        <li>Saturday: By Appointment</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="tel:01747859204" class="inline-flex items-center gap-2 text-xs text-brass-400 font-bold border border-brass-500/30 px-3 py-1.5 rounded bg-forest-900">
+                            <i class="fa-solid fa-phone"></i> 01747 859204
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM FOOTER -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+                <p>&copy; <span id="year"></span> Environmental Cooling Services (Carpentry) Enmore Green, Shaftesbury. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-300">Terms of Craftsmanship</a>
+                    <a href="#" class="hover:text-gray-300">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 </html>

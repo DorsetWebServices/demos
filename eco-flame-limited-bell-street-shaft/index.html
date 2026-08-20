@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en-GB" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco-Flame Limited | Bespoke Garden Design & Luxury Landscaping Shaftesbury</title>
-    <meta name="description" content="Eco-Flame Limited based in Bell Street, Shaftesbury. Premier sustainable landscaping, garden design, outdoor living, and bespoke hardscaping across Dorset & North Dorset.">
+    <title>Eco-Flame Limited | Bespoke Landscaping & Outdoor Living | Shaftesbury, Dorset</title>
+    <meta name="description" content="Eco-Flame Limited based on Bell Street, Shaftesbury. Luxury eco-conscious garden design, hardscaping, outdoor fire features, and sustainable landscape architecture across Dorset & Wiltshire.">
     
     <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome CDN -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Tailwind CSS CDN -->
@@ -25,658 +25,635 @@
                     },
                     colors: {
                         brand: {
-                            dark: '#0c1b15',      /* Rich Deep Forest Night */
-                            green: '#1a382b',     /* Luxury Deep Sage Green */
-                            lightgreen: '#2d5240',/* Soft Emerald Tint */
-                            copper: '#c87a4b',    /* Warm Earthy Bronze/Flame */
-                            copperdark: '#a86035',
-                            cream: '#faf7f2',     /* Warm Off-White */
-                            sand: '#eee7db',      /* Accent Warm Sand */
-                            muted: '#62736b'
+                            dark: '#0D1B12',      // Deepest Forest Charcoal
+                            green: '#1A3323',     // Rich English Oak/Forest Green
+                            sage: '#4A6B53',      // Soft Dorset Sage Green
+                            gold: '#D4A359',      // Aged Brass / Fire Warmth Accent
+                            goldhover: '#B88742',
+                            cream: '#F7F5F0',     // Warm Cotswold Stone
+                            stone: '#EAE6DF',     // Subtle Sandstone
                         }
                     }
                 }
             }
         }
     </script>
+    
     <style>
-        .hero-overlay {
-            background: linear-gradient(135deg, rgba(12, 27, 21, 0.88) 0%, rgba(26, 56, 43, 0.75) 60%, rgba(200, 122, 75, 0.4) 100%);
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F7F5F0;
+            color: #0D1B12;
         }
-        .text-glow {
-            text-shadow: 0 0 20px rgba(200, 122, 75, 0.3);
+        .hero-bg {
+            background: linear-gradient(180deg, rgba(13, 27, 18, 0.75) 0%, rgba(13, 27, 18, 0.85) 100%), 
+                        url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .wood-pattern {
+            background-color: #1A3323;
+            background-image: radial-gradient(#2A4C36 0.75px, transparent 0.75px);
+            background-size: 16px 16px;
         }
     </style>
 </head>
-<body class="font-sans bg-brand-cream text-brand-dark antialiased selection:bg-brand-copper selection:text-white">
+<body class="antialiased text-brand-dark selection:bg-brand-gold selection:text-white">
 
-    <!-- 1. TOP BAR -->
-    <div class="bg-brand-dark text-gray-300 text-xs py-2.5 px-4 border-b border-brand-green/40">
+    <!-- TOP BAR (Hours, Contact, Address) -->
+    <div class="bg-brand-dark text-stone-300 text-xs py-2.5 px-4 border-b border-white/10 relative z-50">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-            <div class="flex items-center gap-6 flex-wrap justify-center md:justify-start">
+            <div class="flex items-center space-x-6">
                 <span class="flex items-center gap-2">
-                    <i class="fa-regular fa-clock text-brand-copper"></i>
-                    Mon - Fri: 8:00 AM - 5:30 PM | Sat: By Appt
+                    <i class="fa-solid fa-location-dot text-brand-gold"></i>
+                    Bell Street, Shaftesbury, SP7 8AE
                 </span>
-                <span class="hidden sm:inline-flex items-center gap-2">
-                    <i class="fa-solid fa-location-dot text-brand-copper"></i>
-                    Bell Street, Shaftesbury, Dorset, SP7 8AR
+                <span class="hidden sm:flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-brand-gold"></i>
+                    Mon - Fri: 08:00 - 17:30 | Sat: By Appointment
                 </span>
             </div>
-            <div class="flex items-center gap-6">
-                <a href="mailto:info@ecoflame-landscaping.co.uk" class="hover:text-brand-copper transition-colors flex items-center gap-2">
-                    <i class="fa-regular fa-envelope text-brand-copper"></i>
-                    info@ecoflame-landscaping.co.uk
+            <div class="flex items-center space-x-6">
+                <a href="mailto:info@eco-flame.co.uk" class="hover:text-brand-gold transition-colors flex items-center gap-2">
+                    <i class="fa-regular fa-envelope text-brand-gold"></i>
+                    info@eco-flame.co.uk
                 </a>
-                <a href="tel:01747859201" class="hover:text-brand-copper transition-colors flex items-center gap-2 font-semibold text-white">
-                    <i class="fa-solid fa-phone text-brand-copper"></i>
-                    01747 859201
+                <a href="tel:01747850000" class="hover:text-brand-gold transition-colors font-semibold flex items-center gap-2 text-white">
+                    <i class="fa-solid fa-phone text-brand-gold"></i>
+                    01747 850000
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- 2. STICKY HEADER + CTA -->
-    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-green/30 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Brand Logo -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-copper to-brand-green flex items-center justify-center text-white text-xl shadow-lg group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-fire-flame-curved"></i>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-xl font-extrabold tracking-tight text-white uppercase font-sans">
-                            Eco-Flame <span class="text-brand-copper font-light">Ltd</span>
-                        </span>
-                        <span class="text-[10px] tracking-widest text-brand-sand uppercase font-medium">Landscaping &amp; Outdoor Living</span>
-                    </div>
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-40 bg-brand-green/95 backdrop-blur-md text-white shadow-xl border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-lg bg-brand-gold flex items-center justify-center text-brand-dark shadow-md group-hover:bg-white transition-colors duration-300">
+                    <i class="fa-solid fa-fire-flame-curved text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-xl tracking-tight leading-none text-white">ECO-FLAME</span>
+                    <span class="text-[10px] tracking-widest text-brand-gold uppercase font-semibold mt-1">Landscaping & Outdoor Living</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-brand-gold transition-colors">About Us</a>
+                <a href="#services" class="hover:text-brand-gold transition-colors">Services</a>
+                <a href="#local-seo" class="hover:text-brand-gold transition-colors">Shaftesbury & Dorset</a>
+                <a href="#testimonials" class="hover:text-brand-gold transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-brand-gold transition-colors">Contact</a>
+            </nav>
+
+            <!-- Header CTA -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="#contact" class="bg-brand-gold hover:bg-brand-goldhover text-brand-dark font-semibold px-5 py-2.5 rounded-md transition-all duration-300 shadow-md hover:shadow-lg text-sm flex items-center gap-2">
+                    <span>Consultation</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
                 </a>
+            </div>
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden lg:flex items-center gap-8">
-                    <a href="#about" class="text-sm font-medium text-gray-200 hover:text-brand-copper transition-colors">About Us</a>
-                    <a href="#services" class="text-sm font-medium text-gray-200 hover:text-brand-copper transition-colors">Services</a>
-                    <a href="#local-seo" class="text-sm font-medium text-gray-200 hover:text-brand-copper transition-colors">Shaftesbury &amp; Dorset</a>
-                    <a href="#testimonials" class="text-sm font-medium text-gray-200 hover:text-brand-copper transition-colors">Testimonials</a>
-                    <a href="#contact" class="text-sm font-medium text-gray-200 hover:text-brand-copper transition-colors">Contact</a>
-                </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl text-white focus:outline-none" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
 
-                <!-- Header CTA Button -->
-                <div class="hidden sm:flex items-center gap-4">
-                    <a href="#contact" class="bg-brand-copper hover:bg-brand-copperdark text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center gap-2">
-                        <span>Consultation</span>
-                        <i class="fa-solid fa-arrow-right text-xs"></i>
+        <!-- Mobile Menu Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-dark border-t border-white/10 px-4 pt-4 pb-6 space-y-3">
+            <a href="#about" class="block text-gray-300 hover:text-brand-gold py-2">About Us</a>
+            <a href="#services" class="block text-gray-300 hover:text-brand-gold py-2">Services</a>
+            <a href="#local-seo" class="block text-gray-300 hover:text-brand-gold py-2">Shaftesbury & Dorset</a>
+            <a href="#testimonials" class="block text-gray-300 hover:text-brand-gold py-2">Testimonials</a>
+            <a href="#contact" class="block text-gray-300 hover:text-brand-gold py-2">Contact</a>
+            <a href="tel:01747850000" class="block bg-brand-gold text-brand-dark text-center font-bold py-3 rounded-md mt-4">
+                Call 01747 850000
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative hero-bg min-h-[85vh] flex items-center justify-center text-white py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center space-y-8 relative z-10">
+            
+            <div class="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest backdrop-blur-sm">
+                <i class="fa-solid fa-leaf"></i> Eco-Conscious Landscape Architecture
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                Crafting Timeless Dorset Gardens & <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-amber-200 to-brand-gold">Bespoke Outdoor Living</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-stone-300 max-w-2xl mx-auto font-light leading-relaxed">
+                Based on Bell Street, Shaftesbury. We combine sustainable landscape design, artisanal hardscaping, and outdoor heating environments to transform your private sanctuary.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#contact" class="w-full sm:w-auto bg-brand-gold hover:bg-brand-goldhover text-brand-dark font-bold px-8 py-4 rounded-md transition-all duration-300 shadow-xl text-base flex items-center justify-center gap-3">
+                    <span>Request Site Survey</span>
+                    <i class="fa-solid fa-calendar-check"></i>
+                </a>
+                <a href="tel:01747850000" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-md transition-all duration-300 border border-white/20 backdrop-blur-sm text-base flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-phone text-brand-gold"></i>
+                    <span>01747 850000</span>
+                </a>
+            </div>
+
+            <!-- TRUST BADGES BAR -->
+            <div class="pt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-t border-white/15 max-w-3xl mx-auto text-xs sm:text-sm text-stone-300">
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-brand-gold text-lg"></i>
+                    <span>Fully Insured & Guaranteed</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-award text-brand-gold text-lg"></i>
+                    <span>APL & RHS Accredited</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-seedling text-brand-gold text-lg"></i>
+                    <span>Sustainable Materials</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-star text-brand-gold text-lg"></i>
+                    <span>5-Star Rated Local Team</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-block text-brand-sage font-bold text-sm tracking-wider uppercase">Welcome to Eco-Flame Limited</div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark leading-tight">
+                    Harmonising Natural Heritage with Modern Outdoor Luxury
+                </h2>
+                <p class="text-stone-600 leading-relaxed">
+                    Operating from our studio on historic Bell Street in Shaftesbury, Eco-Flame Limited represents the pinnacle of high-end British garden design and sustainable outdoor architecture. We cater to homeowners across North Dorset and Wiltshire who demand craftsmanship, environmental responsibility, and understated elegance.
+                </p>
+                <p class="text-stone-600 leading-relaxed">
+                    From bespoke fire tables and clean-burn outdoor stoves to native planting schemes, limestone paving, and bespoke timber structures—we turn outdoor spaces into usable year-round havens.
+                </p>
+
+                <div class="grid grid-cols-2 gap-6 pt-4 border-t border-stone-300">
+                    <div>
+                        <div class="text-3xl font-extrabold text-brand-green">15+</div>
+                        <div class="text-xs text-stone-500 uppercase tracking-wider font-semibold mt-1">Years Regional Excellence</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-extrabold text-brand-green">100%</div>
+                        <div class="text-xs text-stone-500 uppercase tracking-wider font-semibold mt-1">Tailored Eco Designs</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="rounded-2xl overflow-hidden shadow-2xl relative z-10 border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1584467541268-b040f83be3fd?auto=format&fit=crop&q=80&w=1200" alt="Bespoke Garden Landscaping in Shaftesbury" class="w-full h-auto object-cover">
+                </div>
+                <!-- Decorative background frame -->
+                <div class="absolute -bottom-6 -right-6 w-full h-full bg-brand-sage/20 rounded-2xl z-0 hidden sm:block"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section id="services" class="wood-pattern py-24 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <span class="text-brand-gold font-semibold text-sm uppercase tracking-widest">Our Expertise</span>
+                <h2 class="text-3xl sm:text-5xl font-bold">Bespoke Landscaping & Living Services</h2>
+                <p class="text-stone-300 text-sm sm:text-base">Designed and installed to perfection by our local Shaftesbury craftsmen.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-brand-dark/80 rounded-xl p-8 border border-white/10 hover:border-brand-gold/50 transition-all duration-300 shadow-xl group">
+                    <div class="w-14 h-14 rounded-lg bg-brand-green border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Architectural Garden Design</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed mb-6">
+                        Complete master planning, 3D visualisations, and planting schemes crafted to suit local Dorset stone and rolling countryside topography.
+                    </p>
+                    <a href="#contact" class="text-brand-gold hover:text-white text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2">
+                        Inquire Now <i class="fa-solid fa-chevron-right text-[10px]"></i>
                     </a>
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <div class="flex lg:hidden">
-                    <a href="#contact" class="bg-brand-copper text-white text-xs font-semibold px-4 py-2 rounded-md mr-2">Book</a>
-                    <a href="tel:01747859201" class="bg-brand-green text-white p-2 rounded-md">
-                        <i class="fa-solid fa-phone"></i>
+                <!-- Service Card 2 -->
+                <div class="bg-brand-dark/80 rounded-xl p-8 border border-white/10 hover:border-brand-gold/50 transition-all duration-300 shadow-xl group">
+                    <div class="w-14 h-14 rounded-lg bg-brand-green border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fire text-amber-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Eco Fire Features & Cooking</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed mb-6">
+                        Bespoke outdoor fireplaces, smokeless ethanol fire tables, wood-fired ovens, and outdoor kitchens built for year-round entertaining.
+                    </p>
+                    <a href="#contact" class="text-brand-gold hover:text-white text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2">
+                        Inquire Now <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-brand-dark/80 rounded-xl p-8 border border-white/10 hover:border-brand-gold/50 transition-all duration-300 shadow-xl group">
+                    <div class="w-14 h-14 rounded-lg bg-brand-green border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Artisanal Hardscaping</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed mb-6">
+                        Natural Purbeck stone, local limestone paving, traditional dry stone walling, and sustainable drainage solutions engineered for life.
+                    </p>
+                    <a href="#contact" class="text-brand-gold hover:text-white text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2">
+                        Inquire Now <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-brand-dark/80 rounded-xl p-8 border border-white/10 hover:border-brand-gold/50 transition-all duration-300 shadow-xl group">
+                    <div class="w-14 h-14 rounded-lg bg-brand-green border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Timber Craft & Pergolas</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed mb-6">
+                        Handcrafted green oak pergolas, hardwood decking, privacy screening, and bespoke outdoor garden rooms constructed to order.
+                    </p>
+                    <a href="#contact" class="text-brand-gold hover:text-white text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2">
+                        Inquire Now <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-brand-dark/80 rounded-xl p-8 border border-white/10 hover:border-brand-gold/50 transition-all duration-300 shadow-xl group">
+                    <div class="w-14 h-14 rounded-lg bg-brand-green border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Eco Water Features & Ponds</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed mb-6">
+                        Natural swim ponds, cascading stone water features, and sustainable rainwater harvesting systems designed for local wildlife.
+                    </p>
+                    <a href="#contact" class="text-brand-gold hover:text-white text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2">
+                        Inquire Now <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-brand-dark/80 rounded-xl p-8 border border-white/10 hover:border-brand-gold/50 transition-all duration-300 shadow-xl group">
+                    <div class="w-14 h-14 rounded-lg bg-brand-green border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-clover"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Biodiverse Planting Schemes</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed mb-6">
+                        Drought-tolerant, pollinator-friendly, and native species schemes tailored specifically for Cranborne Chase and North Dorset soil.
+                    </p>
+                    <a href="#contact" class="text-brand-gold hover:text-white text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2">
+                        Inquire Now <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO & AREA SECTION -->
+    <section id="local-seo" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="bg-white rounded-2xl p-8 sm:p-12 border border-stone-200 shadow-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="inline-flex items-center gap-2 text-brand-sage font-bold text-xs uppercase tracking-widest">
+                        <i class="fa-solid fa-map-pin"></i> Serving North Dorset & South Wiltshire
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-brand-dark">
+                        Your Trusted Landscaping Specialists in Bell Street, Shaftesbury
+                    </h2>
+                    <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+                        Conveniently situated on <strong>Bell Street in Shaftesbury (SP7)</strong>, Eco-Flame Limited is ideally placed to serve homeowners, estate managers, and commercial clients throughout Shaftesbury and the surrounding countryside. Whether your property overlooks iconic Gold Hill, sits in the heart of Cranborne Chase, or is located in neighbouring villages, our team delivers superior landscape architecture.
+                    </p>
+
+                    <div class="pt-2">
+                        <h4 class="font-bold text-sm text-brand-dark uppercase tracking-wider mb-3">Key Service Areas Include:</h4>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-brand-cream text-brand-green font-semibold px-3 py-1.5 rounded-full border border-stone-300">Shaftesbury Town Centre</span>
+                            <span class="bg-brand-cream text-brand-green font-semibold px-3 py-1.5 rounded-full border border-stone-300">Gillingham</span>
+                            <span class="bg-brand-cream text-brand-green font-semibold px-3 py-1.5 rounded-full border border-stone-300">Semley & Tisbury</span>
+                            <span class="bg-brand-cream text-brand-green font-semibold px-3 py-1.5 rounded-full border border-stone-300">Blandford Forum</span>
+                            <span class="bg-brand-cream text-brand-green font-semibold px-3 py-1.5 rounded-full border border-stone-300">Sherborne</span>
+                            <span class="bg-brand-cream text-brand-green font-semibold px-3 py-1.5 rounded-full border border-stone-300">Stourhead Area</span>
+                            <span class="bg-brand-cream text-brand-green font-semibold px-3 py-1.5 rounded-full border border-stone-300">Fontmell Magna</span>
+                            <span class="bg-brand-cream text-brand-green font-semibold px-3 py-1.5 rounded-full border border-stone-300">Cranborne Chase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-cream p-6 rounded-xl border border-stone-300 space-y-4">
+                    <h3 class="font-bold text-lg text-brand-dark border-b border-stone-300 pb-2">Local Studio Information</h3>
+                    <div class="space-y-3 text-sm text-stone-700">
+                        <p class="flex items-start gap-3">
+                            <i class="fa-solid fa-building-user text-brand-gold mt-1"></i>
+                            <span><strong>Eco-Flame Limited</strong><br>Bell Street, Shaftesbury<br>Dorset, SP7 8AE, UK</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-gold"></i>
+                            <a href="tel:01747850000" class="hover:underline font-semibold">01747 850000</a>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brand-gold"></i>
+                            <a href="mailto:info@eco-flame.co.uk" class="hover:underline">info@eco-flame.co.uk</a>
+                        </p>
+                    </div>
+                    <a href="#contact" class="block text-center bg-brand-green text-white text-xs font-bold uppercase tracking-wider py-3 rounded hover:bg-brand-dark transition-colors">
+                        Book Studio Visit
                     </a>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <!-- 3. HERO SECTION + TRUST BADGES -->
-        <section class="relative bg-brand-dark text-white min-h-[88vh] flex items-center overflow-hidden">
-            <!-- Background Image with Overlay -->
-            <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1558904541-efa8c1968f01?auto=format&fit=crop&w=2000&q=80" alt="Luxury Landscaping Shaftesbury Dorset" class="w-full h-full object-cover object-center scale-105 transform">
-                <div class="absolute inset-0 hero-overlay"></div>
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-brand-stone/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-sage font-bold text-xs uppercase tracking-widest">Client Testimonials</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark">What Our Local Clients Say</h2>
+                <p class="text-stone-600 text-sm">Read verified feedback from property owners across Shaftesbury and North Dorset.</p>
             </div>
 
-            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-                <div class="max-w-3xl">
-                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-green/80 border border-brand-copper/40 text-brand-sand text-xs font-semibold tracking-wide uppercase mb-6 backdrop-blur-sm">
-                        <i class="fa-solid fa-location-dot text-brand-copper"></i>
-                        Bell Street, Shaftesbury &bull; Dorset &amp; Cranborne Chase
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-stone-200 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 italic text-sm leading-relaxed">
+                            "Eco-Flame completely redesigned our garden near Gold Hill. The outdoor fire hearth they built using local stone is simply breathtaking. Professional, clean, and punctual throughout."
+                        </p>
                     </div>
-                    
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
-                        Crafting Exceptional <span class="text-brand-copper italic font-serif">Living Landscapes</span> in Dorset.
-                    </h1>
-                    
-                    <p class="text-lg sm:text-xl text-gray-200 mb-8 font-light leading-relaxed">
-                        Eco-Flame Limited combines eco-conscious garden design, bespoke stonework, and luxury outdoor heating solutions. Transforming residential gardens and countryside estates in Shaftesbury and beyond.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row gap-4 mb-16">
-                        <a href="#contact" class="bg-brand-copper hover:bg-brand-copperdark text-white font-semibold text-center px-8 py-4 rounded-xl transition-all duration-300 shadow-xl hover:shadow-brand-copper/20 flex items-center justify-center gap-3">
-                            <span>Request Site Survey</span>
-                            <i class="fa-solid fa-calendar-check"></i>
-                        </a>
-                        <a href="tel:01747859201" class="bg-brand-green/80 hover:bg-brand-green text-white font-semibold text-center px-8 py-4 rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-3">
-                            <i class="fa-solid fa-phone text-brand-copper"></i>
-                            <span>01747 859201</span>
-                        </a>
+                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-bold text-brand-dark text-sm">Lord & Lady M.</h4>
+                            <span class="text-xs text-stone-500">Shaftesbury, Dorset</span>
+                        </div>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2 py-1 rounded">Verified Client</span>
                     </div>
-
-                    <!-- Trust Badges -->
-                    <div class="pt-8 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-brand-copper shrink-0">
-                                <i class="fa-solid fa-award text-lg"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-bold uppercase tracking-wider text-white">RHS Qualified</h4>
-                                <p class="text-[11px] text-gray-300">Expert Designers</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-brand-copper shrink-0">
-                                <i class="fa-solid fa-leaf text-lg"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-bold uppercase tracking-wider text-white">100% Eco-Friendly</h4>
-                                <p class="text-[11px] text-gray-300">Sustainable Materials</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-brand-copper shrink-0">
-                                <i class="fa-solid fa-shield-halved text-lg"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-bold uppercase tracking-wider text-white">Fully Insured</h4>
-                                <p class="text-[11px] text-gray-300">£5M Public Liability</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-brand-copper shrink-0">
-                                <i class="fa-solid fa-star text-lg"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-bold uppercase tracking-wider text-white">5.0 Star Rated</h4>
-                                <p class="text-[11px] text-gray-300">45+ Dorset Reviews</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-        </section>
 
-        <!-- ABOUT BRIEF SECTION -->
-        <section id="about" class="py-20 bg-brand-cream">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-stone-200 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 italic text-sm leading-relaxed">
+                            "Finding a landscaping company in Bell Street that understands both ecological planting and modern timber pergolas was a dream. The team exceeded all expectations."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-bold text-brand-dark text-sm">Arthur & Clare H.</h4>
+                            <span class="text-xs text-stone-500">Semley, Wiltshire</span>
+                        </div>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2 py-1 rounded">Verified Client</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-stone-200 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 italic text-sm leading-relaxed">
+                            "The natural swim pond and patio area built by Eco-Flame has transformed how we spend our summers. Their attention to drainage and eco-friendly stone was top tier."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-bold text-brand-dark text-sm">David S.</h4>
+                            <span class="text-xs text-stone-500">Gillingham, Dorset</span>
+                        </div>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2 py-1 rounded">Verified Client</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION & FORM -->
+    <section id="contact" class="py-24 bg-brand-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left Column -->
+                <div class="lg:col-span-5 space-y-8">
                     <div>
-                        <span class="text-brand-copper font-bold uppercase tracking-wider text-xs">Based in Bell Street, Shaftesbury</span>
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark mt-2 mb-6">
-                            Rooted in Dorset Tradition, Driven by Sustainable Innovation
-                        </h2>
-                        <p class="text-brand-muted leading-relaxed mb-4">
-                            Located in the heart of historic Shaftesbury on Bell Street, Eco-Flame Limited offers an uncompromised blend of luxury landscape architecture, traditional Dorset stonemasonry, and modern eco-friendly outdoor features.
+                        <span class="text-brand-gold font-semibold text-xs uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold mt-2">Start Your Landscaping Journey</h2>
+                        <p class="text-stone-400 text-sm mt-3 leading-relaxed">
+                            Contact our Bell Street team today to schedule an initial site consultation or discuss your outdoor living requirements.
                         </p>
-                        <p class="text-brand-muted leading-relaxed mb-6">
-                            Whether you seek a tranquil English cottage garden, modern porcelain paving, bespoke timber pergolas, or custom outdoor fire pits designed for year-round entertaining, our local team brings artistic craftsmanship to every acre.
+                    </div>
+
+                    <!-- Direct Quick Call Button -->
+                    <div class="bg-brand-green/80 border border-brand-gold/30 rounded-xl p-6 shadow-xl">
+                        <p class="text-xs text-stone-300 font-semibold uppercase tracking-wider">Speak Directly To Our Principal Designer</p>
+                        <a href="tel:01747850000" class="mt-3 inline-flex items-center justify-center gap-3 w-full bg-brand-gold hover:bg-brand-goldhover text-brand-dark font-extrabold text-lg py-4 rounded-lg transition-all duration-300 shadow-md">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span>Call 01747 850000</span>
+                        </a>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-stone-300">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-brand-gold shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Studio Address</h4>
+                                <p class="text-stone-400">Eco-Flame Limited, Bell Street, Shaftesbury, Dorset, SP7 8AE</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-brand-gold shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Working Hours</h4>
+                                <p class="text-stone-400">Monday - Friday: 08:00 - 17:30</p>
+                                <p class="text-stone-400">Saturday: By Appointment Only</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-brand-gold shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Email Enquiries</h4>
+                                <p class="text-stone-400">info@eco-flame.co.uk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Right Column -->
+                <div class="lg:col-span-7 bg-white text-brand-dark rounded-2xl p-8 sm:p-10 shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-2">Request A Site Survey & Quote</h3>
+                    <p class="text-stone-600 text-sm mb-6">Fill in the details below and our team will get back to you within 24 hours.</p>
+
+                    <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for contacting Eco-Flame Limited. We will be in touch shortly!');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Full Name *</label>
+                                <input type="text" required placeholder="e.g. Eleanor Vance" class="w-full bg-brand-cream border border-stone-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Phone Number *</label>
+                                <input type="tel" required placeholder="e.g. 07700 900000" class="w-full bg-brand-cream border border-stone-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Email Address *</label>
+                                <input type="email" required placeholder="e.g. eleanor@example.co.uk" class="w-full bg-brand-cream border border-stone-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Postcode / Location</label>
+                                <input type="text" placeholder="e.g. SP7 8AE" class="w-full bg-brand-cream border border-stone-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Primary Service Required</label>
+                            <select class="w-full bg-brand-cream border border-stone-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+                                <option>Full Master Garden Architecture</option>
+                                <option>Outdoor Fireplace / Heating Feature</option>
+                                <option>Hardscaping, Paving & Stonework</option>
+                                <option>Timber Pergola / Outdoor Structure</option>
+                                <option>Ecological Planting & Turf</option>
+                                <option>General Landscaping Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Project Details / Message</label>
+                            <textarea rows="4" placeholder="Tell us about your outdoor vision, dimensions, or timeframes..." class="w-full bg-brand-cream border border-stone-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-green hover:bg-brand-dark text-white font-bold py-4 rounded-md transition-all duration-300 shadow-lg text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                            <span>Send Consultation Request</span>
+                            <i class="fa-solid fa-paper-plane text-xs"></i>
+                        </button>
+
+                        <p class="text-[11px] text-stone-500 text-center mt-2">
+                            <i class="fa-solid fa-lock text-brand-gold"></i> We respect your privacy. Your details are strictly kept confidential.
                         </p>
-                        <div class="flex flex-wrap gap-4 text-sm font-semibold text-brand-green">
-                            <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-brand-sand shadow-sm">
-                                <i class="fa-solid fa-check text-brand-copper"></i> Shaftesbury &amp; Blackmore Vale Coverage
-                            </div>
-                            <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-brand-sand shadow-sm">
-                                <i class="fa-solid fa-check text-brand-copper"></i> Low-Carbon &amp; Native Planting
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80" alt="Bespoke Garden Design Shaftesbury" class="w-full h-auto object-cover">
-                        </div>
-                        <div class="absolute -bottom-6 -left-6 bg-brand-green text-white p-6 rounded-2xl shadow-xl hidden sm:block max-w-xs">
-                            <p class="text-2xl font-extrabold text-brand-copper">15+ Years</p>
-                            <p class="text-xs text-gray-200 mt-1">Transforming local landscapes across Shaftesbury, Gillingham &amp; Sherborne.</p>
-                        </div>
-                    </div>
+                    </form>
                 </div>
+
             </div>
-        </section>
-
-        <!-- 4. SERVICES GRID -->
-        <section id="services" class="py-24 bg-white border-y border-brand-sand">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="text-brand-copper font-bold uppercase tracking-wider text-xs">Our Specialty Services</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark mt-2 mb-4">Master Craftsmanship for Every Garden</h2>
-                    <p class="text-brand-muted text-base">From conceptual 3D design through to precision construction and sustainable outdoor heating installation.</p>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Service 1 -->
-                    <div class="bg-brand-cream rounded-2xl p-8 border border-brand-sand hover:border-brand-copper transition-all duration-300 hover:shadow-xl group flex flex-col justify-between">
-                        <div>
-                            <div class="w-14 h-14 bg-brand-green text-brand-copper rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-compass-drafting"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-brand-dark mb-3">Architectural Garden Design</h3>
-                            <p class="text-brand-muted text-sm leading-relaxed mb-6">
-                                Full 3D rendering, spatial planning, and planting schemes tailored to Shaftesbury's natural geology and light.
-                            </p>
-                        </div>
-                        <a href="#contact" class="text-brand-copper font-semibold text-sm flex items-center gap-2 group-hover:translate-x-1 transition-transform">
-                            Book Consultation <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div class="bg-brand-cream rounded-2xl p-8 border border-brand-sand hover:border-brand-copper transition-all duration-300 hover:shadow-xl group flex flex-col justify-between">
-                        <div>
-                            <div class="w-14 h-14 bg-brand-green text-brand-copper rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-fire-flame-curved"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-brand-dark mb-3">Eco Flame &amp; Outdoor Heating</h3>
-                            <p class="text-brand-muted text-sm leading-relaxed mb-6">
-                                Custom bioethanol fireplaces, smokeless fire pits, outdoor kitchens, and year-round ambient living features.
-                            </p>
-                        </div>
-                        <a href="#contact" class="text-brand-copper font-semibold text-sm flex items-center gap-2 group-hover:translate-x-1 transition-transform">
-                            Explore Heating Solutions <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div class="bg-brand-cream rounded-2xl p-8 border border-brand-sand hover:border-brand-copper transition-all duration-300 hover:shadow-xl group flex flex-col justify-between">
-                        <div>
-                            <div class="w-14 h-14 bg-brand-green text-brand-copper rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-cubes"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-brand-dark mb-3">Hardscaping &amp; Stonework</h3>
-                            <p class="text-brand-muted text-sm leading-relaxed mb-6">
-                                High-grade porcelain patios, local Dorset stone walling, dry stone boundary walls, steps, and bespoke driveways.
-                            </p>
-                        </div>
-                        <a href="#contact" class="text-brand-copper font-semibold text-sm flex items-center gap-2 group-hover:translate-x-1 transition-transform">
-                            View Stonework Options <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-
-                    <!-- Service 4 -->
-                    <div class="bg-brand-cream rounded-2xl p-8 border border-brand-sand hover:border-brand-copper transition-all duration-300 hover:shadow-xl group flex flex-col justify-between">
-                        <div>
-                            <div class="w-14 h-14 bg-brand-green text-brand-copper rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-seedling"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-brand-dark mb-3">Sustainable Turf &amp; Planting</h3>
-                            <p class="text-brand-muted text-sm leading-relaxed mb-6">
-                                Drought-resistant native planting, wild meadows, natural turfing, and eco-conscious biodiversity habitats.
-                            </p>
-                        </div>
-                        <a href="#contact" class="text-brand-copper font-semibold text-sm flex items-center gap-2 group-hover:translate-x-1 transition-transform">
-                            Planting Schemes <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-
-                    <!-- Service 5 -->
-                    <div class="bg-brand-cream rounded-2xl p-8 border border-brand-sand hover:border-brand-copper transition-all duration-300 hover:shadow-xl group flex flex-col justify-between">
-                        <div>
-                            <div class="w-14 h-14 bg-brand-green text-brand-copper rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-tree"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-brand-dark mb-3">Timber &amp; Structures</h3>
-                            <p class="text-brand-muted text-sm leading-relaxed mb-6">
-                                Cedar slatted screening, handcrafted pergolas, composite decking, and bespoke garden rooms or shelters.
-                            </p>
-                        </div>
-                        <a href="#contact" class="text-brand-copper font-semibold text-sm flex items-center gap-2 group-hover:translate-x-1 transition-transform">
-                            Timber Work Details <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-
-                    <!-- Service 6 -->
-                    <div class="bg-brand-cream rounded-2xl p-8 border border-brand-sand hover:border-brand-copper transition-all duration-300 hover:shadow-xl group flex flex-col justify-between">
-                        <div>
-                            <div class="w-14 h-14 bg-brand-green text-brand-copper rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-water"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-brand-dark mb-3">Eco Water Features &amp; Drainage</h3>
-                            <p class="text-brand-muted text-sm leading-relaxed mb-6">
-                                Rain gardens, sustainable urban drainage systems (SuDS), wildlife ponds, and bespoke water cascades.
-                            </p>
-                        </div>
-                        <a href="#contact" class="text-brand-copper font-semibold text-sm flex items-center gap-2 group-hover:translate-x-1 transition-transform">
-                            Water Features <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. LOCAL SEO SECTION -->
-        <section id="local-seo" class="py-20 bg-brand-dark text-white relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="grid lg:grid-cols-12 gap-12 items-center">
-                    <div class="lg:col-span-7">
-                        <div class="inline-flex items-center gap-2 text-brand-copper text-xs font-bold uppercase tracking-wider mb-3">
-                            <i class="fa-solid fa-map-pin"></i> Premier Landscapers in Shaftesbury, SP7
-                        </div>
-                        <h2 class="text-3xl sm:text-4xl font-extrabold mb-6 text-white leading-tight">
-                            Serving Bell Street, Shaftesbury &amp; the Surrounding North Dorset Countryside
-                        </h2>
-                        <div class="prose prose-invert text-gray-300 space-y-4 text-sm sm:text-base leading-relaxed">
-                            <p>
-                                At <strong>Eco-Flame Limited</strong>, located conveniently on <strong>Bell Street in Shaftesbury</strong>, we take immense pride in enhancing the natural beauty of Dorset’s unique landscapes. From the iconic heights near Gold Hill to rural properties across the Blackmore Vale, our landscape designs respect local heritage while introducing cutting-edge sustainable practices.
-                            </p>
-                            <p>
-                                Operating throughout <strong>Shaftesbury, Gillingham, Motcombe, Fontmell Magna, Semley, Tisbury, and Blandford Forum</strong>, our team is deeply familiar with North Dorset's soil profiles, local conservation guidelines, and regional stone materials.
-                            </p>
-                            <p>
-                                Whether you own a Grade II listed cottage requiring sensitive stone retaining walls or a modern hilltop residence seeking clean-lined porcelain paving and zero-emission outdoor fireplaces, Eco-Flame Limited delivers unrivaled local expertise.
-                            </p>
-                        </div>
-
-                        <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs font-medium text-brand-sand">
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-circle-check text-brand-copper"></i> Shaftesbury (SP7)
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-circle-check text-brand-copper"></i> Gillingham (SP8)
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-circle-check text-brand-copper"></i> Cranborne Chase AONB
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-circle-check text-brand-copper"></i> Tisbury &amp; Nadder Valley
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-circle-check text-brand-copper"></i> Blandford Forum
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-circle-check text-brand-copper"></i> Sherborne &amp; Yeovil
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lg:col-span-5 bg-brand-green/40 p-8 rounded-2xl border border-brand-green/60 backdrop-blur-sm">
-                        <h3 class="text-xl font-bold mb-4 text-white">Why Choose Eco-Flame Ltd?</h3>
-                        <ul class="space-y-4 text-sm text-gray-200">
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-leaf text-brand-copper mt-1"></i>
-                                <span><strong>Eco-Conscious Focus:</strong> Low-carbon machinery, recycled aggregates, and sustainable timber sourcing.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-house-chimney text-brand-copper mt-1"></i>
-                                <span><strong>Bell Street Local Base:</strong> Quick site visits, accessible team, and dedicated post-project support.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-ribbon text-brand-copper mt-1"></i>
-                                <span><strong>Bespoke Fire Features:</strong> Exclusive access to clean-burning outdoor heating and custom fire tables.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-clipboard-check text-brand-copper mt-1"></i>
-                                <span><strong>Turnkey Management:</strong> From concept sketches to the final plant installation, handled entirely in-house.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. 3 TESTIMONIALS -->
-        <section id="testimonials" class="py-24 bg-brand-cream">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="text-brand-copper font-bold uppercase tracking-wider text-xs">Client Reviews</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark mt-2 mb-4">Trusted by Dorset Homeowners</h2>
-                    <p class="text-brand-muted text-base">Read genuine feedback from our clients in Shaftesbury and surrounding villages.</p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-sand flex flex-col justify-between relative">
-                        <div>
-                            <div class="flex text-amber-500 mb-4 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="text-brand-dark text-sm leading-relaxed italic mb-6">
-                                "Eco-Flame transformed our sloped backyard in Shaftesbury into a multi-tiered paradise. The bespoke fire pit table is the centerpiece of every evening we spend outside. Their attention to detail and local stone matching was remarkable."
-                            </p>
-                        </div>
-                        <div class="border-t border-gray-100 pt-4 flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-brand-green/10 text-brand-green font-bold flex items-center justify-center text-sm">
-                                HR
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-sm text-brand-dark">Harrison R.</h4>
-                                <p class="text-xs text-brand-muted">Bell Street area, Shaftesbury</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-sand flex flex-col justify-between relative">
-                        <div>
-                            <div class="flex text-amber-500 mb-4 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="text-brand-dark text-sm leading-relaxed italic mb-6">
-                                "Professional from the moment we walked into their initial consultation. The team completed our porcelain patio and wild meadow planting on budget and ahead of schedule. Highly recommended for modern eco landscaping."
-                            </p>
-                        </div>
-                        <div class="border-t border-gray-100 pt-4 flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-brand-green/10 text-brand-green font-bold flex items-center justify-center text-sm">
-                                EC
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-sm text-brand-dark">Eleanor C.</h4>
-                                <p class="text-xs text-brand-muted">Fontmell Magna, Dorset</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-sand flex flex-col justify-between relative">
-                        <div>
-                            <div class="flex text-amber-500 mb-4 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="text-brand-dark text-sm leading-relaxed italic mb-6">
-                                "Superb quality timber pergolas and sustainable drainage installed for our country home. The Eco-Flame crew were polite, tidy, and extremely respectful of our property. Easily the best contractors in North Dorset."
-                            </p>
-                        </div>
-                        <div class="border-t border-gray-100 pt-4 flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-brand-green/10 text-brand-green font-bold flex items-center justify-center text-sm">
-                                MB
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-sm text-brand-dark">Marcus B.</h4>
-                                <p class="text-xs text-brand-muted">Gillingham, North Dorset</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 7. CONTACT FORM + TEL BUTTON + LOCATION -->
-        <section id="contact" class="py-24 bg-white relative">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-12 gap-12">
-                    
-                    <!-- Contact Info Panel -->
-                    <div class="lg:col-span-5 bg-brand-green text-white p-8 sm:p-10 rounded-3xl flex flex-col justify-between shadow-2xl relative overflow-hidden">
-                        <div class="absolute -right-10 -bottom-10 opacity-10 text-brand-copper text-9xl pointer-events-none">
-                            <i class="fa-solid fa-tree"></i>
-                        </div>
-
-                        <div>
-                            <span class="text-brand-copper font-bold uppercase tracking-wider text-xs">Get In Touch</span>
-                            <h2 class="text-3xl font-extrabold text-white mt-2 mb-6">Let's Discuss Your Dream Garden</h2>
-                            <p class="text-gray-300 text-sm leading-relaxed mb-8">
-                                Contact our Bell Street office today for a free initial consultation or to arrange an on-site design assessment.
-                            </p>
-
-                            <!-- Direct Phone Button Section -->
-                            <div class="bg-brand-dark/60 border border-brand-copper/30 p-5 rounded-2xl mb-8">
-                                <p class="text-xs text-gray-300 font-medium uppercase tracking-wider mb-2">Speak directly with an engineer</p>
-                                <a href="tel:01747859201" class="inline-flex items-center gap-3 text-2xl font-extrabold text-white hover:text-brand-copper transition-colors">
-                                    <div class="w-10 h-10 rounded-full bg-brand-copper flex items-center justify-center text-white text-base">
-                                        <i class="fa-solid fa-phone"></i>
-                                    </div>
-                                    <span>01747 859201</span>
-                                </a>
-                            </div>
-
-                            <div class="space-y-6 text-sm">
-                                <div class="flex items-start gap-4">
-                                    <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-brand-copper shrink-0">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-white">Office Location</h4>
-                                        <p class="text-gray-300 text-xs mt-0.5">Eco-Flame Limited, Bell Street, Shaftesbury, Dorset, SP7 8AR</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start gap-4">
-                                    <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-brand-copper shrink-0">
-                                        <i class="fa-solid fa-envelope"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-white">Email Enquiries</h4>
-                                        <p class="text-gray-300 text-xs mt-0.5">info@ecoflame-landscaping.co.uk</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start gap-4">
-                                    <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-brand-copper shrink-0">
-                                        <i class="fa-solid fa-clock"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-white">Operating Hours</h4>
-                                        <p class="text-gray-300 text-xs mt-0.5">Monday &ndash; Friday: 08:00 &ndash; 17:30</p>
-                                        <p class="text-gray-300 text-xs">Saturday: By Prior Appointment</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pt-8 border-t border-white/10 mt-8 text-xs text-gray-400">
-                            Registered in England &amp; Wales &bull; Eco-Flame Limited &bull; Shaftesbury, SP7
-                        </div>
-                    </div>
-
-                    <!-- Interactive Form -->
-                    <div class="lg:col-span-7 bg-brand-cream p-8 sm:p-10 rounded-3xl border border-brand-sand">
-                        <h3 class="text-2xl font-bold text-brand-dark mb-2">Request a Project Consultation</h3>
-                        <p class="text-brand-muted text-sm mb-8">Fill out the form below and our landscape team will respond within 24 business hours.</p>
-
-                        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for reaching out to Eco-Flame Limited. We will contact you shortly!');" class="space-y-6">
-                            <div class="grid sm:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="full-name" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">Full Name *</label>
-                                    <input type="text" id="full-name" required placeholder="John Smith" class="w-full px-4 py-3 rounded-xl border border-brand-sand focus:border-brand-copper focus:ring-1 focus:ring-brand-copper outline-none transition bg-white text-sm">
-                                </div>
-                                <div>
-                                    <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">Phone Number *</label>
-                                    <input type="tel" id="phone" required placeholder="07123 456789" class="w-full px-4 py-3 rounded-xl border border-brand-sand focus:border-brand-copper focus:ring-1 focus:ring-brand-copper outline-none transition bg-white text-sm">
-                                </div>
-                            </div>
-
-                            <div class="grid sm:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="email" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">Email Address *</label>
-                                    <input type="email" id="email" required placeholder="john@example.co.uk" class="w-full px-4 py-3 rounded-xl border border-brand-sand focus:border-brand-copper focus:ring-1 focus:ring-brand-copper outline-none transition bg-white text-sm">
-                                </div>
-                                <div>
-                                    <label for="service" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">Primary Service Needed</label>
-                                    <select id="service" class="w-full px-4 py-3 rounded-xl border border-brand-sand focus:border-brand-copper focus:ring-1 focus:ring-brand-copper outline-none transition bg-white text-sm text-brand-dark">
-                                        <option value="full-design">Full Garden Design &amp; Build</option>
-                                        <option value="fire-heating">Eco Flame &amp; Outdoor Heating</option>
-                                        <option value="hardscaping">Hardscaping / Patios / Stonework</option>
-                                        <option value="planting">Turf &amp; Sustainable Planting</option>
-                                        <option value="timber">Pergolas / Decking / Fencing</option>
-                                        <option value="other">Other / General Enquiry</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="location" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">Property Location / Postcode</label>
-                                <input type="text" id="location" placeholder="e.g. Bell Street, Shaftesbury or SP7" class="w-full px-4 py-3 rounded-xl border border-brand-sand focus:border-brand-copper focus:ring-1 focus:ring-brand-copper outline-none transition bg-white text-sm">
-                            </div>
-
-                            <div>
-                                <label for="message" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">Project Details &amp; Ideas</label>
-                                <textarea id="message" rows="4" placeholder="Tell us about your garden size, vision, timeline, or specific heating/stonework ideas..." class="w-full px-4 py-3 rounded-xl border border-brand-sand focus:border-brand-copper focus:ring-1 focus:ring-brand-copper outline-none transition bg-white text-sm"></textarea>
-                            </div>
-
-                            <button type="submit" class="w-full bg-brand-copper hover:bg-brand-copperdark text-white font-bold py-4 px-6 rounded-xl transition duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3">
-                                <span>Send Consultation Request</span>
-                                <i class="fa-solid fa-paper-plane text-sm"></i>
-                            </button>
-                            <p class="text-[11px] text-center text-brand-muted">We respect your privacy. Your information is only used to fulfill your enquiry.</p>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- FOOTER -->
-    <footer class="bg-brand-dark text-white border-t border-brand-green/50 py-12">
+    <footer class="bg-[#08120C] text-stone-400 py-12 border-t border-white/10 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-12">
-                <div class="md:col-span-2">
-                    <a href="#" class="flex items-center gap-3 mb-4">
-                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-brand-copper to-brand-green flex items-center justify-center text-white text-lg">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded bg-brand-gold flex items-center justify-center text-brand-dark font-bold">
                             <i class="fa-solid fa-fire-flame-curved"></i>
                         </div>
-                        <span class="text-lg font-extrabold uppercase tracking-tight text-white">Eco-Flame <span class="text-brand-copper font-light">Ltd</span></span>
-                    </a>
-                    <p class="text-gray-400 text-xs leading-relaxed max-w-sm mb-4">
-                        Bespoke landscape architecture, hardscaping, and eco-conscious outdoor fire features. Based in Bell Street, Shaftesbury, serving North Dorset &amp; surrounding areas.
-                    </p>
-                    <div class="flex gap-3 text-brand-copper">
-                        <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-copper hover:text-white transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-xs"></i></a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-copper hover:text-white transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram text-xs"></i></a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-copper hover:text-white transition-colors" aria-label="Houzz"><i class="fa-brands fa-houzz text-xs"></i></a>
+                        <span class="font-bold text-lg text-white">ECO-FLAME</span>
                     </div>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        High-end eco-conscious landscaping architecture, artisan paving, and bespoke outdoor fireplace integration in Shaftesbury, Dorset.
+                    </p>
                 </div>
 
                 <div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-brand-sand mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-xs text-gray-300">
-                        <li><a href="#about" class="hover:text-brand-copper transition-colors">About Eco-Flame</a></li>
-                        <li><a href="#services" class="hover:text-brand-copper transition-colors">Landscaping Services</a></li>
-                        <li><a href="#services" class="hover:text-brand-copper transition-colors">Outdoor Heating &amp; Fireplaces</a></li>
-                        <li><a href="#local-seo" class="hover:text-brand-copper transition-colors">Shaftesbury &amp; Dorset Coverage</a></li>
-                        <li><a href="#testimonials" class="hover:text-brand-copper transition-colors">Client Reviews</a></li>
-                        <li><a href="#contact" class="hover:text-brand-copper transition-colors">Book Consultation</a></li>
+                    <h4 class="text-white font-semibold mb-4 text-xs uppercase tracking-wider">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-brand-gold">About Eco-Flame</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold">Landscaping Services</a></li>
+                        <li><a href="#local-seo" class="hover:text-brand-gold">Shaftesbury & Dorset</a></li>
+                        <li><a href="#testimonials" class="hover:text-brand-gold">Client Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-brand-gold">Request Consultation</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-brand-sand mb-4">Contact Detail</h4>
-                    <address class="not-italic text-xs text-gray-300 space-y-2">
-                        <p>Eco-Flame Limited</p>
-                        <p>Bell Street, Shaftesbury</p>
-                        <p>Dorset, SP7 8AR</p>
-                        <p class="pt-2"><a href="tel:01747859201" class="text-brand-copper font-bold hover:underline">01747 859201</a></p>
-                    </address>
+                    <h4 class="text-white font-semibold mb-4 text-xs uppercase tracking-wider">Legal & Compliance</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><span>Eco-Flame Limited</span></li>
+                        <li><span>Registered in England & Wales</span></li>
+                        <li><span>Bell Street, Shaftesbury, SP7 8AE</span></li>
+                        <li><a href="#" class="hover:text-brand-gold">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-brand-gold">Terms of Service</a></li>
+                    </ul>
                 </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-xs uppercase tracking-wider">Connect With Us</h4>
+                    <div class="flex space-x-3 text-lg">
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-gold hover:text-brand-dark transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-gold hover:text-brand-dark transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-gold hover:text-brand-dark transition-colors"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-gold hover:text-brand-dark transition-colors"><i class="fa-brands fa-houzz"></i></a>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-gray-400">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> Eco-Flame Limited. All rights reserved. Registered Office: Bell Street, Shaftesbury, UK.</p>
-                <div class="flex gap-4">
-                    <a href="#" class="hover:text-gray-300">Privacy Policy</a>
-                    <a href="#" class="hover:text-gray-300">Terms of Service</a>
-                    <a href="#" class="hover:text-gray-300">Cookie Policy</a>
-                </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-500 gap-4">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Eco-Flame Limited. All Rights Reserved. Bell Street, Shaftesbury, UK.</p>
+                <p class="flex items-center gap-1">
+                    Crafted for excellence in Dorset & Cranborne Chase
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- FLOATING CALL BUTTON (MOBILE QUICK ACTION) -->
-    <a href="tel:01747859201" class="sm:hidden fixed bottom-5 right-5 z-50 bg-brand-copper text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl border-2 border-white text-xl animate-bounce" aria-label="Call Eco-Flame Limited">
-        <i class="fa-solid fa-phone"></i>
-    </a>
+    <!-- Vanilla JS for Mobile Nav Menu Toggle -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
 
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking menu links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 </html>

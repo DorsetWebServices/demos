@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPAR Milton Road | Convenience Store & Bakery in Shaftesbury</title>
+    <meta name="description" content="Your local SPAR convenience store on Mampitts Lane, Shaftesbury. Offering fresh Dorset produce, in-store bakery, Post Office services, fine wines, and daily essentials.">
+    
+    <!-- Google Font: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            emerald: '#064e3b',
+                            forest: '#022c22',
+                            mint: '#10b981',
+                            red: '#dc2626',
+                            crimson: '#991b1b',
+                            cream: '#fdfbf7',
+                            gold: '#d97706',
+                            sand: '#f5f2eb'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fdfbf7;
+            color: #1e293b;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(2, 44, 34, 0.92) 0%, rgba(6, 78, 59, 0.85) 100%), url('https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-mint selection:text-white">
+
+    <!-- 1. TOP BAR / HOURS -->
+    <div class="bg-brand-forest text-stone-300 text-xs sm:text-sm py-2.5 px-4 border-b border-emerald-900/50">
+        <div class="max-w-7xl mx-mx-auto flex flex-col md:flex-row justify-between items-center gap-2 mx-auto">
+            <div class="flex items-center gap-6 flex-wrap justify-center md:justify-start">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-mint"></i>
+                    <span>Mampitts Lane, Shaftesbury, SP7 8TU</span>
+                </span>
+                <span class="hidden sm:inline text-emerald-800">|</span>
+                <span class="flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-brand-gold"></i>
+                    <span><strong>Mon - Sun:</strong> 7:00 AM – 10:00 PM</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-900/80 text-brand-mint border border-emerald-700/50">
+                    <span class="w-2 h-2 rounded-full bg-brand-mint animate-pulse mr-1.5"></span> Open Today
+                </span>
+                <a href="tel:+441747852100" class="hover:text-white transition flex items-center gap-1.5 font-medium">
+                    <i class="fa-solid fa-phone text-xs"></i> 01747 852100
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. STICKY HEADER + CTA -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200/80 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 bg-brand-red rounded-xl flex items-center justify-center text-white shadow-md shadow-red-900/20 group-hover:bg-brand-crimson transition duration-300">
+                        <i class="fa-solid fa-tree text-2xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1">
+                            <span class="font-black text-2xl tracking-wider text-brand-red">SPAR</span>
+                            <span class="text-xs px-1.5 py-0.5 bg-stone-100 font-bold text-stone-600 rounded">EXPRESS</span>
+                        </div>
+                        <span class="block text-xs font-semibold tracking-wider text-stone-500 uppercase">Milton Road • Shaftesbury</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-stone-700 text-sm">
+                    <a href="#services" class="hover:text-brand-emerald transition hover:-translate-y-0.5 transform inline-block">Store Services</a>
+                    <a href="#about" class="hover:text-brand-emerald transition hover:-translate-y-0.5 transform inline-block">Local Dorset Goods</a>
+                    <a href="#testimonials" class="hover:text-brand-emerald transition hover:-translate-y-0.5 transform inline-block">Community Reviews</a>
+                    <a href="#contact" class="hover:text-brand-emerald transition hover:-translate-y-0.5 transform inline-block">Find Us</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:+441747852100" class="hidden sm:inline-flex items-center gap-2 bg-stone-100 hover:bg-stone-200 text-stone-800 font-semibold px-4 py-2.5 rounded-xl text-sm transition">
+                        <i class="fa-solid fa-phone text-brand-emerald"></i>
+                        <span>Call Store</span>
+                    </a>
+                    <a href="#contact" class="inline-flex items-center gap-2 bg-brand-emerald hover:bg-brand-forest text-white font-semibold px-5 py-2.5 rounded-xl text-sm shadow-md shadow-emerald-950/10 transition transform active:scale-95">
+                        <i class="fa-solid fa-route"></i>
+                        <span>Get Directions</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION + TRUST BADGES -->
+    <section class="relative hero-gradient py-20 lg:py-32 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-brand-mint text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-heart text-red-400"></i> Heart of the Mampitts Community
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Your Everyday Premium <span class="text-brand-mint">Convenience</span> & Fresh Bakery.
+                    </h1>
+                    
+                    <p class="text-stone-200 text-lg sm:text-xl font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Welcome to SPAR Milton Road. From freshly baked local bread and Dorset dairy to Post Office services and everyday market essentials — right on your doorstep in Shaftesbury.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#services" class="w-full sm:w-auto bg-brand-red hover:bg-brand-crimson text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-red-950/30 transition text-center">
+                            Explore Services
+                        </a>
+                        <a href="tel:+441747852100" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-semibold px-8 py-4 rounded-xl border border-white/20 transition text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-phone"></i> Direct Call
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Card -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-3xl p-6 sm:p-8 text-stone-800 shadow-2xl relative">
+                        <div class="absolute -top-4 -right-4 bg-brand-gold text-white font-bold text-xs uppercase px-4 py-2 rounded-full shadow-lg">
+                            Fresh Daily
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-forest mb-4">Today at SPAR Milton Road</h3>
+                        
+                        <ul class="space-y-4 text-sm font-medium">
+                            <li class="flex items-start gap-3 p-3 rounded-lg bg-stone-50 border border-stone-100">
+                                <div class="w-8 h-8 rounded-full bg-emerald-100 text-brand-emerald flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-bread-slice"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-stone-900">In-Store Bakery Active</strong>
+                                    <span class="text-stone-500 text-xs">Warm croissants, sourdough & pastries baked every morning.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 p-3 rounded-lg bg-stone-50 border border-stone-100">
+                                <div class="w-8 h-8 rounded-full bg-red-100 text-brand-red flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-stone-900">Post Office Counter</strong>
+                                    <span class="text-stone-500 text-xs">Parcels, banking, bill payments & Royal Mail drop-offs.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 p-3 rounded-lg bg-stone-50 border border-stone-100">
+                                <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-wine-bottle"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-stone-900">Fine Wine & Craft Ales</strong>
+                                    <span class="text-stone-500 text-xs">Chilled beers, local cider & curated wine cellar.</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6 pt-4 border-t border-stone-200 flex items-center justify-between text-xs font-semibold text-stone-500">
+                            <span><i class="fa-solid fa-square-check text-brand-mint mr-1"></i> Parking Available</span>
+                            <span><i class="fa-solid fa-square-check text-brand-mint mr-1"></i> Disabled Access</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES BAR -->
+    <section class="bg-brand-sand py-8 border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-calendar-check text-2xl text-brand-emerald"></i>
+                    <span class="font-bold text-stone-900 text-sm">Open 7 Days a Week</span>
+                    <span class="text-xs text-stone-500">7:00 AM – 10:00 PM</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-wheat-awn text-2xl text-brand-gold"></i>
+                    <span class="font-bold text-stone-900 text-sm">Fresh In-Store Bakery</span>
+                    <span class="text-xs text-stone-500">Hot items served daily</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-box text-2xl text-brand-red"></i>
+                    <span class="font-bold text-stone-900 text-sm">Post Office Drop & Return</span>
+                    <span class="text-xs text-stone-500">Evri & Royal Mail Services</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-cheese text-2xl text-brand-emerald"></i>
+                    <span class="font-bold text-stone-900 text-sm">Local Dorset Produce</span>
+                    <span class="text-xs text-stone-500">Supporting local farms</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICES GRID -->
+    <section id="services" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-brand-emerald mb-2">Everything You Need</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-stone-900">Designed Around Your Busy Day</p>
+                <div class="w-16 h-1 bg-brand-red mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/80 group">
+                    <div class="w-14 h-14 bg-emerald-50 text-brand-emerald rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-emerald group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-bread-slice"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-2">Artisan Bakery & Coffee</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                        Enjoy freshly baked bread, savory sausage rolls, flaky pastries, and barista-grade Costa Express coffee to kickstart your morning.
+                    </p>
+                    <span class="text-xs font-bold text-brand-emerald uppercase tracking-wider">Baked Fresh Hourly</span>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/80 group">
+                    <div class="w-14 h-14 bg-red-50 text-brand-red rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-red group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-2">Post Office & Parcels</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                        Full postal counter services. Drop off Amazon, Evri, and Royal Mail returns, pay bills, and withdraw cash hassle-free.
+                    </p>
+                    <span class="text-xs font-bold text-brand-red uppercase tracking-wider">Convenient Drop-Off</span>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/80 group">
+                    <div class="w-14 h-14 bg-amber-50 text-brand-gold rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-gold group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-2">Local Dorset Produce</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                        Stocked with fresh local dairy, locally sourced meats, crisp regional fruit, and authentic West Country specialties.
+                    </p>
+                    <span class="text-xs font-bold text-brand-gold uppercase tracking-wider">Farm to Shelf</span>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/80 group">
+                    <div class="w-14 h-14 bg-purple-50 text-purple-700 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-700 group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-wine-glass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-2">Off-Licence & Cellar</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                        An extensive selection of fine wines, chilled lagers, craft beers, regional ciders, and premium spirits for every occasion.
+                    </p>
+                    <span class="text-xs font-bold text-purple-700 uppercase tracking-wider">Chilled Selection</span>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/80 group">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-700 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-700 group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-ticket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-2">National Lottery & PayPoint</h3>
+                    <p class="text-stone-600 text-sm

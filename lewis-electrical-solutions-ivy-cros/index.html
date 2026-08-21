@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewis Electrical Solutions | Electricians in Ivy Cross, Shaftesbury</title>
+    <meta name="description" content="NICEIC Approved Electricians based in Ivy Cross, Shaftesbury. Expert residential, commercial, EV charging & 24/7 emergency electrical services across North Dorset.">
+    
+    <!-- Google Font: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            400: '#fbbf24',
+                            500: '#f59e0b', // Electric Amber / Gold
+                            600: '#d97706',
+                            900: '#78350f',
+                        },
+                        navy: {
+                            800: '#0f172a',
+                            900: '#0b132b', // High-end Midnight Navy
+                            950: '#050a18',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .amber-glow {
+            box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.3);
+        }
+        .amber-glow-sm {
+            box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.25);
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(245, 158, 11, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-navy-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-navy-950">
+
+    <!-- TOP ANNOUNCEMENT / CONTACT BAR -->
+    <div class="bg-navy-900 border-b border-slate-800/80 text-slate-300 text-xs sm:text-sm py-2.5 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6">
+                <span class="flex items-center gap-2 text-slate-300">
+                    <i class="fa-solid fa-location-dot text-brand-500"></i> Ivy Cross, Shaftesbury, SP7
+                </span>
+                <span class="hidden sm:flex items-center gap-2 text-slate-300">
+                    <i class="fa-regular fa-clock text-brand-500"></i> Mon - Fri: 08:00 - 18:00 | <strong class="text-amber-400 font-medium">24/7 Emergency</strong>
+                </span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="mailto:info@lewiselectricalsolutions.co.uk" class="hover:text-brand-400 transition-colors hidden lg:flex items-center gap-2">
+                    <i class="fa-regular fa-envelope text-brand-500"></i> info@lewiselectricalsolutions.co.uk
+                </a>
+                <a href="tel:01747850911" class="text-brand-400 font-semibold hover:text-brand-500 transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-brand-500"></i> 01747 850 911
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-navy-900/90 backdrop-blur-md border-b border-slate-800/80 transition-all duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-navy-950 font-black text-xl shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white block leading-none">LEWIS</span>
+                    <span class="text-xs font-bold tracking-widest text-brand-500 uppercase block mt-1">Electrical Solutions</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#services" class="hover:text-brand-400 transition-colors">Services</a>
+                <a href="#about" class="hover:text-brand-400 transition-colors">About Us</a>
+                <a href="#areas" class="hover:text-brand-400 transition-colors">Service Areas</a>
+                <a href="#testimonials" class="hover:text-brand-400 transition-colors">Reviews</a>
+                <a href="#contact" class="hover:text-brand-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Emergency CTA Button -->
+            <div class="flex items-center gap-3">
+                <a href="tel:07700900123" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 hover:bg-red-500 hover:text-white font-semibold text-xs sm:text-sm transition-all duration-200">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                    </span>
+                    24/7 Call Out
+                </a>
+                <a href="#contact" class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-brand-500 to-brand-600 text-navy-950 font-bold text-sm hover:from-brand-400 hover:to-brand-500 transition-all duration-200 shadow-md shadow-brand-500/20">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-20 lg:py-28 overflow-hidden bg-grid-pattern">
+        <!-- Ambient background glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute -top-10 right-0 w-[400px] h-[400px] bg-blue-600/10 blur-[140px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Hero Text -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs sm:text-sm font-semibold mb-6">
+                        <i class="fa-solid fa-shield-halved"></i> NICEIC Approved Master Electricians
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
+                        Precision Electrical Services in <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-amber-300 to-brand-500">Shaftesbury & Ivy Cross</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-lg sm:text-xl font-normal leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                        From emergency rewiring and consumer unit upgrades to sleek EV charger installations and smart home setups. Safe, certified, and dependable local engineering.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-500 hover:bg-brand-400 text-navy-950 font-extrabold text-base transition-all duration-200 text-center amber-glow hover:scale-[1.02]">
+                            Book an Electrician
+                        </a>
+                        <a href="tel:01747850911" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-navy-800 hover:bg-slate-800 text-white border border-slate-700 font-bold text-base transition-all duration-200 text-center flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-500"></i> Call 01747 850 911
+                        </a>
+                    </div>
+
+                    <!-- Highlight Metrics -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">15+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Safety Compliant</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold font-bold text-white">5.0 ★</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Google Rated</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Visual Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-brand-500 to-amber-600 opacity-30 blur-lg"></div>
+                        <div class="relative rounded-2xl bg-navy-900 border border-slate-800 p-6 sm:p-8 shadow-2xl">
+                            <div class="flex items-center justify-between pb-6 border-b border-slate-800 mb-6">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
+                                    <span class="text-sm font-semibold text-slate-200">Local Response Ready</span>
+                                </div>
+                                <span class="text-xs text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded border border-brand-500/20 font-medium">SP7 Postcode Area</span>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div class="p-4 rounded-xl bg-navy-950/80 border border-slate-800 flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0 text-lg">
+                                        <i class="fa-solid fa-house-lightning"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-semibold text-sm">Domestic & Commercial</h4>
+                                        <p class="text-xs text-slate-400 mt-0.5">Full rewires, fuseboard updates, EICR landlord certs.</p>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-xl bg-navy-950/80 border border-slate-800 flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0 text-lg">
+                                        <i class="fa-solid fa-car-battery"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-semibold text-sm">EV Charger Specialists</h4>
+                                        <p class="text-xs text-slate-400 mt-0.5">Home & business fast-charging point installations.</p>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-xl bg-navy-950/80 border border-slate-800 flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0 text-lg">
+                                        <i class="fa-solid fa-triangle-exclamation text-amber-400"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-semibold text-sm">Ivy Cross Rapid Dispatch</h4>
+                                        <p class="text-xs text-slate-400 mt-0.5">Emergency faults & power loss restored quickly.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 pt-6 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                                <span><i class="fa-solid fa-check text-brand-500 mr-1"></i> Part P Registered</span>
+                                <span><i class="fa-solid fa-check text-brand-500 mr-1"></i> Fully Insured (£5M)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES BAR -->
+    <section class="bg-navy-900 border-y border-slate-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-xs font-semibold uppercase tracking-widest text-slate-400 mb-6">Accredited & Certified Electrical Standards</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-items-center opacity-85">
+                <div class="flex items-center gap-3 text-slate-300 font-bold text-sm hover:text-white transition-colors">
+                    <i class="fa-solid fa-award text-2xl text-brand-500"></i>
+                    <span>NICEIC Approved Contractor</span>
+                </div>
+                <div class="flex items-center gap-3 text-slate-300 font-bold text-sm hover:text-white transition-colors">
+                    <i class="fa-solid fa-graduation-cap text-2xl text-brand-500"></i>
+                    <span>City & Guilds 18th Edition</span>
+                </div>
+                <div class="flex items-center gap-3 text-slate-300 font-bold text-sm hover:text-white transition-colors">
+                    <i class="fa-solid fa-shield-check text-2xl text-brand-500"></i>
+                    <span>TrustMark Registered</span>
+                </div>
+                <div class="flex items-center gap-3 text-slate-300 font-bold text-sm hover:text-white transition-colors">
+                    <i class="fa-solid fa-building-shield text-2xl text-brand-500"></i>
+                    <span>Part P Compliant</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID SECTION -->
+    <section id="services" class="py-24 bg-navy-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-3">Comprehensive Electrical Solutions</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Our Professional Services</p>
+                <p class="text-slate-400 mt-4 text-base">Delivering high-specification electrical work across Ivy Cross, Shaftesbury town center, and surrounding North Dorset villages.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="group relative bg-navy-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-plug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Full & Partial Rewiring</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Complete home and commercial re-wires tailored to modern electrical demands, ensuring full BS7671 safety compliance.
+                    </p>
+                    <a href="#contact" class="text-brand-400 font-semibold text-sm flex items-center gap-2 group-hover:text-brand-300">
+                        Request Rewire Quote <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative bg-navy-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-charging-station"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">EV Charger Installation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Smart, safe home and workplace electric vehicle chargers fitted with minimal disruption by certified installers.
+                    </p>
+                    <a href="#contact" class="text-brand-400 font-semibold text-sm flex items-center gap-2 group-hover:text-brand-300">
+                        Book EV Charging Fit <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative bg-navy-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Fuse Board / Consumer Units</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Upgrade old fuse boxes to modern consumer units with surge protection (SPD) and RCD/RCBO safety features.
+                    </p>
+                    <a href="#contact" class="text-brand-400 font-semibold text-sm flex items-center gap-2 group-hover:text-brand-300">
+                        Upgrade Consumer Unit <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group relative bg-navy-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Smart Lighting Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Architectural LED installations, exterior garden security illumination, and smartphone-controlled smart home lighting.
+                    </p>
+                    <a href="#contact" class="text-brand-400 font-semibold text-sm flex items-center gap-2 group-hover:text-brand-300">
+                        Explore Lighting <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="group relative bg-navy-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">EICR Safety Inspections</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Electrical Installation Condition Reports for landlords, buyers, and commercial properties in Shaftesbury & surrounds.
+                    </p>
+                    <a href="#contact" class="text-brand-400 font-semibold text-sm flex items-center gap-2 group-hover:text-brand-300">
+                        Book EICR Inspection <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="group relative bg-navy-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">24/7 Emergency Repairs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Tripped breakers, power loss, or burning smells? Rapid emergency callouts across Ivy Cross and surrounding areas.
+                    </p>
+                    <a href="tel:07700900123" class="text-brand-400 font-semibold text-sm flex items-center gap-2 group-hover:text-brand-300">
+                        Call Emergency Hotline <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO & ABOUT SECTION -->
+    <section id="about" class="py-20 bg-navy-900 border-y border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-brand-500/10 text-brand-400 text-xs font-semibold mb-4">
+                        Your Local Electricians in Ivy Cross
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+                        Dependable Electrical Craftsmanship in Shaftesbury, SP7
+                    </h2>
+                    
+                    <div class="space-y-4 text-slate-300 text-base leading-relaxed">
+                        <p>
+                            Based prominently near <strong>Ivy Cross in Shaftesbury</strong>, <strong class="text-white">Lewis Electrical Solutions</strong> provides high-standard electrical installation, maintenance, and testing across North Dorset and Wiltshire borders.
+                        </p>
+                        <p>
+                            Whether you own a period cottage in the historical heart of Shaftesbury requiring sensitive rewiring, a modern home in Ivy Cross needing a smart EV charger, or a commercial unit along the A350 corridor, our team brings local knowledge, prompt scheduling, and uncompromising safety.
+                        </p>
+                        <p>
+                            We pride ourselves on transparent, fixed-quote pricing with zero hidden fees. As NICEIC Approved contractors, all our work is fully certified and compliant with modern UK building regulations (Part P).
+                        </p>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center gap-3 p-3 rounded-lg bg-navy-950 border border-slate-800">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                            <span class="text-sm font-semibold text-slate-200">Ivy Cross Local Dispatch</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-lg bg-navy-950 border border-slate-800">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                            <span class="text-sm font-semibold text-slate-200">Clean & Respectful Engineers</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-lg bg-navy-950 border border-slate-800">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                            <span class="text-sm font-semibold text-slate-200">No Hidden Callout Fees</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-lg bg-navy-950 border border-slate-800">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                            <span class="text-sm font-semibold text-slate-200">Landlord EICR Specialists</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Feature Block / SEO Location map indicator -->
+                <div id="areas" class="lg:col-span-5 bg-navy-950 border border-slate-800 rounded-2xl p-6 sm:p-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-map-location-dot text-brand-500"></i> Primary Service Coverage
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-6">Based in Ivy Cross (Shaftesbury), regularly serving customers within a 15-mile radius:</p>
+                    
+                    <ul class="space-y-3">
+                        <li class="flex items-center justify-between p-3 rounded-lg bg-navy-900 border border-slate-800/80 text-sm font-medium text-slate-200">
+                            <span><i class="fa-solid fa-location-arrow text-brand-500 mr-2 text-xs"></i> Shaftesbury & Ivy Cross</span>
+                            <span class="text-xs bg-brand-500/20 text-brand-400 px-2 py-0.5 rounded font-mono">SP7</span>
+                        </li>
+                        <li class="flex items-center justify-between p-3 rounded-lg bg-navy-900 border border-slate-800/80 text-sm font-medium text-slate-200">
+                            <span><i class="fa-solid fa-location-arrow text-brand-500 mr-2 text-xs"></i> Gillingham & Motcombe</span>
+                            <span class="text-xs bg-brand-500/20 text-brand-400 px-2 py-0.5 rounded font-mono">SP8</span>
+                        </li>
+                        <li class="flex items-center justify-between p-3 rounded-lg bg-navy-900 border border-slate-800/80 text-sm font-medium text-slate-200">
+                            <span><i class="fa-solid fa-location-arrow text-brand-500 mr-2 text-xs"></i> Fontmell Magna & Compton Abbas</span>
+                            <span class="text-xs bg-brand-500/20 text-brand-400 px-2 py-0.5 rounded font-mono">SP5 / SP7</span>
+                        </li>
+                        <li class="flex items-center justify-between p-3 rounded-lg bg-navy-900 border border-slate-800/80 text-sm font-medium text-slate-200">
+                            <span><i class="fa-solid fa-location-arrow text-brand-500 mr-2 text-xs"></i> Blandford Forum & Sturminster Newton</span>
+                            <span class="text-xs bg-brand-500/20 text-brand-400 px-2 py-0.5 rounded font-mono">DT10 / DT11</span>
+                        </li>
+                        <li class="flex items-center justify-between p-3 rounded-lg bg-navy-900 border border-slate-800/80 text-sm font-medium text-slate-200">
+                            <span><i class="fa-solid fa-location-arrow text-brand-500 mr-2 text-xs"></i> Tisbury & Nadder Valley</span>
+                            <span class="text-xs bg-brand-500/20 text-brand-400 px-2 py-0.5 rounded font-mono">SP3</span>
+                        </li>
+                    </ul>
+
+                    <div class="mt-6 p-4 rounded-xl bg-brand-500/10 border border-brand-500/20 text-center">
+                        <p class="text-xs font-semibold text-brand-400">Not sure if we cover your postcode?</p>
+                        <a href="tel:01747850911" class="text-sm font-bold text-white hover:underline mt-1 block">Give us a quick call on 01747 850 911</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 bg-navy-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-3">Verified Local Customer Feedback</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">What Our Clients Say</p>
+                <p class="text-slate-400 mt-3">Read genuine reviews from local homeowners and businesses in Shaftesbury.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-navy-900 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between relative">
+                    <div>
+                        <div class="flex items-center gap-1 text-brand-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Lewis fitted a dual-socket EV charger at our house near Ivy Cross. Arrived exactly on time, quoted clearly upfront, and left the driveway spotless. Highly professional service!"
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-800/80 pt-4 mt-2">
+                        <div>
+                            <p class="text-white font-bold text-sm">Mark & Helen Reynolds</p>
+                            <p class="text-slate-500 text-xs">Ivy Cross, Shaftesbury</p>
+                        </div>
+                        <span class="text-xs text-brand-500 font-semibold bg-brand-500/10 px-2 py-1 rounded">EV Installation</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-navy-900 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between relative">
+                    <div>
+                        <div class="flex items-center gap-1 text-brand-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Called out on a Sunday evening when our main fuse board tripped and left us without power. They were at our cottage within 35 minutes and fixed the fault quickly. Outstanding response."
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-800/80 pt-4 mt-2">
+                        <div>
+                            <p class="text-white font-bold text-sm">Sarah Jenkins</p>
+                            <p class="text-slate-500 text-xs">Shaftesbury Town Centre</p>
+                        </div>
+                        <span class="text-xs text-red-400 font-semibold bg-red-500/10 px-2 py-1 rounded">24/7 Callout</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-navy-900 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between relative">
+                    <div>
+                        <div class="flex items-center gap-1 text-brand-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "We used Lewis Electrical Solutions for full EICR safety testing across three rental properties in Motcombe & Gillingham. Excellent paperwork, competitive rates, and zero hassle."
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-800/80 pt-4 mt-2">
+                        <div>
+                            <p class="text-white font-bold text-sm">David Miller</p>
+                            <p class="text-slate-500 text-xs">Landlord, Gillingham</p>
+                        </div>
+                        <span class="text-xs text-brand-500 font-semibold bg-brand-500/10 px-2 py-1 rounded">EICR Testing</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & CALL TO ACTION -->
+    <section id="contact" class="py-24 bg-navy-900 border-t border-slate-800 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Panel -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-500">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2 mb-6">
+                            Request Your Free Quote
+                        </h2>
+                        <p class="text-slate-300 text-base leading-relaxed mb-8">
+                            Fill out the form or contact us directly. For immediate emergency callouts across Ivy Cross and Shaftesbury, please call us right away.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0 text-xl">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">Standard Telephone</p>
+                                    <a href="tel:01747850911" class="text-lg font-bold text-white hover:text-brand-400 transition-colors">01747 850 911</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center shrink-0 text-xl">
+                                    <i class="fa-solid fa-truck-medical"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">24/7 Emergency Line</p>
+                                    <a href="tel:07700900123" class="text-lg font-bold text-red-400 hover:text-red-300 transition-colors">07700 900 123</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0 text-xl">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">Main Depot Location</p>
+                                    <p class="text-base font-semibold text-white">Ivy Cross, Shaftesbury, Dorset, SP7</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0 text-xl">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">Email Enquiries</p>
+                                    <a href="mailto:info@lewiselectricalsolutions.co.uk" class="text-base font-semibold text-white hover:text-brand-400">info@lewiselectricalsolutions.co.uk</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Tel Action Box -->
+                    <div class="mt-10 p-6 rounded-2xl bg-gradient-to-r from-brand-500 to-amber-600 text-navy-950">
+                        <h4 class="font-extrabold text-lg">Need Immediate Assistance?</h4>
+                        <p class="text-xs font-semibold mt-1 opacity-90">Speak directly with an engineer now for rapid dispatch in Ivy Cross.</p>
+                        <a href="tel:01747850911" class="mt-4 inline-flex items-center gap-2 bg-navy-950 text-white font-bold px-5 py-3 rounded-xl hover:bg-slate-900 transition-colors text-sm">
+                            <i class="fa-solid fa-phone text-brand-400"></i> Call 01747 850 911 Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="lg:col-span-7 bg-navy-950 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Send Us A Message</h3>
+                    <p class="text-slate-400 text-sm mb-8">We reply to all non-emergency quotes within 2 hours during normal working days.</p>
+
+                    <form action="#" method="POST" class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you! Your quote request has been sent successfully. Lewis Electrical Solutions will call you shortly.');">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first_name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">First & Last Name *</label>
+                                <input type="text" id="first_name" required placeholder="John Smith" class="w-full bg-navy-900 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all">
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" required placeholder="07123 456789" class="w-full bg-navy-900 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address *</label>
+                                <input type="email" id="email" required placeholder="john@example.co.uk" class="w-full bg-navy-900 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all">
+                            </div>
+
+                            <div>
+                                <label for="postcode" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Postcode / Location *</label>
+                                <input type="text" id="postcode" required placeholder="e.g. SP7 888 (Shaftesbury)" class="w-full bg-navy-900 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="service_type" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                            <select id="service_type" class="w-full bg-navy-900 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all">
+                                <option>General Enquiry / Free Quote</option>
+                                <option>EV Charger Installation</option>
+                                <option>Full or Partial Rewire</option>
+                                <option>Consumer Unit / Fuseboard Upgrade</option>
+                                <option>Landlord EICR Inspection</option>
+                                <option>Smart Home & Lighting</option>
+                                <option>Emergency Callout</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Details / Message</label>
+                            <textarea id="message" rows="4" placeholder="Tell us briefly about the job or requirement..." class="w-full bg-navy-900 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-brand-500 hover:bg-brand-400 text-navy-950 font-extrabold text-base transition-all duration-200 text-center amber-glow cursor-pointer">
+                            Submit Quote Request <i class="fa-solid fa-paper-plane ml-2 text-sm"></i>
+                        </button>
+                        
+                        <p class="text-center text-xs text-slate-500">We respect your privacy. Your details are used solely to fulfill your electrical quote request.</p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-950 text-slate-400 text-sm border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <!-- Col 1: Brand Info -->
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-9 h-9 rounded-lg bg-brand-500 flex items-center justify-center text-navy-950 font-black text-lg">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <span class="text-lg font-extrabold tracking-tight text-white">LEWIS <span class="text-brand-500">ELECTRICAL</span></span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                        Professional, NICEIC-approved electrical contractors based in Ivy Cross, Shaftesbury. Serving domestic and commercial clients across North Dorset and surrounding areas.
+                    </p>
+                    <div class="flex items-center gap-3 text-brand-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="text-xs text-slate-300 font-semibold ml-1">5.0 Local Rating</span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Services Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">Electrical Services</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="#services" class="hover:text-brand-400 transition-colors">Residential Rewiring</a></li>
+                        <li><a href="#services" class="hover:text-brand-400 transition-colors">EV Charging Point Fittings</a></li>
+                        <li><a href="#services" class="hover:text-brand-400 transition-colors">Fuse Board / Consumer Units</a></li>
+                        <li><a href="#services" class="hover:text-brand-400 transition-colors">Landlord EICR Certificates</a></li>
+                        <li><a href="#services" class="hover:text-brand-400 transition-colors">Smart Lighting & Security</a></li>
+                        <li><a href="#contact" class="hover:text-brand-400 transition-colors">24/7 Emergency Repairs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Areas Served -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">Dorset Service Areas</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="#areas" class="hover:text-brand-400 transition-colors">Ivy Cross (SP7)</a></li>
+                        <li><a href="#areas" class="hover:text-brand-400 transition-colors">Shaftesbury Town Centre</a></li>
+                        <li><a href="#areas" class="hover:text-brand-400 transition-colors">Gillingham & Motcombe</a></li>
+                        <li><a href="#areas" class="hover:text-brand-400 transition-colors">Fontmell Magna & Cann</a></li>
+                        <li><a href="#areas" class="hover:text-brand-400 transition-colors">Blandford & Sturminster Newton</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Summary -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">Contact Information</h4>
+                    <address class="not-italic space-y-2.5 text-xs text-slate-400">
+                        <p class="text-white font-semibold">Lewis Electrical Solutions</p>
+                        <p>Ivy Cross, Shaftesbury</p>
+                        <p>Dorset, SP7</p>
+                        <p class="pt-2">Tel: <a href="tel:01747850911" class="text-brand-400 font-bold hover:underline">01747 850 911</a></p>
+                        <p>24/7 Mob: <a href="tel:07700900123" class="text-red-400 font-bold hover:underline">07700 900 123</a></p>
+                    </address>
+                </div>
+
+            </div>
+
+            <div class="border-t border-slate-800/80 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Lewis Electrical Solutions. All Rights Reserved. Ivy Cross, Shaftesbury.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-400">Part P Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

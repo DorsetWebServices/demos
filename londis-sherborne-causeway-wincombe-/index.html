@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Londis Sherborne Causeway | Convenience Store in Shaftesbury, Dorset</title>
+  <meta name="description" content="Your premier local convenience store in Wincombe Business Park, Shaftesbury. Fresh produce, Costa Express, Off-Licence, Evri & DPD parcel services, and daily groceries.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              600: '#16a34a',
+              800: '#064e3b',
+              900: '#022c22',
+              dark: '#011e17',
+              gold: '#d97706',
+              'gold-light': '#fef3c7',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(to right, rgba(2, 44, 34, 0.92), rgba(6, 78, 59, 0.78)), url('https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-800 selection:text-white">
+
+  <!-- TOP BAR / HOURS & QUICK INFO -->
+  <div class="bg-brand-dark text-slate-300 text-xs sm:text-sm py-2.5 px-4 border-b border-brand-800/50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6">
+        <span class="flex items-center gap-2 text-brand-gold-light">
+          <i class="fa-regular fa-clock text-brand-gold"></i>
+          <strong class="font-semibold text-white">Mon–Sat:</strong> 6:00 AM – 9:00 PM | <strong class="font-semibold text-white">Sun:</strong> 7:00 AM – 8:00 PM
+        </span>
+        <span class="hidden lg:flex items-center gap-2">
+          <i class="fa-solid fa-location-dot text-brand-gold"></i>
+          Wincombe Business Park, Shaftesbury, SP7 9QJ
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:01747852100" class="flex items-center gap-2 text-white hover:text-brand-gold transition-colors font-medium">
+          <i class="fa-solid fa-phone text-xs text-brand-gold"></i>
+          01747 852100
+        </a>
+        <span class="text-slate-600">|</span>
+        <div class="flex items-center gap-3 text-slate-400">
+          <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="bg-brand-800 text-white p-2.5 rounded-xl font-black text-xl tracking-wider shadow-md group-hover:bg-brand-900 transition-all">
+            LONDIS
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold text-slate-900 text-lg leading-tight tracking-tight">Sherborne Causeway</span>
+            <span class="text-xs text-brand-800 font-semibold tracking-wider uppercase">Wincombe Park • Shaftesbury</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+          <a href="#about" class="hover:text-brand-800 transition-colors">About</a>
+          <a href="#services" class="hover:text-brand-800 transition-colors">Services</a>
+          <a href="#seo-info" class="hover:text-brand-800 transition-colors">Local Store</a>
+          <a href="#reviews" class="hover:text-brand-800 transition-colors">Reviews</a>
+          <a href="#contact" class="hover:text-brand-800 transition-colors">Contact</a>
+        </nav>
+
+        <!-- CTA Header Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://maps.google.com/?q=Wincombe+Business+Park+Shaftesbury" target="_blank" rel="noopener" class="bg-brand-800 hover:bg-brand-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md shadow-brand-800/20 hover:shadow-lg transition-all flex items-center gap-2">
+            <i class="fa-solid fa-directions"></i> Get Directions
+          </a>
+        </div>
+
+        <!-- Mobile Menu Icon (Visual Only for single-page) -->
+        <button class="md:hidden text-slate-700 hover:text-brand-800 p-2 text-xl" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-bg text-white relative py-20 lg:py-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold-light px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+          <i class="fa-solid fa-store"></i> Your Local Independent Supermarket
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none mb-6">
+          Freshness & Convenience Right on Your Doorstep.
+        </h1>
+        <p class="text-lg sm:text-xl text-slate-200 font-light mb-8 leading-relaxed">
+          Serving Wincombe Business Park and the Shaftesbury community with farm-fresh produce, daily essentials, Costa Express, hot food, and seamless parcel collection.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-12">
+          <a href="tel:01747852100" class="bg-brand-gold hover:bg-amber-600 text-slate-950 font-bold px-7 py-4 rounded-xl shadow-lg hover:shadow-amber-500/20 text-center transition-all flex items-center justify-center gap-3 text-base">
+            <i class="fa-solid fa-phone"></i> Call Store Direct
+          </a>
+          <a href="#services" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 font-semibold px-7 py-4 rounded-xl text-center transition-all flex items-center justify-center gap-2 text-base">
+            Explore Services <i class="fa-solid fa-arrow-down text-sm"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO TRUST BADGES -->
+    <div class="mt-8 border-t border-white/10 bg-black/20 backdrop-blur-sm py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+          
+          <div class="flex items-center justify-center md:justify-start gap-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0">
+              <i class="fa-solid fa-apple-whole text-lg"></i>
+            </div>
+            <div>
+              <h2 class="text-sm font-bold text-white">Fresh Local Produce</h2>
+              <p class="text-xs text-slate-300">Sourced daily for top quality</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center md:justify-start gap-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0">
+              <i class="fa-solid fa-mug-hot text-lg"></i>
+            </div>
+            <div>
+              <h2 class="text-sm font-bold text-white">Costa Express</h2>
+              <p class="text-xs text-slate-300">Hot drinks on the go</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center md:justify-start gap-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0">
+              <i class="fa-solid fa-box text-lg"></i>
+            </div>
+            <div>
+              <h2 class="text-sm font-bold text-white">Evri & DPD Parcel Hub</h2>
+              <p class="text-xs text-slate-300">Easy drop-off & pickup</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center md:justify-start gap-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0">
+              <i class="fa-solid fa-square-parking text-lg"></i>
+            </div>
+            <div>
+              <h2 class="text-sm font-bold text-white">Free Parking</h2>
+              <p class="text-xs text-slate-300">Hassle-free parking outside</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / FEATURED BANNER -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-brand-800 font-bold text-xs uppercase tracking-widest block mb-2">Welcome to Londis Sherborne Causeway</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
+            Your Premium Community Store in Wincombe Business Park
+          </h2>
+          <p class="text-slate-600 leading-relaxed mb-4">
+            Located conveniently on Sherborne Causeway within Wincombe Business Park, Shaftesbury, our store provides an elevated local shopping experience. Whether you’re stopping by on your daily commute, taking a lunch break from work, or doing your weekly household top-up shop, we offer everything you need under one roof.
+          </p>
+          <p class="text-slate-600 leading-relaxed mb-6">
+            We take pride in stocking a wide range of everyday essentials, high-quality local Dorset food and beverages, ready-to-eat hot food, and offering essential services like parcel return counters and bill payments.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-4 border-t border-slate-100 pt-6">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-brand-600 mt-1"></i>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Open 7 Days a Week</h3>
+                <p class="text-xs text-slate-500">Early mornings to late evenings</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-brand-600 mt-1"></i>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Off-Licence Selection</h3>
+                <p class="text-xs text-slate-500">Chilled wines, ales & ciders</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Fresh groceries at Londis Sherborne Causeway" class="w-full h-96 object-cover">
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-brand-800 text-white p-6 rounded-2xl shadow-xl hidden sm:block max-w-xs">
+            <p class="text-2xl font-black text-brand-gold">100%</p>
+            <p class="text-xs font-medium text-slate-200">Committed to serving the Shaftesbury community with quality and care.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section id="services" class="py-20 bg-slate-100/70 border-y border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-800 font-bold text-xs uppercase tracking-widest">What We Offer</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">Comprehensive Store Services</h2>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base">Designed for convenience, speed, and quality for local workers and residents alike.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md hover:border-brand-800/30 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-800 group-hover:text-white transition-all">
+            <i class="fa-solid fa-carrot"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Fresh Grocery & Produce</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Daily deliveries of fresh fruit, vegetables, dairy, bakery items, and household essentials to keep your pantry stocked.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md hover:border-brand-800/30 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-800 group-hover:text-white transition-all">
+            <i class="fa-solid fa-mug-saucer"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Costa Express Coffee & Bakery</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Enjoy bar-quality self-serve hot drinks alongside warm in-store baked croissants, pastries, and savory snacks.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md hover:border-brand-800/30 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-800 group-hover:text-white transition-all">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Evri, DPD & Parcel Drop</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Official parcel pick-up and drop-off point. Send, collect, or return your online shopping hassle-free at our counter.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md hover:border-brand-800/30 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-800 group-hover:text-white transition-all">
+            <i class="fa-solid fa-wine-bottle"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Off-Licence & Fine Wines</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Extensive selection of chilled beers, craft ciders, fine spirits, and world wines, featuring famous local Dorset drinks.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md hover:border-brand-800/30 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-800 group-hover:text-white transition-all">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Hot Food To-Go</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Quick, delicious breakfast rolls, pies, sausage rolls, and warm lunch meal deals tailored for business park professionals.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md hover:border-brand-800/30 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-xl mb-6 group-hover:bg-brand-800 group-hover:text-white transition-all">
+            <i class="fa-solid fa-receipt"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">PayPoint & National Lottery</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Pay utility bills, top up mobile credit, and grab your National Lottery or EuroMillions tickets while you shop.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCAL SEO NARRATIVE SECTION -->
+  <section id="seo-info" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-brand-900 text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-xl">
+        <div class="absolute -right-10 -bottom-10 opacity-10 text-white">
+          <i class="fa-solid fa-store text-[280px]"></i>
+        </div>
+        <div class="relative z-10 max-w-3xl">
+          <span class="text-brand-gold font-bold text-xs uppercase tracking-widest block mb-2">Serving Shaftesbury & Dorset</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mb-4 text-white">
+            Conveniently Located at Wincombe Business Park on Sherborne Causeway
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+            If you are searching for a reliable, well-stocked <strong>convenience store in Shaftesbury</strong> or near <strong>Sherborne Causeway</strong>, look no further than Londis. Located strategically within Wincombe Business Park, we cater to nearby residents, business employees, and travelers along the A30 and surrounding Dorset routes.
+          </p>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Our mission is simple: provide top-grade customer service, competitive pricing on branded goods, and support local Dorset farmers and suppliers by bringing the freshest products straight to our shelves.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="reviews" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <span class="text-brand-800 font-bold text-xs uppercase tracking-widest">Customer Reviews</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mt-2">What Our Community Says</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+              "Hands down the cleanest and best-stocked store in Shaftesbury. Staff members are always bright and welcoming. The parcel drop counter is super convenient when working in Wincombe Park!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+            <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm">
+              MT
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-sm">Mark T.</h3>
+              <p class="text-xs text-slate-500">Local Resident</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+              "Great selection of local Dorset produce, fresh bread, and cold drinks. Their Costa Express machine is always clean and fully stocked for morning coffee runs."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+            <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm">
+              SL
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-sm">Sarah L.</h3>
+              <p class="text-xs text-slate-500">Shaftesbury Visitor</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic leading-relaxed mb-6">
+              "Very easy to park right outside, grab fresh lunch savouries and pay bills quickly. Excellent customer service from the local team every single day."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+            <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm">
+              DK
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-sm">David K.</h3>
+              <p class="text-xs text-slate-500">Commuter</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM & DIRECT CALL SECTION -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12">
+        
+        <!-- Store Information -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-brand-800 font-bold text-xs uppercase tracking-widest block mb-1">Get In Touch</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Visit Or Call Us</h2>
+            <p class="text-slate-600 text-sm mt-3">Have a question about product stock or parcel pickups? Reach out to our team directly.</p>
+          </div>
+
+          <!-- Direct Phone CTA -->
+          <div class="bg-brand-50 border border-brand-100 p-6 rounded-2xl flex items-center gap-5">
+            <div class="w-14 h-14 bg-brand-800 text-white rounded-xl flex items-center justify-center text-2xl shrink-0 shadow-md">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Direct Store Phone</p>
+              <a href="tel:01747852100" class="text-2xl font-black text-brand-900 hover:text-brand-800 transition-colors">
+                01747 852100
+              </a>
+              <p class="text-xs text-brand-800 font-medium mt-0.5">Click to call directly</p>
+            </div>
+          </div>
+
+          <!-- Info List -->
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Store Address</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Londis Sherborne Causeway<br>
+                  Wincombe Business Park<br>
+                  Shaftesbury, Dorset, SP7 9QJ
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Opening Hours</h3>
+                <p class="text-sm text-slate-600">Monday – Saturday: 6:00 AM – 9:00 PM</p>
+                <p class="text-sm text-slate-600">Sunday: 7:00 AM – 8:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7 bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200/80 shadow-sm">
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Send Us a Message</h3>
+          <p class="text-slate-600 text-sm mb-6">Fill in the quick form below and our store manager will respond promptly.</p>
+          
+          <form onsubmit="event.preventDefault(); alert('Thank you for contacting Londis Sherborne Causeway. We will be in touch shortly!');" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Your Name</label>
+                <input type="text" id="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-800 focus:border-transparent text-sm bg-white">
+              </div>
+              <div>
+                <label for="phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Phone Number</label>
+                <input type="tel" id="phone" placeholder="07123 456789" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-800 focus:border-transparent text-sm bg-white">
+              </div>
+            </div>
+
+            <div>
+              <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Email Address</label>
+              <input type="email" id="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-800 focus:border-transparent text-sm bg-white">
+            </div>
+
+            <div>
+              <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Message or Enquiry</label>
+              <textarea id="message" rows="4" required placeholder="How can we help you today?" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-800 focus:border-transparent text-sm bg-white"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-brand-800 hover:bg-brand-900 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-brand-800/20 transition-all text-sm tracking-wide uppercase">
+              Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark text-slate-400 py-12 border-t border-brand-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-brand-800/60">
+        
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="bg-brand-800 text-white px-3 py-1.5 rounded-lg font-black text-lg">
+              LONDIS
+            </div>
+            <span class="font-bold text-white text-lg">Sherborne Causeway</span>
+          </div>
+          <p class="text-sm text-slate-400 max-w-sm mb-4 leading-relaxed">
+            Your trusted local convenience store serving Wincombe Business Park, Shaftesbury, and surrounding Dorset communities with fresh groceries, coffee, and postal services.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#about" class="hover:text-white transition-colors">About Store</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
+            <li><a href="#seo-info" class="hover:text-white transition-colors">Location Info</a></li>
+            <li><a href="#reviews" class="hover:text-white transition-colors">Customer Reviews</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4">Contact Info</h4>
+          <p class="text-sm leading-relaxed mb-2">Wincombe Business Park<br>Shaftesbury, SP7 9QJ</p>
+          <a href="tel:01747852100" class="text-brand-gold hover:underline text-sm font-semibold block">Tel: 01747 852100</a>
+        </div>
+
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Londis Sherborne Causeway. All rights reserved.</p>
+        <p class="text-slate-500">Wincombe Business Park • Shaftesbury • Dorset</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDH Electrical | Expert Electricians in Enmore Green & Shaftesbury</title>
+    <meta name="description" content="Certified local electricians in Enmore Green, Shaftesbury. NICEIC approved domestic & commercial electrical services, 24/7 emergency response, EV chargers & EICRs across Dorset.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            950: '#070A12',
+                            900: '#0F172A',
+                            800: '#1E293B',
+                            700: '#334155'
+                        },
+                        amber: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .glow-amber {
+            box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.25);
+        }
+        .glow-card:hover {
+            box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.15);
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-navy-950 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-navy-950">
+
+    <!-- 1. TOP BAR / HOURS -->
+    <div class="bg-navy-900 border-b border-slate-800/80 text-xs text-slate-300 py-2.5 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap items-center gap-6 justify-center md:justify-start">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid me-1 fa-location-dot text-amber-500"></i> Enmore Green, Shaftesbury, SP7
+                </span>
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid me-1 fa-clock text-amber-500"></i> Mon - Fri: 8:00 AM - 6:00 PM | <strong>24/7 Emergency Callout</strong>
+                </span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="mailto:info@wdhelectrical.co.uk" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope text-amber-500"></i> info@wdhelectrical.co.uk
+                </a>
+                <span class="hidden lg:inline-block text-slate-600">|</span>
+                <span class="hidden lg:flex items-center gap-1 text-amber-400 font-medium">
+                    <i class="fa-solid fa-shield-halved text-xs"></i> NICEIC Approved Contractor
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. STICKY HEADER + CTA -->
+    <header class="sticky top-0 z-50 bg-navy-950/90 backdrop-blur-md border-b border-slate-800/80 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-navy-950 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-bolt text-xl font-black"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-tight text-white uppercase flex items-center gap-1">
+                        WDH <span class="text-amber-500">Electrical</span>
+                    </span>
+                    <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold">Shaftesbury & Beyond</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-amber-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
+                <a href="#local-seo" class="hover:text-amber-400 transition-colors">Coverage</a>
+                <a href="#testimonials" class="hover:text-amber-400 transition-colors">Reviews</a>
+                <a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="tel:01747850123" class="hidden sm:inline-flex items-center gap-2 text-xs md:text-sm font-semibold text-slate-200 bg-navy-800 hover:bg-navy-700 border border-slate-700/80 px-4 py-2.5 rounded-lg transition-all">
+                    <i class="fa-solid fa-phone text-amber-500"></i>
+                    <span>01747 850123</span>
+                </a>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs md:text-sm font-bold text-navy-950 bg-amber-500 hover:bg-amber-400 px-5 py-2.5 rounded-lg shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30 transition-all hover:-translate-y-0.5">
+                    <span>Book Electrician</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION + TRUST BADGES -->
+    <section class="relative bg-navy-950 pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-grid-pattern">
+        <!-- Glow accents -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-amber-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute -top-10 right-0 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-circle text-[8px] animate-pulse"></i> Trusted Local Electricians in Enmore Green
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+                        High-End Electrical Services in <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Shaftesbury</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        From full domestic rewires and stylish lighting installations to commercial testing and EV chargers. Certified, safe, and dependable electrical solutions tailored for Enmore Green and North Dorset homes.
+                    </p>
+
+                    <!-- CTA Group -->
+                    <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#contact" class="inline-flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold px-8 py-4 rounded-xl shadow-xl shadow-amber-500/20 hover:shadow-amber-500/30 transition-all text-base hover:-translate-y-0.5">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Request Free Quotation</span>
+                        </a>
+                        <a href="tel:01747850123" class="inline-flex items-center justify-center gap-3 bg-navy-900 hover:bg-navy-800 text-white font-semibold px-8 py-4 rounded-xl border border-slate-700/80 transition-all text-base hover:border-amber-500/50">
+                            <i class="fa-solid fa-phone-flip text-amber-500"></i>
+                            <span>24/7 Emergency: 01747 850123</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Mini Banner -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">15+</div>
+                            <div class="text-xs text-slate-400 font-medium">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">100%</div>
+                            <div class="text-xs text-slate-400 font-medium">NICEIC Compliant</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">4.9 ★</div>
+                            <div class="text-xs text-slate-400 font-medium">Customer Rating</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Card / Image Container -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="relative bg-gradient-to-b from-navy-800 to-navy-900 border border-slate-700/70 rounded-2xl p-6 sm:p-8 shadow-2xl glow-amber">
+                            <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+                                <div>
+                                    <h3 class="text-white font-bold text-lg">Emergency & Scheduled</h3>
+                                    <p class="text-xs text-slate-400">Fast response across SP7 & surrounding areas</p>
+                                </div>
+                                <span class="h-3 w-3 rounded-full bg-emerald-500 animate-ping"></span>
+                            </div>
+
+                            <!-- Bullet Highlights -->
+                            <ul class="py-6 space-y-4 text-sm text-slate-300">
+                                <li class="flex items-start gap-3">
+                                    <div class="p-1 bg-amber-500/10 rounded text-amber-400 mt-0.5"><i class="fa-solid fa-check text-xs"></i></div>
+                                    <span><strong>Part P & NICEIC Registered</strong> fully certified work</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="p-1 bg-amber-500/10 rounded text-amber-400 mt-0.5"><i class="fa-solid fa-check text-xs"></i></div>
+                                    <span><strong>Transparent Pricing</strong> with zero hidden callout fees</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="p-1 bg-amber-500/10 rounded text-amber-400 mt-0.5"><i class="fa-solid fa-check text-xs"></i></div>
+                                    <span><strong>Enmore Green Local</strong> rapid dispatch for urgent faults</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="p-1 bg-amber-500/10 rounded text-amber-400 mt-0.5"><i class="fa-solid fa-check text-xs"></i></div>
+                                    <span><strong>Comprehensive Guarantee</strong> on all parts & labor</span>
+                                </li>
+                            </ul>
+
+                            <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-bolt-lightning text-2xl text-amber-400"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-400">Need immediate help?</p>
+                                        <p class="text-sm font-bold text-white">Call Direct to Workshop</p>
+                                    </div>
+                                </div>
+                                <a href="tel:01747850123" class="bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold p-2.5 rounded-lg transition-colors">
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRUST BADGES STRIP -->
+            <div class="mt-16 pt-8 border-t border-slate-800/80">
+                <p class="text-center text-xs uppercase tracking-widest text-slate-500 font-semibold mb-6">Fully Accredited & Certified Standards</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80 grayscale hover:grayscale-0 transition-all duration-300">
+                    <div class="flex items-center gap-2 text-slate-300 font-bold text-sm bg-navy-900 px-4 py-2 rounded-lg border border-slate-800">
+                        <i class="fa-solid fa-award text-amber-400 text-lg"></i> NICEIC Approved Contractor
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-300 font-bold text-sm bg-navy-900 px-4 py-2 rounded-lg border border-slate-800">
+                        <i class="fa-solid fa-shield-cat text-amber-400 text-lg"></i> Part P Domestic Installer
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-300 font-bold text-sm bg-navy-900 px-4 py-2 rounded-lg border border-slate-800">
+                        <i class="fa-solid fa-car-battery text-amber-400 text-lg"></i> OZEV EV Approved
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-300 font-bold text-sm bg-navy-900 px-4 py-2 rounded-lg border border-slate-800">
+                        <i class="fa-solid fa-certificate text-amber-400 text-lg"></i> City & Guilds Qualified
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICES GRID -->
+    <section id="services" class="py-20 bg-navy-900 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs uppercase tracking-widest text-amber-500 font-bold">Our Expertise</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Full-Spectrum Electrical Services</p>
+                <p class="text-slate-400 text-sm sm:text-base">Whether modernizing a traditional Dorset cottage, upgrading commercial premises, or installing eco EV chargers, WDH Electrical delivers perfection.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-navy-950 border border-slate-800 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-navy-950 transition-all">
+                        <i class="fa-solid fa-house-plug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Domestic Rewires & Upgrades</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Complete or partial re-wiring for period homes and modern developments. Modern consumer unit (fuse box) upgrades with full RCD protection.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-semibold text-sm hover:text-amber-300">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-navy-950 border border-slate-800 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-navy-950 transition-all">
+                        <i class="fa-solid fa-charging-station"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">EV Charger Installation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Authorized smart EV charger installers for residential driveways and commercial car parks. Fast, efficient charging solutions at your doorstep.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-semibold text-sm hover:text-amber-300">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-navy-950 border border-slate-800 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-navy-950 transition-all">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">EICR Safety Inspections</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Electrical Installation Condition Reports for landlords, homebuyers, and businesses. Fast turnaround digital certification & remediation.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-semibold text-sm hover:text-amber-300">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-navy-950 border border-slate-800 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-navy-950 transition-all">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Architectural & Garden Lighting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Custom interior LED lighting designs, smart home automation, and weather-resistant outdoor landscape lighting installation.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-semibold text-sm hover:text-amber-300">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-navy-950 border border-slate-800 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-navy-950 transition-all">
+                        <i class="fa-solid fa-building text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Commercial Electrical Contracting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Tailored electrical setups for shops, offices, agricultural units, and hospitality venues across Shaftesbury & Dorset.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-semibold text-sm hover:text-amber-300">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-navy-950 border border-slate-800 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 glow-card group border-amber-500/30">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500 text-navy-950 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">24/7 Emergency Repairs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Tripped circuits, power outages, burning smells, or dangerous faults. Our emergency electrician is ready for fast callouts in Enmore Green.
+                    </p>
+                    <a href="tel:01747850123" class="inline-flex items-center gap-2 text-amber-400 font-semibold text-sm hover:text-amber-300">
+                        Call Now <i class="fa-solid fa-phone text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. LOCAL SEO CONTENT SECTION -->
+    <section id="local-seo" class="py-20 bg-navy-950 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left SEO Info -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-navy-800 border border-slate-700 text-amber-400 text-xs font-semibold">
+                        <i class="fa-solid fa-map-pin"></i> Serving Enmore Green & North Dorset
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Your Dedicated Local Electrician in Enmore Green, Shaftesbury
+                    </h2>
+
+                    <div class="prose prose-invert text-slate-300 text-sm sm:text-base leading-relaxed space-y-4">
+                        <p>
+                            Based right here in <strong>Enmore Green</strong>, WDH Electrical provides unrivaled electrical services throughout <strong>Shaftesbury (SP7)</strong> and surrounding Dorset villages. Being local means we offer extremely swift response times for both routine projects and urgent emergency electrical faults.
+                        </p>
+                        <p>
+                            Whether you own a character cottage requiring careful rewiring near Gold Hill, need extra socket points in Motcombe, or require commercial safety certification in Shaftesbury town center, our master electricians bring unmatched precision and safety standards to every job.
+                        </p>
+                    </div>
+
+                    <!-- Coverage List Grid -->
+                    <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-medium text-slate-300">
+                        <div class="bg-navy-900 border border-slate-800 p-2.5 rounded-lg flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-amber-500"></i> Enmore Green
+                        </div>
+                        <div class="bg-navy-900 border border-slate-800 p-2.5 rounded-lg flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-amber-500"></i> Shaftesbury Town
+                        </div>
+                        <div class="bg-navy-900 border border-slate-800 p-2.5 rounded-lg flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-amber-500"></i> Motcombe
+                        </div>
+                        <div class="bg-navy-900 border border-slate-800 p-2.5 rounded-lg flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-amber-500"></i> Fontmell Magna
+                        </div>
+                        <div class="bg-navy-900 border border-slate-800 p-2.5 rounded-lg flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-amber-500"></i> Cann Common
+                        </div>
+                        <div class="bg-navy-900 border border-slate-800 p-2.5 rounded-lg flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-amber-500"></i> Ludwell & SP7
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Card / Map Highlight Visual -->
+                <div class="lg:col-span-5">
+                    <div class="bg-navy-900 border border-slate-800 rounded-2xl p-8 relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 opacity-10 text-amber-500 pointer-events-none">
+                            <i class="fa-solid fa-compass text-9xl"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-clock-rotate-left text-amber-500"></i> Rapid Emergency Coverage
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Electrical emergencies don't wait for convenient business hours. Located centrally in Enmore Green, we can be at your door in minutes for severe electrical issues.
+                        </p>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-center justify-between p-3 bg-navy-950 rounded-lg border border-slate-800">
+                                <span class="text-slate-300 font-medium">Average Local Response:</span>
+                                <span class="text-amber-400 font-bold">Under 45 Mins</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-navy-950 rounded-lg border border-slate-800">
+                                <span class="text-slate-300 font-medium">Callout Charge Transparency:</span>
+                                <span class="text-amber-400 font-bold">Quoted Upfront</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-navy-950 rounded-lg border border-slate-800">
+                                <span class="text-slate-300 font-medium">Certification Included:</span>
+                                <span class="text-amber-400 font-bold">Yes (NICEIC)</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <a href="#contact" class="w-full inline-flex justify-center items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 rounded-xl border border-slate-700 text-sm transition-all">
+                                Check Service Availability In Your Area
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONIALS (3 REVIEWS) -->
+    <section id="testimonials" class="py-20 bg-navy-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs uppercase tracking-widest text-amber-500 font-bold">Client Feedback</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Trusted by Local Homeowners</p>
+                <p class="text-slate-400 text-sm">Read real reviews from satisfied clients across Enmore Green & Shaftesbury.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-navy-950 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between relative">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "WDH Electrical rewired our cottage in Enmore Green. Fantastic craftsmanship, exceptionally clean work, and complete NICEIC documentation provided promptly. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+                            SM
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Sarah M.</h4>
+                            <p class="text-xs text-slate-400">Enmore Green, Shaftesbury</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-navy-950 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between relative">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Called them out on a Sunday evening when our main fuse board kept tripping. They arrived within 35 minutes, found the fault quickly, and fixed it safely. Absolute life savers!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+                            DP
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">David P.</h4>
+                            <p class="text-xs text-slate-400">Shaftesbury Town Centre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-navy-950 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between relative">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Installed an EV home charger on our driveway and set up smart garden lighting. Very professional team, polite, and great price. Wouldn't use any other electrician in SP7."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+                            JT
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">James T.</h4>
+                            <p class="text-xs text-slate-400">Motcombe, Dorset</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT FORM + TEL BUTTON SECTION -->
+    <section id="contact" class="py-20 bg-navy-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Sidebar -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="text-xs uppercase tracking-widest text-amber-500 font-bold mb-2">Get In Touch</h2>
+                        <h3 class="text-3xl font-extrabold text-white">Contact WDH Electrical</h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Have a query or need an estimate? Fill out the form or give us a direct call. We respond to all inquiries within 2 hours during work hours.
+                        </p>
+                    </div>
+
+                    <!-- Direct Call Card -->
+                    <div class="bg-gradient-to-br from-amber-500 to-amber-600 p-6 rounded-2xl text-navy-950 shadow-xl shadow-amber-500/10">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 rounded-xl bg-navy-950/10 flex items-center justify-center text-navy-950 text-xl font-bold">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs uppercase font-bold tracking-wider opacity-80">Immediate Telephone Call</span>
+                                <h4 class="text-xl font-black">Direct Line</h4>
+                            </div>
+                        </div>
+                        <p class="text-xs font-medium mb-4 opacity-90">Press below to connect directly with our leading electrician for advice or fast bookings.</p>
+                        <a href="tel:01747850123" class="w-full inline-flex justify-center items-center gap-3 bg-navy-950 hover:bg-navy-900 text-white font-bold py-3.5 px-6 rounded-xl transition-colors text-sm shadow-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call 01747 850123 Now</span>
+                        </a>
+                    </div>
+
+                    <!-- Contact Details Block -->
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-start gap-4 p-4 bg-navy-900 rounded-xl border border-slate-800">
+                            <i class="fa-solid fa-location-dot text-amber-500 text-lg mt-0.5"></i>
+                            <div>
+                                <h5 class="text-white font-bold">Address</h5>
+                                <p class="text-slate-400 text-xs mt-1">Enmore Green, Shaftesbury, Dorset, SP7 UK</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-navy-900 rounded-xl border border-slate-800">
+                            <i class="fa-solid fa-envelope text-amber-500 text-lg mt-0.5"></i>
+                            <div>
+                                <h5 class="text-white font-bold">Email</h5>
+                                <p class="text-slate-400 text-xs mt-1">info@wdhelectrical.co.uk</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-navy-900 rounded-xl border border-slate-800">
+                            <i class="fa-solid fa-clock text-amber-500 text-lg mt-0.5"></i>
+                            <div>
+                                <h5 class="text-white font-bold">Operating Hours</h5>
+                                <p class="text-slate-400 text-xs mt-1">Mon - Fri: 8am - 6pm | 24/7 Emergency Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7 bg-navy-900 border border-slate-800 p-8 sm:p-10 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Request a Free Quote</h3>
+                    <p class="text-slate-400 text-sm mb-8">Please complete the form below for non-emergency inquiries and quotes.</p>
+
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your message! WDH Electrical will contact you shortly.');" class="space-y-5">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Your Name *</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-navy-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Phone Number *</label>
+                                <input type="tel" required placeholder="07123 456789" class="w-full bg-navy-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Email Address *</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full bg-navy-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Service Required</label>
+                                <select class="w-full bg-navy-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 transition-colors">
+                                    <option>Domestic Rewire / Electrical Work</option>
+                                    <option>EV Charger Installation</option>
+                                    <option>EICR / Safety Inspection</option>
+                                    <option>Commercial Services</option>
+                                    <option>Lighting & Smart Automation</option>
+                                    <option>Other Enquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Job Details / Message *</label>
+                            <textarea rows="4" required placeholder="Tell us about your project or required work in Enmore Green / Shaftesbury..." class="w-full bg-navy-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold py-4 px-6 rounded-xl shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30 transition-all text-base flex items-center justify-center gap-2">
+                            <span>Send Quotation Request</span>
+                            <i class="fa-solid fa-paper-plane text-sm"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-950 border-t border-slate-800 text-slate-400 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Col 1 -->
+                <div class="space-y-4 md:col-span-1">
+                    <a href="#" class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-navy-950">
+                            <i class="fa-solid fa-bolt font-black"></i>
+                        </div>
+                        <span class="text-lg font-extrabold text-white uppercase">WDH <span class="text-amber-500">Electrical</span></span>
+                    </a>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Professional master electricians serving Enmore Green, Shaftesbury, Motcombe, and the wider Dorset area with distinction.
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-amber-400 transition-colors">About WDH</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Electrical Services</a></li>
+                        <li><a href="#local-seo" class="hover:text-amber-400 transition-colors">Coverage Area</a></li>
+                        <li><a href="#testimonials" class="hover:text-amber-400 transition-colors">Customer Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-amber-400 transition-colors">Request Quotation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Core Services</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Full Home Rewiring</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Consumer Unit Upgrades</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">EV Charging Points</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Landlord EICR Certificates</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">24/7 Emergency Callouts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><strong class="text-slate-200">Location:</strong> Enmore Green, Shaftesbury, SP7</li>
+                        <li><strong class="text-slate-200">Phone:</strong> <a href="tel:01747850123" class="hover:text-amber-400">01747 850123</a></li>
+                        <li><strong class="text-slate-200">Email:</strong> <a href="mailto:info@wdhelectrical.co.uk" class="hover:text-amber-400">info@wdhelectrical.co.uk</a></li>
+                        <li><strong class="text-slate-200">Accreditation:</strong> NICEIC & Part P</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> WDH Electrical. All rights reserved. Enmore Green, Shaftesbury, UK.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-400 transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS Mechanical & Electrical | Certified Electricians Bimport, Shaftesbury</title>
+    <meta name="description" content="Premier mechanical and electrical services in Bimport, Shaftesbury. NICEIC registered electricians for domestic, commercial, EV charging & 24/7 emergency callouts across Dorset.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0B132B',
+                            slate: '#1C2541',
+                            blue: '#2A365B',
+                            amber: '#F59E0B',
+                            gold: '#D97706',
+                            yellow: '#FBBF24',
+                            gray: '#F8FAFC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-amber {
+            box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.3);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(245, 158, 11, 0.15), transparent 40%),
+                        linear-gradient(to bottom, #0B132B, #1C2541);
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-brand-amber selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT / HOURS BAR -->
+    <div class="bg-brand-navy text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-amber"></i> Bimport, Shaftesbury, SP7 8AT
+                </span>
+                <span class="hidden md:flex items-center gap-2">
+                    <i class="fa-solid fa-clock text-brand-amber"></i> Mon - Fri: 07:30 - 18:00 | 24/7 Emergency
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 text-amber-400 font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Available For Emergency Callouts
+                </span>
+                <a href="tel:01747850000" class="hover:text-brand-amber transition-colors font-semibold text-white">
+                    <i class="fa-solid fa-phone mr-1 text-brand-amber"></i> 01747 850000
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-brand-navy/95 backdrop-blur-md border-b border-slate-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-lg bg-brand-amber flex items-center justify-center text-brand-navy font-black text-xl shadow-lg group-hover:bg-amber-400 transition-colors">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight block leading-none">AS MECHANICAL</span>
+                    <span class="text-xs text-brand-amber font-semibold tracking-widest uppercase">& Electrical Services</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-200">
+                <a href="#services" class="hover:text-brand-amber transition-colors">Services</a>
+                <a href="#about" class="hover:text-brand-amber transition-colors">About Us</a>
+                <a href="#area" class="hover:text-brand-amber transition-colors">Coverage Area</a>
+                <a href="#testimonials" class="hover:text-brand-amber transition-colors">Reviews</a>
+                <a href="#contact" class="hover:text-brand-amber transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Header Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="tel:01747850000" class="bg-brand-amber hover:bg-amber-500 text-brand-navy font-bold px-5 py-2.5 rounded-lg text-sm transition-all shadow-md hover:shadow-amber-500/20 flex items-center gap-2">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>Call 01747 850000</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menuBtn" class="lg:hidden text-slate-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-brand-navy border-b border-slate-800 px-4 pt-2 pb-6">
+            <nav class="flex flex-col gap-4 text-base font-medium text-slate-300">
+                <a href="#services" class="hover:text-brand-amber py-1">Services</a>
+                <a href="#about" class="hover:text-brand-amber py-1">About Us</a>
+                <a href="#area" class="hover:text-brand-amber py-1">Coverage Area</a>
+                <a href="#testimonials" class="hover:text-brand-amber py-1">Reviews</a>
+                <a href="#contact" class="hover:text-brand-amber py-1">Contact</a>
+                <a href="tel:01747850000" class="bg-brand-amber text-brand-navy font-bold py-3 rounded-lg text-center mt-2">
+                    <i class="fa-solid fa-phone mr-2"></i> Call Now: 01747 850000
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-gradient text-white pt-16 pb-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brand-amber/10 border border-brand-amber/30 text-brand-amber px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold">
+                        <i class="fa-solid fa-shield-halved"></i> Trusted Local Electricians in Bimport & Shaftesbury
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Expert Electrical Solutions <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-brand-amber to-amber-500">Built To Last.</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        From historic residential rewiring on Bimport to large-scale commercial electrical installations across Shaftesbury. Certified, dependable, and fully insured mechanical & electrical engineers.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto bg-brand-amber hover:bg-amber-500 text-brand-navy font-extrabold px-8 py-4 rounded-xl shadow-lg transition-all text-center glow-amber">
+                            Get Free Quote
+                        </a>
+                        <a href="tel:01747850000" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-xl border border-slate-700 transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-phone text-brand-amber"></i> Emergency Callout
+                        </a>
+                    </div>
+
+                    <!-- Quick Bullet points -->
+                    <div class="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-800 text-xs sm:text-sm text-slate-300 font-medium">
+                        <div class="flex items-center justify-center lg:justify-start gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-amber"></i> NICEIC Standard
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-amber"></i> Fully Insured (£5M)
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start gap-2 col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-circle-check text-brand-amber"></i> Zero Hidden Costs
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Feature Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-brand-slate/80 backdrop-blur-xl border border-slate-700 p-8 rounded-2xl shadow-2xl relative">
+                        <div class="absolute -top-3 -right-3 bg-brand-amber text-brand-navy font-extrabold text-xs uppercase px-3 py-1 rounded-full shadow">
+                            Shaftesbury Local
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-bolt text-brand-amber"></i> Need Rapid Assistance?
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="bg-brand-navy/60 p-4 rounded-xl border border-slate-800 flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-brand-amber flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-house-lightning"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Domestic Electrical</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Full rewires, fuse board upgrades, extra sockets, and lighting setups.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-brand-navy/60 p-4 rounded-xl border border-slate-800 flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-brand-amber flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-building-user"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Commercial & Mechanical</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Maintenance, EICR safety certificates, and modern containment fitouts.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-brand-navy/60 p-4 rounded-xl border border-slate-800 flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-brand-amber flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-charging-station"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">EV Charger Installation</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Smart home EV chargers installed safely for all modern electric vehicles.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t border-slate-800 text-center">
+                            <p class="text-xs text-slate-400 mb-2">Based on Bimport, responding rapidly to SP7 & North Dorset</p>
+                            <a href="#contact" class="text-brand-amber font-bold text-sm hover:underline inline-flex items-center gap-1">
+                                Book an Inspector Visit <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES BAR -->
+    <section class="bg-white py-8 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-center">
+                <div class="p-4 border border-slate-100 rounded-xl bg-slate-50 shadow-sm">
+                    <p class="text-2xl font-black text-brand-navy">100%</p>
+                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Certified Engineers</p>
+                </div>
+                <div class="p-4 border border-slate-100 rounded-xl bg-slate-50 shadow-sm">
+                    <p class="text-2xl font-black text-brand-navy">24/7</p>
+                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Emergency Callouts</p>
+                </div>
+                <div class="p-4 border border-slate-100 rounded-xl bg-slate-50 shadow-sm">
+                    <p class="text-2xl font-black text-brand-navy">SP7 & Dorset</p>
+                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Local Shaftesbury Base</p>
+                </div>
+                <div class="p-4 border border-slate-100 rounded-xl bg-slate-50 shadow-sm">
+                    <p class="text-2xl font-black text-brand-navy">5.0 ★★★★★</p>
+                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Customer Rated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-gold tracking-widest uppercase mb-2">Our Expertise</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-brand-navy">Comprehensive Mechanical & Electrical Services</p>
+                <div class="w-16 h-1 bg-brand-amber mx-auto my-4 rounded-full"></div>
+                <p class="text-slate-600 text-base">Whether you require a simple domestic light fixture installation or full-scale commercial mechanical & electrical engineering in Shaftesbury, our team delivers high precision work every time.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-brand-amber text-2xl font-bold mb-6 group-hover:bg-brand-navy group-hover:text-brand-amber transition-colors">
+                        <i class="fa-solid fa-house-signal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Domestic Rewiring & Repairs</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Complete or partial electrical rewires, fuse box (consumer unit) upgrades, extra sockets, and decorative interior/exterior lighting solutions tailored to homes in Bimport and surrounding Shaftesbury areas.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-navy group-hover:text-brand-amber transition-colors inline-flex items-center gap-2">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-brand-amber text-2xl font-bold mb-6 group-hover:bg-brand-navy group-hover:text-brand-amber transition-colors">
+                        <i class="fa-solid fa-building-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Commercial Electrical</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Full M&E services for offices, retail stores, local pubs, and industrial units. Three-phase power installations, LED energy retrofits, emergency lighting, and preventative maintenance schedules.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-navy group-hover:text-brand-amber transition-colors inline-flex items-center gap-2">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-brand-amber text-2xl font-bold mb-6 group-hover:bg-brand-navy group-hover:text-brand-amber transition-colors">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">EICR Safety Inspections</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Electrical Installation Condition Reports for landlords, buyers, and business owners. Thorough testing to ensure complete statutory compliance and safety certification across Dorset.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-navy group-hover:text-brand-amber transition-colors inline-flex items-center gap-2">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-brand-amber text-2xl font-bold mb-6 group-hover:bg-brand-navy group-hover:text-brand-amber transition-colors">
+                        <i class="fa-solid fa-[#fa-charging-station] fa-plug-circle-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">EV Charging Point Installation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Certified installation of home and commercial EV chargers. Fast, efficient, and smart charger solutions tailored to your vehicle specifications and electrical panel capacity.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-navy group-hover:text-brand-amber transition-colors inline-flex items-center gap-2">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-brand-amber text-2xl font-bold mb-6 group-hover:bg-brand-navy group-hover:text-brand-amber transition-colors">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Fault Finding & Repairs</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Tripping breakers? Power loss? Sudden electrical burning smells? Our rapid diagnostic engineers locate hidden electrical faults quickly and execute safe, lasting repairs.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-navy group-hover:text-brand-amber transition-colors inline-flex items-center gap-2">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-brand-amber text-2xl font-bold mb-6 group-hover:bg-brand-navy group-hover:text-brand-amber transition-colors">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Mechanical Contracting</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Integrated mechanical and electrical systems, HVAC controls, ventilation wiring, commercial heating element power integration, and custom automated control panels.
+                    </p>
+                    <a href="#contact" class="text-sm font-bold text-brand-navy group-hover:text-brand-amber transition-colors inline-flex items-center gap-2">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO & ABOUT US SECTION -->
+    <section id="about" class="py-20 bg-brand-navy text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <div>
+                    <span class="text-brand-amber font-semibold text-sm uppercase tracking-wider">Local Shaftesbury Electricians</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold mt-2 mb-6">Serving Bimport & The Blackmore Vale Region</h2>
+                    
+                    <p class="text-slate-300 mb-4 leading-relaxed">
+                        At <strong class="text-white">AS Mechanical and Electrical</strong>, based right in Bimport, Shaftesbury, we take pride in delivering top-tier electrical engineering services across Dorset and Wiltshire. Our local presence ensures prompt response times and a friendly, neighborhood approach to every project.
+                    </p>
+                    
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Whether working on historic thatched period properties near Gold Hill requiring delicate electrical rewiring, or modern commercial units along the SP7 area, our certified electricians combine cutting-edge safety standards with meticulously clean craftsmanship.
+                    </p>
+
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-amber/20 text-brand-amber flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-slate-200 text-sm font-medium">Fully certified to UK BS 7671 Wiring Regulations</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-amber/20 text-brand-amber flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-slate-200 text-sm font-medium">Transparent upfront pricing with zero hidden callout fees</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-amber/20 text-brand-amber flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-slate-200 text-sm font-medium">Clean, respectful technicians who tidy up after every job</span>
+                        </div>
+                    </div>
+
+                    <a href="tel:01747850000" class="inline-flex items-center gap-3 bg-brand-amber hover:bg-amber-500 text-brand-navy font-bold px-6 py-3.5 rounded-xl transition-all">
+                        <i class="fa-solid fa-phone"></i>
+                        Speak Directly To An Engineer
+                    </a>
+                </div>
+
+                <!-- Coverage Map Visual Card -->
+                <div id="area" class="bg-brand-slate p-8 rounded-2xl border border-slate-700 shadow-xl">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-map-location-dot text-brand-amber"></i> Key Coverage Areas
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-6">
+                        Headquartered at Bimport, Shaftesbury (SP7), we operate across a wide radius:
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-3 text-sm font-medium text-slate-300">
+                        <div class="bg-brand-navy/80 p-3 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-pin text-brand-amber text-xs"></i> Shaftesbury Town
+                        </div>
+                        <div class="bg-brand-navy/80 p-3 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-pin text-brand-amber text-xs"></i> Bimport & Enmore Green
+                        </div>
+                        <div class="bg-brand-navy/80 p-3 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-pin text-brand-amber text-xs"></i> Motcombe
+                        </div>
+                        <div class="bg-brand-navy/80 p-3 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-pin text-brand-amber text-xs"></i> Gillingham (Dorset)
+                        </div>
+                        <div class="bg-brand-navy/80 p-3 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-pin text-brand-amber text-xs"></i> Fontmell Magna
+                        </div>
+                        <div class="bg-brand-navy/80 p-3 rounded-lg border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-location-pin text-brand-amber text-xs"></i> Semley & Tisbury
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 rounded-xl bg-amber-500/10 border border-brand-amber/30 text-xs text-amber-200">
+                        <i class="fa-solid fa-circle-info text-brand-amber mr-1"></i> Not sure if we cover your postcode? Call us on <a href="tel:01747850000" class="underline font-bold">01747 850000</a> to verify immediate engineer availability.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-gold tracking-widest uppercase mb-2">Verified Reviews</h2>
+                <p class="text-3xl font-extrabold text-brand-navy">What Local Shaftesbury Clients Say</p>
+                <div class="w-16 h-1 bg-brand-amber mx-auto my-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                            "Called AS Mechanical after our main circuit breaker kept tripping at our cottage on Bimport. They arrived within the hour, identified a corroded external cable, and fixed it safely. Superb, clean service!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-navy text-brand-amber flex items-center justify-center font-bold text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-brand-navy">Richard M.</h4>
+                            <p class="text-xs text-slate-500">Bimport, Shaftesbury</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                            "Extremely thorough job installing our EV charger and updating our old fuse board. Clear explanations, fair price quote upfront, and complete EICR paperwork delivered promptly."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-navy text-brand-amber flex items-center justify-center font-bold text-sm">
+                            SL
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-brand-navy">Sarah L.</h4>
+                            <p class="text-xs text-slate-500">Gillingham Road, SP7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                            "We use AS Mechanical & Electrical for all our retail premises maintenance in Shaftesbury High Street. Always punctual, professional, and fully certified. Highly recommended."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-navy text-brand-amber flex items-center justify-center font-bold text-sm">
+                            DH
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-brand-navy">David H.</h4>
+                            <p class="text-xs text-slate-500">Commercial Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & TEL SECTION -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Left Info Panel -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-xs font-bold text-brand-gold tracking-widest uppercase">Get In Touch</span>
+                        <h2 class="text-3xl font-extrabold text-brand-navy mt-1">Request A Quote or Call Out</h2>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            Have an electrical project in mind or need emergency assistance? Fill out the form or phone our Bimport office directly for an immediate estimate.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4">
+                        
+                        <a href="tel:01747850000" class="flex items-center gap-4 p-4 bg-brand-navy text-white rounded-xl hover:bg-slate-800 transition-colors group">
+                            <div class="w-12 h-12 rounded-lg bg-brand-amber text-brand-navy flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Direct Call Line</p>
+                                <p class="text-xl font-extrabold text-brand-amber group-hover:text-yellow-400">01747 850000</p>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 p-3 text-slate-700">
+                            <div class="w-10 h-10 rounded-lg bg-slate-200/60 flex items-center justify-center text-brand-navy text-lg shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-semibold">Email Us</p>
+                                <p class="text-sm font-bold text-brand-navy">info@asmechanicalelectrical.co.uk</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-3 text-slate-700">
+                            <div class="w-10 h-10 rounded-lg bg-slate-200/60 flex items-center justify-center text-brand-navy text-lg shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-semibold">Address</p>
+                                <p class="text-sm font-bold text-brand-navy">Bimport, Shaftesbury, Dorset, SP7 8AT</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 bg-amber-50 rounded-xl border border-amber-200">
+                        <h4 class="font-bold text-amber-900 text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-brand-amber"></i> Working Hours
+                        </h4>
+                        <div class="mt-2 text-xs text-amber-800 space-y-1">
+                            <p><span class="font-semibold">Monday - Friday:</span> 07:30 - 18:00</p>
+                            <p><span class="font-semibold">Saturday:</span> By appointment</p>
+                            <p><span class="font-semibold">Emergency:</span> 24 Hours / 7 Days</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for contacting AS Mechanical and Electrical. We will get back to you shortly!');" class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                        <h3 class="text-xl font-bold text-brand-navy">Send Us A Message</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-2">Your Full Name *</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-amber text-sm bg-white">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-2">Phone Number *</label>
+                                <input type="tel" required placeholder="07123 456789" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-amber text-sm bg-white">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-2">Email Address</label>
+                                <input type="email" placeholder="john@example.co.uk" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-amber text-sm bg-white">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-2">Service Required</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-amber text-sm bg-white text-slate-700">
+                                    <option>Domestic Electrical</option>
+                                    <option>Commercial Maintenance</option>
+                                    <option>EICR Safety Inspection</option>
+                                    <option>EV Charger Fitting</option>
+                                    <option>Emergency Repair</option>
+                                    <option>Other / Mechanical</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-2">Project Details or Emergency Details *</label>
+                            <textarea rows="4" required placeholder="Please describe the electrical work needed or location in Shaftesbury..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-amber text-sm bg-white"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-navy hover:bg-slate-800 text-brand-amber font-extrabold py-4 rounded-xl transition-all shadow-lg text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-navy text-slate-400 text-xs sm:text-sm border-t border-slate-800 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 text-white">
+                        <div class="w-8 h-8 rounded bg-brand-amber flex items-center justify-center text-brand-navy font-bold">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <span class="font-extrabold tracking-tight text-lg">AS Mechanical & Electrical</span>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Professional, reliable, and fully accredited electrical and mechanical contractors operating out of Bimport, Shaftesbury, UK.
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-brand-amber transition-colors">Domestic Electrical</a></li>
+                        <li><a href="#services" class="hover:text-brand-amber transition-colors">Commercial Fitouts</a></li>
+                        <li><a href="#services" class="hover:text-brand-amber transition-colors">EV Charger Installations</a></li>
+                        <li><a href="#services" class="hover:text-brand-amber transition-colors">Landlord EICR Reports</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Local Area -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Service Radius</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li>Shaftesbury (SP7)</li>
+                        <li>Bimport & Enmore Green</li>
+                        <li>Gillingham & Motcombe</li>
+                        <li>North Dorset & Borders</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Direct Contact</h4>
+                    <p class="mb-1 text-white font-bold">AS Mechanical & Electrical</p>
+                    <p class="mb-3">Bimport, Shaftesbury, SP7 8AT</p>
+                    <a href="tel:01747850000" class="text-brand-amber font-bold hover:underline block text-base">01747 850000</a>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> AS Mechanical and Electrical Services. All rights reserved.</p>
+                <p>Located in Bimport, Shaftesbury, Dorset UK</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

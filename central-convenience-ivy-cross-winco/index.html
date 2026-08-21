@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Convenience Ivy Cross | Wincombe Business Park, Shaftesbury</title>
+    <meta name="description" content="Your premier local convenience store at Wincombe Business Park, Shaftesbury. Offering fresh local produce, off-licence, Costa Express, PayPoint, and everyday essentials.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#081C15',      /* Deep British Racing Green */
+                            green: '#0F382C',     /* Primary Heritage Green */
+                            accent: '#C5A059',    /* Warm Heritage Gold */
+                            accentHover: '#B28E46',
+                            cream: '#FBF9F5',     /* Off-white luxury background */
+                            cardBg: '#FFFFFF',
+                            slate: '#1E2923',
+                            muted: '#64748B'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #E6CA85 0%, #C5A059 50%, #9A7732 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-mesh {
+            background-color: #0F382C;
+            background-image: radial-gradient(at 80% 0%, hsla(158,42%,18%,1) 0px, transparent 50%),
+                              radial-gradient(at 0% 50%, hsla(41,48%,25%,0.3) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-slate font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- ================= 1. TOP BAR ================= -->
+    <div class="bg-brand-dark text-slate-300 text-xs sm:text-sm border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6 text-xs">
+                <span class="flex items-center gap-2 text-brand-accent font-medium">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="text-slate-200">Open Daily: <strong class="text-white">6:00 AM – 10:00 PM</strong></span>
+                </span>
+                <span class="hidden sm:flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-accent"></i>
+                    <span>Wincombe Business Park, Shaftesbury, SP7 9QJ</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-6 text-xs">
+                <a href="tel:01747852100" class="hover:text-brand-accent transition-colors flex items-center gap-1.5 font-semibold text-white">
+                    <i class="fa-solid fa-phone text-brand-accent"></i> 01747 852100
+                </a>
+                <span class="text-white/20">|</span>
+                <a href="#location" class="hover:text-brand-accent transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-diamond-turn-right text-brand-accent"></i> Directions
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= 2. STICKY HEADER ================= -->
+    <header class="sticky top-0 z-50 bg-brand-green/95 backdrop-blur-md border-b border-white/10 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-lg bg-brand-accent/20 border border-brand-accent/40 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-brand-dark transition-all duration-300">
+                        <i class="fa-solid fa-store text-xl"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-lg sm:text-xl tracking-tight text-white leading-none">CENTRAL CONVENIENCE</span>
+                        <span class="text-[10px] tracking-[0.2em] text-brand-accent uppercase font-bold mt-1">Ivy Cross • Shaftesbury</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-200">
+                    <a href="#about" class="hover:text-brand-accent transition-colors py-1">About Us</a>
+                    <a href="#services" class="hover:text-brand-accent transition-colors py-1">Services & Products</a>
+                    <a href="#local" class="hover:text-brand-accent transition-colors py-1">Local Suppliers</a>
+                    <a href="#testimonials" class="hover:text-brand-accent transition-colors py-1">Reviews</a>
+                    <a href="#contact" class="hover:text-brand-accent transition-colors py-1">Find & Contact</a>
+                </nav>
+
+                <!-- Header CTAs -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="tel:01747852100" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-xs font-bold uppercase tracking-wider text-brand-dark bg-brand-accent hover:bg-brand-accentHover transition-all shadow-md hover:shadow-brand-accent/20">
+                        <i class="fa-solid fa-phone"></i> Call Store
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" aria-label="Toggle menu" class="lg:hidden p-2 rounded-md text-slate-200 hover:text-white hover:bg-white/10 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-dark border-b border-white/10 px-4 pt-2 pb-6 space-y-3 text-sm">
+            <a href="#about" class="block py-2 text-slate-200 hover:text-brand-accent border-b border-white/5">About Us</a>
+            <a href="#services" class="block py-2 text-slate-200 hover:text-brand-accent border-b border-white/5">Services & Products</a>
+            <a href="#local" class="block py-2 text-slate-200 hover:text-brand-accent border-b border-white/5">Local Suppliers</a>
+            <a href="#testimonials" class="block py-2 text-slate-200 hover:text-brand-accent border-b border-white/5">Reviews</a>
+            <a href="#contact" class="block py-2 text-slate-200 hover:text-brand-accent">Find & Contact</a>
+            <div class="pt-2">
+                <a href="tel:01747852100" class="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-md text-xs font-bold uppercase tracking-wider text-brand-dark bg-brand-accent">
+                    <i class="fa-solid fa-phone"></i> Call Store Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= 3. HERO SECTION ================= -->
+    <section class="relative bg-mesh text-white py-20 lg:py-28 overflow-hidden border-b border-brand-accent/20">
+        <!-- Accent Glow background elements -->
+        <div class="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -mb-12 -ml-12 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-accent/15 border border-brand-accent/30 text-brand-accent text-xs font-semibold tracking-wider uppercase">
+                        <i class="fa-solid fa-circle text-[8px] animate-pulse"></i> Your Local Shaftesbury Store
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Quality Essentials & Fresh Local Produce at <span class="gold-gradient-text">Ivy Cross</span>
+                    </h1>
+                    
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+                        Serving Wincombe Business Park and the Shaftesbury community with premium groceries, off-licence fine wines, Costa Express coffee, PayPoint services, and daily fresh local food.
+                    </p>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#location" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-lg bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-bold text-sm tracking-wider uppercase transition-all shadow-lg shadow-brand-accent/20 transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-map-pin"></i> Visit Us Today
+                        </a>
+                        <a href="tel:01747852100" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-lg bg-white/10 hover:bg-white/15 text-white border border-white/20 font-semibold text-sm transition-all backdrop-blur-sm">
+                            <i class="fa-solid fa-phone text-brand-accent"></i> Call 01747 852100
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Hero Showcase Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl bg-brand-dark/80 border border-brand-accent/30 p-6 sm:p-8 backdrop-blur-xl shadow-2xl">
+                        <div class="absolute -top-3 -right-3 bg-brand-accent text-brand-dark text-xs font-bold uppercase tracking-widest px-3 py-1 rounded shadow-md">
+                            Open 7 Days
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-store text-brand-accent"></i> Store Highlights
+                        </h3>
+
+                        <ul class="space-y-4 text-sm text-slate-200">
+                            <li class="flex items-start gap-3">
+                                <span class="w-6 h-6 rounded-full bg-brand-accent/20 text-brand-accent flex items-center justify-center text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <div>
+                                    <strong class="text-white block">Prime Wincombe Location</strong>
+                                    Easy access with free parking for quick stops & daily visits.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-6 h-6 rounded-full bg-brand-accent/20 text-brand-accent flex items-center justify-center text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <div>
+                                    <strong class="text-white block">Costa Express & Fresh Bakery</strong>
+                                    Hot barista-quality coffee & freshly baked goods delivered daily.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-6 h-6 rounded-full bg-brand-accent/20 text-brand-accent flex items-center justify-center text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <div>
+                                    <strong class="text-white block">PayPoint & Parcel Drop Services</strong>
+                                    Pay bills, top up utilities, and collect/send packages hassle-free.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-6 h-6 rounded-full bg-brand-accent/20 text-brand-accent flex items-center justify-center text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <div>
+                                    <strong class="text-white block">Gourmet Off-Licence & Dorset Food</strong>
+                                    Selected fine wines, chilled local ales, spirits & artisanal produce.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Trust Badges Strip -->
+        <div class="mt-16 border-t border-white/10 pt-8 bg-brand-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="flex items-center justify-center gap-3 text-slate-300">
+                        <i class="fa-solid fa-square-parking text-2xl text-brand-accent"></i>
+                        <span class="text-xs sm:text-sm font-medium">Free Customer Parking</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 text-slate-300">
+                        <i class="fa-solid fa-mug-hot text-2xl text-brand-accent"></i>
+                        <span class="text-xs sm:text-sm font-medium">Costa Express Station</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 text-slate-300">
+                        <i class="fa-solid fa-receipt text-2xl text-brand-accent"></i>
+                        <span class="text-xs sm:text-sm font-medium">PayPoint & Bill Pay</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 text-slate-300">
+                        <i class="fa-solid fa-wine-bottle text-2xl text-brand-accent"></i>
+                        <span class="text-xs sm:text-sm font-medium">Chilled Off-Licence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 4. SERVICES GRID ================= -->
+    <section id="services" class="py-20 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-accent mb-2">Everything You Need</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-brand-slate">In-Store Services & Offerings</p>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-brand-muted text-base">Designed around convenience for residents, local workforce, and commuters passing through Shaftesbury.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-200/80 hover:shadow-xl hover:border-brand-accent/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-green/10 text-brand-green group-hover:bg-brand-green group-hover:text-brand-accent flex items-center justify-center text-2xl mb-6 transition-colors">
+                        <i class="fa-solid fa-bread-slice"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3">Fresh Daily Bakery & Foods</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Start your morning right with freshly baked bread, pastries, warm savory snacks, and ready-to-go meal options prepared daily.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-200/80 hover:shadow-xl hover:border-brand-accent/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-green/10 text-brand-green group-hover:bg-brand-green group-hover:text-brand-accent flex items-center justify-center text-2xl mb-6 transition-colors">
+                        <i class="fa-solid fa-wine-glass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3">Gourmet Off-Licence</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        An extensive selection of chilled craft beers, premium ciders, fine wines, and spirits. Featuring top Dorset local breweries and international favorites.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-200/80 hover:shadow-xl hover:border-brand-accent/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-green/10 text-brand-green group-hover:bg-brand-green group-hover:text-brand-accent flex items-center justify-center text-2xl mb-6 transition-colors">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3">Costa Express Barista Coffee</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Enjoy real-milk, freshly ground Costa Coffee on the go. Perfect for morning commutes, lunch breaks, or an afternoon pick-me-up.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-200/80 hover:shadow-xl hover:border-brand-accent/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-green/10 text-brand-green group-hover:bg-brand-green group-hover:text-brand-accent flex items-center justify-center text-2xl mb-6 transition-colors">
+                        <i class="fa-solid fa-barcode"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3">PayPoint & Utility Services</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Pay utility bills, top up gas and electricity cards, TV licence payments, and mobile top-ups efficiently at our counter.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-200/80 hover:shadow-xl hover:border-brand-accent/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-green/10 text-brand-green group-hover:bg-brand-green group-hover:text-brand-accent flex items-center justify-center text-2xl mb-6 transition-colors">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3">Local Dorset Produce</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Proudly stocking local Dorset dairy, cheeses, artisanal snacks, preserves, and seasonal goods from regional growers and makers.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-200/80 hover:shadow-xl hover:border-brand-accent/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-green/10 text-brand-green group-hover:bg-brand-green group-hover:text-brand-accent flex items-center justify-center text-2xl mb-6 transition-colors">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3">News, Lottery & ATM</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Grab your daily newspapers, national publications, National Lottery tickets, scratch cards, and access our quick cash machine.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 5. LOCAL SEO & ABOUT SECTION ================= -->
+    <section id="about" class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- SEO Content Left -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-accent">
+                        <i class="fa-solid fa-location-crosshairs"></i> Heart of Wincombe & Shaftesbury
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-slate leading-tight">
+                        Your Trusted Neighborhood Convenience Store at Ivy Cross
+                    </h2>
+                    
+                    <p class="text-brand-muted text-base leading-relaxed">
+                        <strong>Central Convenience Ivy Cross</strong> is proudly situated at Wincombe Business Park, serving as a vital everyday hub for residents of Shaftesbury, local business professionals, and commuters traveling along the A350 and A30 corridors in North Dorset.
+                    </p>
+                    
+                    <p class="text-brand-muted text-base leading-relaxed">
+                        Whether you are grabbing a quick morning coffee before work, picking up evening groceries, stocking up on chilled beverages for the weekend, or dropping off parcels, our store offers an elevated retail experience. We combine national brand value with genuine Dorset warmth and friendliness.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-lg bg-brand-cream border border-slate-200">
+                            <h4 class="font-bold text-brand-slate text-sm mb-1"><i class="fa-solid fa-clock text-brand-accent mr-2"></i> Extended Hours</h4>
+                            <p class="text-xs text-brand-muted">Open early until late 7 days a week for maximum convenience.</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-brand-cream border border-slate-200">
+                            <h4 class="font-bold text-brand-slate text-sm mb-1"><i class="fa-solid fa-car text-brand-accent mr-2"></i> Stress-Free Access</h4>
+                            <p class="text-xs text-brand-muted">Ample free parking right outside the store door.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Accent Box Right -->
+                <div class="lg:col-span-5">
+                    <div class="bg-brand-green text-white p-8 sm:p-10 rounded-2xl shadow-2xl relative overflow-hidden">
+                        <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-brand-accent/20 rounded-full blur-2xl"></div>
+                        
+                        <h3 class="text-2xl font-bold mb-4 border-b border-white/20 pb-4">Store Details at a Glance</h3>
+                        
+                        <dl class="space-y-4 text-sm">
+                            <div class="flex justify-between border-b border-white/10 pb-2">
+                                <dt class="text-slate-300">Location:</dt>
+                                <dd class="font-semibold text-right text-brand-accent">Wincombe Business Park</dd>
+                            </div>
+                            <div class="flex justify-between border-b border-white/10 pb-2">
+                                <dt class="text-slate-300">Town:</dt>
+                                <dd class="font-semibold text-right">Shaftesbury, Dorset</dd>
+                            </div>
+                            <div class="flex justify-between border-b border-white/10 pb-2">
+                                <dt class="text-slate-300">Postcode:</dt>
+                                <dd class="font-semibold text-right">SP7 9QJ</dd>
+                            </div>
+                            <div class="flex justify-between border-b border-white/10 pb-2">
+                                <dt class="text-slate-300">Mon - Sat Hours:</dt>
+                                <dd class="font-semibold text-right">6:00 AM – 10:00 PM</dd>
+                            </div>
+                            <div class="flex justify-between border-b border-white/10 pb-2">
+                                <dt class="text-slate-300">Sunday Hours:</dt>
+                                <dd class="font-semibold text-right">7:00 AM – 9:00 PM</dd>
+                            </div>
+                        </dl>
+
+                        <div class="mt-8 pt-2">
+                            <a href="#contact" class="w-full text-center block py-3 px-4 rounded-lg bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-bold text-xs uppercase tracking-wider transition-colors">
+                                View Location Map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 6. TESTIMONIALS ================= -->
+    <section id="testimonials" class="py-20 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-accent mb-2">Customer Feedback</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-brand-slate">What Local Customers Say</p>
+                <div class="w-16 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="text-brand-accent text-sm mb-4 flex gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-brand-slate text-sm italic leading-relaxed mb-6">
+                            "Extremely convenient location on Wincombe Business Park. Friendly staff, great selection of cold drinks, fresh pastries, and quick Costa coffee in the morning!"
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4">
+                        <h4 class="font-bold text-brand-slate text-sm">Mark T.</h4>
+                        <span class="text-xs text-brand-muted">Wincombe Business Park Worker</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="text-brand-accent text-sm mb-4 flex gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-brand-slate text-sm italic leading-relaxed mb-6">
+                            "A real asset to Shaftesbury. PayPoint is super easy to use here, parking is right outside, and they stock great local Dorset food items!"
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4">
+                        <h4 class="font-bold text-brand-slate text-sm">Sarah P.</h4>
+                        <span class="text-xs text-brand-muted">Shaftesbury Resident</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="text-brand-accent text-sm mb-4 flex gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-brand-slate text-sm italic leading-relaxed mb-6">
+                            "Always clean, well-stocked, and the staff are always welcoming. Excellent off-licence section with a great choice of wines and local ciders."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4">
+                        <h4 class="font-bold text-brand-slate text-sm">David H.</h4>
+                        <span class="text-xs text-brand-muted">Local Commuter</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 7. CONTACT & LOCATION SECTION ================= -->
+    <section id="contact" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details & Direct Call CTA -->
+                <div class="lg:col-span-6 space-y-8">
+                    <div>
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-accent mb-2">Visit & Contact Us</h2>
+                        <h3 class="text-3xl font-extrabold text-brand-slate">We're Here to Help You</h3>
+                        <p class="text-brand-muted mt-2 text-sm">Have a question regarding product availability, services, or parcel collection? Reach out to our team.</p>
+                    </div>
+
+                    <!-- Direct Call Action Box -->
+                    <div class="bg-brand-green text-white p-6 rounded-xl shadow-lg border border-brand-accent/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs text-brand-accent font-semibold uppercase tracking-wider block">Direct Telephone</span>
+                            <span class="text-xl font-bold">01747 852100</span>
+                        </div>
+                        <a href="tel:01747852100" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md text-xs font-bold uppercase tracking-wider text-brand-dark bg-brand-accent hover:bg-brand-accentHover transition-colors">
+                            <i class="fa-solid fa-phone"></i> Call Now
+                        </a>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-brand-slate">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-cream border border-slate-200 flex items-center justify-center text-brand-green shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-base">Store Address</strong>
+                                <p class="text-brand-muted">Central Convenience Stores<br>Wincombe Business Park, Ivy Cross<br>Shaftesbury, Dorset, SP7 9QJ</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-cream border border-slate-200 flex items-center justify-center text-brand-green shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-base">Opening Hours</strong>
+                                <p class="text-brand-muted">Monday – Saturday: 6:00 AM – 10:00 PM<br>Sunday: 7:00 AM – 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Map Card Container -->
+                    <div class="rounded-xl overflow-hidden border border-slate-200 shadow-sm h-64 bg-slate-100 relative flex items-center justify-center text-center p-6">
+                        <div class="space-y-3">
+                            <i class="fa-solid fa-map-location-dot text-4xl text-brand-green"></i>
+                            <p class="font-bold text-brand-slate text-sm">Wincombe Business Park, Shaftesbury</p>
+                            <a href="https://maps.google.com/?q=Central+Convenience+Wincombe+Business+Park+Shaftesbury+SP7+9QJ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold text-brand-green hover:text-brand-accent underline">
+                                Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-6">
+                    <div class="bg-brand-cream p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
+                        <h3 class="text-2xl font-bold text-brand-slate mb-2">Send an Enquiry</h3>
+                        <p class="text-brand-muted text-sm mb-6">Leave us a message and our store team will respond as soon as possible.</p>
+
+                        <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for your enquiry. We will get back to you shortly!');">
+                            <div>
+                                <label for="name" class="block text-xs font-bold uppercase tracking-wider text-brand-slate mb-1">Your Name</label>
+                                <input type="text" id="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green text-sm">
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="email" class="block text-xs font-bold uppercase tracking-wider text-brand-slate mb-1">Email Address</label>
+                                    <input type="email" id="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green text-sm">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-brand-slate mb-1">Phone Number</label>
+                                    <input type="tel" id="phone" placeholder="07123 456789" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-xs font-bold uppercase tracking-wider text-brand-slate mb-1">Enquiry Type</label>
+                                <select id="subject" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green text-sm bg-white">
+                                    <option>General Store Query</option>
+                                    <option>Product Stock Availability</option>
+                                    <option>PayPoint / Parcel Service</option>
+                                    <option>Local Supplier Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-xs font-bold uppercase tracking-wider text-brand-slate mb-1">Your Message</label>
+                                <textarea id="message" rows="4" required placeholder="How can we help you?" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-lg bg-brand-green hover:bg-brand-dark text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-md">
+                                Submit Enquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 8. FOOTER ================= -->
+    <footer class="bg-brand-dark text-slate-400 py-12 border-t border-white/10 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 pb-12 border-b border-white/10">
+                
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded bg-brand-accent/20 flex items-center justify-center text-brand-accent">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <span class="font-extrabold text-lg text-white">CENTRAL CONVENIENCE</span>
+                    </div>
+                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+                        Your trusted convenience hub at Wincombe Business Park, Ivy Cross, Shaftesbury. Proudly serving North Dorset with top-quality products and essential everyday services.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-brand-accent transition-colors">About Store</a></li>
+                        <li><a href="#services" class="hover:text-brand-accent transition-colors">In-Store Services</a></li>
+                        <li><a href="#testimonials" class="hover:text-brand-accent transition-colors">Customer Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-brand-accent transition-colors">Location & Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Contact Store</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="text-slate-300"><i class="fa-solid fa-phone text-brand-accent mr-2"></i> 01747 852100</li>
+                        <li class="text-slate-300"><i class="fa-solid fa-location-dot text-brand-accent mr-2"></i> Shaftesbury, SP7 9QJ</li>
+                        <li class="text-slate-300"><i class="fa-solid fa-clock text-brand-accent mr-2"></i> Mon-Sat: 6am - 10pm</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <span id="year"></span> Central Convenience Ivy Cross. All rights reserved.</p>
+                <p>Wincombe Business Park, Shaftesbury, Dorset UK</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple Dynamic JS for Year & Mobile Menu Toggle -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

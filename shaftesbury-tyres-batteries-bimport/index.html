@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaftesbury Tyres & Batteries | Artisan Bakery & Espresso Bar in Bimport</title>
+    <meta name="description" content="Shaftesbury's premier artisan bakery located on historic Bimport. Sourdough bread, high-voltage pastries, and specialty coffee. Baked fresh daily in Shaftesbury, Dorset.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        bakery: {
+                            50: '#FAF8F5',
+                            100: '#F3EDE2',
+                            200: '#E5D7C3',
+                            300: '#D4BD9F',
+                            400: '#C1A078',
+                            500: '#A88254',
+                            600: '#8C663D',
+                            700: '#6E4E2E',
+                            800: '#4A331E',
+                            900: '#2A1C10',
+                            950: '#1A1009',
+                        },
+                        amberGold: {
+                            400: '#F59E0B',
+                            500: '#D97706',
+                            600: '#B45309',
+                        },
+                        espresso: '#19130E',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bakery-50 text-espresso font-sans antialiased selection:bg-amberGold-500 selection:text-white">
+
+    <!-- 1. TOP BAR / HOURS -->
+    <div class="bg-espresso text-bakery-200 text-xs sm:text-sm py-2.5 px-4 border-b border-bakery-800/50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                <span class="flex items-center gap-1.5 text-amberGold-400 font-medium">
+                    <i class="fa-solid me-1 fa-clock"></i> Mon - Sat: 6:30 AM - 4:00 PM | Sun: 7:30 AM - 2:00 PM
+                </span>
+                <span class="hidden lg:inline-block text-bakery-700">|</span>
+                <span class="hidden lg:flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-amberGold-400"></i> Bimport, Shaftesbury, Dorset, SP7 8AT
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:01747850123" class="hover:text-amberGold-400 transition-colors flex items-center gap-1.5 font-semibold text-white">
+                    <i class="fa-solid fa-phone text-amberGold-400"></i> 01747 850123
+                </a>
+                <div class="flex items-center gap-3 ml-2 border-l border-bakery-800 pl-4">
+                    <a href="#" class="hover:text-amberGold-400 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-amberGold-400 transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. STICKY HEADER + CTA -->
+    <header class="sticky top-0 z-50 bg-bakery-50/90 backdrop-blur-md border-b border-bakery-200/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Branding / Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-espresso flex items-center justify-center text-amberGold-400 shadow-md group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-wheat-awn text-xl"></i>
+                </div>
+                <div>
+                    <span class="block font-extrabold text-lg sm:text-xl tracking-tight text-espresso uppercase leading-none">
+                        Shaftesbury <span class="text-amberGold-600">Tyres & Batteries</span>
+                    </span>
+                    <span class="text-[10px] tracking-widest uppercase font-bold text-bakery-600 block mt-1">
+                        Artisan Bakery & Coffee • Bimport
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-espresso/80">
+                <a href="#about" class="hover:text-amberGold-600 transition-colors">Our Story</a>
+                <a href="#menu" class="hover:text-amberGold-600 transition-colors">Fresh Bakes</a>
+                <a href="#seo-story" class="hover:text-amberGold-600 transition-colors">Bimport Heritage</a>
+                <a href="#reviews" class="hover:text-amberGold-600 transition-colors">Reviews</a>
+                <a href="#contact" class="hover:text-amberGold-600 transition-colors">Find Us</a>
+            </nav>
+
+            <!-- Header CTA -->
+            <div class="flex items-center gap-3">
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white bg-espresso hover:bg-bakery-900 rounded-lg shadow-sm hover:shadow-md transition-all border border-bakery-800">
+                    <i class="fa-solid fa-basket-shopping mr-2 text-amberGold-400"></i> Reserve Your Bake
+                </a>
+                <a href="tel:01747850123" class="inline-flex md:hidden items-center justify-center w-10 h-10 rounded-lg bg-amberGold-500 text-white shadow">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION + TRUST BADGES -->
+    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-bakery-100/70 via-bakery-50 to-white">
+        <!-- Subtle Background Glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-amberGold-400/10 blur-3xl rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amberGold-500/10 border border-amberGold-500/20 text-amberGold-600 font-bold text-xs uppercase tracking-wider mb-6">
+                        <i class="fa-solid fa-fire text-amberGold-500"></i> Shaftesbury’s Most Unlikely Bakery
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-espresso tracking-tight leading-[1.1] mb-6">
+                        Heavy-Duty Sourdough. <br class="hidden sm:block">
+                        <span class="text-amberGold-600 underline decoration-amberGold-400/40 decoration-wavy decoration-2">High-Voltage Pastries.</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-bakery-800/80 font-normal leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Don't let the historic sign fool you. Housed in Bimport’s legendary former garage, we swap motor oil for organic flour, crafting Shaftesbury's finest wild-ferment sourdough, buttery viennoiserie, and small-batch espresso.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                        <a href="#menu" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-amberGold-600 hover:bg-amberGold-500 rounded-xl shadow-lg shadow-amberGold-600/25 transition-all transform hover:-translate-y-0.5">
+                            Explore Today's Menu <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="tel:01747850123" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-espresso bg-white hover:bg-bakery-100 rounded-xl border border-bakery-200 shadow-sm transition-all">
+                            <i class="fa-solid fa-phone mr-2 text-amberGold-600"></i> Call Bakery: 01747 850123
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-bakery-200/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-amberGold-500/10 flex items-center justify-center text-amberGold-600 font-bold shrink-0">
+                                <i class="fa-solid fa-wheat-awt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs uppercase text-espresso">100% Organic</h4>
+                                <p class="text-[11px] text-bakery-700">Stoneground Flour</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-amberGold-500/10 flex items-center justify-center text-amberGold-600 font-bold shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs uppercase text-espresso">48-Hr Ferment</h4>
+                                <p class="text-[11px] text-bakery-700">Gut-Friendly Crust</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-amberGold-500/10 flex items-center justify-center text-amberGold-600 font-bold shrink-0">
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs uppercase text-espresso">Specialty Roast</h4>
+                                <p class="text-[11px] text-bakery-700">Direct Trade Beans</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-amberGold-500/10 flex items-center justify-center text-amberGold-600 font-bold shrink-0">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs uppercase text-espresso">4.9 Star Rated</h4>
+                                <p class="text-[11px] text-bakery-700">Over 300+ Locals</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Right Card Highlight -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Decorative Frame -->
+                        <div class="absolute -inset-3 rounded-2xl bg-gradient-to-tr from-amberGold-500/30 to-bakery-800/20 blur-lg"></div>
+                        
+                        <div class="relative bg-espresso text-white rounded-2xl p-6 sm:p-8 shadow-2xl border border-bakery-800">
+                            <div class="flex justify-between items-start mb-6">
+                                <div>
+                                    <span class="text-xs font-bold uppercase tracking-widest text-amberGold-400">Fresh From Oven</span>
+                                    <h3 class="text-2xl font-extrabold text-white">Today's Signature Batch</h3>
+                                </div>
+                                <span class="px-3 py-1 bg-amberGold-500/20 border border-amberGold-500/40 text-amberGold-400 rounded-full text-xs font-bold">
+                                    Baked 4:00 AM
+                                </span>
+                            </div>
+
+                            <!-- Showcase Item List -->
+                            <div class="space-y-4 mb-6">
+                                <div class="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xl">🥖</span>
+                                        <div>
+                                            <p class="font-bold text-sm text-white">Bimport High-Tread Sourdough</p>
+                                            <p class="text-xs text-bakery-300">Wild yeast starter, golden crust</p>
+                                        </div>
+                                    </div>
+                                    <span class="font-bold text-amberGold-400 text-sm">£4.80</span>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xl">🥐</span>
+                                        <div>
+                                            <p class="font-bold text-sm text-white">Full-Voltage Pain au Chocolat</p>
+                                            <p class="text-xs text-bakery-300">Dorset butter & 70% dark chocolate</p>
+                                        </div>
+                                    </div>
+                                    <span class="font-bold text-amberGold-400 text-sm">£3.40</span>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xl">☕</span>
+                                        <div>
+                                            <p class="font-bold text-sm text-white">Spark-Plug Flat White</p>
+                                            <p class="text-xs text-bakery-300">Double ristretto, velvety steamed milk</p>
+                                        </div>
+                                    </div>
+                                    <span class="font-bold text-amberGold-400 text-sm">£3.60</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-amberGold-500/10 rounded-xl p-4 border border-amberGold-500/30 text-center">
+                                <p class="text-xs text-amberGold-200 font-medium">
+                                    <i class="fa-solid fa-circle-info text-amberGold-400 mr-1"></i>
+                                    Weekend bakes sell out fast! Pre-order by 3 PM the day before.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICES / MENU GRID -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amberGold-600 text-xs font-bold uppercase tracking-widest">Handcrafted In Bimport</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-espresso mt-2 mb-4">Our High-Octane Bakery Menu</h2>
+                <p class="text-bakery-800/80 text-base sm:text-lg">
+                    Every loaf is naturally fermented for 48 hours. Every pastry is laminated with pure West Country butter. No additives, no shortcuts.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-bakery-50 rounded-2xl p-8 border border-bakery-200 hover:border-amberGold-500/50 hover:shadow-xl transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amberGold-500/10 flex items-center justify-center text-amberGold-600 text-2xl font-bold mb-6 group-hover:bg-amberGold-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-bread-slice"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-espresso mb-3">Artisan Sourdough Loaves</h3>
+                        <p class="text-bakery-800/80 text-sm leading-relaxed mb-6">
+                            From our signature Bimport Country White to Rye, Seeded Multigrain, and Olive & Rosemary foccacia. Baked on granite hearth stones every morning.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-bakery-200/60 flex items-center justify-between">
+                        <span class="text-xs font-bold text-bakery-600 uppercase">Loaves from £4.20</span>
+                        <a href="#contact" class="text-xs font-bold text-amberGold-600 group-hover:text-amberGold-500 flex items-center gap-1">Pre-order <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-bakery-50 rounded-2xl p-8 border border-bakery-200 hover:border-amberGold-500/50 hover:shadow-xl transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amberGold-500/10 flex items-center justify-center text-amberGold-600 text-2xl font-bold mb-6 group-hover:bg-amberGold-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-cookie-bite"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-espresso mb-3">Viennoiserie & Pastries</h3>
+                        <p class="text-bakery-800/80 text-sm leading-relaxed mb-6">
+                            Flaky croissants, almond bear claws, cinnamon buns, and seasonal fruit danishes. Flown off the racks early—grab them fresh with morning coffee.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-bakery-200/60 flex items-center justify-between">
+                        <span class="text-xs font-bold text-bakery-600 uppercase">From £2.80</span>
+                        <a href="#contact" class="text-xs font-bold text-amberGold-600 group-hover:text-amberGold-500 flex items-center gap-1">Pre-order <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-bakery-50 rounded-2xl p-8 border border-bakery-200 hover:border-amberGold-500/50 hover:shadow-xl transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amberGold-500/10 flex items-center justify-center text-amberGold-600 text-2xl font-bold mb-6 group-hover:bg-amberGold-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-espresso mb-3">Specialty Espresso Bar</h3>
+                        <p class="text-bakery-800/80 text-sm leading-relaxed mb-6">
+                            Single-origin roasts ethically sourced and ground fresh. Enjoy flat whites, lattes, cold brews, and organic Dorset herbal teas.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-bakery-200/60 flex items-center justify-between">
+                        <span class="text-xs font-bold text-bakery-600 uppercase">From £3.00</span>
+                        <a href="#contact" class="text-xs font-bold text-amberGold-600 group-hover:text-amberGold-500 flex items-center gap-1">Pre-order <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-bakery-50 rounded-2xl p-8 border border-bakery-200 hover:border-amberGold-500/50 hover:shadow-xl transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amberGold-500/10 flex items-center justify-center text-amberGold-600 text-2xl font-bold mb-6 group-hover:bg-amberGold-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-pie"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-espresso mb-3">Savory Pies & Sausage Rolls</h3>
+                        <p class="text-bakery-800/80 text-sm leading-relaxed mb-6">
+                            Loaded with local Dorset beef, free-range pork, apples, and wild mushrooms wrapped in light puff pastry. Perfect for a quick lunch.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-bakery-200/60 flex items-center justify-between">
+                        <span class="text-xs font-bold text-bakery-600 uppercase">From £4.50</span>
+                        <a href="#contact" class="text-xs font-bold text-amberGold-600 group-hover:text-amberGold-500 flex items-center gap-1">Pre-order <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-bakery-50 rounded-2xl p-8 border border-bakery-200 hover:border-amberGold-500/50 hover:shadow-xl transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amberGold-500/10 flex items-center justify-center text-amberGold-600 text-2xl font-bold mb-6 group-hover:bg-amberGold-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-espresso mb-3">Custom Cakes & Events</h3>
+                        <p class="text-bakery-800/80 text-sm leading-relaxed mb-6">
+                            Bespoke celebration cakes, birthday bakes, and wholesale catering orders for local Shaftesbury events and weddings.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-bakery-200/60 flex items-center justify-between">
+                        <span class="text-xs font-bold text-bakery-600 uppercase">Custom Quotes</span>
+                        <a href="#contact" class="text-xs font-bold text-amberGold-600 group-hover:text-amberGold-500 flex items-center gap-1">Enquire <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-bakery-50 rounded-2xl p-8 border border-bakery-200 hover:border-amberGold-500/50 hover:shadow-xl transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amberGold-500/10 flex items-center justify-center text-amberGold-600 text-2xl font-bold mb-6 group-hover:bg-amberGold-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-espresso mb-3">Breakfast Batters & Rolls</h3>
+                        <p class="text-bakery-800/80 text-sm leading-relaxed mb-6">
+                            Warm brioche buns filled with oak-smoked Dorset bacon, poached eggs, and house-made tomato relish. Served until 11:30 AM.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-bakery-200/60 flex items-center justify-between">
+                        <span class="text-xs font-bold text-bakery-600 uppercase">From £5.50</span>
+                        <a href="#contact" class="text-xs font-bold text-amberGold-600 group-hover:text-amberGold-500 flex items-center gap-1">Pre-order <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. LOCAL SEO TEXT SECTION -->
+    <section id="seo-story" class="py-20 bg-bakery-100/60 border-y border-bakery-200/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-amberGold-600 text-xs font-bold uppercase tracking-widest">
+                        <i class="fa-solid fa-map-pin"></i> Proudly Baking in Shaftesbury, Dorset
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-espresso leading-tight">
+                        Why is an Artisan Bakery Called "Shaftesbury Tyres & Batteries"?
+                    </h2>
+                    <p class="text-bakery-800/90 leading-relaxed">
+                        If you walk along <strong>Bimport in Shaftesbury, UK</strong>, just a stone’s throw from the world-famous Gold Hill and Trinity Church, you'll spot an old historic sign reading <em>Shaftesbury Tyres & Batteries</em>. When our master baker transformed this iconic 1950s motor workshop into a neighborhood bakery, locals begged us to keep the quirky name.
+                    </p>
+                    <p class="text-bakery-800/90 leading-relaxed">
+                        Today, we are proud to be North Dorset’s favorite artisan bakery. We recharge the people of Shaftesbury with high-grade espresso, long-fermentation sourdough loaves, and delicate pastries instead of spark plugs and fan belts!
+                    </p>
+                    <div class="pt-2">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-xl border border-bakery-200">
+                                <h4 class="font-bold text-espresso text-sm mb-1"><i class="fa-solid fa-check text-amberGold-500 mr-2"></i>Local Dorset Ingredients</h4>
+                                <p class="text-xs text-bakery-700">Flour & dairy sourced directly from local North Dorset farms.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-bakery-200">
+                                <h4 class="font-bold text-espresso text-sm mb-1"><i class="fa-solid fa-check text-amberGold-500 mr-2"></i>Near Gold Hill</h4>
+                                <p class="text-xs text-bakery-700">The perfect morning breakfast stop for locals and tourists alike.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEO Visual / Info Card -->
+                <div class="lg:col-span-6">
+                    <div class="bg-espresso text-white rounded-3xl p-8 sm:p-10 shadow-xl border border-bakery-800 relative overflow-hidden">
+                        <!-- Decorative background circle -->
+                        <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-amberGold-500/10 rounded-full blur-2xl"></div>
+                        
+                        <h3 class="text-2xl font-bold mb-6 text-white flex items-center gap-3">
+                            <i class="fa-solid fa-store text-amberGold-400"></i>
+                            Visit Us in Bimport
+                        </h3>
+
+                        <ul class="space-y-4 text-sm text-bakery-200 mb-8">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-amberGold-400 mt-1"></i>
+                                <div>
+                                    <strong class="text-white block">Address:</strong>
+                                    Shaftesbury Tyres & Batteries Bakery, Bimport, Shaftesbury, Dorset, SP7 8AT
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-clock text-amberGold-400 mt-1"></i>
+                                <div>
+                                    <strong class="text-white block">Bakery Hours:</strong>
+                                    Monday – Saturday: 06:30 – 16:00<br>
+                                    Sunday: 07:30 – 14:00
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-phone text-amberGold-400 mt-1"></i>
+                                <div>
+                                    <strong class="text-white block">Direct Phone Line:</strong>
+                                    <a href="tel:01747850123" class="text-amberGold-400 hover:underline">01747 850123</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-3 px-6 text-center font-bold text-espresso bg-amberGold-400 hover:bg-amberGold-500 rounded-xl transition-colors">
+                            <i class="fa-solid fa-diamond-turn-right mr-2"></i> Get Directions on Google Maps
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 3 TESTIMONIALS -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-amberGold-600 text-xs font-bold uppercase tracking-widest">Community Love</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-espresso mt-2">What Shaftesbury Locals Say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-bakery-50 p-8 rounded-2xl border border-bakery-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex text-amberGold-500 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-bakery-800 text-sm leading-relaxed italic mb-6">
+                            "When I first moved to Bimport, I thought this place was a garage! Stepped in for a joke and walked out with the best country sourdough I've ever tasted in Dorset. Incredible crust and chewy center."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-bakery-200/60">
+                        <div class="w-10 h-10 rounded-full bg-amberGold-500/20 flex items-center justify-center font-bold text-amberGold-700">
+                            SM
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-espresso">Sarah M.</h4>
+                            <p class="text-xs text-bakery-600">Bimport Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-bakery-50 p-8 rounded-2xl border border-bakery-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex text-amberGold-500 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-bakery-800 text-sm leading-relaxed italic mb-6">
+                            "The almond croissants here are absolute perfection. Pairs magically with their flat white espresso. I stop here every single morning before walking down Gold Hill."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-bakery-200/60">
+                        <div class="w-10 h-10 rounded-full bg-amberGold-500/20 flex items-center justify-center font-bold text-amberGold-700">
+                            JP
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-espresso">James P.</h4>
+                            <p class="text-xs text-bakery-600">Shaftesbury Local</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-bakery-50 p-8 rounded-2xl border border-bakery-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex text-amberGold-500 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-bakery-800 text-sm leading-relaxed italic mb-6">
+                            "Ordered a custom celebration cake and three dozen breakfast rolls for a family gathering. Everything was baked to perfection and handed over with a smile. Outstanding service!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-bakery-200/60">
+                        <div class="w-10 h-10 rounded-full bg-amberGold-500/20 flex items-center justify-center font-bold text-amberGold-700">
+                            EW
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-espresso">Eleanor W.</h4>
+                            <p class="text-xs text-bakery-600">Motcombe Local</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT FORM + TEL BUTTON -->
+    <section id="contact" class="py-20 bg-espresso text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-amberGold-400 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Reserve Bakes or Enquire Below</h2>
+                        <p class="text-bakery-300 text-sm mt-4 leading-relaxed">
+                            Have a custom cake inquiry, want to reserve a morning bread box, or need wholesale bakery delivery in Shaftesbury? Reach out or call our counter directly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <a href="tel:01747850123" class="inline-flex items-center gap-4 w-full p-4 rounded-xl bg-amberGold-600 hover:bg-amberGold-500 text-white font-bold transition-all shadow-lg shadow-amberGold-600/30">
+                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs block text-amberGold-100 uppercase font-semibold">Call Bakery Direct</span>
+                                <span class="text-lg text-white">01747 850123</span>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-12 h-12 rounded-lg bg-amberGold-500/20 flex items-center justify-center text-amberGold-400 text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs block text-bakery-400 uppercase font-semibold">Email Orders</span>
+                                <span class="text-sm font-medium text-white">hello@shaftesburytyresandbatteries.co.uk</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-12 h-12 rounded-lg bg-amberGold-500/20 flex items-center justify-center text-amberGold-400 text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs block text-bakery-400 uppercase font-semibold">Bakery Location</span>
+                                <span class="text-sm font-medium text-white">Bimport, Shaftesbury, SP7 8AT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right -->
+                <div class="lg:col-span-7 bg-white text-espresso rounded-3xl p-8 sm:p-10 shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-2">Send Us a Message</h3>
+                    <p class="text-xs text-bakery-700 mb-8">Fill out this quick form and our head baker will get back to you within 24 hours.</p>
+
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your message! Shaftesbury Tyres & Batteries Bakery will get back to you shortly.');" class="space-y-5">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-bakery-800 mb-2">Your Name</label>
+                                <input type="text" required placeholder="e.g. Oliver Smith" class="w-full px-4 py-3 rounded-xl border border-bakery-200 focus:outline-none focus:ring-2 focus:ring-amberGold-500 text-sm bg-bakery-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-bakery-800 mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="07123 456789" class="w-full px-4 py-3 rounded-xl border border-bakery-200 focus:outline-none focus:ring-2 focus:ring-amberGold-500 text-sm bg-bakery-50">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-bakery-800 mb-2">Email Address</label>
+                                <input type="email" required placeholder="oliver@example.co.uk" class="w-full px-4 py-3 rounded-xl border border-bakery-200 focus:outline-none focus:ring-2 focus:ring-amberGold-500 text-sm bg-bakery-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-bakery-800 mb-2">Inquiry Type</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-bakery-200 focus:outline-none focus:ring-2 focus:ring-amberGold-500 text-sm bg-bakery-50 text-espresso">
+                                    <option>Daily Bread Pre-Order</option>
+                                    <option>Custom Celebration Cake</option>
+                                    <option>Event Catering</option>
+                                    <option>General Question</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-bakery-800 mb-2">Your Order or Message</label>
+                            <textarea rows="4" required placeholder="Let us know what you'd like to order or inquire about..." class="w-full px-4 py-3 rounded-xl border border-bakery-200 focus:outline-none focus:ring-2 focus:ring-amberGold-500 text-sm bg-bakery-50"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-espresso hover:bg-bakery-900 text-white font-bold rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane text-amberGold-400"></i> Submit Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-espresso text-bakery-300 border-t border-bakery-800/80 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+            <div>
+                <p class="font-bold text-white uppercase tracking-wider">Shaftesbury Tyres & Batteries (Artisan Bakery)</p>
+                <p class="mt-1">Bimport, Shaftesbury, Dorset SP7 8AT • Phone: <a href="tel:01747850123" class="hover:underline text-amberGold-400">01747 850123</a></p>
+            </div>
+            <p class="text-bakery-500">&copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved. Crafted with sourdough love in Shaftesbury.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

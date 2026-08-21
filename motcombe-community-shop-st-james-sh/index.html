@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motcombe Community Shop | Village Store & Café | Shaftesbury, Dorset</title>
+  <meta name="description" content="Your community-owned village shop and café in Motcombe, serving Shaftesbury, St James & North Dorset with fresh local produce, Post Office services, and everyday essentials.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#16281F',      // Deep Forest Obsidian
+              primary: '#244232',   // Luxurious British Racing/Pine Green
+              medium: '#3B604B',    // Soft Pine
+              sage: '#8DA391',      // Muted Sage Highlight
+              light: '#F4F6F1',     // Soft Warm Pale Tint
+              linen: '#FAF8F5',     // Warm Off-White Background
+              terracotta: '#D46A4E',// High-End Earth Warmth Accent
+              terracottaHover: '#BD573C',
+              gold: '#D4A359'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FAF8F5;
+      color: #16281F;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(22, 40, 31, 0.92) 0%, rgba(36, 66, 50, 0.85) 100%);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-brand-terracotta selection:text-white">
+
+  <!-- ==================== TOP BAR ==================== -->
+  <div class="bg-brand-dark text-slate-300 text-xs py-2.5 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center gap-2 text-brand-sage">
+          <i class="fa-regular fa-clock text-brand-terracotta"></i>
+          <span><strong class="text-white font-medium">Open Today:</strong> 8:00 AM – 5:30 PM</span>
+        </span>
+        <span class="hidden md:flex items-center gap-2">
+          <i class="fa-solid fa-location-dot text-brand-terracotta"></i>
+          <span>Motcombe, Shaftesbury, SP7 9NT</span>
+        </span>
+      </div>
+      <div class="flex items-center space-x-6">
+        <a href="tel:01747852225" class="hover:text-white transition flex items-center gap-2">
+          <i class="fa-solid fa-phone text-brand-terracotta"></i>
+          <span class="font-semibold text-white">01747 852225</span>
+        </a>
+        <div class="hidden sm:flex space-x-3 text-slate-400">
+          <a href="#" class="hover:text-brand-terracotta transition"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-brand-terracotta transition"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== STICKY HEADER ==================== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200/80 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3 group">
+          <div class="w-11 h-11 bg-brand-primary rounded-xl flex items-center justify-center text-white shadow-md group-hover:bg-brand-terracotta transition duration-300">
+            <i class="fa-solid fa-basket-shopping text-xl"></i>
+          </div>
+          <div>
+            <span class="block text-xl font-extrabold tracking-tight text-brand-dark leading-none">MOTCOMBE</span>
+            <span class="text-xs font-semibold tracking-widest text-brand-terracotta uppercase">Community Shop & Café</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-stone-700">
+          <a href="#about" class="hover:text-brand-primary transition">About Us</a>
+          <a href="#services" class="hover:text-brand-primary transition">Services & Goods</a>
+          <a href="#local-seo" class="hover:text-brand-primary transition">Our Community</a>
+          <a href="#testimonials" class="hover:text-brand-primary transition">Reviews</a>
+          <a href="#contact" class="hover:text-brand-primary transition">Hours & Contact</a>
+        </nav>
+
+        <!-- Header CTA Button -->
+        <div class="hidden sm:flex items-center space-x-4">
+          <a href="#contact" class="inline-flex items-center gap-2 bg-brand-terracotta hover:bg-brand-terracottaHover text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition duration-300">
+            <span>Visit The Shop</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex lg:hidden">
+          <button id="mobile-menu-btn" type="button" class="text-stone-700 hover:text-brand-primary p-2 focus:outline-none" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-stone-200 bg-white px-4 pt-3 pb-6 space-y-3">
+      <a href="#about" class="block py-2 text-stone-700 font-medium hover:text-brand-primary">About Us</a>
+      <a href="#services" class="block py-2 text-stone-700 font-medium hover:text-brand-primary">Services & Goods</a>
+      <a href="#local-seo" class="block py-2 text-stone-700 font-medium hover:text-brand-primary">Our Community</a>
+      <a href="#testimonials" class="block py-2 text-stone-700 font-medium hover:text-brand-primary">Reviews</a>
+      <a href="#contact" class="block py-2 text-stone-700 font-medium hover:text-brand-primary">Hours & Contact</a>
+      <a href="tel:01747852225" class="block w-full text-center bg-brand-primary text-white py-3 rounded-xl font-semibold mt-4">
+        <i class="fa-solid fa-phone mr-2"></i>Call Us Direct
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="relative bg-brand-dark overflow-hidden min-h-[620px] flex items-center">
+    <!-- Background Image Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1920&q=80" alt="Fresh local produce in village shop" class="w-full h-full object-cover object-center opacity-25">
+      <div class="absolute inset-0 hero-gradient"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-brand-sage px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium">
+            <i class="fa-solid fa-heart text-brand-terracotta"></i>
+            <span>Award-Winning Community Hub in Shaftesbury, Dorset</span>
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
+            The Heart of <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-amber-200">Motcombe</span> Village Life.
+          </h1>
+          
+          <p class="text-lg sm:text-xl text-stone-300 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Proudly owned and run by our community. Delivering fresh Dorset bakery goods, locally farmed dairy, daily post office services, and artisan coffee right to your neighborhood.
+          </p>
+
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="#services" class="w-full sm:w-auto bg-brand-terracotta hover:bg-brand-terracottaHover text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition duration-300 flex items-center justify-center gap-3 text-base">
+              <span>Explore Our Stock</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="tel:01747852225" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-xl font-bold backdrop-blur-sm transition duration-300 flex items-center justify-center gap-3 text-base">
+              <i class="fa-solid fa-phone text-brand-terracotta"></i>
+              <span>01747 852225</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Info Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 shadow-2xl border border-stone-100 text-stone-800">
+            <div class="flex items-center justify-between border-b border-stone-200 pb-4 mb-6">
+              <div>
+                <h3 class="font-bold text-xl text-brand-dark">Shop Opening Hours</h3>
+                <p class="text-xs text-stone-500">Motcombe Road, Shaftesbury SP7 9NT</p>
+              </div>
+              <span class="w-3 h-3 bg-emerald-500 rounded-full animate-ping"></span>
+            </div>
+
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center py-1 border-b border-stone-100">
+                <span class="font-semibold text-stone-700">Monday – Friday</span>
+                <span class="text-brand-primary font-bold">8:00 AM – 5:30 PM</span>
+              </div>
+              <div class="flex justify-between items-center py-1 border-b border-stone-100">
+                <span class="font-semibold text-stone-700">Saturday</span>
+                <span class="text-brand-primary font-bold">8:00 AM – 4:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center py-1 border-b border-stone-100">
+                <span class="font-semibold text-stone-700">Sunday</span>
+                <span class="text-brand-primary font-bold">8:30 AM – 12:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center py-2 bg-brand-light rounded-lg px-3 mt-2 text-xs">
+                <span class="font-medium text-brand-primary"><i class="fa-solid fa-envelope-open-text mr-1.5"></i>Post Office Counter</span>
+                <span class="font-semibold text-brand-dark">Mon-Fri: 9am - 1pm</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="mt-6 w-full block text-center bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 rounded-xl transition duration-300 text-sm">
+              Find Directions & Parking
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRUST BADGES BAR ==================== -->
+  <section class="bg-white border-y border-stone-200/80 py-8 shadow-inner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="flex flex-col items-center p-3">
+          <div class="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center text-brand-primary mb-3">
+            <i class="fa-solid fa-wheat-awn text-xl"></i>
+          </div>
+          <h4 class="font-bold text-stone-800 text-sm sm:text-base">100% Dorset Sourced</h4>
+          <p class="text-xs text-stone-500 mt-1">Fresh daily local dairy & meats</p>
+        </div>
+
+        <div class="flex flex-col items-center p-3">
+          <div class="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-brand-terracotta mb-3">
+            <i class="fa-solid fa-hand-holding-heart text-xl"></i>
+          </div>
+          <h4 class="font-bold text-stone-800 text-sm sm:text-base">Community Owned</h4>
+          <p class="text-xs text-stone-500 mt-1">Run for people, not for profit</p>
+        </div>
+
+        <div class="flex flex-col items-center p-3">
+          <div class="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center text-brand-primary mb-3">
+            <i class="fa-solid fa-stamp text-xl"></i>
+          </div>
+          <h4 class="font-bold text-stone-800 text-sm sm:text-base">Post Office Counter</h4>
+          <p class="text-xs text-stone-500 mt-1">Banking, parcels & cash withdrawals</p>
+        </div>
+
+        <div class="flex flex-col items-center p-3">
+          <div class="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-brand-terracotta mb-3">
+            <i class="fa-solid fa-mug-hot text-xl"></i>
+          </div>
+          <h4 class="font-bold text-stone-800 text-sm sm:text-base">Café Corner</h4>
+          <p class="text-xs text-stone-500 mt-1">Fresh espresso & homemade cakes</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES & GOODS GRID ==================== -->
+  <section id="services" class="py-20 bg-brand-linen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-terracotta font-bold text-xs uppercase tracking-widest block mb-2">Everything You Need Nearby</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">Our Village Shop Offerings</h2>
+        <p class="text-stone-600 mt-3 text-base sm:text-lg">Combining essential everyday convenience with high-end Dorset artisanal produce.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/60 group hover:-translate-y-1">
+          <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center text-brand-primary text-2xl mb-6 group-hover:bg-brand-primary group-hover:text-white transition duration-300">
+            <i class="fa-solid fa-bread-slice"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-800 mb-3">Fresh Dorset Bakery & Farm Eggs</h3>
+          <p class="text-stone-600 text-sm leading-relaxed mb-4">
+            Delivered fresh every morning from local bakeries across Shaftesbury and surrounding farms. Artisan loaves, pastries, rolls, and free-range farm eggs.
+          </p>
+          <span class="inline-flex items-center text-xs font-bold text-brand-terracotta group-hover:translate-x-1 transition">
+            Fresh Bread Schedule &rarr;
+          </span>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/60 group hover:-translate-y-1">
+          <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center text-brand-primary text-2xl mb-6 group-hover:bg-brand-primary group-hover:text-white transition duration-300">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-800 mb-3">Sub-Post Office Counter</h3>
+          <p class="text-stone-600 text-sm leading-relaxed mb-4">
+            Full postal services including Royal Mail collections, parcel drop-offs, free cash withdrawals, bill payments, and foreign currency ordering.
+          </p>
+          <span class="inline-flex items-center text-xs font-bold text-brand-terracotta group-hover:translate-x-1 transition">
+            Post Office Hours &rarr;
+          </span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/60 group hover:-translate-y-1">
+          <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center text-brand-primary text-2xl mb-6 group-hover:bg-brand-primary group-hover:text-white transition duration-300">
+            <i class="fa-solid fa-mug-saucer"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-800 mb-3">Community Café & Takeaway</h3>
+          <p class="text-stone-600 text-sm leading-relaxed mb-4">
+            Relax in our cozy seating area or grab-and-go with barista coffee, specialty teas, home-baked cakes, savory pies, and hot soup.
+          </p>
+          <span class="inline-flex items-center text-xs font-bold text-brand-terracotta group-hover:translate-x-1 transition">
+            View Cafe Menu &rarr;
+          </span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/60 group hover:-translate-y-1">
+          <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center text-brand-primary text-2xl mb-6 group-hover:bg-brand-primary group-hover:text-white transition duration-300">
+            <i class="fa-solid fa-apple-whole"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-800 mb-3">Local Fruit & Produce</h3>
+          <p class="text-stone-600 text-sm leading-relaxed mb-4">
+            Seasonal vegetables, fruits, and organic harvests sourced directly from North Dorset farmers and growers in St James and Motcombe.
+          </p>
+          <span class="inline-flex items-center text-xs font-bold text-brand-terracotta group-hover:translate-x-1 transition">
+            Seasonal Highlights &rarr;
+          </span>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/60 group hover:-translate-y-1">
+          <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center text-brand-primary text-2xl mb-6 group-hover:bg-brand-primary group-hover:text-white transition duration-300">
+            <i class="fa-solid fa-newspaper"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-800 mb-3">Newspapers & Daily Essentials</h3>
+          <p class="text-stone-600 text-sm leading-relaxed mb-4">
+            Daily national and Dorset regional newspapers, magazines, household emergency items, dry goods, fine wines, and local craft ales.
+          </p>
+          <span class="inline-flex items-center text-xs font-bold text-brand-terracotta group-hover:translate-x-1 transition">
+            Newspaper Reserve &rarr;
+          </span>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-stone-200/60 group hover:-translate-y-1">
+          <div class="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center text-brand-primary text-2xl mb-6 group-hover:bg-brand-primary group-hover:text-white transition duration-300">
+            <i class="fa-solid fa-recycle"></i>
+          </div>
+          <h3 class="text-xl font-bold text-stone-800 mb-3">Eco Refill & Dry Goods Hub</h3>
+          <p class="text-stone-600 text-sm leading-relaxed mb-4">
+            Reduce plastic waste with our eco refill station for laundry detergents, washing liquids, plus loose grains, nuts, and eco-friendly home products.
+          </p>
+          <span class="inline-flex items-center text-xs font-bold text-brand-terracotta group-hover:translate-x-1 transition">
+            Eco Station Info &rarr;
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LOCAL SEO / COMMUNITY STORY SECTION ==================== -->
+  <section id="local-seo" class="py-20 bg-white border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image Composition -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80" alt="Motcombe Village Community atmosphere" class="w-full h-[450px] object-cover">
+          </div>
+          <!-- Overlay Card -->
+          <div class="absolute -bottom-6 -right-6 bg-brand-primary text-white p-6 rounded-2xl shadow-xl hidden sm:block max-w-xs border border-white/10">
+            <p class="text-2xl font-extrabold text-brand-gold">100%</p>
+            <p class="text-xs text-stone-200 font-medium uppercase tracking-wider mt-1">Community Run & Owned Volunteers</p>
+            <p class="text-xs text-stone-300 mt-2">Sustaining village independence in Shaftesbury since 2010.</p>
+          </div>
+        </div>
+
+        <!-- Right Content SEO Rich -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-brand-terracotta font-bold text-xs uppercase tracking-widest">Serving Shaftesbury, St James & Surrounds</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
+            More Than Just a Shop: The Heart of Motcombe
+          </h2>
+          
+          <div class="prose text-stone-600 space-y-4 text-sm sm:text-base leading-relaxed">
+            <p>
+              Nestled just minutes from the historic hilltop town of <strong class="text-brand-dark">Shaftesbury</strong> and the charming parish of <strong class="text-brand-dark">St James</strong>, <strong class="text-brand-dark">Motcombe Community Shop</strong> stands as a vibrant testament to local spirit and sustainable rural living in North Dorset.
+            </p>
+            <p>
+              When traditional rural amenities began closing across the UK, the residents of Motcombe rallied together to establish a community-owned retail shop and café. Today, our dedicated team of volunteers and shop managers stock a curated selection of Dorset cheeses, local farm-fresh milk, regional meats, craft preserves, and everyday pantry items.
+            </p>
+            <p>
+              Whether you are taking a countryside walk near Gold Hill, commuting through St James, or looking for a warm espresso and catch-up with neighbors, our doors are open 7 days a week to welcome you.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-stone-200">
+            <div>
+              <span class="block text-xl font-bold text-brand-primary">SP7 9NT</span>
+              <span class="text-xs text-stone-500">Postcode Location</span>
+            </div>
+            <div>
+              <span class="block text-xl font-bold text-brand-primary">7 Days</span>
+              <span class="text-xs text-stone-500">Weekly Service</span>
+            </div>
+            <div>
+              <span class="block text-xl font-bold text-brand-primary">30+ Local</span>
+              <span class="text-xs text-stone-500">Dorset Suppliers</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS SECTION ==================== -->
+  <section id="testimonials" class="py-20 bg-brand-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-terracotta font-bold text-xs uppercase tracking-widest block mb-2">Community Reviews</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark">Loved by Locals & Visitors</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-stone-700 italic text-sm leading-relaxed mb-6">
+              "An absolute lifesaver for Motcombe! The fresh bread and local sausages are second to none. Having the Post Office in the village saves me driving into Shaftesbury every week."
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 border-t border-stone-100 pt-4">
+            <div class="w-10 h-10 rounded-full bg-brand-primary text-white flex items-center justify-center font-bold text-sm">
+              EH
+            </div>
+            <div>
+              <h4 class="font-bold text-stone-800 text-sm">Eleanor H.</h4>
+              <p class="text-xs text-stone-500">Motcombe Resident</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-stone-700 italic text-sm leading-relaxed mb-6">
+              "Stopped by on a cycle route from St James. The coffee and homemade flapjacks were top notch! Fantastic friendly service from the volunteers behind the counter."
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 border-t border-stone-100 pt-4">
+            <div class="w-10 h-10 rounded-full bg-brand-terracotta text-white flex items-center justify-center font-bold text-sm">
+              MD
+            </div>
+            <div>
+              <h4 class="font-bold text-stone-800 text-sm">Mark D.</h4>
+              <p class="text-xs text-stone-500">Shaftesbury Cyclist</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-stone-700 italic text-sm leading-relaxed mb-6">
+              "The eco-refill station and fresh local veg selection are wonderful. It's so inspiring to see a community come together and build such a warm, vital hub."
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 border-t border-stone-100 pt-4">
+            <div class="w-10 h-10 rounded-full bg-brand-medium text-white flex items-center justify-center font-bold text-sm">
+              CP
+            </div>
+            <div>
+              <h4 class="font-bold text-stone-800 text-sm">Clara P.</h4>
+              <p class="text-xs text-stone-500">St James, Shaftesbury</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT FORM & LOCATION SECTION ==================== -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Info & Call Button -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-brand-terracotta font-bold text-xs uppercase tracking-widest block mb-2">Get In Touch</span>
+            <h2 class="text-3xl font-extrabold text-brand-dark">Visit Us in Motcombe</h2>
+            <p class="text-stone-600 mt-2 text-sm leading-relaxed">
+              We are situated in the center of Motcombe village, easily accessible from Shaftesbury, St James, and the A30. Free parking available outside.
+            </p>
+          </div>
+
+          <!-- Direct Tel Banner CTA -->
+          <div class="p-6 bg-brand-primary text-white rounded-2xl shadow-lg space-y-3">
+            <h4 class="font-bold text-lg">Need to check stock or ask a question?</h4>
+            <p class="text-xs text-stone-200">Call our friendly team on shop counter directly.</p>
+            <a href="tel:01747852225" class="inline-flex items-center justify-center gap-3 w-full bg-brand-terracotta hover:bg-brand-terracottaHover text-white py-3.5 px-6 rounded-xl font-bold transition duration-300 text-center shadow">
+              <i class="fa-solid fa-phone text-lg"></i>
+              <span>Call 01747 852225</span>
+            </a>
+          </div>
+
+          <!-- Address Details -->
+          <div class="space-y-4 text-stone-700 text-sm">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center text-brand-primary flex-shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <strong class="block text-stone-900 font-bold">Address</strong>
+                <span>Motcombe Community Shop<br>Motcombe, Shaftesbury, Dorset, SP7 9NT</span>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center text-brand-primary flex-shrink-0">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <strong class="block text-stone-900 font-bold">Email Inquiries</strong>
+                <span>info@motcombeshop.co.uk</span>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center text-brand-primary flex-shrink-0">
+                <i class="fa-solid fa-square-parking"></i>
+              </div>
+              <div>
+                <strong class="block text-stone-900 font-bold">Parking & Accessibility</strong>
+                <span>Free customer parking directly outside. Full wheel-chair accessible ramp & doorway.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-brand-linen p-8 sm:p-10 rounded-3xl border border-stone-200 shadow-sm">
+            <h3 class="text-2xl font-bold text-brand-dark mb-2">Send Us a Message</h3>
+            <p class="text-xs text-stone-500 mb-6">Have a product query, newspaper delivery order, or volunteer inquiry? Drop us a line.</p>
+
+            <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Motcombe Community Shop.');">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold uppercase text-stone-700 mb-1">Your Name</label>
+                  <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-primary bg-white text-stone-800 text-sm">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase text-stone-700 mb-1">Email Address</label>
+                  <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-primary bg-white text-stone-800 text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase text-stone-700 mb-1">Subject</label>
+                <select class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-primary bg-white text-stone-800 text-sm">
+                  <option>General Inquiry</option>
+                  <option>Product / Bakery Stock Query</option>
+                  <option>Post Office Inquiry</option>
+                  <option>Volunteering Opportunities</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase text-stone-700 mb-1">Message</label>
+                <textarea rows="4" required placeholder="How can we help you today?" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-primary bg-white text-stone-800 text-sm"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-brand-primary hover:bg-brand-dark text-white font-bold py-4 rounded-xl shadow-md transition duration-300 text-sm flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-brand-dark text-stone-400 py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="space-y-3 md:col-span-1">
+          <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-brand-terracotta rounded-lg flex items-center justify-center text-white">
+              <i class="fa-solid fa-basket-shopping text-sm"></i>
+            </div>
+            <span class="text-white font-bold tracking-tight text-lg">MOTCOMBE SHOP</span>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            Your community-owned village store and café in Shaftesbury, North Dorset. Owned by the village, run for the community.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Quick Links</h5>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#about" class="hover:text-white transition">About Our Shop</a></li>
+            <li><a href="#services" class="hover:text-white transition">Post Office Services</a></li>
+            <li><a href="#services" class="hover:text-white transition">Fresh Bakery & Produce</a></li>
+            <li><a href="#local-seo" class="hover:text-white transition">Shaftesbury & St James</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Find Us / Map</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Opening Hours</h5>
+          <ul class="space-y-2 text-xs">
+            <li>Mon - Fri: 8:00 AM – 5:30 PM</li>
+            <li>Saturday: 8:00 AM – 4:00 PM</li>
+            <li>Sunday: 8:30 AM – 12:00 PM</li>
+            <li class="text-brand-sage pt-2">PO Counter: Mon-Fri 9am-1pm</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Location</h5>
+          <p class="text-xs text-stone-400 leading-relaxed mb-3">
+            Motcombe Road, Motcombe<br>
+            Shaftesbury, Dorset, SP7 9NT
+          </p>
+          <a href="tel:01747852225" class="text-xs font-bold text-brand-terracotta hover:underline block">
+            <i class="fa-solid fa-phone mr-1"></i> 01747 852225
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-500 gap-4">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Motcombe Community Shop Ltd. All rights reserved.</p>
+        <p class="flex items-center gap-1">
+          <span>Serving Motcombe, St James & Shaftesbury with pride</span>
+          <i class="fa-solid fa-heart text-brand-terracotta text-xs ml-1"></i>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple JS for Mobile Menu Toggle -->
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
